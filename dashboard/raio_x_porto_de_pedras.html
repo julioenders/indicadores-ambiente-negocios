@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raio-X Municipal — Porto de Pedras</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--card:rgba(255,255,255,.04);--border:rgba(255,255,255,.06);--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4}
+body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+.container{max-width:1400px;margin:0 auto;padding:1.5rem}
+header{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
+header h1{font-size:1.6rem;font-weight:800;letter-spacing:-.02em}
+header h1 span{color:var(--accent)}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:6px;font-size:.7rem;font-weight:600;background:rgba(59,130,246,.15);color:var(--accent);border:1px solid rgba(59,130,246,.2)}
+.subtitle{color:var(--muted);font-size:.8rem;margin-top:.3rem}
+.header-actions{display:flex;gap:.5rem;align-items:center}
+.portal-btn{background:rgba(34,197,94,.12);color:#22c55e;border:1px solid rgba(34,197,94,.2);padding:.5rem 1rem;border-radius:8px;font-size:.75rem;font-weight:600;text-decoration:none;transition:all .2s}
+.portal-btn:hover{background:rgba(34,197,94,.2)}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1.5rem}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;text-align:center;transition:border-color .2s}
+.kpi:hover{border-color:rgba(59,130,246,.3)}
+.kpi-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
+.kpi-value{font-size:1.5rem;font-weight:800;color:var(--text)}
+.kpi-detail{font-size:.65rem;color:var(--muted);margin-top:.2rem}
+.kpi-blue .kpi-value{color:var(--accent)}
+.kpi-green .kpi-value{color:var(--green)}
+.kpi-purple .kpi-value{color:var(--purple)}
+.kpi-cyan .kpi-value{color:var(--cyan)}
+.kpi-yellow .kpi-value{color:var(--yellow)}
+
+.tabs{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:.5rem}
+.tab{padding:.5rem 1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s}
+.tab.active{color:var(--accent);background:rgba(59,130,246,.1);border-bottom:2px solid var(--accent)}
+.tab:hover{color:var(--text)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1rem;margin-bottom:1rem}
+.chart-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem;min-height:300px}
+.chart-title{font-size:.8rem;font-weight:600;margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+.section-title{font-size:.9rem;font-weight:700;margin:1.5rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+
+.table-wrapper{overflow-x:auto;margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;font-size:.75rem}
+th{text-align:left;padding:.6rem .8rem;background:rgba(255,255,255,.03);color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid var(--border)}
+td{padding:.5rem .8rem;border-bottom:1px solid var(--border);color:var(--text)}
+tr:hover td{background:rgba(255,255,255,.02)}
+
+.tag{display:inline-block;padding:.15rem .5rem;border-radius:4px;font-size:.65rem;font-weight:600}
+.tag-green{background:rgba(34,197,94,.15);color:#22c55e}
+.tag-yellow{background:rgba(234,179,8,.15);color:#eab308}
+.tag-red{background:rgba(239,68,68,.15);color:#ef4444}
+.tag-blue{background:rgba(59,130,246,.15);color:#3b82f6}
+
+.empty{text-align:center;color:var(--muted);padding:2rem;font-size:.8rem}
+
+.footer{text-align:center;padding:2rem 0;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.7rem}
+
+.benchmark-bar{display:flex;align-items:center;gap:.5rem;margin:.4rem 0}
+.benchmark-label{font-size:.7rem;color:var(--muted);width:80px;text-align:right}
+.benchmark-track{flex:1;height:20px;background:rgba(255,255,255,.03);border-radius:4px;position:relative;overflow:hidden}
+.benchmark-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;font-size:.6rem;font-weight:600;color:#fff;min-width:fit-content;white-space:nowrap}
+
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:auto;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
+
+.info-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:1000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.info-overlay.active{display:flex}
+.info-modal{background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:2rem;max-width:520px;width:90%;max-height:80vh;overflow-y:auto;position:relative}
+.info-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer}
+.info-close:hover{color:var(--text)}
+
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div>
+    <h1>Raio-X Municipal — <span>Porto de Pedras</span></h1>
+    <div class="subtitle">Alagoas (AL) | Codigo IBGE: 2707404 | Gerado em 06/10/2026 14:22</div>
+  </div>
+  <div class="header-actions">
+    <span class="badge">PIPPA — Indicadores</span>
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="portal-btn">Portal PIPPA</a>
+  </div>
+</header>
+
+<div class="kpi-row" id="kpiMain"></div>
+
+<div class="tabs" id="tabBar"></div>
+<div id="tabContents"></div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
+</div>
+
+<div class="footer">
+  PIPPA — Plataforma de Inteligencia em Politicas Publicas Aplicadas | Sebrae Nacional<br>
+  Dados: Observatorio Sebrae (OLAP), IBGE, BCB, CAGED, INEP, ANS, ANATEL, MDS, PNUD | Gerado automaticamente
+</div>
+
+</div>
+
+<script>
+const D = {"municipio": {"nome": "Porto de Pedras", "uf_sigla": "AL", "uf_nome": "Alagoas", "uf_id": 27, "codigo": "2707404", "regiao": "Nordeste"}, "gerado_em": "06/10/2026 14:22", "perfil": {"populacao": 9520, "pib_ibge": 0.0, "ano_pop": "2026", "densidade": 34.4, "pop_urbana": 0, "pop_rural": 0, "idhm": 0.541, "gini": 0, "ano_idhm": 2010, "isdel": 0}, "empresas": {"por_porte": [{"porte": "Empresa de Pequeno Porte (EPP)", "qtd": 63.0}, {"porte": "Microempresa (ME)", "qtd": 259.0}, {"porte": "Micro Empresário Individual (MEI)", "qtd": 371.0}, {"porte": "Outros", "qtd": 63.0}], "total": 756.0, "por_cnae": [{"divisao": "Comércio Varejista", "qtd": 202.0}, {"divisao": "Alimentação", "qtd": 92.0}, {"divisao": "Alojamento", "qtd": 90.0}, {"divisao": "Construção De Edifícios", "qtd": 50.0}, {"divisao": "Serviços Especializados Para Construção", "qtd": 45.0}, {"divisao": "Transporte Terrestre", "qtd": 32.0}, {"divisao": "Atividades Imobiliárias", "qtd": 23.0}, {"divisao": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas", "qtd": 23.0}, {"divisao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas", "qtd": 18.0}, {"divisao": "Serviços Para Edifícios E Atividades Paisagísticas", "qtd": 15.0}, {"divisao": "Outras Atividades De Serviços Pessoais", "qtd": 15.0}, {"divisao": "Fabricação De Produtos Alimentícios", "qtd": 10.0}, {"divisao": "Fabricação De Produtos De Madeira", "qtd": 10.0}, {"divisao": "Fabricação De Produtos Diversos", "qtd": 10.0}, {"divisao": "Comércio E Reparação De Veículos Automotores E Motocicletas", "qtd": 10.0}], "uf_total": 221007.0, "uf_por_porte": [{"porte": "Empresa de Pequeno Porte (EPP)", "qtd": 13831.0}, {"porte": "Microempresa (ME)", "qtd": 73749.0}, {"porte": "Micro Empresário Individual (MEI)", "qtd": 122650.0}, {"porte": "Outros", "qtd": 10777.0}]}, "complexidade": {"eci": -10.394, "eci_rank": 36210.0, "vocacoes": [{"divisao": "Transporte Aquaviário", "rca": 2718.39}, {"divisao": "Alojamento", "rca": 2360.64}, {"divisao": "Agricultura, Pecuária E Serviços Relacionados", "rca": 1542.74}, {"divisao": "Comércio Varejista", "rca": 555.78}, {"divisao": "Construção De Edifícios", "rca": 209.47}, {"divisao": "Fabricação De Produtos De Minerais Não Metálicos", "rca": 152.83}, {"divisao": "Atividades Jurídicas, De Contabilidade E De Auditoria", "rca": 95.13}, {"divisao": "Alimentação", "rca": 85.69}, {"divisao": "Pesca E Aqüicultura", "rca": 65.82}, {"divisao": "Fabricação De Produtos Diversos", "rca": 62.42}, {"divisao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas", "rca": 49.11}, {"divisao": "Serviços Para Edifícios E Atividades Paisagísticas", "rca": 48.74}, {"divisao": "Correio E Outras Atividades De Entrega", "rca": 43.2}, {"divisao": "Outras Atividades De Serviços Pessoais", "rca": 35.71}, {"divisao": "Serviços Especializados Para Construção", "rca": 35.47}, {"divisao": "Fabricação De Produtos Alimentícios", "rca": 19.44}, {"divisao": "Atividades De Organizações Associativas", "rca": 19.35}, {"divisao": "Transporte Terrestre", "rca": 19.06}, {"divisao": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas", "rca": 17.5}, {"divisao": "Outras Atividades Profissionais, Científicas E Técnicas", "rca": 13.63}]}, "emprego": {"mensal": [{"mes": 202501, "admissoes": 159.0, "desligamentos": 113.0, "saldo": 46.0, "salario": 1746.26}, {"mes": 202502, "admissoes": 136.0, "desligamentos": 101.0, "saldo": 35.0, "salario": 1711.53}, {"mes": 202503, "admissoes": 81.0, "desligamentos": 119.0, "saldo": -38.0, "salario": 1695.34}, {"mes": 202504, "admissoes": 129.0, "desligamentos": 95.0, "saldo": 34.0, "salario": 1763.07}, {"mes": 202505, "admissoes": 105.0, "desligamentos": 120.0, "saldo": -15.0, "salario": 1734.94}, {"mes": 202506, "admissoes": 153.0, "desligamentos": 96.0, "saldo": 57.0, "salario": 1737.07}, {"mes": 202507, "admissoes": 162.0, "desligamentos": 138.0, "saldo": 24.0, "salario": 1786.59}, {"mes": 202508, "admissoes": 151.0, "desligamentos": 157.0, "saldo": -6.0, "salario": 1915.03}, {"mes": 202509, "admissoes": 209.0, "desligamentos": 104.0, "saldo": 105.0, "salario": 1849.38}, {"mes": 202510, "admissoes": 163.0, "desligamentos": 132.0, "saldo": 31.0, "salario": 1797.34}, {"mes": 202511, "admissoes": 228.0, "desligamentos": 118.0, "saldo": 110.0, "salario": 1854.47}, {"mes": 202512, "admissoes": 72.0, "desligamentos": 105.0, "saldo": -33.0, "salario": 1748.74}, {"mes": 202601, "admissoes": 138.0, "desligamentos": 123.0, "saldo": 15.0, "salario": 1888.5}, {"mes": 202602, "admissoes": 147.0, "desligamentos": 158.0, "saldo": -11.0, "salario": 1913.83}, {"mes": 202603, "admissoes": 239.0, "desligamentos": 122.0, "saldo": 117.0, "salario": 1930.52}, {"mes": 202604, "admissoes": 179.0, "desligamentos": 128.0, "saldo": 51.0, "salario": 1896.79}, {"mes": 202605, "admissoes": 141.0, "desligamentos": 133.0, "saldo": 8.0, "salario": 1976.37}, {"mes": 202606, "admissoes": 134.0, "desligamentos": 124.0, "saldo": 10.0, "salario": 1845.99}], "por_setor": [{"divisao": "Construção De Edifícios", "saldo": 105.0, "admissoes": 554.0}, {"divisao": "Serviços Para Edifícios E Atividades Paisagísticas", "saldo": 52.0, "admissoes": 81.0}, {"divisao": "Atividades Imobiliárias", "saldo": 37.0, "admissoes": 58.0}, {"divisao": "Comércio Varejista", "saldo": 18.0, "admissoes": 44.0}, {"divisao": "Alimentação", "saldo": -16.0, "admissoes": 65.0}, {"divisao": "Alojamento", "saldo": -6.0, "admissoes": 128.0}, {"divisao": "Agricultura, Pecuária E Serviços Relacionados", "saldo": -5.0, "admissoes": 10.0}, {"divisao": "Atividades De Organizações Associativas", "saldo": 4.0, "admissoes": 7.0}, {"divisao": "Atividades Jurídicas, De Contabilidade E De Auditoria", "saldo": -3.0, "admissoes": 0.0}, {"divisao": "Fabricação De Produtos Alimentícios", "saldo": 2.0, "admissoes": 2.0}, {"divisao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas", "saldo": -2.0, "admissoes": 11.0}, {"divisao": "Fabricação De Produtos De Minerais Não Metálicos", "saldo": 1.0, "admissoes": 3.0}], "saldo_total": 190.0, "salario_medio": 1821.76}, "pib": {"vab_total": 451598000.0, "vab_setores": [{"setor": "PIB Total (sem decomposicao VAB)", "valor": 451598000.0}], "exportacoes": 0, "importacoes": 0}, "credito": {"agencias": 0, "operacoes_credito": 0, "depositos_poupanca": 0, "ativos_totais": 0, "credito_rural_valor": 0, "credito_rural_contratos": 0}, "educacao": {"ideb": 0, "matriculas": 8110.0, "docentes": 0, "escolas": 0, "aprovacao": 0, "reprovacao": 0, "abandono": 0}, "saude_social": {"cobertura_saude": 2.6, "beneficiarios_saude": 0, "pbf_familias": 36382.0}, "conectividade": {"ibc": 37.1}, "sebrae": {"atendimentos": 2269.0}};
+
+function fmt(v,dec=0){if(v==null||v===0)return'N/D';if(Math.abs(v)>=1e9)return'R$ '+(v/1e9).toFixed(1)+'B';if(Math.abs(v)>=1e6)return(v/1e6).toFixed(1)+'M';if(Math.abs(v)>=1e3)return(v/1e3).toFixed(dec>0?dec:1)+'k';return dec>0?v.toFixed(dec):v.toLocaleString('pt-BR')}
+function pct(v){return v!=null&&v>0?v.toFixed(1)+'%':'N/D'}
+
+const CHART_COLORS = ['#3b82f6','#22c55e','#a855f7','#eab308','#ef4444','#06b6d4','#f97316','#ec4899','#14b8a6','#6366f1','#84cc16','#f43f5e'];
+
+// ── KPIs ────────────────────────────────────────────────────
+function renderKPIs(){
+  const p=D.perfil,e=D.empresas,em=D.emprego,ed=D.educacao,c=D.conectividade;
+  document.getElementById('kpiMain').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Populacao</div><div class="kpi-value">${fmt(p.populacao)}</div><div class="kpi-detail">IBGE Censo</div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">Empresas ativas</div><div class="kpi-value">${fmt(e.total)}</div><div class="kpi-detail">RF OLAP (MPEs)</div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">Saldo empregos ${new Date().getFullYear()}</div><div class="kpi-value">${em.saldo_total>=0?'+':''}${fmt(em.saldo_total)}</div><div class="kpi-detail">CAGED</div></div>
+    <div class="kpi kpi-cyan"><div class="kpi-label">IDHM</div><div class="kpi-value">${p.idhm||'N/D'}</div><div class="kpi-detail">PNUD (2010)</div></div>
+    <div class="kpi kpi-yellow"><div class="kpi-label">IDEB</div><div class="kpi-value">${ed.ideb||'N/D'}</div><div class="kpi-detail">INEP</div></div>
+    <div class="kpi"><div class="kpi-label">IBC Conectividade</div><div class="kpi-value">${c.ibc||'N/D'}</div><div class="kpi-detail">ANATEL (0-100)</div></div>
+  `;
+}
+
+// ── Tabs ─────────────────────────────────────────────────────
+const TABS=[
+  {id:'empresas',label:'Empresas'},
+  {id:'emprego',label:'Emprego'},
+  {id:'economia',label:'Economia'},
+  {id:'infra',label:'Infraestrutura'},
+  {id:'social',label:'Social'},
+  {id:'sebrae',label:'Sebrae'}
+];
+
+function renderTabs(){
+  const bar=document.getElementById('tabBar');
+  const cont=document.getElementById('tabContents');
+  TABS.forEach((t,i)=>{
+    const btn=document.createElement('button');
+    btn.className='tab'+(i===0?' active':'');
+    btn.textContent=t.label;
+    btn.onclick=()=>switchTab(t.id);
+    btn.dataset.tab=t.id;
+    bar.appendChild(btn);
+
+    const div=document.createElement('div');
+    div.className='tab-content'+(i===0?' active':'');
+    div.id='tab-'+t.id;
+    cont.appendChild(div);
+  });
+}
+
+function switchTab(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.toggle('active',c.id==='tab-'+id));
+}
+
+// ── Empresas ────────────────────────────────────────────────
+function renderEmpresas(){
+  const el=document.getElementById('tab-empresas');
+  const e=D.empresas, cx=D.complexidade;
+
+  let vocHtml='<div class="empty">Sem vocacoes identificadas (RCA &gt; 1)</div>';
+  if(cx.vocacoes&&cx.vocacoes.length>0){
+    vocHtml='<div class="table-wrapper"><table><thead><tr><th>Divisao CNAE</th><th>RCA</th><th>Classificacao</th></tr></thead><tbody>';
+    cx.vocacoes.forEach(v=>{
+      const cls=v.rca>=3?'tag-green':v.rca>=2?'tag-yellow':'tag-blue';
+      const lbl=v.rca>=3?'Forte':v.rca>=2?'Moderada':'Emergente';
+      vocHtml+=`<tr><td>${v.divisao}</td><td>${v.rca}</td><td><span class="tag ${cls}">${lbl}</span></td></tr>`;
+    });
+    vocHtml+='</tbody></table></div>';
+  }
+
+  el.innerHTML=`
+    <div class="section-title">Tecido Empresarial</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">Total de empresas</div><div class="kpi-value">${fmt(e.total)}</div><div class="kpi-detail">RF OLAP — ativas mercantis</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">ECI (complexidade)</div><div class="kpi-value">${cx.eci||'N/D'}</div><div class="kpi-detail">Ranking: ${cx.eci_rank||'N/D'}o</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">Participacao na UF</div><div class="kpi-value">${e.uf_total>0?((e.total/e.uf_total)*100).toFixed(1)+'%':'N/D'}</div><div class="kpi-detail">${fmt(e.uf_total)} na UF</div></div>
+      <div class="kpi kpi-cyan"><div class="kpi-label">Vocacoes (RCA&gt;1)</div><div class="kpi-value">${cx.vocacoes?cx.vocacoes.length:0}</div><div class="kpi-detail">setores especializados</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Distribuicao por Porte</div>
+        <canvas id="chartPorte"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Top 15 Setores (CNAE)</div>
+        <canvas id="chartCnae"></canvas>
+      </div>
+    </div>
+    <div class="section-title">Vocacoes Territoriais (RCA &gt; 1)</div>
+    ${vocHtml}
+  `;
+
+  if(e.por_porte&&e.por_porte.length>0){
+    new Chart(document.getElementById('chartPorte'),{type:'doughnut',data:{labels:e.por_porte.map(p=>p.porte),datasets:[{data:e.por_porte.map(p=>p.qtd),backgroundColor:CHART_COLORS.slice(0,e.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+  }
+  if(e.por_cnae&&e.por_cnae.length>0){
+    new Chart(document.getElementById('chartCnae'),{type:'bar',data:{labels:e.por_cnae.map(c=>c.divisao.length>30?c.divisao.substring(0,30)+'...':c.divisao),datasets:[{label:'Empresas',data:e.por_cnae.map(c=>c.qtd),backgroundColor:'rgba(59,130,246,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#94a3b8',font:{size:10}},grid:{display:false}}}}});
+  }
+}
+
+// ── Emprego ──────────────────────────────────────────────────
+function renderEmprego(){
+  const el=document.getElementById('tab-emprego');
+  const em=D.emprego;
+
+  el.innerHTML=`
+    <div class="section-title">Mercado de Trabalho Formal</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">Saldo ${new Date().getFullYear()}</div><div class="kpi-value">${em.saldo_total>=0?'+':''}${fmt(em.saldo_total)}</div><div class="kpi-detail">admissoes - desligamentos</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">Salario medio admissao</div><div class="kpi-value">R$ ${em.salario_medio?em.salario_medio.toLocaleString('pt-BR',{minimumFractionDigits:0}):'N/D'}</div><div class="kpi-detail">CAGED — media mensal</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao Mensal — Admissoes vs Desligamentos</div>
+        <canvas id="chartCaged"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Saldo por Setor (${new Date().getFullYear()})</div>
+        <canvas id="chartSetorEmprego"></canvas>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--purple)"></span>Evolucao do Salario Medio de Admissao</div>
+        <canvas id="chartSalario"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Saldo Acumulado</div>
+        <canvas id="chartSaldoAcum"></canvas>
+      </div>
+    </div>
+  `;
+
+  if(em.mensal&&em.mensal.length>0){
+    const labels=em.mensal.map(m=>m.mes);
+    new Chart(document.getElementById('chartCaged'),{type:'line',data:{labels,datasets:[
+      {label:'Admissoes',data:em.mensal.map(m=>m.admissoes),borderColor:'#22c55e',backgroundColor:'rgba(34,197,94,.1)',fill:true,tension:.3},
+      {label:'Desligamentos',data:em.mensal.map(m=>m.desligamentos),borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,.1)',fill:true,tension:.3}
+    ]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+
+    let acum=0;
+    const acumData=em.mensal.map(m=>{acum+=m.saldo;return acum});
+    new Chart(document.getElementById('chartSaldoAcum'),{type:'bar',data:{labels,datasets:[{label:'Saldo acumulado',data:acumData,backgroundColor:acumData.map(v=>v>=0?'rgba(34,197,94,.6)':'rgba(239,68,68,.6)'),borderRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+
+    new Chart(document.getElementById('chartSalario'),{type:'line',data:{labels,datasets:[{label:'Salario medio (R$)',data:em.mensal.map(m=>m.salario),borderColor:'#a855f7',backgroundColor:'rgba(168,85,247,.1)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b',callback:v=>'R$ '+v.toLocaleString('pt-BR')},grid:{color:'rgba(255,255,255,.05)'}}}}});
+  }
+
+  if(em.por_setor&&em.por_setor.length>0){
+    new Chart(document.getElementById('chartSetorEmprego'),{type:'bar',data:{labels:em.por_setor.map(s=>s.divisao.length>25?s.divisao.substring(0,25)+'...':s.divisao),datasets:[{label:'Saldo',data:em.por_setor.map(s=>s.saldo),backgroundColor:em.por_setor.map(s=>s.saldo>=0?'rgba(34,197,94,.6)':'rgba(239,68,68,.6)'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#94a3b8',font:{size:10}},grid:{display:false}}}}});
+  }
+}
+
+// ── Economia ────────────────────────────────────────────────
+function renderEconomia(){
+  const el=document.getElementById('tab-economia');
+  const p=D.pib, pf=D.perfil;
+
+  const pibPC=pf.populacao>0&&p.vab_total>0?Math.round(p.vab_total/pf.populacao):0;
+
+  el.innerHTML=`
+    <div class="section-title">Economia Municipal</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">PIB Municipal (VAB)</div><div class="kpi-value">${fmt(p.vab_total)}</div><div class="kpi-detail">IBGE PIB Municipal</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">PIB per capita</div><div class="kpi-value">R$ ${pibPC?pibPC.toLocaleString('pt-BR'):'N/D'}</div><div class="kpi-detail">VAB / populacao</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">Exportacoes</div><div class="kpi-value">${p.exportacoes>0?'US$ '+fmt(p.exportacoes):'N/D'}</div><div class="kpi-detail">MDIC COMEX</div></div>
+      <div class="kpi kpi-cyan"><div class="kpi-label">Importacoes</div><div class="kpi-value">${p.importacoes>0?'US$ '+fmt(p.importacoes):'N/D'}</div><div class="kpi-detail">MDIC COMEX</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Composicao do PIB (VAB)</div>
+        <canvas id="chartVAB"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Perfil Demografico</div>
+        <canvas id="chartDemog"></canvas>
+      </div>
+    </div>
+  `;
+
+  if(p.vab_setores&&p.vab_setores.length>0){
+    new Chart(document.getElementById('chartVAB'),{type:'doughnut',data:{labels:p.vab_setores.map(s=>s.setor),datasets:[{data:p.vab_setores.map(s=>s.valor),backgroundColor:['#22c55e','#3b82f6','#a855f7','#eab308','#ef4444'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+  }
+
+  const urb=pf.pop_urbana||0,rur=pf.pop_rural||0;
+  if(urb>0||rur>0){
+    new Chart(document.getElementById('chartDemog'),{type:'doughnut',data:{labels:['Urbana','Rural'],datasets:[{data:[urb,rur],backgroundColor:['#3b82f6','#22c55e'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8'}}}}});
+  }
+}
+
+// ── Infraestrutura ──────────────────────────────────────────
+function renderInfra(){
+  const el=document.getElementById('tab-infra');
+  const cr=D.credito, cn=D.conectividade;
+
+  el.innerHTML=`
+    <div class="section-title">Infraestrutura Financeira e Digital</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">Agencias bancarias</div><div class="kpi-value">${cr.agencias||'N/D'}</div><div class="kpi-detail">BCB ESTBAN</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">Operacoes de credito</div><div class="kpi-value">${fmt(cr.operacoes_credito)}</div><div class="kpi-detail">BCB ESTBAN</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">Depositos poupanca</div><div class="kpi-value">${fmt(cr.depositos_poupanca)}</div><div class="kpi-detail">BCB ESTBAN</div></div>
+      <div class="kpi kpi-cyan"><div class="kpi-label">IBC Conectividade</div><div class="kpi-value">${cn.ibc||'N/D'}</div><div class="kpi-detail">ANATEL (0-100)</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Indicadores Financeiros</div>
+        <canvas id="chartFinanceiro"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Credito Rural (SICOR)</div>
+        <div class="kpi-row">
+          <div class="kpi kpi-green"><div class="kpi-label">Valor contratado</div><div class="kpi-value">${fmt(cr.credito_rural_valor)}</div></div>
+          <div class="kpi kpi-blue"><div class="kpi-label">Contratos</div><div class="kpi-value">${fmt(cr.credito_rural_contratos)}</div></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const finLabels=['Operacoes Credito','Depositos Poupanca','Ativos Totais'];
+  const finData=[cr.operacoes_credito,cr.depositos_poupanca,cr.ativos_totais];
+  if(finData.some(v=>v>0)){
+    new Chart(document.getElementById('chartFinanceiro'),{type:'bar',data:{labels:finLabels,datasets:[{label:'Valor (R$)',data:finData,backgroundColor:['#3b82f6','#22c55e','#a855f7'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{ticks:{color:'#64748b',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+  }
+}
+
+// ── Social ──────────────────────────────────────────────────
+function renderSocial(){
+  const el=document.getElementById('tab-social');
+  const ed=D.educacao, ss=D.saude_social, pf=D.perfil;
+
+  el.innerHTML=`
+    <div class="section-title">Educacao</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">IDEB</div><div class="kpi-value">${ed.ideb||'N/D'}</div><div class="kpi-detail">INEP — anos iniciais</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">Matriculas</div><div class="kpi-value">${fmt(ed.matriculas)}</div><div class="kpi-detail">Censo Escolar</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">Docentes</div><div class="kpi-value">${fmt(ed.docentes)}</div><div class="kpi-detail">Censo Escolar</div></div>
+      <div class="kpi kpi-cyan"><div class="kpi-label">Escolas</div><div class="kpi-value">${fmt(ed.escolas)}</div><div class="kpi-detail">Censo Escolar</div></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Taxas Educacionais</div>
+        <canvas id="chartTaxasEdu"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Indicadores Sociais</div>
+        <canvas id="chartSocial"></canvas>
+      </div>
+    </div>
+    <div class="section-title">Saude e Protecao Social</div>
+    <div class="kpi-row">
+      <div class="kpi kpi-blue"><div class="kpi-label">Cobertura saude suplementar</div><div class="kpi-value">${pct(ss.cobertura_saude)}</div><div class="kpi-detail">ANS</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">Beneficiarios planos</div><div class="kpi-value">${fmt(ss.beneficiarios_saude)}</div><div class="kpi-detail">ANS</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">Familias Bolsa Familia</div><div class="kpi-value">${fmt(ss.pbf_familias)}</div><div class="kpi-detail">MDS</div></div>
+      <div class="kpi kpi-cyan"><div class="kpi-label">IDHM</div><div class="kpi-value">${pf.idhm||'N/D'}</div><div class="kpi-detail">PNUD — Gini: ${pf.gini||'N/D'}</div></div>
+    </div>
+  `;
+
+  if(ed.aprovacao>0||ed.reprovacao>0){
+    new Chart(document.getElementById('chartTaxasEdu'),{type:'bar',data:{labels:['Aprovacao','Reprovacao','Abandono'],datasets:[{data:[ed.aprovacao,ed.reprovacao,ed.abandono],backgroundColor:['#22c55e','#eab308','#ef4444'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{max:100,ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+  }
+
+  const socialLabels=['IDHM','Gini','ISDEL','Cobertura Saude (%)','IBC Conectividade'];
+  const socialData=[pf.idhm*100,pf.gini*100,pf.isdel,ss.cobertura_saude,D.conectividade.ibc];
+  new Chart(document.getElementById('chartSocial'),{type:'radar',data:{labels:socialLabels,datasets:[{label:D.municipio.nome,data:socialData,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.15)',pointBackgroundColor:'#3b82f6'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#94a3b8',font:{size:10}}}}}});
+}
+
+// ── Sebrae ───────────────────────────────────────────────────
+function renderSebrae(){
+  const el=document.getElementById('tab-sebrae');
+  const sb=D.sebrae, e=D.empresas, pf=D.perfil;
+
+  const taxa = e.total>0&&sb.atendimentos>0?((sb.atendimentos/e.total)*100).toFixed(1):0;
+
+  el.innerHTML=`
+    <div class="section-title">Presenca Sebrae no Municipio</div>
+    <div class="kpi-row" style="margin-bottom:1rem">
+      <div class="kpi kpi-blue"><div class="kpi-label">Atendimentos</div><div class="kpi-value">${fmt(sb.atendimentos)}</div><div class="kpi-detail">Sebrae (acumulado)</div></div>
+      <div class="kpi kpi-green"><div class="kpi-label">Taxa de alcance</div><div class="kpi-value">${taxa}%</div><div class="kpi-detail">atendimentos / empresas</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-label">ISDEL</div><div class="kpi-value">${pf.isdel||'N/D'}</div><div class="kpi-detail">Indice Sebrae Desenv. Local (0-100)</div></div>
+    </div>
+    <div class="chart-box" style="max-width:600px">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Panorama do Municipio</div>
+      <canvas id="chartRadar"></canvas>
+    </div>
+  `;
+
+  const dims=['Empresas','Emprego','PIB','IDHM','Educacao','Conectividade'];
+  const maxEmpresas=e.uf_total>0?e.uf_total:e.total*50;
+  const vals=[
+    Math.min((e.total/Math.max(maxEmpresas*.01,1))*100,100),
+    Math.min(Math.max(D.emprego.saldo_total+50,0),100),
+    Math.min(D.pib.vab_total>0?50:0,100),
+    (pf.idhm||0)*100,
+    (D.educacao.ideb||0)*20,
+    D.conectividade.ibc||0
+  ];
+
+  new Chart(document.getElementById('chartRadar'),{type:'radar',data:{labels:dims,datasets:[{label:D.municipio.nome,data:vals,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.15)',pointBackgroundColor:'#3b82f6'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#94a3b8',font:{size:11}}}}}});
+}
+
+// ── CI Modal ────────────────────────────────────────────────
+function showCI(html){document.getElementById('ciBody').innerHTML=html;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideCI()});
+
+// ── Init ────────────────────────────────────────────────────
+renderKPIs();
+renderTabs();
+renderEmpresas();
+renderEmprego();
+renderEconomia();
+renderInfra();
+renderSocial();
+renderSebrae();
+</script>
+</body>
+</html>
