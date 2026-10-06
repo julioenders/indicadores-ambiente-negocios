@@ -121,7 +121,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="kpi-row" id="kpiAbertura"></div>
     <div class="grid-2">
       <div class="chart-box">
-        <div class="chart-title">Tempo medio de abertura por estado (horas)</div>
+        <div class="chart-title">Tempo medio de abertura por estado (dias)</div>
         <canvas id="chartRanking" height="450"></canvas>
       </div>
       <div class="chart-box">
@@ -131,7 +131,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
     <div class="grid-2">
       <div class="chart-box full">
-        <div class="chart-title">Evolucao do tempo medio nacional (horas por empresa)</div>
+        <div class="chart-title">Evolucao do tempo medio nacional (dias por empresa)</div>
         <canvas id="chartEvolucao" height="160"></canvas>
       </div>
     </div>
@@ -171,9 +171,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 
     <h3>Tempo de Abertura</h3>
     <ul>
-      <li><strong>Ranking por estado:</strong> Tempo medio em horas, do registro no REDESIM ate o CNPJ ativo. Verde = abaixo de 150h, amarelo = 150 a 250h, vermelho = acima de 250h.</li>
+      <li><strong>Ranking por estado:</strong> Tempo medio em dias, do registro no REDESIM ate o CNPJ ativo. Verde = abaixo de 7 dias, amarelo = 7 a 11 dias, vermelho = acima de 11 dias.</li>
       <li><strong>Integracao REDESIM:</strong> Percentual de municipios do estado integrados ao sistema. Quanto maior a integracao, mais rapido tende a ser o processo.</li>
-      <li><strong>Evolucao mensal:</strong> Media nacional de horas por empresa ao longo dos meses.</li>
+      <li><strong>Evolucao mensal:</strong> Media nacional em dias por empresa ao longo dos meses.</li>
     </ul>
 
     <h3>Massa Empresarial</h3>
@@ -226,17 +226,17 @@ function renderAbertura(){
   const totalInt=DATA.integracao.reduce((s,i)=>s+i.mun_int,0);
 
   document.getElementById('kpiAbertura').innerHTML=`
-    <div class="kpi"><div class="kpi-label">Tempo medio nacional</div><div class="kpi-value" style="color:var(--accent)">${ultimo.total_h}h</div><div class="kpi-detail">Horas por empresa — ${ultimo.ano}-${String(ultimo.mes).padStart(2,'0')}</div></div>
-    <div class="kpi"><div class="kpi-label">Estado mais rapido</div><div class="kpi-value" style="color:var(--green)">${rk[0].uf}</div><div class="kpi-detail">${rk[0].tempo.toFixed(0)} horas em media</div></div>
-    <div class="kpi"><div class="kpi-label">Estado mais lento</div><div class="kpi-value" style="color:var(--red)">${rk[rk.length-1].uf}</div><div class="kpi-detail">${rk[rk.length-1].tempo.toFixed(0)} horas em media</div></div>
+    <div class="kpi"><div class="kpi-label">Tempo medio nacional</div><div class="kpi-value" style="color:var(--accent)">${(ultimo.total_h/24).toFixed(1)} dias</div><div class="kpi-detail">Dias por empresa — ${ultimo.ano}-${String(ultimo.mes).padStart(2,'0')}</div></div>
+    <div class="kpi"><div class="kpi-label">Estado mais rapido</div><div class="kpi-value" style="color:var(--green)">${rk[0].uf}</div><div class="kpi-detail">${(rk[0].tempo/24).toFixed(1)} dias em media</div></div>
+    <div class="kpi"><div class="kpi-label">Estado mais lento</div><div class="kpi-value" style="color:var(--red)">${rk[rk.length-1].uf}</div><div class="kpi-detail">${(rk[rk.length-1].tempo/24).toFixed(1)} dias em media</div></div>
     <div class="kpi"><div class="kpi-label">Municipios integrados</div><div class="kpi-value" style="color:var(--cyan)">${fmt(totalInt)}</div><div class="kpi-detail">De 5.570 municipios no REDESIM</div></div>
   `;
 
   charts.ranking=new Chart(document.getElementById('chartRanking'),{
     type:'bar',
-    data:{labels:rk.map(r=>r.uf),datasets:[{data:rk.map(r=>r.tempo),backgroundColor:rk.map(r=>r.tempo<150?'rgba(34,197,94,.6)':r.tempo<250?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'),borderRadius:4}]},
-    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw.toFixed(1)+' horas'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+    data:{labels:rk.map(r=>r.uf),datasets:[{data:rk.map(r=>+(r.tempo/24).toFixed(1)),backgroundColor:rk.map(r=>r.tempo<168?'rgba(34,197,94,.6)':r.tempo<264?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw.toFixed(1)+' dias'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'d'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
   });
 
   charts.integracao=new Chart(document.getElementById('chartIntegracao'),{
@@ -248,9 +248,9 @@ function renderAbertura(){
 
   charts.evolucao=new Chart(document.getElementById('chartEvolucao'),{
     type:'line',
-    data:{labels:tn.map(t=>t.ano+'-'+String(t.mes).padStart(2,'0')),datasets:[{label:'Horas por empresa',data:tn.map(t=>t.total_h),borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',fill:true,tension:.3,pointRadius:4,borderWidth:2.5}]},
+    data:{labels:tn.map(t=>t.ano+'-'+String(t.mes).padStart(2,'0')),datasets:[{label:'Dias por empresa',data:tn.map(t=>+(t.total_h/24).toFixed(1)),borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',fill:true,tension:.3,pointRadius:4,borderWidth:2.5}]},
     options:{responsive:true,plugins:{legend:{display:false}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}}}}
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'d'}}}}
   });
 }
 
@@ -324,8 +324,8 @@ async function fetchAPIs(){
       const nr=Object.entries(byUF).map(([uf,v])=>({uf,tempo:Math.round(v.soma/v.n*10)/10})).sort((a,b)=>a.tempo-b.tempo);
       if(nr.length>0&&charts.ranking){
         charts.ranking.data.labels=nr.map(r=>r.uf);
-        charts.ranking.data.datasets[0].data=nr.map(r=>r.tempo);
-        charts.ranking.data.datasets[0].backgroundColor=nr.map(r=>r.tempo<150?'rgba(34,197,94,.6)':r.tempo<250?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)');
+        charts.ranking.data.datasets[0].data=nr.map(r=>+(r.tempo/24).toFixed(1));
+        charts.ranking.data.datasets[0].backgroundColor=nr.map(r=>r.tempo<168?'rgba(34,197,94,.6)':r.tempo<264?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)');
         charts.ranking.update();
       }
     }
