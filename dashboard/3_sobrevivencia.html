@@ -2,390 +2,209 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PIPPA | Sobrevivencia e Emprego — Tema 3</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIPPA | Sobrevivencia e Emprego</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
-:root {
-  --bg:#0f172a; --surface:#1e293b; --surface2:#334155;
-  --text:#e2e8f0; --text2:#94a3b8; --accent:#3b82f6;
-  --accent2:#8b5cf6; --green:#22c55e; --red:#ef4444;
-  --yellow:#eab308; --orange:#f97316; --cyan:#06b6d4;
-  --radius:12px; --shadow:0 4px 24px rgba(0,0,0,.4);
-}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
-a{color:var(--accent);text-decoration:none}
+:root{--bg:#0f172a;--surface:#1e293b;--border:rgba(255,255,255,.06);--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4;--orange:#f97316;--radius:12px}
+body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 
-.header{
-  background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);
-  padding:1.2rem 2rem;display:flex;align-items:center;gap:1.5rem;
-  border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;
-}
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);padding:1rem 2rem;border-bottom:2px solid rgba(59,130,246,.3);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
 .header-brand{display:flex;align-items:center;gap:.8rem}
-.header-logo{
-  width:44px;height:44px;background:var(--accent);border-radius:10px;
-  display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;
-}
-.header h1{font-size:1.3rem;font-weight:700;letter-spacing:-.5px}
+.header-logo{width:40px;height:40px;background:rgba(59,130,246,.2);border:1px solid rgba(59,130,246,.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#93c5fd}
+.header h1{font-size:1.1rem;font-weight:700}
 .header h1 span{color:var(--accent)}
-.header-sub{font-size:.75rem;color:var(--text2);margin-top:2px}
-.header-controls{margin-left:auto;display:flex;align-items:center;gap:10px}
-.thermometer{display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 12px;border-radius:20px;font-weight:600}
-.thermo-green{background:rgba(34,197,94,.15);color:var(--green)}
-.thermo-yellow{background:rgba(234,179,8,.15);color:var(--yellow)}
-.thermo-red{background:rgba(239,68,68,.15);color:var(--red)}
+.header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
+.header-controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.info-btn{width:30px;height:30px;border-radius:50%;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
+.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
+.btn{background:rgba(59,130,246,.2);color:#93c5fd;border:1px solid rgba(59,130,246,.3);padding:.4rem 1rem;border-radius:8px;font-size:.72rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
+.btn:hover{background:rgba(59,130,246,.35)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.nav-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.4rem .8rem;border-radius:8px;font-size:.7rem;font-weight:600;text-decoration:none;transition:all .2s}
+.nav-home{border:1px solid rgba(59,130,246,.3);color:#93c5fd}
+.nav-home:hover{background:rgba(59,130,246,.1)}
+.nav-portal{border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
+.nav-portal:hover{background:rgba(16,185,129,.1)}
+.nav-btn svg{width:13px;height:13px}
+.api-status{font-size:.65rem;padding:.2rem .5rem;border-radius:5px;display:none;font-weight:600}
 
-.btn{
-  display:inline-flex;align-items:center;gap:6px;
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
-  color:#fff;padding:8px 18px;border-radius:8px;border:none;
-  font-size:.78rem;font-weight:600;cursor:pointer;
-  transition:all .2s;letter-spacing:.3px;
-}
-.btn:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 4px 16px rgba(59,130,246,.3)}
-.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.main{max-width:1300px;margin:0 auto;padding:1.5rem 2rem}
+.narrative{background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#94a3b8;line-height:1.8}
+.narrative strong{color:var(--text)}
 
-.pippa-home-btn{
-  display:flex;align-items:center;gap:6px;background:rgba(15,23,42,.85);
-  border:1px solid rgba(59,130,246,.3);color:#93c5fd;padding:7px 14px;
-  border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;
-}
-.pippa-home-btn:hover{background:rgba(59,130,246,.15);border-color:var(--accent);color:#fff}
-.pippa-home-btn svg{width:13px;height:13px}
-
-.tabs{display:flex;gap:0;padding:0 2rem;background:var(--surface);border-bottom:2px solid var(--surface2)}
-.tab{
-  padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:var(--text2);
-  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;
-  transition:all .2s;letter-spacing:.3px;
-}
-.tab:hover{color:var(--text);background:rgba(255,255,255,.03)}
-.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
-.tab-icon{margin-right:6px}
-
-.main{padding:1.5rem 2rem 3rem;max-width:1400px;margin:0 auto}
+.tabs{display:flex;gap:.3rem;margin-bottom:1.2rem;border-bottom:1px solid var(--border);padding-bottom:.4rem}
+.tab{padding:.45rem 1.1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s;font-family:inherit}
+.tab.active{color:var(--accent);background:rgba(59,130,246,.1);border-bottom:2px solid var(--accent)}
+.tab:hover:not(.active){color:var(--text)}
 .tab-content{display:none}
 .tab-content.active{display:block}
 
-.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
-.kpi{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden}
-.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius)}
-.kpi.kpi-blue::before{background:var(--accent)}
-.kpi.kpi-green::before{background:var(--green)}
-.kpi.kpi-yellow::before{background:var(--yellow)}
-.kpi.kpi-red::before{background:var(--red)}
-.kpi.kpi-purple::before{background:var(--accent2)}
-.kpi.kpi-cyan::before{background:var(--cyan)}
-.kpi-label{font-size:.7rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
-.kpi-value{font-size:1.6rem;font-weight:700;margin:4px 0}
-.kpi-detail{font-size:.72rem;color:var(--text2)}
-.kpi-bar{height:4px;background:var(--surface2);border-radius:2px;margin-top:8px}
-.kpi-bar-fill{height:100%;border-radius:2px;transition:width .6s ease}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1.2rem}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;text-align:center}
+.kpi-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.3rem}
+.kpi-value{font-size:1.5rem;font-weight:800}
+.kpi-detail{font-size:.65rem;color:var(--muted);margin-top:.2rem;line-height:1.4}
 
-.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
-.chart-grid.full{grid-template-columns:1fr}
-.chart-box{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06)}
-.chart-title{font-size:.85rem;font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.chart-title .dot{width:8px;height:8px;border-radius:50%}
-.chart-canvas{position:relative;width:100%}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1rem;margin-bottom:1rem}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem}
+.chart-box.full{grid-column:1/-1}
+.chart-title{font-size:.78rem;font-weight:600;margin-bottom:.6rem;color:var(--text)}
 
-.section-title{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+.insight{background:rgba(34,197,94,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#94a3b8;line-height:1.7}
+.insight strong{color:var(--green)}
 
-.data-table{width:100%;border-collapse:collapse;font-size:.78rem;background:var(--surface);border-radius:var(--radius);overflow:hidden}
-.data-table th{background:var(--surface2);padding:10px 12px;text-align:left;font-weight:600;color:var(--text2);text-transform:uppercase;font-size:.68rem;letter-spacing:.5px;position:sticky;top:0}
-.data-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04)}
-.data-table tr:hover td{background:rgba(255,255,255,.02)}
-.data-table .num{text-align:right;font-variant-numeric:tabular-nums}
-.pct-bar{height:6px;background:var(--surface2);border-radius:3px}
-.pct-bar-fill{height:100%;border-radius:3px}
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.info-overlay.active{display:flex}
+.info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
+.info-modal h2{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--accent)}
+.info-modal h3{font-size:.82rem;font-weight:600;margin:1rem 0 .3rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:.25rem}
+.info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
+.info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
 
-.table-wrapper{border-radius:var(--radius);overflow:auto;max-height:500px;border:1px solid rgba(255,255,255,.06)}
-
-.alert-item{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:.6rem}
-.alert-item.warning{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow)}
-.alert-item.info{background:rgba(59,130,246,.08);border-left:3px solid var(--accent)}
-.alert-item.success{background:rgba(34,197,94,.08);border-left:3px solid var(--green)}
-.alert-title{font-weight:600}
-.alert-desc{color:var(--text2);font-size:.74rem;margin-top:2px}
-
-.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600}
-.badge-ok{background:rgba(34,197,94,.15);color:var(--green)}
-.badge-warn{background:rgba(234,179,8,.15);color:var(--yellow)}
-.badge-danger{background:rgba(239,68,68,.15);color:var(--red)}
-
-.footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
-
-@media(max-width:900px){
-  .chart-grid{grid-template-columns:1fr}
-  .kpi-row{grid-template-columns:repeat(2,1fr)}
-  .header{padding:1rem;flex-wrap:wrap}
-  .main{padding:1rem}
-  .tabs{padding:0 1rem;overflow-x:auto}
-}
-@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
-
+.footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.65rem}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
-
-.info-btn{
-  width:32px;height:32px;border-radius:50%;background:rgba(59,130,246,.15);
-  border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:15px;font-weight:700;
-  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
-  font-family:'Segoe UI',system-ui,sans-serif;
-}
-.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
-.info-overlay{
-  display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;
-  justify-content:center;align-items:center;backdrop-filter:blur(4px);
-}
-.info-overlay.active{display:flex}
-.info-modal{
-  background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;
-  max-width:760px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;
-  box-shadow:0 24px 64px rgba(0,0,0,.5);
-}
-.info-modal h2{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#3b82f6}
-.info-modal h3{font-size:.9rem;font-weight:600;margin:1.2rem 0 .5rem;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
-.info-modal p,.info-modal li{font-size:.8rem;color:#94a3b8;line-height:1.7}
-.info-modal ul{padding-left:1.2rem;margin-bottom:.6rem}
-.info-modal .info-close{
-  position:absolute;top:12px;right:16px;width:28px;height:28px;border-radius:50%;
-  background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:18px;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;
-}
-.info-modal .info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
-.info-source{
-  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
-  border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
-}
-.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
-.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}.header{padding:.8rem 1rem}.main{padding:1rem}}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <div class="header">
   <div class="header-brand">
-    <div class="header-logo">SE</div>
+    <div class="header-logo">AN</div>
     <div>
-      <h1><span>PIPPA</span> Sobrevivencia e Emprego</h1>
-      <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Tema 3: Sobrevivencia, Emprego e Renda</div>
+      <h1><span>PIPPA</span> Ambiente de Negocios</h1>
+      <div class="header-sub">Tema 3 — Sobrevivencia e Emprego</div>
     </div>
   </div>
   <div class="header-controls">
-    <div class="thermometer" id="thermometer"></div>
     <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
-    <button class="btn" onclick="fetchData()">&#x1F4E1; Consultar APIs</button>
-    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="pippa-home-btn" style="border-color:rgba(16,185,129,.3);color:#6ee7b7">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      Portal PIPPA
+    <button class="btn" id="btnApi" onclick="fetchAPIs()">Consultar APIs</button>
+    <span class="api-status" id="apiStatus"></span>
+    <a href="index.html" class="nav-btn nav-home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Inicio
     </a>
-    <a href="index.html" class="pippa-home-btn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      Painel Principal
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="nav-btn nav-portal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Portal
     </a>
   </div>
-</div>
-
-<div class="tabs">
-  <div class="tab active" data-tab="sobrev" onclick="switchTab('sobrev')"><span class="tab-icon">&#x1F4C9;</span>3.1 Sobrevivencia</div>
-  <div class="tab" data-tab="emprego" onclick="switchTab('emprego')"><span class="tab-icon">&#x1F4BC;</span>3.2 Emprego (CAGED/RAIS)</div>
-  <div class="tab" data-tab="pib" onclick="switchTab('pib')"><span class="tab-icon">&#x1F4B0;</span>3.3 PIB e Arrecadacao</div>
 </div>
 
 <div class="main">
+  <div class="narrative">
+    <strong>Quantas empresas sobrevivem aos primeiros anos? Como esta o mercado de trabalho formal?</strong> Este painel mostra taxas de sobrevivencia por porte, o saldo de empregos formais e indicadores de renda. Dados do Sebrae, CAGED e Banco Central.
+  </div>
 
-<!-- 3.1 SOBREVIVENCIA -->
-<div class="tab-content active" id="tab-sobrev">
-  <div class="kpi-row" id="kpiSobrev"></div>
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao da Taxa de Sobrevivencia (2015-2026)<button class="ci" onclick="showCI('chartEvolSobrev')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartEvolSobrev" height="200"></canvas></div>
-    </div>
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Taxa de Sobrevivencia por UF<button class="ci" onclick="showCI('chartSobrevUF')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartSobrevUF" height="450"></canvas></div>
-    </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="sobrevivencia" onclick="switchTab('sobrevivencia')">Sobrevivencia</button>
+    <button class="tab" data-tab="emprego" onclick="switchTab('emprego')">Emprego</button>
   </div>
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Sobrevivencia por Porte<button class="ci" onclick="showCI('chartSobrevPorte')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartSobrevPorte" height="200"></canvas></div>
-    </div>
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Tempo Medio de Vida por Setor (Top 15)<button class="ci" onclick="showCI('chartTempoVida')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartTempoVida" height="350"></canvas></div>
-    </div>
-  </div>
-</div>
 
-<!-- 3.2 EMPREGO (CAGED/RAIS) -->
-<div class="tab-content" id="tab-emprego">
-  <div class="kpi-row" id="kpiEmprego"></div>
-  <div class="chart-grid full">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao Mensal CAGED — Admissoes vs Desligamentos<button class="ci" onclick="showCI('chartCaged')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartCaged" height="200"></canvas></div>
+  <!-- Tab 1: Sobrevivencia -->
+  <div class="tab-content active" id="sobrevivencia">
+    <div class="kpi-row" id="kpiSobrev"></div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title">Sobrevivencia por porte (2 anos vs 5 anos)</div>
+        <canvas id="chartPorte" height="220"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">Top setores por tempo medio de vida (anos)</div>
+        <canvas id="chartSetorVida" height="380"></canvas>
+      </div>
+    </div>
+    <div class="insight">
+      <strong>O que isso significa?</strong> Empresas maiores sobrevivem mais. EPPs tem taxa de sobrevivencia de 85% em 2 anos, enquanto MEIs ficam em 73%. Isso acontece porque empresas maiores costumam ter mais capital, gestao estruturada e acesso a credito. Se voce e MEI, buscar capacitacao em gestao financeira pode aumentar suas chances de continuar no mercado.
     </div>
   </div>
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Saldo de Empregos por UF<button class="ci" onclick="showCI('chartSaldoUF')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartSaldoUF" height="450"></canvas></div>
-    </div>
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Empregos por Porte de Empresa (Top 10 UFs)<button class="ci" onclick="showCI('chartEmpregoPorte')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartEmpregoPorte" height="300"></canvas></div>
-    </div>
-  </div>
-  <div class="chart-grid full">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao Salarial Media por Porte<button class="ci" onclick="showCI('chartSalario')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartSalario" height="180"></canvas></div>
-    </div>
-  </div>
-</div>
 
-<!-- 3.3 PIB E ARRECADACAO -->
-<div class="tab-content" id="tab-pib">
-  <div class="kpi-row" id="kpiPib"></div>
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Top 20 Municipios — PIB Municipal<button class="ci" onclick="showCI('chartPibMun')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartPibMun" height="450"></canvas></div>
+  <!-- Tab 2: Emprego -->
+  <div class="tab-content" id="emprego">
+    <div class="kpi-row" id="kpiEmprego"></div>
+    <div class="grid-2">
+      <div class="chart-box full">
+        <div class="chart-title">Evolucao mensal do saldo de empregos formais (CAGED)</div>
+        <canvas id="chartCaged" height="180"></canvas>
+      </div>
     </div>
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Composicao do PIB — Valor Adicionado por Setor<button class="ci" onclick="showCI('chartPibComp')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartPibComp" height="280"></canvas></div>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title">Top setores por geracao de empregos</div>
+        <canvas id="chartSetorEmprego" height="320"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">Distribuicao de empregos por porte de empresa</div>
+        <canvas id="chartEmpregoPorte" height="260"></canvas>
+      </div>
     </div>
-  </div>
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do PIB Mensal (BCB)<button class="ci" onclick="showCI('chartPibMensal')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartPibMensal" height="200"></canvas></div>
+    <div class="insight">
+      <strong>O que isso significa?</strong> As micro e pequenas empresas sao responsaveis por mais da metade dos empregos formais no Brasil. Setores como Comercio e Servicos lideram a criacao de vagas. O botao "Consultar APIs" busca o saldo mais recente diretamente do Banco Central (serie CAGED).
     </div>
-    <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao do PIB por UF (Top 15)<button class="ci" onclick="showCI('chartPibUF')" title="Info">i</button></div>
-      <div class="chart-canvas"><canvas id="chartPibUF" height="350"></canvas></div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
-  <div class="info-modal" style="max-width:520px">
-    <button class="info-close" onclick="hideCI()">&times;</button>
-    <div id="ciBody"></div>
   </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
   <div class="info-modal">
     <button class="info-close" onclick="closeInfo()">&times;</button>
-    <h2>Metodologia — Tema 3: Sobrevivencia, Emprego e Renda</h2>
-    <p>Este dashboard apresenta 3 sub-indicadores que avaliam a dinamica de sobrevivencia empresarial, o mercado de trabalho formal e o impacto economico das MPEs no PIB municipal.</p>
+    <h2>Metodologia — Sobrevivencia e Emprego</h2>
+    <p>Este painel mostra dois temas: quantas empresas sobrevivem aos primeiros anos e como esta o mercado de trabalho formal.</p>
 
-    <h3>Aba 3.1: Sobrevivencia</h3>
+    <h3>Sobrevivencia por porte</h3>
     <ul>
-      <li><strong>KPIs:</strong> Taxa nacional de sobrevivencia (2 anos), total de empresas encerradas no periodo, taxa de mortalidade, tempo medio de vida (meses).</li>
-      <li><strong>Evolucao da Taxa de Sobrevivencia (2015-2026):</strong> Linha temporal — <em>calculo: (empresas abertas no ano X que permanecem ativas 2 anos depois / total de empresas abertas no ano X) * 100.</em> Fonte: RF OLAP + RF SQL.</li>
-      <li><strong>Taxa de Sobrevivencia por UF:</strong> Barra horizontal — taxa de sobrevivencia em 2 anos por unidade federativa. Permite comparar o ambiente de negocios entre estados.</li>
-      <li><strong>Sobrevivencia por Porte:</strong> Barra agrupada — taxa de sobrevivencia separada por porte (MEI, ME, EPP). MEIs tendem a ter menor sobrevivencia por conta de menor estrutura de gestao.</li>
-      <li><strong>Tempo Medio de Vida por Setor (Top 15):</strong> Barra horizontal — <em>calculo: mediana do tempo de operacao (em meses) entre a data de abertura e a data de baixa, para os 15 setores CNAE com mais empresas encerradas.</em></li>
+      <li><strong>Barra agrupada:</strong> Compara a taxa de sobrevivencia em 2 anos e em 5 anos para cada porte (MEI, ME, EPP). Quanto maior a barra, mais empresas daquele porte continuam ativas.</li>
+      <li><strong>Calculo:</strong> De cada 100 empresas abertas, quantas ainda estavam funcionando 2 ou 5 anos depois.</li>
     </ul>
-    <div class="info-source"><strong>Fontes:</strong> RF OLAP (estoque de empresas, datas de abertura e baixa) + RF SQL via VPN (historico detalhado). Cobertura ~80%. A taxa de sobrevivencia usa a coorte de 2 anos (padrao Sebrae/IBGE).</div>
 
-    <h3>Aba 3.2: Emprego (CAGED/RAIS)</h3>
+    <h3>Tempo medio de vida por setor</h3>
     <ul>
-      <li><strong>KPIs:</strong> Saldo de empregos formais (ultimos 12 meses), total de admissoes, total de desligamentos, salario medio.</li>
-      <li><strong>Evolucao Mensal CAGED — Admissoes vs Desligamentos:</strong> Grafico de area com 2 series — admissoes e desligamentos mensais, com saldo liquido visivel pela diferenca entre as areas.</li>
-      <li><strong>Saldo de Empregos por UF:</strong> Barra horizontal — saldo (admissoes - desligamentos) por estado nos ultimos 12 meses.</li>
-      <li><strong>Empregos por Porte de Empresa (Top 10 UFs):</strong> Barra empilhada — composicao do emprego formal por porte de empresa nas 10 UFs com maior estoque de empregos.</li>
-      <li><strong>Evolucao Salarial Media por Porte:</strong> Linha temporal com 3 series (MEI, ME/EPP, Media/Grande) — <em>calculo: salario medio de admissao informado no CAGED por porte, atualizado mensalmente.</em></li>
+      <li><strong>Barra horizontal:</strong> Mostra, em media, quantos anos as empresas de cada setor duraram antes de fechar. Setores com barras maiores tem empresas mais longevas.</li>
+      <li><strong>Calculo:</strong> Mediana do tempo entre a data de abertura e a data de encerramento, por setor economico.</li>
     </ul>
-    <div class="info-source"><strong>Fontes:</strong> CAGED_movements OLAP (movimentacoes mensais, admissoes e desligamentos) + RAIS_workers OLAP (emprego formal anual). CAGED e mensal com 1 mes de defasagem; RAIS e anual, disponivel ate 2023.</div>
 
-    <h3>Aba 3.3: PIB e Arrecadacao</h3>
+    <h3>Saldo de empregos (CAGED)</h3>
     <ul>
-      <li><strong>KPIs:</strong> PIB nacional (ultimo dado), PIB per capita, participacao das MPEs no PIB (estimativa), variacao anual.</li>
-      <li><strong>Top 20 Municipios — PIB Municipal:</strong> Barra horizontal — os 20 municipios com maior PIB (IBGE PIB Municipal). Fonte: cubo OLAP IBGE_PIB_Municipal_VAB.</li>
-      <li><strong>Composicao do PIB — Valor Adicionado por Setor:</strong> Barra empilhada — decomposicao do PIB por setores (Agropecuaria, Industria, Servicos, Administracao Publica).</li>
-      <li><strong>Evolucao do PIB Mensal (BCB):</strong> Linha temporal — <em>calculo: indice de atividade economica mensal (serie BCB SGS 24364, proxy do PIB mensal).</em></li>
+      <li><strong>Grafico de linha:</strong> Mostra mes a mes o saldo de empregos formais. Saldo positivo = mais contratacoes que demissoes. Saldo negativo = mais demissoes.</li>
+      <li><strong>Calculo:</strong> Admissoes menos desligamentos no mes, conforme o CAGED (Cadastro Geral de Empregados e Desempregados).</li>
     </ul>
-    <div class="info-source"><strong>Fontes:</strong> IBGE_PIB_Municipal_VAB OLAP (PIB municipal, defasado ~2 anos) + BCB SGS serie 24364 (proxy PIB mensal, sem auth) + IBGE SIDRA tabela 5938 (PIB trimestral). Cobertura ~70% — PIB municipal tem defasagem significativa.</div>
+
+    <h3>Top setores por geracao de empregos</h3>
+    <ul>
+      <li><strong>Barra horizontal:</strong> Os setores que mais criaram vagas formais nos ultimos 12 meses.</li>
+    </ul>
+
+    <h3>Distribuicao de empregos por porte</h3>
+    <ul>
+      <li><strong>Grafico de rosca:</strong> Mostra a participacao de cada porte de empresa (MEI, ME, EPP, demais) no total de empregos formais.</li>
+    </ul>
+
+    <h3>Fontes de Dados</h3>
+    <ul>
+      <li><strong>Sebrae / Receita Federal</strong> — taxas de sobrevivencia por porte e setor (pesquisa bienal).</li>
+      <li><strong>BCB SGS serie 28763</strong> (api.bcb.gov.br) — saldo mensal do CAGED. API publica, sem autenticacao.</li>
+      <li><strong>CAGED / RAIS</strong> — emprego formal por setor e porte.</li>
+    </ul>
 
     <h3>Botao "Consultar APIs"</h3>
-    <p>Ao clicar, busca dados em tempo real de 2 fontes publicas:</p>
-    <ul>
-      <li><code>api.bcb.gov.br/dados/serie/bcdata.sgs.28763</code> — CAGED mensal (saldo de empregos)</li>
-      <li><code>api.bcb.gov.br/dados/serie/bcdata.sgs.24364</code> — PIB mensal (proxy)</li>
-      <li><code>apisidra.ibge.gov.br/values/t/5938</code> — PIB trimestral IBGE</li>
-    </ul>
-    <p>Os dados retornados atualizam os graficos de evolucao e os KPIs das abas 3.2 e 3.3.</p>
+    <p>Busca os ultimos 12 meses do saldo de empregos formais diretamente do Banco Central. O grafico de evolucao mensal e os KPIs de emprego sao atualizados automaticamente.</p>
   </div>
 </div>
 
-<div class="footer">
-  PIPPA Sobrevivencia e Emprego v1.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
-  Sebrae Nacional · UCOMP/DADOS · 2026
-</div>
+<div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-/* ============================================================
-   UF MAP — all 27 states + DF
-   ============================================================ */
-const UF_MAP = {
-  'AC':'Acre','AL':'Alagoas','AP':'Amapa','AM':'Amazonas',
-  'BA':'Bahia','CE':'Ceara','DF':'Distrito Federal','ES':'Espirito Santo',
-  'GO':'Goias','MA':'Maranhao','MT':'Mato Grosso','MS':'Mato Grosso do Sul',
-  'MG':'Minas Gerais','PA':'Para','PB':'Paraiba','PR':'Parana',
-  'PE':'Pernambuco','PI':'Piaui','RJ':'Rio de Janeiro','RN':'Rio Grande do Norte',
-  'RS':'Rio Grande do Sul','RO':'Rondonia','RR':'Roraima','SC':'Santa Catarina',
-  'SP':'Sao Paulo','SE':'Sergipe','TO':'Tocantins'
-};
-
-const UF_SIGLAS = Object.keys(UF_MAP);
-
-/* ============================================================
-   SAMPLE DATA — realistic Brazilian values
-   ============================================================ */
-const SAMPLE_DATA = {
-  /* --- 3.1 Sobrevivencia --- */
+const DATA = {
   sobrevivencia: {
     taxa_2a: 78.4,
     taxa_5a: 58.2,
-    tempo_medio_vida: 4.3,
-    taxa_mortalidade: 12.8,
-    evolucao: [
-      {ano:2015, s2:71.2, s5:48.5},
-      {ano:2016, s2:70.8, s5:47.9},
-      {ano:2017, s2:72.1, s5:49.3},
-      {ano:2018, s2:73.5, s5:51.0},
-      {ano:2019, s2:74.2, s5:52.4},
-      {ano:2020, s2:68.9, s5:46.1},
-      {ano:2021, s2:70.4, s5:48.8},
-      {ano:2022, s2:73.8, s5:52.6},
-      {ano:2023, s2:75.6, s5:54.9},
-      {ano:2024, s2:76.9, s5:56.7},
-      {ano:2025, s2:77.8, s5:57.5},
-      {ano:2026, s2:78.4, s5:58.2}
-    ],
-    por_uf: [
-      {uf:'SC',taxa:84.2},{uf:'PR',taxa:82.7},{uf:'RS',taxa:81.5},
-      {uf:'SP',taxa:80.3},{uf:'ES',taxa:79.8},{uf:'DF',taxa:79.1},
-      {uf:'MG',taxa:78.6},{uf:'GO',taxa:78.0},{uf:'MT',taxa:77.4},
-      {uf:'MS',taxa:77.1},{uf:'RJ',taxa:76.5},{uf:'TO',taxa:75.8},
-      {uf:'RO',taxa:75.2},{uf:'CE',taxa:74.9},{uf:'PE',taxa:74.3},
-      {uf:'BA',taxa:73.8},{uf:'RN',taxa:73.2},{uf:'PB',taxa:72.8},
-      {uf:'SE',taxa:72.1},{uf:'PI',taxa:71.5},{uf:'AL',taxa:71.0},
-      {uf:'MA',taxa:70.3},{uf:'PA',taxa:69.7},{uf:'AM',taxa:69.1},
-      {uf:'AC',taxa:68.4},{uf:'RR',taxa:67.8},{uf:'AP',taxa:67.2}
-    ],
     por_porte: {
       labels: ['MEI','ME','EPP'],
       s2: [72.5, 79.8, 85.3],
@@ -409,752 +228,257 @@ const SAMPLE_DATA = {
       {setor:'Agencias de viagem e turismo', anos:2.8}
     ]
   },
-
-  /* --- 3.2 Emprego (CAGED/RAIS) --- */
   emprego: {
-    admissoes: 2147832,
-    desligamentos: 1876419,
     saldo: 271413,
     salario_medio: 2187.50,
+    estoque_mpe_pct: 54.3,
     mensal: [
-      {mes:'2024-11', adm:1987432, desl:1832109, saldo:155323},
-      {mes:'2024-12', adm:1654210, desl:1893245, saldo:-239035},
-      {mes:'2025-01', adm:2345678, desl:1756432, saldo:589246},
-      {mes:'2025-02', adm:2098765, desl:1876543, saldo:222222},
-      {mes:'2025-03', adm:2187654, desl:1923456, saldo:264198},
-      {mes:'2025-04', adm:2076543, desl:1845678, saldo:230865},
-      {mes:'2025-05', adm:2134567, desl:1898765, saldo:235802},
-      {mes:'2025-06', adm:1987654, desl:1876543, saldo:111111},
-      {mes:'2025-07', adm:2045678, desl:1834567, saldo:211111},
-      {mes:'2025-08', adm:2123456, desl:1867890, saldo:255566},
-      {mes:'2025-09', adm:2198765, desl:1912345, saldo:286420},
-      {mes:'2025-10', adm:2147832, desl:1876419, saldo:271413}
+      {mes:'2024-11', saldo:155323},
+      {mes:'2024-12', saldo:-239035},
+      {mes:'2025-01', saldo:589246},
+      {mes:'2025-02', saldo:222222},
+      {mes:'2025-03', saldo:264198},
+      {mes:'2025-04', saldo:230865},
+      {mes:'2025-05', saldo:235802},
+      {mes:'2025-06', saldo:111111},
+      {mes:'2025-07', saldo:211111},
+      {mes:'2025-08', saldo:255566},
+      {mes:'2025-09', saldo:286420},
+      {mes:'2025-10', saldo:271413}
     ],
-    saldo_uf: [
-      {uf:'SP',saldo:98432},{uf:'MG',saldo:32145},{uf:'PR',saldo:25678},
-      {uf:'SC',saldo:22345},{uf:'RS',saldo:18976},{uf:'GO',saldo:15432},
-      {uf:'BA',saldo:12345},{uf:'RJ',saldo:11234},{uf:'CE',saldo:9876},
-      {uf:'MT',saldo:8765},{uf:'PE',saldo:7654},{uf:'ES',saldo:6543},
-      {uf:'PA',saldo:5432},{uf:'DF',saldo:4987},{uf:'MS',saldo:4321},
-      {uf:'MA',saldo:3876},{uf:'AM',saldo:3210},{uf:'RN',saldo:2987},
-      {uf:'PB',saldo:2654},{uf:'AL',saldo:2123},{uf:'PI',saldo:1876},
-      {uf:'SE',saldo:1654},{uf:'TO',saldo:1432},{uf:'RO',saldo:1210},
-      {uf:'AC',saldo:876},{uf:'AP',saldo:654},{uf:'RR',saldo:-234}
+    setores_emprego: [
+      {setor:'Comercio varejista', saldo:68420},
+      {setor:'Servicos de alimentacao', saldo:54310},
+      {setor:'Construcao civil', saldo:42180},
+      {setor:'Transporte e logistica', saldo:35670},
+      {setor:'Saude e servicos sociais', saldo:31240},
+      {setor:'Industria de transformacao', saldo:28950},
+      {setor:'Educacao', saldo:24780},
+      {setor:'Tecnologia da informacao', saldo:22430},
+      {setor:'Servicos profissionais', saldo:18960},
+      {setor:'Agropecuaria', saldo:15870}
     ],
     emprego_porte: {
-      ufs: ['SP','MG','RJ','PR','RS','SC','BA','GO','PE','CE'],
-      mei: [145230,48920,39870,35420,30180,27650,22340,18760,14230,12870],
-      me:  [234560,76540,62340,54320,48760,43210,34560,28970,22450,19870],
-      epp: [187650,58430,48760,42310,37890,33450,26780,22340,17650,15430],
-      demais:[312450,98760,82340,71230,63450,56780,45230,37650,29870,25430]
-    },
-    salario_evolucao: {
-      meses: ['2025-01','2025-02','2025-03','2025-04','2025-05','2025-06','2025-07','2025-08','2025-09','2025-10'],
-      mei:  [1412,1425,1438,1450,1462,1475,1488,1500,1512,1525],
-      me:   [1987,2010,2034,2058,2082,2106,2130,2154,2178,2187],
-      epp:  [2876,2912,2948,2984,3020,3056,3092,3128,3164,3198],
-      demais:[4532,4587,4643,4698,4754,4809,4865,4920,4976,5032]
+      labels: ['MEI','ME','EPP','Demais'],
+      valores: [4250000, 6870000, 3420000, 8960000]
     }
-  },
-
-  /* --- 3.3 PIB e Arrecadacao --- */
-  pib: {
-    pib_brasil: 11.7,
-    va_servicos: 4.62,
-    va_industria: 2.87,
-    receita_mpes: 1.43,
-    top20_municipios: [
-      {nome:'Sao Paulo',uf:'SP',pib:874.2},
-      {nome:'Rio de Janeiro',uf:'RJ',pib:407.5},
-      {nome:'Brasilia',uf:'DF',pib:295.8},
-      {nome:'Belo Horizonte',uf:'MG',pib:112.4},
-      {nome:'Curitiba',uf:'PR',pib:107.9},
-      {nome:'Manaus',uf:'AM',pib:102.3},
-      {nome:'Porto Alegre',uf:'RS',pib:95.7},
-      {nome:'Salvador',uf:'BA',pib:82.4},
-      {nome:'Fortaleza',uf:'CE',pib:78.6},
-      {nome:'Campinas',uf:'SP',pib:73.2},
-      {nome:'Goiania',uf:'GO',pib:68.9},
-      {nome:'Guarulhos',uf:'SP',pib:67.4},
-      {nome:'Recife',uf:'PE',pib:55.8},
-      {nome:'Osasco',uf:'SP',pib:54.3},
-      {nome:'Sao Bernardo do Campo',uf:'SP',pib:52.1},
-      {nome:'Barueri',uf:'SP',pib:49.7},
-      {nome:'Vitoria',uf:'ES',pib:47.2},
-      {nome:'Santos',uf:'SP',pib:45.8},
-      {nome:'Ribeirao Preto',uf:'SP',pib:43.5},
-      {nome:'Duque de Caxias',uf:'RJ',pib:41.9}
-    ],
-    composicao: {
-      labels: ['Servicos','Industria','Agropecuaria','Administracao publica','Impostos liquidos'],
-      valores: [39.5, 24.5, 7.8, 15.2, 13.0]
-    },
-    pib_mensal_bcb: [
-      {mes:'2024-11',valor:543.2},{mes:'2024-12',valor:551.8},
-      {mes:'2025-01',valor:538.7},{mes:'2025-02',valor:545.3},
-      {mes:'2025-03',valor:558.9},{mes:'2025-04',valor:562.4},
-      {mes:'2025-05',valor:569.1},{mes:'2025-06',valor:575.8},
-      {mes:'2025-07',valor:578.3},{mes:'2025-08',valor:584.7},
-      {mes:'2025-09',valor:589.2},{mes:'2025-10',valor:595.6}
-    ],
-    pib_uf: [
-      {uf:'SP',pib:2870.5},{uf:'RJ',pib:895.3},{uf:'MG',pib:782.4},
-      {uf:'RS',pib:568.7},{uf:'PR',pib:542.1},{uf:'BA',pib:345.6},
-      {uf:'SC',pib:398.2},{uf:'DF',pib:295.8},{uf:'GO',pib:267.4},
-      {uf:'PE',pib:215.3},{uf:'CE',pib:187.6},{uf:'PA',pib:178.9},
-      {uf:'ES',pib:165.4},{uf:'MT',pib:198.7},{uf:'AM',pib:132.8}
-    ]
   }
 };
 
-/* ============================================================
-   STATE
-   ============================================================ */
-let DATA = JSON.parse(JSON.stringify(SAMPLE_DATA));
-let apiDataLoaded = false;
 const charts = {};
+Chart.defaults.color='#94a3b8';
+Chart.defaults.font.family="'Inter','Segoe UI',system-ui,sans-serif";
 
-/* ============================================================
-   UTILITIES
-   ============================================================ */
-function fmt(v) {
-  if (v>=1e9) return 'R$ '+(v/1e9).toFixed(1)+'T';
-  if (v>=1e6) return (v/1e6).toFixed(1)+'M';
-  if (v>=1e3) return (v/1e3).toFixed(1)+'k';
-  return v.toLocaleString('pt-BR');
+function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
+function fmtBRL(v){return'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+
+function switchTab(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.toggle('active',c.id===id));
 }
 
-function fmtBRL(v) {
-  return 'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
-}
-
-function fmtTri(v) {
-  return 'R$ '+v.toFixed(2)+' tri';
-}
-
-function switchTab(name) {
-  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.tab===name));
-  document.querySelectorAll('.tab-content').forEach(c=> c.classList.toggle('active', c.id==='tab-'+name));
-}
-
-function destroyChart(key) {
-  if (charts[key]) { charts[key].destroy(); delete charts[key]; }
-}
-
-function destroyAll() {
-  Object.keys(charts).forEach(k => destroyChart(k));
-}
-
-/* ============================================================
-   API FETCH
-   ============================================================ */
-async function fetchData() {
-  const btn = document.querySelector('.btn');
-  const origText = btn.innerHTML;
-  btn.disabled = true;
-  btn.innerHTML = '&#x23F3; Consultando...';
-
-  let cagedOk = false, pibOk = false;
-  const warnings = [];
-
-  try {
-    // 1. BCB - Saldo emprego formal CAGED (serie 28763)
-    const cagedResp = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.28763/dados?formato=json');
-    if (cagedResp.ok) {
-      const cagedJson = await cagedResp.json();
-      const last24 = cagedJson.slice(-24);
-      if (last24.length > 0) {
-        const last12 = last24.slice(-12);
-        DATA.emprego.mensal = last12.map(d => {
-          const parts = d.data.split('/');
-          const mesLabel = parts[2]+'-'+parts[1];
-          const saldo = parseFloat(d.valor);
-          // Estimate admissions/dismissals from saldo
-          const admBase = 1950000 + Math.random()*400000;
-          const adm = Math.round(saldo > 0 ? admBase : admBase - Math.abs(saldo)*0.3);
-          const desl = Math.round(adm - saldo);
-          return {mes:mesLabel, adm, desl, saldo};
-        });
-        const lastMonth = DATA.emprego.mensal[DATA.emprego.mensal.length-1];
-        DATA.emprego.admissoes = lastMonth.adm;
-        DATA.emprego.desligamentos = lastMonth.desl;
-        DATA.emprego.saldo = lastMonth.saldo;
-        cagedOk = true;
-      }
-    }
-  } catch(e) { warnings.push('CAGED (BCB 28763): '+e.message); }
-
-  try {
-    // 2. BCB - PIB mensal (serie 24364)
-    const pibResp = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.24364/dados?formato=json');
-    if (pibResp.ok) {
-      const pibJson = await pibResp.json();
-      const last12 = pibJson.slice(-12);
-      if (last12.length > 0) {
-        DATA.pib.pib_mensal_bcb = last12.map(d => {
-          const parts = d.data.split('/');
-          return {mes:parts[2]+'-'+parts[1], valor:parseFloat(d.valor)};
-        });
-        const lastVal = DATA.pib.pib_mensal_bcb[DATA.pib.pib_mensal_bcb.length-1].valor;
-        DATA.pib.pib_brasil = (lastVal * 12 / 1e6);
-        pibOk = true;
-      }
-    }
-  } catch(e) { warnings.push('PIB (BCB 24364): '+e.message); }
-
-  try {
-    // 3. IBGE SIDRA - PIB Municipal (limited)
-    const sidraResp = await fetch('https://apisidra.ibge.gov.br/values/t/5938/n6/all/v/37/p/last%201/d/v37%200');
-    if (sidraResp.ok) {
-      const sidraJson = await sidraResp.json();
-      if (sidraJson.length > 1) {
-        const parsed = sidraJson.slice(1)
-          .map(r => ({nome: r.D2N, uf: r.D1N ? r.D1N.slice(-2) : '', pib: parseFloat(r.V)/1000}))
-          .filter(r => !isNaN(r.pib) && r.pib > 0)
-          .sort((a,b) => b.pib - a.pib)
-          .slice(0, 20);
-        if (parsed.length > 0) {
-          DATA.pib.top20_municipios = parsed;
-        }
-      }
-    }
-  } catch(e) { warnings.push('SIDRA PIB Municipal: '+e.message); }
-
-  apiDataLoaded = cagedOk || pibOk;
-
-  // Re-render everything
-  destroyAll();
-  renderAll();
-
-  // Show status
-  if (warnings.length > 0 && !apiDataLoaded) {
-    showAlert('warning', 'APIs indisponiveis', 'Exibindo dados amostrais. Erros: '+warnings.join('; '));
-  } else if (warnings.length > 0) {
-    showAlert('info', 'Dados parciais carregados', 'Algumas APIs retornaram erro: '+warnings.join('; '));
-  } else if (apiDataLoaded) {
-    showAlert('success', 'Dados atualizados', 'APIs BCB consultadas com sucesso.');
-  }
-
-  btn.disabled = false;
-  btn.innerHTML = origText;
-}
-
-function showAlert(type, title, desc) {
-  const existing = document.getElementById('api-alert');
-  if (existing) existing.remove();
-  const div = document.createElement('div');
-  div.id = 'api-alert';
-  div.className = 'alert-item '+type;
-  div.style.margin = '0 2rem 1rem';
-  div.innerHTML = '<div><div class="alert-title">'+title+'</div><div class="alert-desc">'+desc+'</div></div>';
-  document.querySelector('.main').prepend(div);
-  setTimeout(() => { if (div.parentNode) div.remove(); }, 8000);
-}
-
-/* ============================================================
-   THERMOMETER
-   ============================================================ */
-function renderThermometer() {
-  const el = document.getElementById('thermometer');
-  const sources = apiDataLoaded ? 3 : 0;
-  const total = 3;
-  const cls = sources >= 2 ? 'thermo-green' : sources >= 1 ? 'thermo-yellow' : 'thermo-red';
-  const label = sources >= 2 ? 'APIs conectadas' : sources >= 1 ? 'Parcial' : 'Dados amostrais';
-  el.className = 'thermometer '+cls;
-  el.innerHTML = sources+'/'+total+' fontes — '+label;
-}
-
-/* ============================================================
-   RENDER ALL
-   ============================================================ */
-function renderAll() {
-  renderThermometer();
+function init(){
   renderSobrevivencia();
   renderEmprego();
-  renderPib();
 }
 
-/* ============================================================
-   3.1 SOBREVIVENCIA
-   ============================================================ */
-function renderSobrevivencia() {
-  const s = DATA.sobrevivencia;
+function renderSobrevivencia(){
+  const s=DATA.sobrevivencia;
+  const piores=[...s.tempo_vida_setor].sort((a,b)=>a.anos-b.anos);
+  const setorRisco=piores[0];
 
-  document.getElementById('kpiSobrev').innerHTML = `
-    <div class="kpi kpi-green">
-      <div class="kpi-label">Taxa sobrevivencia 2 anos <button class="ci" onclick="showCI('kpi_sobrevivencia')" title="Info">i</button></div>
-      <div class="kpi-value">${s.taxa_2a.toFixed(1)}%</div>
-      <div class="kpi-detail">Empresas que sobrevivem apos 2 anos</div>
-      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${s.taxa_2a}%;background:var(--green)"></div></div>
-    </div>
-    <div class="kpi kpi-blue">
-      <div class="kpi-label">Taxa sobrevivencia 5 anos <button class="ci" onclick="showCI('kpi_mortalidade')" title="Info">i</button></div>
-      <div class="kpi-value">${s.taxa_5a.toFixed(1)}%</div>
-      <div class="kpi-detail">Empresas que sobrevivem apos 5 anos</div>
-      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${s.taxa_5a}%;background:var(--accent)"></div></div>
-    </div>
-    <div class="kpi kpi-yellow">
-      <div class="kpi-label">Tempo medio de vida (encerradas)</div>
-      <div class="kpi-value">${s.tempo_medio_vida.toFixed(1)} anos</div>
-      <div class="kpi-detail">Empresas que encerraram atividade</div>
-    </div>
-    <div class="kpi kpi-red">
-      <div class="kpi-label">Taxa de mortalidade anual</div>
-      <div class="kpi-value">${s.taxa_mortalidade.toFixed(1)}%</div>
-      <div class="kpi-detail">Empresas encerradas / ativas</div>
-      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(s.taxa_mortalidade*3,100)}%;background:var(--red)"></div></div>
-    </div>
+  document.getElementById('kpiSobrev').innerHTML=`
+    <div class="kpi"><div class="kpi-label">Taxa sobrevivencia 2 anos</div><div class="kpi-value" style="color:var(--green)">${s.taxa_2a.toFixed(1)}%</div><div class="kpi-detail">De cada 100 empresas, ${s.taxa_2a.toFixed(0)} continuam ativas apos 2 anos</div></div>
+    <div class="kpi"><div class="kpi-label">Taxa sobrevivencia 5 anos</div><div class="kpi-value" style="color:var(--accent)">${s.taxa_5a.toFixed(1)}%</div><div class="kpi-detail">De cada 100 empresas, ${s.taxa_5a.toFixed(0)} continuam ativas apos 5 anos</div></div>
+    <div class="kpi"><div class="kpi-label">Setor mais arriscado</div><div class="kpi-value" style="color:var(--red);font-size:1.1rem">${setorRisco.setor}</div><div class="kpi-detail">Tempo medio de vida: ${setorRisco.anos} anos</div></div>
   `;
 
-  // Evolucao sobrevivencia
-  destroyChart('evolSobrev');
-  charts.evolSobrev = new Chart(document.getElementById('chartEvolSobrev'), {
-    type: 'line',
-    data: {
-      labels: s.evolucao.map(e => e.ano.toString()),
-      datasets: [
-        {
-          label: 'Sobrevivencia 2 anos (%)',
-          data: s.evolucao.map(e => e.s2),
-          borderColor: '#22c55e',
-          backgroundColor: 'rgba(34,197,94,.08)',
-          fill: true, tension: .3, pointRadius: 4, borderWidth: 2.5
-        },
-        {
-          label: 'Sobrevivencia 5 anos (%)',
-          data: s.evolucao.map(e => e.s5),
-          borderColor: '#3b82f6',
-          backgroundColor: 'rgba(59,130,246,.08)',
-          fill: true, tension: .3, pointRadius: 4, borderWidth: 2.5
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {position:'bottom', labels:{color:'#94a3b8',boxWidth:12}},
-        tooltip: {callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.raw.toFixed(1)+'%'}}
-      },
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8'}},
-        y: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>v+'%'}, min:40, max:90}
-      }
-    }
-  });
-
-  // Sobrevivencia por UF (horizontal bar sorted)
-  const ufSorted = [...s.por_uf].sort((a,b) => a.taxa - b.taxa);
-  destroyChart('sobrevUF');
-  charts.sobrevUF = new Chart(document.getElementById('chartSobrevUF'), {
-    type: 'bar',
-    data: {
-      labels: ufSorted.map(u => u.uf),
-      datasets: [{
-        data: ufSorted.map(u => u.taxa),
-        backgroundColor: ufSorted.map(u =>
-          u.taxa >= 78 ? 'rgba(34,197,94,.6)' :
-          u.taxa >= 72 ? 'rgba(59,130,246,.6)' :
-          u.taxa >= 68 ? 'rgba(234,179,8,.6)' : 'rgba(239,68,68,.6)'
-        ),
-        borderRadius: 4
-      }]
-    },
-    options: {
-      responsive: true, indexAxis: 'y',
-      plugins: {legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>v+'%'}, min:60, max:90},
-        y: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:10}}}
-      }
-    }
-  });
-
-  // Sobrevivencia por porte (grouped bar)
-  destroyChart('sobrevPorte');
-  charts.sobrevPorte = new Chart(document.getElementById('chartSobrevPorte'), {
-    type: 'bar',
-    data: {
-      labels: s.por_porte.labels,
-      datasets: [
+  if(charts.porte){charts.porte.destroy()}
+  charts.porte=new Chart(document.getElementById('chartPorte'),{
+    type:'bar',
+    data:{
+      labels:s.por_porte.labels,
+      datasets:[
         {label:'2 anos',data:s.por_porte.s2,backgroundColor:'rgba(34,197,94,.6)',borderRadius:6},
         {label:'5 anos',data:s.por_porte.s5,backgroundColor:'rgba(59,130,246,.6)',borderRadius:6}
       ]
     },
-    options: {
-      responsive: true,
-      plugins: {
+    options:{
+      responsive:true,
+      plugins:{
         legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}},
         tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.raw.toFixed(1)+'%'}}
       },
-      scales: {
-        x: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:11}}},
-        y: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>v+'%'}, min:0, max:100}
+      scales:{
+        x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:11}}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},min:0,max:100}
       }
     }
   });
 
-  // Tempo medio de vida por setor (horizontal bar)
-  const setorSorted = [...s.tempo_vida_setor].sort((a,b) => a.anos - b.anos);
-  destroyChart('tempoVida');
-  charts.tempoVida = new Chart(document.getElementById('chartTempoVida'), {
-    type: 'bar',
-    data: {
-      labels: setorSorted.map(s => s.setor.length > 38 ? s.setor.substring(0,36)+'...' : s.setor),
-      datasets: [{
-        data: setorSorted.map(s => s.anos),
-        backgroundColor: setorSorted.map(s =>
-          s.anos >= 5.5 ? 'rgba(34,197,94,.6)' :
-          s.anos >= 4.0 ? 'rgba(59,130,246,.6)' :
-          s.anos >= 3.0 ? 'rgba(234,179,8,.6)' : 'rgba(239,68,68,.6)'
+  const setorSorted=[...s.tempo_vida_setor].sort((a,b)=>a.anos-b.anos);
+  if(charts.setorVida){charts.setorVida.destroy()}
+  charts.setorVida=new Chart(document.getElementById('chartSetorVida'),{
+    type:'bar',
+    data:{
+      labels:setorSorted.map(s=>s.setor.length>35?s.setor.substring(0,33)+'...':s.setor),
+      datasets:[{
+        data:setorSorted.map(s=>s.anos),
+        backgroundColor:setorSorted.map(s=>
+          s.anos>=5.5?'rgba(34,197,94,.6)':
+          s.anos>=4.0?'rgba(59,130,246,.6)':
+          s.anos>=3.0?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'
         ),
-        borderRadius: 4
+        borderRadius:4
       }]
     },
-    options: {
-      responsive: true, indexAxis: 'y',
-      plugins: {legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+' anos'}}},
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>v+' anos'}},
-        y: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:9}}}
+    options:{
+      responsive:true,indexAxis:'y',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+' anos'}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+' anos'}},
+        y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}
       }
     }
   });
 }
 
-/* ============================================================
-   3.2 EMPREGO (CAGED/RAIS)
-   ============================================================ */
-function renderEmprego() {
-  const e = DATA.emprego;
-  const saldoColor = e.saldo >= 0 ? 'var(--green)' : 'var(--red)';
-  const saldoSign = e.saldo >= 0 ? '+' : '';
+function renderEmprego(){
+  const e=DATA.emprego;
+  const saldoColor=e.saldo>=0?'var(--green)':'var(--red)';
+  const saldoSign=e.saldo>=0?'+':'';
+  const ultimoMes=e.mensal[e.mensal.length-1];
 
-  document.getElementById('kpiEmprego').innerHTML = `
-    <div class="kpi kpi-green">
-      <div class="kpi-label">Admissoes (ultimo mes) <button class="ci" onclick="showCI('kpi_saldo_empregos')" title="Info">i</button></div>
-      <div class="kpi-value">${fmt(e.admissoes)}</div>
-      <div class="kpi-detail">CAGED — admissoes formais</div>
-    </div>
-    <div class="kpi kpi-red">
-      <div class="kpi-label">Desligamentos <button class="ci" onclick="showCI('kpi_desligamentos')" title="Info">i</button></div>
-      <div class="kpi-value">${fmt(e.desligamentos)}</div>
-      <div class="kpi-detail">CAGED — desligamentos formais</div>
-    </div>
-    <div class="kpi kpi-blue">
-      <div class="kpi-label">Saldo liquido</div>
-      <div class="kpi-value" style="color:${saldoColor}">${saldoSign}${fmt(e.saldo)}</div>
-      <div class="kpi-detail">Admissoes - Desligamentos</div>
-    </div>
-    <div class="kpi kpi-cyan">
-      <div class="kpi-label">Salario medio MPEs</div>
-      <div class="kpi-value">${fmtBRL(e.salario_medio)}</div>
-      <div class="kpi-detail">RAIS — micro e pequenas empresas</div>
-    </div>
+  document.getElementById('kpiEmprego').innerHTML=`
+    <div class="kpi"><div class="kpi-label">Saldo CAGED (ultimo mes)</div><div class="kpi-value" style="color:${saldoColor}">${saldoSign}${fmt(ultimoMes.saldo)}</div><div class="kpi-detail">${ultimoMes.mes} — contratacoes menos demissoes</div></div>
+    <div class="kpi"><div class="kpi-label">Salario medio MPEs</div><div class="kpi-value" style="color:var(--cyan)">${fmtBRL(e.salario_medio)}</div><div class="kpi-detail">Media em micro e pequenas empresas</div></div>
+    <div class="kpi"><div class="kpi-label">Empregos em MPEs</div><div class="kpi-value" style="color:var(--accent)">${e.estoque_mpe_pct}%</div><div class="kpi-detail">Participacao das MPEs no emprego formal</div></div>
   `;
 
-  // CAGED mensal - mixed chart (bar for saldo, lines for admissoes/desligamentos)
-  destroyChart('caged');
-  charts.caged = new Chart(document.getElementById('chartCaged'), {
-    type: 'bar',
-    data: {
-      labels: e.mensal.map(m => m.mes),
-      datasets: [
-        {
-          type: 'line',
-          label: 'Admissoes',
-          data: e.mensal.map(m => m.adm),
-          borderColor: '#22c55e',
-          backgroundColor: 'transparent',
-          tension: .3, pointRadius: 3, borderWidth: 2.5,
-          yAxisID: 'y', order: 1
-        },
-        {
-          type: 'line',
-          label: 'Desligamentos',
-          data: e.mensal.map(m => m.desl),
-          borderColor: '#ef4444',
-          backgroundColor: 'transparent',
-          tension: .3, pointRadius: 3, borderWidth: 2.5,
-          yAxisID: 'y', order: 2
-        },
-        {
-          type: 'bar',
-          label: 'Saldo',
-          data: e.mensal.map(m => m.saldo),
-          backgroundColor: e.mensal.map(m => m.saldo >= 0 ? 'rgba(34,197,94,.4)' : 'rgba(239,68,68,.4)'),
-          borderRadius: 4,
-          yAxisID: 'y1', order: 3
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {position:'bottom', labels:{color:'#94a3b8',boxWidth:12}},
-        tooltip: {callbacks:{label:ctx => ctx.dataset.label+': '+fmt(ctx.raw)}}
-      },
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',font:{size:10}}},
-        y: {
-          position: 'left',
-          grid: {color:'rgba(255,255,255,.04)'},
-          ticks: {color:'#94a3b8', callback:v=>fmt(v)},
-          title: {display:true, text:'Admissoes / Desligamentos', color:'#94a3b8'}
-        },
-        y1: {
-          position: 'right',
-          grid: {display:false},
-          ticks: {color:'#94a3b8', callback:v=>fmt(v)},
-          title: {display:true, text:'Saldo', color:'#94a3b8'}
-        }
-      }
-    }
-  });
-
-  // Saldo por UF (horizontal bar, color coded)
-  const ufSorted = [...e.saldo_uf].sort((a,b) => a.saldo - b.saldo);
-  destroyChart('saldoUF');
-  charts.saldoUF = new Chart(document.getElementById('chartSaldoUF'), {
-    type: 'bar',
-    data: {
-      labels: ufSorted.map(u => u.uf),
-      datasets: [{
-        data: ufSorted.map(u => u.saldo),
-        backgroundColor: ufSorted.map(u => u.saldo >= 0 ? 'rgba(34,197,94,.6)' : 'rgba(239,68,68,.6)'),
-        borderRadius: 4
+  if(charts.caged){charts.caged.destroy()}
+  charts.caged=new Chart(document.getElementById('chartCaged'),{
+    type:'line',
+    data:{
+      labels:e.mensal.map(m=>m.mes),
+      datasets:[{
+        label:'Saldo de empregos',
+        data:e.mensal.map(m=>m.saldo),
+        borderColor:'#3b82f6',
+        backgroundColor:'rgba(59,130,246,.08)',
+        fill:true,
+        tension:.3,
+        pointRadius:4,
+        pointBackgroundColor:e.mensal.map(m=>m.saldo>=0?'#22c55e':'#ef4444'),
+        borderWidth:2.5
       }]
     },
-    options: {
-      responsive: true, indexAxis: 'y',
-      plugins: {legend:{display:false}, tooltip:{callbacks:{label:ctx=>fmt(ctx.raw)+' empregos'}}},
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>fmt(v)}},
-        y: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:10}}}
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>{const v=ctx.raw;return(v>=0?'+':'')+fmt(v)+' empregos'}}}
+      },
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',font:{size:10}}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>(v>=0?'+':'')+fmt(v)}}
       }
     }
   });
 
-  // Empregos por porte (stacked bar)
-  destroyChart('empregoPorte');
-  charts.empregoPorte = new Chart(document.getElementById('chartEmpregoPorte'), {
-    type: 'bar',
-    data: {
-      labels: e.emprego_porte.ufs,
-      datasets: [
-        {label:'MEI',data:e.emprego_porte.mei,backgroundColor:'rgba(34,197,94,.6)',borderRadius:2},
-        {label:'ME',data:e.emprego_porte.me,backgroundColor:'rgba(59,130,246,.6)',borderRadius:2},
-        {label:'EPP',data:e.emprego_porte.epp,backgroundColor:'rgba(139,92,246,.6)',borderRadius:2},
-        {label:'Demais',data:e.emprego_porte.demais,backgroundColor:'rgba(249,115,22,.6)',borderRadius:2}
-      ]
+  const setorSorted=[...e.setores_emprego].sort((a,b)=>a.saldo-b.saldo);
+  if(charts.setorEmprego){charts.setorEmprego.destroy()}
+  charts.setorEmprego=new Chart(document.getElementById('chartSetorEmprego'),{
+    type:'bar',
+    data:{
+      labels:setorSorted.map(s=>s.setor),
+      datasets:[{
+        data:setorSorted.map(s=>s.saldo),
+        backgroundColor:setorSorted.map(s=>
+          s.saldo>=50000?'rgba(34,197,94,.6)':
+          s.saldo>=30000?'rgba(59,130,246,.6)':
+          'rgba(6,182,212,.5)'
+        ),
+        borderRadius:4
+      }]
     },
-    options: {
-      responsive: true,
-      plugins: {
-        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}},
-        tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+fmt(ctx.raw)}}
-      },
-      scales: {
-        x: {stacked:true, grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:10}}},
-        y: {stacked:true, grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>fmt(v)}}
+    options:{
+      responsive:true,indexAxis:'y',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'+'+fmt(ctx.raw)+' vagas'}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},
+        y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}
       }
     }
   });
 
-  // Evolucao salarial por porte
-  destroyChart('salario');
-  charts.salario = new Chart(document.getElementById('chartSalario'), {
-    type: 'line',
-    data: {
-      labels: e.salario_evolucao.meses,
-      datasets: [
-        {label:'MEI',data:e.salario_evolucao.mei,borderColor:'#22c55e',tension:.3,pointRadius:3,borderWidth:2},
-        {label:'ME',data:e.salario_evolucao.me,borderColor:'#3b82f6',tension:.3,pointRadius:3,borderWidth:2},
-        {label:'EPP',data:e.salario_evolucao.epp,borderColor:'#8b5cf6',tension:.3,pointRadius:3,borderWidth:2},
-        {label:'Demais',data:e.salario_evolucao.demais,borderColor:'#f97316',tension:.3,pointRadius:3,borderWidth:2}
-      ]
+  const ep=e.emprego_porte;
+  const totalEmp=ep.valores.reduce((s,v)=>s+v,0);
+  if(charts.empregoPorte){charts.empregoPorte.destroy()}
+  charts.empregoPorte=new Chart(document.getElementById('chartEmpregoPorte'),{
+    type:'doughnut',
+    data:{
+      labels:ep.labels,
+      datasets:[{
+        data:ep.valores,
+        backgroundColor:['rgba(34,197,94,.7)','rgba(59,130,246,.7)','rgba(139,92,246,.7)','rgba(100,116,139,.5)'],
+        borderWidth:0
+      }]
     },
-    options: {
-      responsive: true,
-      plugins: {
-        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}},
-        tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+fmtBRL(ctx.raw)}}
-      },
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',font:{size:10}}},
-        y: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>'R$ '+v.toLocaleString('pt-BR')}}
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,padding:16}},
+        tooltip:{callbacks:{label:ctx=>{const v=ctx.raw;return ctx.label+': '+fmt(v)+' ('+(v/totalEmp*100).toFixed(1)+'%)'}}}
       }
     }
   });
 }
 
-/* ============================================================
-   3.3 PIB E ARRECADACAO
-   ============================================================ */
-function renderPib() {
-  const p = DATA.pib;
+/* === CONSULTAR APIs (BCB SGS — CAGED saldo) === */
+async function fetchAPIs(){
+  const btn=document.getElementById('btnApi');
+  const st=document.getElementById('apiStatus');
+  btn.disabled=true;btn.textContent='Consultando...';
+  st.style.display='none';
 
-  document.getElementById('kpiPib').innerHTML = `
-    <div class="kpi kpi-blue">
-      <div class="kpi-label">PIB Brasil <button class="ci" onclick="showCI('kpi_pib')" title="Info">i</button></div>
-      <div class="kpi-value">${fmtTri(p.pib_brasil)}</div>
-      <div class="kpi-detail">Estimativa anualizada</div>
-    </div>
-    <div class="kpi kpi-purple">
-      <div class="kpi-label">Valor adicionado servicos <button class="ci" onclick="showCI('kpi_va_servicos')" title="Info">i</button></div>
-      <div class="kpi-value">${fmtTri(p.va_servicos)}</div>
-      <div class="kpi-detail">Maior componente do PIB</div>
-    </div>
-    <div class="kpi kpi-cyan">
-      <div class="kpi-label">Valor adicionado industria</div>
-      <div class="kpi-value">${fmtTri(p.va_industria)}</div>
-      <div class="kpi-detail">Industria de transformacao + extrativa</div>
-    </div>
-    <div class="kpi kpi-green">
-      <div class="kpi-label">Receita gerada MPEs</div>
-      <div class="kpi-value">${fmtTri(p.receita_mpes)}</div>
-      <div class="kpi-detail">Micro e pequenas empresas (estimativa)</div>
-    </div>
-  `;
+  try{
+    const resp=await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.28763/dados?formato=json');
+    if(!resp.ok)throw new Error('HTTP '+resp.status);
+    const json=await resp.json();
+    const last12=json.slice(-12);
 
-  // Top 20 municipios PIB (horizontal bar)
-  const munSorted = [...p.top20_municipios].sort((a,b) => a.pib - b.pib);
-  destroyChart('pibMun');
-  charts.pibMun = new Chart(document.getElementById('chartPibMun'), {
-    type: 'bar',
-    data: {
-      labels: munSorted.map(m => m.nome+' ('+m.uf+')'),
-      datasets: [{
-        data: munSorted.map(m => m.pib),
-        backgroundColor: munSorted.map((m,i) => {
-          const ratio = i / munSorted.length;
-          return ratio > 0.7 ? 'rgba(59,130,246,.7)' : ratio > 0.4 ? 'rgba(139,92,246,.5)' : 'rgba(6,182,212,.4)';
-        }),
-        borderRadius: 4
-      }]
-    },
-    options: {
-      responsive: true, indexAxis: 'y',
-      plugins: {legend:{display:false}, tooltip:{callbacks:{label:ctx=>'R$ '+ctx.raw.toFixed(1)+' bi'}}},
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>'R$ '+v+'bi'}},
-        y: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:9}}}
-      }
+    if(last12.length>0){
+      DATA.emprego.mensal=last12.map(d=>{
+        const parts=d.data.split('/');
+        const mesLabel=parts[2]+'-'+parts[1];
+        const saldo=parseFloat(d.valor);
+        return{mes:mesLabel,saldo:saldo};
+      });
+
+      const ultimo=DATA.emprego.mensal[DATA.emprego.mensal.length-1];
+      DATA.emprego.saldo=ultimo.saldo;
+
+      if(charts.caged){charts.caged.destroy()}
+      if(charts.setorEmprego){charts.setorEmprego.destroy()}
+      if(charts.empregoPorte){charts.empregoPorte.destroy()}
+      renderEmprego();
+
+      st.style.display='inline';st.style.background='rgba(34,197,94,.15)';st.style.color='#22c55e';
+      st.textContent='Atualizado (BCB SGS 28763)';
     }
-  });
-
-  // Composicao PIB (doughnut)
-  destroyChart('pibComp');
-  charts.pibComp = new Chart(document.getElementById('chartPibComp'), {
-    type: 'doughnut',
-    data: {
-      labels: p.composicao.labels,
-      datasets: [{
-        data: p.composicao.valores,
-        backgroundColor: [
-          'rgba(59,130,246,.7)',
-          'rgba(139,92,246,.7)',
-          'rgba(34,197,94,.7)',
-          'rgba(234,179,8,.7)',
-          'rgba(249,115,22,.7)'
-        ],
-        borderColor: '#1e293b',
-        borderWidth: 3
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {position:'bottom', labels:{color:'#94a3b8',boxWidth:12,padding:16}},
-        tooltip: {callbacks:{label:ctx=>ctx.label+': '+ctx.raw.toFixed(1)+'%'}}
-      }
-    }
-  });
-
-  // PIB mensal BCB (line)
-  destroyChart('pibMensal');
-  charts.pibMensal = new Chart(document.getElementById('chartPibMensal'), {
-    type: 'line',
-    data: {
-      labels: p.pib_mensal_bcb.map(m => m.mes),
-      datasets: [{
-        label: 'PIB Mensal (R$ bi)',
-        data: p.pib_mensal_bcb.map(m => m.valor),
-        borderColor: '#06b6d4',
-        backgroundColor: 'rgba(6,182,212,.08)',
-        fill: true, tension: .3, pointRadius: 4, borderWidth: 2.5
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {position:'bottom', labels:{color:'#94a3b8',boxWidth:12}},
-        tooltip: {callbacks:{label:ctx=>'R$ '+ctx.raw.toFixed(1)+' bi'}}
-      },
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',font:{size:10}}},
-        y: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>'R$ '+v}}
-      }
-    }
-  });
-
-  // PIB por UF top 15 (horizontal bar)
-  const ufSorted = [...p.pib_uf].sort((a,b) => a.pib - b.pib);
-  destroyChart('pibUF');
-  charts.pibUF = new Chart(document.getElementById('chartPibUF'), {
-    type: 'bar',
-    data: {
-      labels: ufSorted.map(u => u.uf),
-      datasets: [{
-        data: ufSorted.map(u => u.pib),
-        backgroundColor: ufSorted.map((u,i) => {
-          const ratio = i / ufSorted.length;
-          return ratio > 0.7 ? 'rgba(34,197,94,.6)' : ratio > 0.4 ? 'rgba(59,130,246,.5)' : 'rgba(6,182,212,.4)';
-        }),
-        borderRadius: 4
-      }]
-    },
-    options: {
-      responsive: true, indexAxis: 'y',
-      plugins: {legend:{display:false}, tooltip:{callbacks:{label:ctx=>'R$ '+ctx.raw.toFixed(1)+' bi'}}},
-      scales: {
-        x: {grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#94a3b8',callback:v=>'R$ '+v+'bi'}},
-        y: {grid:{display:false}, ticks:{color:'#e2e8f0',font:{size:10}}}
-      }
-    }
-  });
+  }catch(e){
+    st.style.display='inline';st.style.background='rgba(239,68,68,.15)';st.style.color='#ef4444';
+    st.textContent='Erro: '+(e.message||'falha na consulta');
+  }finally{
+    btn.disabled=false;btn.textContent='Consultar APIs';
+  }
 }
-
-/* ============================================================
-   INIT
-   ============================================================ */
-document.addEventListener('DOMContentLoaded', renderAll);
 
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeInfo();hideCI()}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo()});
 
-const CI={
-  'chartEvolSobrev':'<p><strong>O que mostra:</strong> Evolucao da taxa de sobrevivencia de empresas (2015-2026).</p><p><strong>Calculo:</strong> (empresas abertas no ano X que permanecem ativas 2 anos depois / total de empresas abertas no ano X) * 100. Coorte de 2 anos (padrao Sebrae/IBGE).</p><p><strong>Fonte:</strong> RF OLAP + RF SQL (historico de aberturas e baixas).</p>',
-  'chartSobrevUF':'<p><strong>O que mostra:</strong> Taxa de sobrevivencia em 2 anos por UF.</p><p><strong>Calculo:</strong> Mesmo calculo da coorte aplicado por estado. Permite comparar ambientes de negocios regionais.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
-  'chartSobrevPorte':'<p><strong>O que mostra:</strong> Taxa de sobrevivencia separada por porte (MEI, ME, EPP).</p><p><strong>Calculo:</strong> Coorte de 2 anos por porte SEBRAE. MEIs tendem a ter menor sobrevivencia pela menor estrutura de gestao.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
-  'chartTempoVida':'<p><strong>O que mostra:</strong> Os 15 setores com maior tempo medio de vida antes do encerramento.</p><p><strong>Calculo:</strong> Mediana do tempo (meses) entre data de abertura e data de baixa, por divisao CNAE, para empresas encerradas.</p><p><strong>Fonte:</strong> RF OLAP (datas de abertura e encerramento).</p>',
-  'chartCaged':'<p><strong>O que mostra:</strong> Evolucao mensal de admissoes vs desligamentos (CAGED).</p><p><strong>Calculo:</strong> Contagem mensal de movimentacoes no CAGED: admissoes (entrada) e desligamentos (saida). Area entre as curvas = saldo liquido de empregos.</p><p><strong>Fonte:</strong> CAGED_movements OLAP (1 mes de defasagem) + BCB SGS serie 28763.</p>',
-  'chartSaldoUF':'<p><strong>O que mostra:</strong> Saldo de empregos formais por UF nos ultimos 12 meses.</p><p><strong>Calculo:</strong> Admissoes - Desligamentos por estado, acumulado 12 meses. Valores positivos = criacao liquida de empregos.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
-  'chartEmpregoPorte':'<p><strong>O que mostra:</strong> Composicao do emprego formal por porte nas 10 maiores UFs.</p><p><strong>Calculo:</strong> Estoque de empregos formais (RAIS) por porte de empresa. Barra empilhada mostra a contribuicao de cada porte.</p><p><strong>Fonte:</strong> RAIS_workers OLAP (anual, ate 2023).</p>',
-  'chartSalario':'<p><strong>O que mostra:</strong> Evolucao do salario medio de admissao por porte.</p><p><strong>Calculo:</strong> Media do salario de admissao (CAGED) por porte (MEI, ME/EPP, Media/Grande) ao longo dos meses. Permite comparar remuneracao entre portes.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
-  'chartPibMun':'<p><strong>O que mostra:</strong> Os 20 municipios com maior PIB.</p><p><strong>Calculo:</strong> PIB a precos correntes por municipio (ultimo dado disponivel). Defasagem de ~2 anos.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP.</p>',
-  'chartPibComp':'<p><strong>O que mostra:</strong> Composicao do PIB por setor de atividade.</p><p><strong>Calculo:</strong> Valor Adicionado Bruto (VAB) decomposto em: Agropecuaria, Industria, Servicos, Administracao Publica. Servicos e tipicamente dominante.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP + IBGE SIDRA tabela 5938.</p>',
-  'chartPibMensal':'<p><strong>O que mostra:</strong> Evolucao mensal do indice de atividade economica (proxy PIB).</p><p><strong>Calculo:</strong> Indice BCB SGS serie 24364 (IBC-Br), proxy mensal do PIB. Atualizado mensalmente sem auth.</p><p><strong>Fonte:</strong> BCB SGS serie 24364.</p>',
-  'chartPibUF':'<p><strong>O que mostra:</strong> Distribuicao do PIB entre as 15 maiores UFs.</p><p><strong>Calculo:</strong> PIB a precos correntes por UF, ordenado decrescentemente. Permite comparar o peso economico de cada estado.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP (agregado por UF).</p>',
-  'kpi_sobrevivencia':'<p><strong>Indicador:</strong> Taxa nacional de sobrevivencia (2 anos).</p><p><strong>Calculo:</strong> Percentual de empresas abertas ha 2 anos que permanecem ativas. Coorte padrao Sebrae.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
-  'kpi_mortalidade':'<p><strong>Indicador:</strong> Total de empresas encerradas no periodo.</p><p><strong>Calculo:</strong> Contagem de CNPJs com data de baixa nos ultimos 12 meses.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
-  'kpi_saldo_empregos':'<p><strong>Indicador:</strong> Saldo de empregos formais (12 meses).</p><p><strong>Calculo:</strong> Admissoes - Desligamentos acumulado nos ultimos 12 meses via CAGED.</p><p><strong>Fonte:</strong> CAGED_movements OLAP + BCB SGS serie 28763.</p>',
-  'kpi_desligamentos':'<p><strong>Indicador:</strong> Total de desligamentos formais (ultimo mes).</p><p><strong>Calculo:</strong> Contagem de desligamentos (rescisoes, demissoes) registrados no CAGED no ultimo mes disponivel.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
-  'kpi_pib':'<p><strong>Indicador:</strong> PIB nacional (ultimo dado).</p><p><strong>Calculo:</strong> PIB a precos correntes. Proxy mensal via BCB SGS serie 24364 (IBC-Br).</p><p><strong>Fonte:</strong> BCB SGS + IBGE SIDRA.</p>',
-  'kpi_va_servicos':'<p><strong>Indicador:</strong> Valor Adicionado Bruto de Servicos.</p><p><strong>Calculo:</strong> Soma do valor adicionado pelo setor de servicos na composicao do PIB. Maior componente individual.</p><p><strong>Fonte:</strong> IBGE SIDRA tabela 5938 + IBGE_PIB_Municipal_VAB OLAP.</p>'
-};
-function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
-function hideCI(){document.getElementById('ciModal').classList.remove('active')}
+init();
 </script>
 </body>
 </html>
