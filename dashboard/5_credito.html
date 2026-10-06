@@ -73,6 +73,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
 
+.data-range{display:inline-block;font-size:.7rem;padding:.3rem .8rem;border-radius:6px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15);color:#94a3b8;margin-bottom:1.2rem}
 .footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.65rem}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
@@ -108,8 +109,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 
 <div class="main">
   <div class="narrative">
-    <strong>O credito esta acessivel para os pequenos negocios?</strong> Este painel mostra a evolucao do credito para empresas, as taxas de juros e a cobertura bancaria no pais. Dados em tempo real do Banco Central.
+    <strong>O credito esta acessivel para os pequenos negocios?</strong> Este painel mostra a evolucao do credito para empresas, as taxas de juros e a cobertura bancaria no pais. Dados do Banco Central (BCB SGS). Clique em "Consultar APIs" para buscar os dados mais recentes.
   </div>
+  <div class="data-range" id="dataRange"></div>
 
   <div class="tabs">
     <button class="tab active" data-tab="credito" onclick="switchTab('credito')">Credito</button>
@@ -218,12 +220,12 @@ const SAMPLE_DATA = {
   selic: [
     {data:'01/10/2024',valor:10.75},{data:'01/11/2024',valor:11.25},{data:'01/12/2024',valor:12.25},
     {data:'01/01/2025',valor:13.25},{data:'01/02/2025',valor:13.25},{data:'01/03/2025',valor:14.25},
-    {data:'01/04/2025',valor:14.25},{data:'01/05/2025',valor:14.75},{data:'01/06/2025',valor:14.75},
-    {data:'01/07/2025',valor:14.75},{data:'01/08/2025',valor:14.75},{data:'01/09/2025',valor:14.25},
-    {data:'01/10/2025',valor:13.75},{data:'01/11/2025',valor:13.25},{data:'01/12/2025',valor:12.75},
-    {data:'01/01/2026',valor:12.25},{data:'01/02/2026',valor:11.75},{data:'01/03/2026',valor:11.25},
-    {data:'01/04/2026',valor:10.75},{data:'01/05/2026',valor:10.50},{data:'01/06/2026',valor:10.50},
-    {data:'01/07/2026',valor:10.50},{data:'01/08/2026',valor:10.50},{data:'01/09/2026',valor:10.50}
+    {data:'01/04/2025',valor:14.25},{data:'01/05/2025',valor:14.75},{data:'01/06/2025',valor:15.00},
+    {data:'01/07/2025',valor:15.00},{data:'01/08/2025',valor:15.00},{data:'01/09/2025',valor:15.00},
+    {data:'01/10/2025',valor:15.00},{data:'01/11/2025',valor:15.00},{data:'01/12/2025',valor:15.00},
+    {data:'01/01/2026',valor:15.00},{data:'01/02/2026',valor:15.00},{data:'01/03/2026',valor:14.75},
+    {data:'01/04/2026',valor:14.50},{data:'01/05/2026',valor:14.50},{data:'01/06/2026',valor:14.25},
+    {data:'01/07/2026',valor:14.25},{data:'01/08/2026',valor:14.00},{data:'01/09/2026',valor:13.75}
   ],
   ipca: [
     {data:'01/10/2024',valor:0.56},{data:'01/11/2024',valor:0.39},{data:'01/12/2024',valor:0.52},
@@ -301,8 +303,18 @@ function init(){
 
 function renderAll(){
   destroyCharts();
+  renderDataRange();
   renderCredito();
   renderCobertura();
+}
+
+const MESES=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+function renderDataRange(){
+  const series=DATA.saldo_credito||DATA.selic||[];
+  if(series.length<2){document.getElementById('dataRange').textContent='';return}
+  const first=series[0].data.split('/');
+  const last=series[series.length-1].data.split('/');
+  document.getElementById('dataRange').textContent='Periodo dos dados: '+MESES[parseInt(first[1])-1]+'/'+first[2]+' a '+MESES[parseInt(last[1])-1]+'/'+last[2];
 }
 
 /* ========== TAB 1: CREDITO ========== */
