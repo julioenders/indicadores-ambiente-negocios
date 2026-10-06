@@ -159,6 +159,8 @@ a{color:var(--accent);text-decoration:none}
   font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
   border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
 }
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
 </style>
 </head>
 <body>
@@ -201,21 +203,21 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiInclusao"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Genero do Empreendedor</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Genero do Empreendedor<button class="ci" onclick="showCI('chartGenero')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartGenero" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Participacao Feminina no Empreendedorismo por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Participacao Feminina no Empreendedorismo por UF<button class="ci" onclick="showCI('chartFemininaUF')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartFemininaUF" height="450"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Empreendedores por Faixa Etaria e Porte</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Empreendedores por Faixa Etaria e Porte<button class="ci" onclick="showCI('chartFaixaEtaria')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartFaixaEtaria" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Formalizacao por Grupo Prioritario</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Formalizacao por Grupo Prioritario<button class="ci" onclick="showCI('chartGrupoPrioritario')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartGrupoPrioritario" height="220"></canvas></div>
     </div>
   </div>
@@ -226,26 +228,33 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiTerritorial"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Densidade Empresarial por Regiao</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Densidade Empresarial por Regiao<button class="ci" onclick="showCI('chartDensidadeRegiao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartDensidadeRegiao" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Empreendimentos Urbano vs Rural por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Empreendimentos Urbano vs Rural por UF<button class="ci" onclick="showCI('chartUrbanoRural')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartUrbanoRural" height="400"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 APLs por N. de Empresas</div>
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 APLs por N. de Empresas<button class="ci" onclick="showCI('chartAPLs')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartAPLs" height="400"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Indicadores por Regiao</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Indicadores por Regiao<button class="ci" onclick="showCI('tableRegiao')" title="Info">i</button></div>
       <div class="table-wrapper" id="tableRegiao"></div>
     </div>
   </div>
 </div>
 
+</div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
@@ -552,13 +561,13 @@ function renderInclusao() {
 
   document.getElementById('kpiInclusao').innerHTML=`
     <div class="kpi kpi-purple">
-      <div class="kpi-label">Empreendedoras mulheres</div>
+      <div class="kpi-label">Empreendedoras mulheres <button class="ci" onclick="showCI('kpi_feminina')" title="Info">i</button></div>
       <div class="kpi-value">${kd.empreendedoras_mulheres.toFixed(1)}%</div>
       <div class="kpi-detail">Do total de empreendedores</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kd.empreendedoras_mulheres}%;background:var(--accent2)"></div></div>
     </div>
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Empreendedores jovens (18-29)</div>
+      <div class="kpi-label">Empreendedores jovens (18-29) <button class="ci" onclick="showCI('kpi_jovens')" title="Info">i</button></div>
       <div class="kpi-value">${kd.empreendedores_jovens.toFixed(1)}%</div>
       <div class="kpi-detail">Faixa etaria 18 a 29 anos</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kd.empreendedores_jovens}%;background:var(--accent)"></div></div>
@@ -687,13 +696,13 @@ function renderTerritorial() {
 
   document.getElementById('kpiTerritorial').innerHTML=`
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Municipios com APLs</div>
+      <div class="kpi-label">Municipios com APLs <button class="ci" onclick="showCI('kpi_densidade')" title="Info">i</button></div>
       <div class="kpi-value">${kt.municipios_apls.toLocaleString('pt-BR')}</div>
       <div class="kpi-detail">Arranjos produtivos locais cadastrados</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(kt.municipios_apls/5570*100,100)}%;background:var(--accent)"></div></div>
     </div>
     <div class="kpi kpi-green">
-      <div class="kpi-label">Empreendimentos rurais formais</div>
+      <div class="kpi-label">Empreendimentos rurais formais <button class="ci" onclick="showCI('kpi_mun_100')" title="Info">i</button></div>
       <div class="kpi-value">${fmt(kt.empreendimentos_rurais)}</div>
       <div class="kpi-detail">MEI + ME + EPP em areas rurais</div>
     </div>
@@ -852,6 +861,24 @@ init();
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+
+const CI={
+  'chartGenero':'<p><strong>O que mostra:</strong> Distribuicao de empreendedores por genero.</p><p><strong>Calculo:</strong> Percentual de socios/titulares por genero estimado via proxy de primeiro nome (RF nao registra genero). Limitacao: proxy com margem de erro em nomes ambiguos.</p><p><strong>Fonte:</strong> RF OLAP + IBGE_Censo_Pop_Sit OLAP (populacao por sexo).</p>',
+  'chartFemininaUF':'<p><strong>O que mostra:</strong> Participacao feminina no empreendedorismo por UF.</p><p><strong>Calculo:</strong> Percentual de empresas com pelo menos uma socia mulher (proxy). UFs do Nordeste tendem a ter participacao feminina relativamente maior.</p><p><strong>Fonte:</strong> RF OLAP (quadro societario) + IBGE Censo.</p>',
+  'chartFaixaEtaria':'<p><strong>O que mostra:</strong> Distribuicao de empreendedores por faixa etaria e porte.</p><p><strong>Calculo:</strong> Contagem de socios/titulares por faixa etaria (18-24, 25-34, 35-44, 45-54, 55-64, 65+) cruzada com porte da empresa. Jovens (18-29) sao considerados grupo prioritario pelo Sebrae.</p><p><strong>Fonte:</strong> RF OLAP + IBGE Censo.</p>',
+  'chartGrupoPrioritario':'<p><strong>O que mostra:</strong> Taxa de formalizacao estimada por grupo prioritario.</p><p><strong>Calculo:</strong> Proxy de formalizacao para mulheres, jovens, negros, indigenas e populacao rural, cruzando dados do Censo 2022 com estoque de empresas RF. Limitacao: genero e raca nao registrados diretamente na RF.</p><p><strong>Fonte:</strong> IBGE_Censo_Pop_Sit OLAP + RF OLAP.</p>',
+  'chartDensidadeRegiao':'<p><strong>O que mostra:</strong> Densidade empresarial por regiao (empresas por 1000 hab).</p><p><strong>Calculo:</strong> (total de empresas ativas na regiao / populacao total) * 1000. Sul e Sudeste tem maior densidade; Norte e Nordeste menor, refletindo concentracao economica.</p><p><strong>Fonte:</strong> RF OLAP + IBGE SIDRA (populacao por regiao).</p>',
+  'chartUrbanoRural':'<p><strong>O que mostra:</strong> Proporcao de empreendimentos urbanos vs rurais por UF.</p><p><strong>Calculo:</strong> Cruzamento da localizacao dos estabelecimentos (RF) com populacao urbana/rural (Censo). Proxy — a RF nao informa diretamente se o endereco e urbano ou rural.</p><p><strong>Fonte:</strong> RF OLAP + IBGE_Censo_Pop_Sit OLAP.</p>',
+  'chartAPLs':'<p><strong>O que mostra:</strong> Os 20 maiores Arranjos Produtivos Locais por numero de empresas.</p><p><strong>Calculo:</strong> Proxy via concentracao setorial — municipios com alta especializacao em determinado CNAE. APLs formais sem API publica atualizada.</p><p><strong>Fonte:</strong> RF OLAP (concentracao CNAE por municipio). Cobertura parcial.</p>',
+  'tableRegiao':'<p><strong>O que mostra:</strong> Indicadores comparativos por regiao.</p><p><strong>Calculo:</strong> Tabela com densidade empresarial, taxa de formalizacao, participacao feminina (proxy) e taxa de urbanizacao para cada macrorregiao.</p><p><strong>Fonte:</strong> RF OLAP + IBGE SIDRA + IBGE Localidades.</p>',
+  'kpi_feminina':'<p><strong>Indicador:</strong> Percentual de empreendedoras mulheres.</p><p><strong>Calculo:</strong> Proxy via primeiro nome dos socios na RF. Margem de erro em nomes ambiguos.</p><p><strong>Fonte:</strong> RF OLAP + Censo 2022.</p>',
+  'kpi_jovens':'<p><strong>Indicador:</strong> Total de empreendedores jovens (18-29 anos).</p><p><strong>Calculo:</strong> Contagem de socios com idade 18-29 na data de consulta.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'kpi_densidade':'<p><strong>Indicador:</strong> Densidade empresarial nacional (empresas por 1000 hab).</p><p><strong>Calculo:</strong> (total de empresas ativas / populacao total IBGE) * 1000.</p><p><strong>Fonte:</strong> RF OLAP + IBGE.</p>',
+  'kpi_mun_100':'<p><strong>Indicador:</strong> Municipios com menos de 100 empresas.</p><p><strong>Calculo:</strong> Contagem de municipios onde o total de empresas ativas e inferior a 100. Indica desertos empresariais.</p><p><strong>Fonte:</strong> RF OLAP.</p>'
+};
+function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')hideCI()});
 </script>
 </body>
 </html>

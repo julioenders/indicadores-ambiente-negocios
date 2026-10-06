@@ -160,6 +160,8 @@ a{color:var(--accent);text-decoration:none}
   font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
   border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
 }
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
 </style>
 </head>
 <body>
@@ -202,21 +204,21 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiOperacoes"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao do Saldo de Credito PJ (BCB)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao do Saldo de Credito PJ (BCB)<button class="ci" onclick="showCI('chartSaldoCredito')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSaldoCredito" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Concessoes vs Inadimplencia</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Concessoes vs Inadimplencia<button class="ci" onclick="showCI('chartConcessaoInad')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartConcessaoInad" height="220"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--yellow)"></span>Taxa Selic e IPCA — Ultimos 24 Meses</div>
+      <div class="chart-title"><span class="dot" style="background:var(--yellow)"></span>Taxa Selic e IPCA — Ultimos 24 Meses<button class="ci" onclick="showCI('chartSelicIpca')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSelicIpca" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Credito por Porte de Empresa</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Credito por Porte de Empresa<button class="ci" onclick="showCI('chartPorteCredito')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPorteCredito" height="220"></canvas></div>
     </div>
   </div>
@@ -227,26 +229,33 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiInfra"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Postos de Atendimento por UF (Top 15)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Postos de Atendimento por UF (Top 15)<button class="ci" onclick="showCI('chartPostosUF')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPostosUF" height="380"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Tipo de Instituicao</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Tipo de Instituicao<button class="ci" onclick="showCI('chartTipoInstituicao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartTipoInstituicao" height="380"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Cooperativas de Credito por Regiao</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Cooperativas de Credito por Regiao<button class="ci" onclick="showCI('chartCoopRegiao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartCoopRegiao" height="200"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Cobertura Bancaria por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Cobertura Bancaria por UF<button class="ci" onclick="showCI('tableCoberturaUF')" title="Info">i</button></div>
       <div class="table-wrapper" id="tableCoberturaUF"></div>
     </div>
   </div>
 </div>
 
+</div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
@@ -548,7 +557,7 @@ function renderOperacoes() {
   // KPIs
   document.getElementById('kpiOperacoes').innerHTML = `
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Saldo de credito PJ</div>
+      <div class="kpi-label">Saldo de credito PJ<button class="ci" onclick="showCI('kpi_saldo_credito')" title="Info">i</button></div>
       <div class="kpi-value">${fmtBRL(lastSaldo.valor * 1e6)}</div>
       <div class="kpi-detail">BCB serie 20539 — ${lastSaldo.data}</div>
     </div>
@@ -563,7 +572,7 @@ function renderOperacoes() {
       <div class="kpi-detail">BCB serie 11 — ${lastSelic.data}</div>
     </div>
     <div class="kpi kpi-red">
-      <div class="kpi-label">Inadimplencia PJ</div>
+      <div class="kpi-label">Inadimplencia PJ<button class="ci" onclick="showCI('kpi_inadimplencia')" title="Info">i</button></div>
       <div class="kpi-value">${lastInad.valor.toFixed(1)}%</div>
       <div class="kpi-detail">BCB serie 21083 — ${lastInad.data}</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(lastInad.valor * 20, 100)}%;background:var(--red)"></div></div>
@@ -785,12 +794,12 @@ function renderInfra() {
   // KPIs
   document.getElementById('kpiInfra').innerHTML = `
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Agencias bancarias</div>
+      <div class="kpi-label">Agencias bancarias<button class="ci" onclick="showCI('kpi_postos')" title="Info">i</button></div>
       <div class="kpi-value">${fmtNum(totalAgencias)}</div>
       <div class="kpi-detail">Total nacional — BCB</div>
     </div>
     <div class="kpi kpi-green">
-      <div class="kpi-label">Cooperativas de credito</div>
+      <div class="kpi-label">Cooperativas de credito<button class="ci" onclick="showCI('kpi_cooperativas')" title="Info">i</button></div>
       <div class="kpi-value">${fmtNum(totalCoop)}</div>
       <div class="kpi-detail">Total nacional — BCB</div>
     </div>
@@ -971,7 +980,24 @@ init();
 
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+
+const CI={
+  'chartSaldoCredito':'<p><strong>O que mostra:</strong> Evolucao do saldo total de credito a pessoas juridicas.</p><p><strong>Calculo:</strong> Serie temporal BCB SGS 20539 — saldo de operacoes de credito do SFN a PJ, em R$ milhoes, ultimos 24 meses.</p><p><strong>Fonte:</strong> BCB SGS serie 20539. API publica, sem autenticacao.</p>',
+  'chartConcessaoInad':'<p><strong>O que mostra:</strong> Relacao entre concessoes de credito e inadimplencia PJ.</p><p><strong>Calculo:</strong> Eixo esquerdo: serie BCB SGS 25436 (concessoes de credito a PJ, R$ mi). Eixo direito: serie BCB SGS 21083 (taxa de inadimplencia PJ, %). Periodos de aumento de concessoes podem preceder alta de inadimplencia.</p><p><strong>Fonte:</strong> BCB SGS series 25436 e 21083.</p>',
+  'chartSelicIpca':'<p><strong>O que mostra:</strong> Taxa Selic e IPCA nos ultimos 24 meses.</p><p><strong>Calculo:</strong> Serie BCB SGS 11 = meta da taxa Selic (% a.a.). Serie BCB SGS 433 = IPCA mensal (%). O spread Selic - IPCA indica o juro real, que impacta o custo de credito para MPEs.</p><p><strong>Fonte:</strong> BCB SGS series 11 e 433.</p>',
+  'chartPorteCredito':'<p><strong>O que mostra:</strong> Distribuicao do credito por porte de empresa.</p><p><strong>Calculo:</strong> Volume de concessoes de credito segmentado por porte (MEI, ME, EPP, Media, Grande) via cubo OLAP credito_bacen_valores. MPEs recebem proporcao menor do credito total.</p><p><strong>Fonte:</strong> credito_bacen_valores OLAP (requer token).</p>',
+  'chartPostosUF':'<p><strong>O que mostra:</strong> Top 15 UFs por quantidade de postos de atendimento bancario.</p><p><strong>Calculo:</strong> Contagem total de postos (agencias + PABs + PAEs) por estado. Concentracao no Sudeste reflete distribuicao economica.</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP.</p>',
+  'chartTipoInstituicao':'<p><strong>O que mostra:</strong> Distribuicao por tipo de instituicao financeira.</p><p><strong>Calculo:</strong> Percentual por tipo: bancos comerciais, bancos de desenvolvimento, cooperativas de credito, fintechs, correspondentes. Cooperativas vem ganhando participacao.</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP + BCB SGS.</p>',
+  'chartCoopRegiao':'<p><strong>O que mostra:</strong> Cooperativas de credito por regiao.</p><p><strong>Calculo:</strong> Contagem de cooperativas de credito (CNPJ com CNAE 6413) ativas, agrupadas por macrorregiao. Sul lidera em cooperativismo de credito.</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP.</p>',
+  'tableCoberturaUF':'<p><strong>O que mostra:</strong> Cobertura bancaria por UF.</p><p><strong>Calculo:</strong> (postos de atendimento na UF / populacao) * 10.000. Municipios com menos de 1 posto por 10k habitantes sao "desertos bancarios".</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP + IBGE (populacao).</p>',
+  'kpi_saldo_credito':'<p><strong>Indicador:</strong> Saldo total de credito PJ.</p><p><strong>Calculo:</strong> Ultimo valor da serie BCB SGS 20539 (saldo de operacoes de credito a PJ), em R$ bilhoes.</p><p><strong>Fonte:</strong> BCB SGS serie 20539.</p>',
+  'kpi_inadimplencia':'<p><strong>Indicador:</strong> Taxa de inadimplencia PJ.</p><p><strong>Calculo:</strong> Ultimo valor da serie BCB SGS 21083 — percentual de operacoes de credito PJ em atraso superior a 90 dias.</p><p><strong>Fonte:</strong> BCB SGS serie 21083.</p>',
+  'kpi_postos':'<p><strong>Indicador:</strong> Total de postos de atendimento bancario.</p><p><strong>Calculo:</strong> Soma de agencias, PABs e PAEs no territorio nacional.</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP.</p>',
+  'kpi_cooperativas':'<p><strong>Indicador:</strong> Total de cooperativas de credito.</p><p><strong>Calculo:</strong> Contagem de instituicoes tipo cooperativa de credito ativas.</p><p><strong>Fonte:</strong> BCB_ESTBAN_MUN OLAP.</p>'
+};
+function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){hideCI();closeInfo()}});
 </script>
 </body>
 </html>

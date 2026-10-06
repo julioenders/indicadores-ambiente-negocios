@@ -163,6 +163,8 @@ a{color:var(--accent);text-decoration:none}
   font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
   border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
 }
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
 </style>
 </head>
 <body>
@@ -206,16 +208,14 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiGeral"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Cobertura por Sub-indicador</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Cobertura por Sub-indicador<button class="ci" onclick="showCI('chartCobertura')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartCobertura" height="180"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo de Abertura vs Formalizacao</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo de Abertura vs Formalizacao<button class="ci" onclick="showCI('chartScatter')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartScatter" height="180"></canvas></div>
     </div>
   </div>
-  <div class="section-title">&#x1F4C1; Status das Fontes de Dados</div>
-  <div class="table-wrapper" id="tableFontes"></div>
 </div>
 
 <!-- 1.1 TEMPO DE ABERTURA -->
@@ -223,27 +223,27 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiTempo"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Ranking Estadual — Tempo Medio por Empresa (horas)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Ranking Estadual — Tempo Medio por Empresa (horas)<button class="ci" onclick="showCI('chartRanking')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartRanking" height="450"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Integracao REDESIM por UF (%)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Integracao REDESIM por UF (%)<button class="ci" onclick="showCI('chartIntegracao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartIntegracao" height="450"></canvas></div>
     </div>
   </div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do Tempo Medio por Empresa (Nacional)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do Tempo Medio por Empresa (Nacional)<button class="ci" onclick="showCI('chartEvolucao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartEvolucao" height="180"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo por Autoridade Registradora</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo por Autoridade Registradora<button class="ci" onclick="showCI('chartAutoridade')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartAutoridade" height="200"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 15 Setores CNAE — Tempo</div>
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 15 Setores CNAE — Tempo<button class="ci" onclick="showCI('chartCnae')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartCnae" height="300"></canvas></div>
     </div>
   </div>
@@ -254,17 +254,17 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiFormal"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Proxy de Formalizacao por Estado (%)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Proxy de Formalizacao por Estado (%)<button class="ci" onclick="showCI('chartFormProxy')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartFormProxy" height="450"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>MPEs por 1.000 Ocupados</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>MPEs por 1.000 Ocupados<button class="ci" onclick="showCI('chartMpes1k')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartMpes1k" height="450"></canvas></div>
     </div>
   </div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Formalizacao vs Concentracao MEI</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Formalizacao vs Concentracao MEI<button class="ci" onclick="showCI('chartFormScatter')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartFormScatter" height="250"></canvas></div>
     </div>
   </div>
@@ -275,17 +275,17 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiMassa"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Distribuicao por Porte — Top 15</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Distribuicao por Porte — Top 15<button class="ci" onclick="showCI('chartPorte')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPorte" height="350"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Concentracao MEI por Estado</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Concentracao MEI por Estado<button class="ci" onclick="showCI('chartMeiConc')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartMeiConc" height="350"></canvas></div>
     </div>
   </div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Detalhamento por Estado</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Detalhamento por Estado<button class="ci" onclick="showCI('tableMassa')" title="Info">i</button></div>
       <div class="table-wrapper" id="tableMassa"></div>
     </div>
   </div>
@@ -302,22 +302,29 @@ a{color:var(--accent);text-decoration:none}
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Score Proxy Lei Geral por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Score Proxy Lei Geral por UF<button class="ci" onclick="showCI('chartLeiScore')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartLeiScore" height="450"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Cobertura: PJs em Municipios Integrados (%)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Cobertura: PJs em Municipios Integrados (%)<button class="ci" onclick="showCI('chartLeiPJ')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartLeiPJ" height="450"></canvas></div>
     </div>
   </div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Top 20 Municipios: Ativas vs Baixadas</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Top 20 Municipios: Ativas vs Baixadas<button class="ci" onclick="showCI('chartMunicipios')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartMunicipios" height="200"></canvas></div>
     </div>
   </div>
 </div>
 
+</div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
@@ -331,7 +338,6 @@ a{color:var(--accent);text-decoration:none}
       <li><strong>KPIs:</strong> Resumo dos 4 sub-indicadores com cobertura percentual de cada um.</li>
       <li><strong>Grafico Cobertura por Sub-indicador:</strong> Barra horizontal mostrando o nivel de cobertura dos dados de cada sub-indicador (de 30% a 100%).</li>
       <li><strong>Grafico Tempo de Abertura vs Formalizacao:</strong> Dispersao (scatter) correlacionando o tempo medio de abertura (eixo X) com a taxa de formalizacao (eixo Y) para cada UF. Permite identificar estados com alta burocracia e baixa formalizacao.</li>
-      <li><strong>Tabela Status das Fontes:</strong> Mostra cada fonte de dados (REDESIM, RF, RAIS, IBGE), se requer autenticacao, e a data de ultima coleta.</li>
     </ul>
 
     <h3>Aba 1.1: Tempo de Abertura</h3>
@@ -437,8 +443,8 @@ function renderGeral() {
   const totalInt = DATA.integracao.reduce((s,i)=>s+i.mun_int,0);
 
   document.getElementById('kpiGeral').innerHTML=`
-    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa</div><div class="kpi-value">${tempoStr}</div><div class="kpi-detail">Nacional — ano corrente (por empresa)</div></div>
-    <div class="kpi kpi-purple"><div class="kpi-label">MPEs ativas</div><div class="kpi-value">${fmt(totalMpes)}</div><div class="kpi-detail">Filtro Sebrae (OLAP)</div></div>
+    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa<button class="ci" onclick="showCI('kpi_tempo_medio')" title="Info">i</button></div><div class="kpi-value">${tempoStr}</div><div class="kpi-detail">Nacional — ano corrente (por empresa)</div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">MPEs ativas<button class="ci" onclick="showCI('kpi_mpes_ativas')" title="Info">i</button></div><div class="kpi-value">${fmt(totalMpes)}</div><div class="kpi-detail">Filtro Sebrae (OLAP)</div></div>
     <div class="kpi kpi-cyan"><div class="kpi-label">Formalizacao media</div><div class="kpi-value">${mediaForm.toFixed(1)}%</div><div class="kpi-detail">Proxy RAIS+MEI / IBGE</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(mediaForm,100)}%;background:var(--cyan)"></div></div></div>
     <div class="kpi kpi-green"><div class="kpi-label">Municipios integrados</div><div class="kpi-value">${fmt(totalInt)}</div><div class="kpi-detail">REDESIM Gov</div>
@@ -466,28 +472,6 @@ function renderGeral() {
               y:{title:{display:true,text:'Formalizacao (%)',color:'#94a3b8'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}}}}
   });
 
-  // Fontes table
-  const fontesMap = {
-    'redesim_ranking_estadual.csv':'REDESIM OLAP (tempo abertura)',
-    'redesim_gov_tempo_abertura_mensal.csv':'REDESIM Gov (tempo mensal)',
-    'redesim_gov_integracao_municipal.csv':'REDESIM Gov (integracao)',
-    'redesim_gov_estabelecimentos_uf.csv':'REDESIM Gov (estabelecimentos)',
-    'redesim_gov_estabelecimentos_municipios.csv':'REDESIM Gov (5.571 municipios)',
-    'rf_estoque_porte_estado.csv':'RF OLAP (estoque porte)',
-    'rf_estoque_setor_estado.csv':'RF OLAP (estoque setor)',
-    'rf_estoque_divisao_cnae.csv':'RF OLAP (divisao CNAE)',
-    'inf_rais_emprego_formal_estado.csv':'RAIS (emprego formal)',
-    'inf_populacao_ocupada_estado.csv':'IBGE Censo (pop. ocupada)',
-    'rf_aberturas_por_ano.csv':'RF SQL (aberturas/baixas)',
-    'rf_taxa_sobrevivencia.csv':'RF SQL (sobrevivencia)',
-  };
-  let rows='';
-  for(const [arq,nome] of Object.entries(fontesMap)){
-    const ok=DATA.fontes[arq];
-    const badge=ok?'<span class="badge badge-ok">OK</span>':'<span class="badge badge-danger">Pendente</span>';
-    rows+=`<tr><td>${nome}</td><td style="font-family:monospace;font-size:.72rem">${arq}</td><td>${badge}</td></tr>`;
-  }
-  document.getElementById('tableFontes').innerHTML=`<table class="data-table"><thead><tr><th>Fonte</th><th>Arquivo</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 /* ========== 1.1 TEMPO ========== */
@@ -498,9 +482,9 @@ function renderTempo() {
   const topAgil = DATA.agilidade[0];
 
   document.getElementById('kpiTempo').innerHTML=`
-    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa</div><div class="kpi-value">${ultimo.dias}d ${ultimo.horas}h</div><div class="kpi-detail">REDESIM Gov — ${ultimo.ano}-${String(ultimo.mes).padStart(2,'0')} (por empresa)</div></div>
+    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa<button class="ci" onclick="showCI('kpi_tempo_medio')" title="Info">i</button></div><div class="kpi-value">${ultimo.dias}d ${ultimo.horas}h</div><div class="kpi-detail">REDESIM Gov — ${ultimo.ano}-${String(ultimo.mes).padStart(2,'0')} (por empresa)</div></div>
     <div class="kpi kpi-purple"><div class="kpi-label">Estados monitorados</div><div class="kpi-value">${DATA.ranking.length}</div><div class="kpi-detail">REDESIM OLAP</div></div>
-    <div class="kpi kpi-green"><div class="kpi-label">Municipios integrados</div><div class="kpi-value">${fmt(totalInt)}</div><div class="kpi-detail">REDESIM Gov</div>
+    <div class="kpi kpi-green"><div class="kpi-label">Municipios integrados<button class="ci" onclick="showCI('kpi_municipios_int')" title="Info">i</button></div><div class="kpi-value">${fmt(totalInt)}</div><div class="kpi-detail">REDESIM Gov</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(totalInt/5570*100,100)}%;background:var(--green)"></div></div></div>
     <div class="kpi kpi-cyan"><div class="kpi-label">UF mais agil</div><div class="kpi-value">${topAgil.uf}</div><div class="kpi-detail">Score: ${topAgil.score.toFixed(1)}</div></div>
   `;
@@ -555,7 +539,7 @@ function renderFormal() {
   const pctMei = totalMpes>0?totalMeis/totalMpes*100:0;
 
   document.getElementById('kpiFormal').innerHTML=`
-    <div class="kpi kpi-blue"><div class="kpi-label">Formalizacao media</div><div class="kpi-value">${mediaProxy.toFixed(1)}%</div><div class="kpi-detail">Proxy (MEI+RAIS / IBGE)</div>
+    <div class="kpi kpi-blue"><div class="kpi-label">Formalizacao media<button class="ci" onclick="showCI('kpi_formalizacao')" title="Info">i</button></div><div class="kpi-value">${mediaProxy.toFixed(1)}%</div><div class="kpi-detail">Proxy (MEI+RAIS / IBGE)</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(mediaProxy,100)}%;background:var(--accent)"></div></div></div>
     <div class="kpi kpi-green"><div class="kpi-label">Total MEIs ativos</div><div class="kpi-value">${fmt(totalMeis)}</div><div class="kpi-detail">Todas as UFs</div></div>
     <div class="kpi kpi-purple"><div class="kpi-label">Total MPEs ativas</div><div class="kpi-value">${fmt(totalMpes)}</div><div class="kpi-detail">MEI + ME + EPP</div></div>
@@ -596,7 +580,7 @@ function renderMassa() {
   const epp = ms.reduce((s,m)=>s+m.epp,0);
 
   document.getElementById('kpiMassa').innerHTML=`
-    <div class="kpi kpi-blue"><div class="kpi-label">Total empresas</div><div class="kpi-value">${fmt(total)}</div><div class="kpi-detail">MPEs ativas (filtro Sebrae)</div></div>
+    <div class="kpi kpi-blue"><div class="kpi-label">Total empresas<button class="ci" onclick="showCI('kpi_mpes_ativas')" title="Info">i</button></div><div class="kpi-value">${fmt(total)}</div><div class="kpi-detail">MPEs ativas (filtro Sebrae)</div></div>
     <div class="kpi kpi-green"><div class="kpi-label">MEI</div><div class="kpi-value">${fmt(mei)}</div><div class="kpi-detail">${(mei/total*100).toFixed(1)}% do total</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${mei/total*100}%;background:var(--green)"></div></div></div>
     <div class="kpi kpi-purple"><div class="kpi-label">ME</div><div class="kpi-value">${fmt(me)}</div><div class="kpi-detail">${(me/total*100).toFixed(1)}% do total</div>
@@ -643,7 +627,7 @@ function renderLei() {
   const scoreM = lg.reduce((s,l)=>s+l.score,0)/lg.length;
 
   document.getElementById('kpiLei').innerHTML=`
-    <div class="kpi kpi-blue"><div class="kpi-label">Score medio</div><div class="kpi-value">${scoreM.toFixed(1)}</div><div class="kpi-detail">Proxy Lei Geral</div>
+    <div class="kpi kpi-blue"><div class="kpi-label">Score medio<button class="ci" onclick="showCI('chartLeiScore')" title="Info">i</button></div><div class="kpi-value">${scoreM.toFixed(1)}</div><div class="kpi-detail">Proxy Lei Geral</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${scoreM}%;background:var(--accent)"></div></div></div>
     <div class="kpi kpi-green"><div class="kpi-label">Classificacao ALTA</div><div class="kpi-value">${alta}</div><div class="kpi-detail">${alta}/27 UFs</div></div>
     <div class="kpi kpi-yellow"><div class="kpi-label">Classificacao MEDIA</div><div class="kpi-value">${media}</div><div class="kpi-detail">${media}/27 UFs</div></div>
@@ -778,7 +762,33 @@ init();
 
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeInfo();hideCI()}});
+
+const CI={
+  'chartCobertura':'<p><strong>O que mostra:</strong> Nivel de cobertura dos dados para cada sub-indicador do Tema 1.</p><p><strong>Calculo:</strong> Percentual de dados disponiveis vs universo completo. 1.1 Tempo (92%): REDESIM cobre todas UFs mas nao municipios. 1.2 Informalidade (70%): proxy sem PNAD. 1.3 Massa (100%): RF cobertura total. 1.4 Lei Geral (30%): proxy indireto.</p><p><strong>Fonte:</strong> Metadados dos scripts de coleta 01-09.</p>',
+  'chartScatter':'<p><strong>O que mostra:</strong> Correlacao entre tempo de abertura (eixo X, horas) e taxa de formalizacao (eixo Y, %) por UF.</p><p><strong>Calculo:</strong> Cada bolha e uma UF. X = tempo medio de abertura (REDESIM). Y = proxy de formalizacao (empresas ativas / pop. ocupada * 100). Tamanho = proporcional ao numero de MPEs.</p><p><strong>Fonte:</strong> REDESIM Gov + RF OLAP + IBGE Censo.</p>',
+  'chartRanking':'<p><strong>O que mostra:</strong> Ranking das 27 UFs pelo tempo medio de abertura de empresas.</p><p><strong>Calculo:</strong> Soma das horas de abertura de todas as empresas na UF no ano corrente / numero de empresas abertas na UF no mesmo ano. Cores: verde &lt;100h, amarelo 100-200h, vermelho &gt;200h.</p><p><strong>Fonte:</strong> REDESIM Gov (estatistica.redesim.gov.br) — API publica sem autenticacao.</p>',
+  'chartIntegracao':'<p><strong>O que mostra:</strong> Percentual de municipios integrados ao REDESIM por UF.</p><p><strong>Calculo:</strong> (municipios integrados na UF / total de municipios na UF) * 100. Cores: verde ≥80%, amarelo 50-80%, vermelho &lt;50%.</p><p><strong>Fonte:</strong> REDESIM Gov — endpoint /situacao-cadastral.</p>',
+  'chartEvolucao':'<p><strong>O que mostra:</strong> Evolucao do tempo medio nacional de abertura ao longo dos meses.</p><p><strong>Calculo:</strong> Media ponderada mensal do tempo total de abertura (dias + horas convertidos em horas). Tendencia de reducao indica melhoria na desburocratizacao.</p><p><strong>Fonte:</strong> REDESIM Gov — endpoint /tempos-abertura-redesim/tempos-abertura.</p>',
+  'chartAutoridade':'<p><strong>O que mostra:</strong> Tempo medio de abertura separado por tipo de autoridade registradora.</p><p><strong>Calculo:</strong> Media simples do tempo total (horas) agrupado por tipo: Junta Comercial, OAB, Cartorio de Registro de PJ, Ato Legal. Cartorio tende a ser mais lento por processos manuais.</p><p><strong>Fonte:</strong> REDESIM OLAP (cubo REDESIM_Tempo_Abertura).</p>',
+  'chartCnae':'<p><strong>O que mostra:</strong> Os 15 setores de atividade (CNAE) com maior tempo medio de abertura.</p><p><strong>Calculo:</strong> Media do tempo de abertura por divisao CNAE, ordenado decrescente. Setores regulados (saude, energia) tendem a ter maior tempo por exigencias de licenciamento.</p><p><strong>Fonte:</strong> REDESIM OLAP (cubo REDESIM_Tempo_Abertura, dimensao CNAE Division).</p>',
+  'chartFormProxy':'<p><strong>O que mostra:</strong> Proxy de formalizacao por estado.</p><p><strong>Calculo:</strong> (empresas ativas na UF / populacao ocupada na UF segundo IBGE Censo) * 100. E um proxy — nao mede informalidade diretamente. Valores acima de 80% indicam alta densidade empresarial formal.</p><p><strong>Fonte:</strong> RF OLAP + IBGE_Censo_Pop_Ocup OLAP.</p>',
+  'chartMpes1k':'<p><strong>O que mostra:</strong> Quantidade de MPEs por 1.000 habitantes ocupados em cada UF.</p><p><strong>Calculo:</strong> (total de MPEs ativas na UF / populacao ocupada IBGE Censo) * 1000. Indica densidade de empreendedorismo formal relativo ao mercado de trabalho.</p><p><strong>Fonte:</strong> RF OLAP + IBGE_Censo_Pop_Ocup.</p>',
+  'chartFormScatter':'<p><strong>O que mostra:</strong> Correlacao entre formalizacao e concentracao de MEI por UF.</p><p><strong>Calculo:</strong> X = taxa de formalizacao (proxy). Y = percentual de MEIs sobre o total de empresas. UFs com alto % de MEI e alta formalizacao sugerem empreendedorismo individual como motor de formalizacao.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'chartPorte':'<p><strong>O que mostra:</strong> Distribuicao de empresas por porte nas 15 UFs com mais empresas.</p><p><strong>Calculo:</strong> Contagem absoluta de empresas ativas por porte SEBRAE (MEI, ME, EPP, Media, Grande) em cada UF. Barra empilhada mostra a composicao.</p><p><strong>Fonte:</strong> RF OLAP — filtro Registration Status=2, Sebrae Commercial Company Indicator=1.</p>',
+  'chartMeiConc':'<p><strong>O que mostra:</strong> Concentracao de MEI sobre o total de empresas por UF.</p><p><strong>Calculo:</strong> (MEIs na UF / total de empresas na UF) * 100. Valores acima de 55% indicam predominancia de microempreendedores individuais.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'tableMassa':'<p><strong>O que mostra:</strong> Tabela detalhada com total de empresas por porte e UF.</p><p><strong>Calculo:</strong> Contagem absoluta por porte (MEI, ME, EPP, Demais) e percentual de MEI sobre o total. Ordenado por total de empresas decrescente.</p><p><strong>Fonte:</strong> RF OLAP — cubo RF, cobertura ~100% de empresas formalizadas.</p>',
+  'chartLeiScore':'<p><strong>O que mostra:</strong> Score proxy de adesao a Lei Geral por UF.</p><p><strong>Calculo:</strong> Composicao ponderada: integracao REDESIM (peso 0.4) + compras MPE (peso 0.3) + formalizacao (peso 0.3). Score 0-100. Classificacao: ALTA ≥80, MEDIA 50-80, BAIXA &lt;50.</p><p><strong>Fonte:</strong> REDESIM Gov + PNCP + RF OLAP. Proxy — cobertura ~30%.</p>',
+  'chartLeiPJ':'<p><strong>O que mostra:</strong> Percentual de PJs localizadas em municipios integrados ao REDESIM.</p><p><strong>Calculo:</strong> (PJs em municipios integrados / total de PJs na UF) * 100. Indica quantas empresas se beneficiam da integracao.</p><p><strong>Fonte:</strong> REDESIM Gov + RF OLAP.</p>',
+  'chartMunicipios':'<p><strong>O que mostra:</strong> Os 20 maiores municipios comparando empresas ativas vs baixadas.</p><p><strong>Calculo:</strong> Contagem absoluta de CNPJs com status ativa e baixada por municipio. Proporcao ativas/baixadas indica vitalidade empresarial do municipio.</p><p><strong>Fonte:</strong> RF OLAP — cubo RF por municipio.</p>',
+  'kpi_tempo_medio':'<p><strong>Indicador:</strong> Tempo medio de abertura por empresa no ano corrente.</p><p><strong>Calculo:</strong> Total de horas do processo de abertura (da entrada no REDESIM ate o CNPJ ativo) dividido pelo numero de empresas abertas no mesmo ano, considerando apenas o ano corrente. Nao e somatorio acumulado.</p><p><strong>Fonte:</strong> REDESIM Gov — serie temporal mensal.</p>',
+  'kpi_mpes_ativas':'<p><strong>Indicador:</strong> Total de micro e pequenas empresas ativas no Brasil.</p><p><strong>Calculo:</strong> Soma de todas as empresas com Registration Status=2 (ativa) e Sebrae Commercial Company Indicator=1, agrupadas por porte SEBRAE (MEI + ME + EPP).</p><p><strong>Fonte:</strong> RF OLAP — snapshot atualizado.</p>',
+  'kpi_formalizacao':'<p><strong>Indicador:</strong> Taxa media de formalizacao (proxy).</p><p><strong>Calculo:</strong> Media ponderada entre UFs de (empresas ativas / populacao ocupada) * 100. Proxy — nao mede informalidade diretamente. Valores tipicos: 55-85%.</p><p><strong>Fonte:</strong> RF OLAP + IBGE Censo (populacao ocupada).</p>',
+  'kpi_municipios_int':'<p><strong>Indicador:</strong> Total de municipios integrados ao REDESIM.</p><p><strong>Calculo:</strong> Contagem de municipios que completaram integracao com o sistema REDESIM. Total de municipios no Brasil: 5.570. A barra mostra o percentual de integracao.</p><p><strong>Fonte:</strong> REDESIM Gov — endpoint /situacao-cadastral.</p>'
+};
+
+function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
 </script>
 </body>
 </html>

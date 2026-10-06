@@ -130,6 +130,9 @@ a{color:var(--accent);text-decoration:none}
 ::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
 
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
+
 .info-btn{
   width:32px;height:32px;border-radius:50%;background:rgba(59,130,246,.15);
   border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:15px;font-weight:700;
@@ -204,21 +207,21 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiVolume"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Volume de Contratacoes por Modalidade</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Volume de Contratacoes por Modalidade<button class="ci" onclick="showCI('chartModalidade')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartModalidade" height="220"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Evolucao Mensal de Contratacoes</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Evolucao Mensal de Contratacoes<button class="ci" onclick="showCI('chartEvolucao')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartEvolucao" height="220"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Porte de Empresa</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Porte de Empresa<button class="ci" onclick="showCI('chartPorte')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPorte" height="240"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 10 UFs por Valor Contratado</div>
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 10 UFs por Valor Contratado<button class="ci" onclick="showCI('chartUfValor')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartUfValor" height="240"></canvas></div>
     </div>
   </div>
@@ -230,26 +233,33 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiFornecedoras"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>MPEs Fornecedoras por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>MPEs Fornecedoras por UF<button class="ci" onclick="showCI('chartMpesUf')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartMpesUf" height="380"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao por Natureza Juridica</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao por Natureza Juridica<button class="ci" onclick="showCI('chartNatureza')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartNatureza" height="380"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Relacao PIB Municipal vs Contratos com MPEs</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Relacao PIB Municipal vs Contratos com MPEs<button class="ci" onclick="showCI('chartPibContratos')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPibContratos" height="260"></canvas></div>
     </div>
     <div class="chart-box" style="grid-column:1/-1">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 Fornecedores MPE</div>
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 Fornecedores MPE<button class="ci" onclick="showCI('tableFornecedores')" title="Info">i</button></div>
       <div class="table-wrapper" id="tableFornecedores"></div>
     </div>
   </div>
 </div>
 
+</div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
@@ -618,12 +628,12 @@ function renderVolume() {
   const pctMpe = DATA.pct_mpe;
   document.getElementById('kpiVolume').innerHTML=`
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Contratacoes recentes</div>
+      <div class="kpi-label">Contratacoes recentes <button class="ci" onclick="showCI('kpi_contratacoes')" title="Info">i</button></div>
       <div class="kpi-value">${DATA.contratacoes_recentes.toLocaleString('pt-BR')}</div>
       <div class="kpi-detail">Ultimos 30 dias — ${DATA.fonte_api}</div>
     </div>
     <div class="kpi kpi-green">
-      <div class="kpi-label">Valor total (R$)</div>
+      <div class="kpi-label">Valor total (R$) <button class="ci" onclick="showCI('kpi_valor_total')" title="Info">i</button></div>
       <div class="kpi-value">${fmtCurrency(DATA.valor_total)}</div>
       <div class="kpi-detail">Soma dos contratos recentes</div>
     </div>
@@ -752,12 +762,12 @@ function renderFornecedoras() {
   /* KPIs */
   document.getElementById('kpiFornecedoras').innerHTML=`
     <div class="kpi kpi-blue">
-      <div class="kpi-label">MPEs fornecedoras</div>
+      <div class="kpi-label">MPEs fornecedoras <button class="ci" onclick="showCI('kpi_mpes_forn')" title="Info">i</button></div>
       <div class="kpi-value">${DATA.mpes_fornecedoras.toLocaleString('pt-BR')}</div>
       <div class="kpi-detail">Empresas com contratos vigentes</div>
     </div>
     <div class="kpi kpi-green">
-      <div class="kpi-label">Descentralizacao</div>
+      <div class="kpi-label">Descentralizacao <button class="ci" onclick="showCI('kpi_pct_mpe')" title="Info">i</button></div>
       <div class="kpi-value">${DATA.descentralizacao.toFixed(2)}</div>
       <div class="kpi-detail">Indice Herfindahl-Hirschman inverso</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${DATA.descentralizacao*100}%;background:var(--green)"></div></div>
@@ -920,6 +930,24 @@ renderAll();
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+
+const CI={
+  'chartModalidade':'<p><strong>O que mostra:</strong> Volume de contratacoes agrupado por modalidade licitatoria.</p><p><strong>Calculo:</strong> Contagem de contratacoes publicadas no PNCP por modalidade (Pregao Eletronico, Dispensa, Concorrencia, etc.). Pregao Eletronico costuma concentrar o maior volume.</p><p><strong>Fonte:</strong> PNCP API — pncp.gov.br/api/consulta/v1. Publica, sem auth.</p>',
+  'chartEvolucao':'<p><strong>O que mostra:</strong> Evolucao mensal do numero de contratacoes publicadas.</p><p><strong>Calculo:</strong> Contagem de contratacoes por mes de publicacao. Permite identificar sazonalidade (pico em final de ano fiscal).</p><p><strong>Fonte:</strong> PNCP API — filtro por dataPublicacao.</p>',
+  'chartPorte':'<p><strong>O que mostra:</strong> Distribuicao do valor contratado por porte de empresa.</p><p><strong>Calculo:</strong> Percentual do valor total destinado a cada porte conforme LC 123/2006: MEI (faturamento ate R$81k), ME (ate R$360k), EPP (ate R$4,8mi), Demais.</p><p><strong>Fonte:</strong> PNCP API + classificacao de porte via CNPJ/RF.</p>',
+  'chartUfValor':'<p><strong>O que mostra:</strong> Ranking das 10 UFs com maior valor total contratado.</p><p><strong>Calculo:</strong> Soma do valor de todas as contratacoes por UF do orgao contratante. SP e RJ lideram pela concentracao de orgaos federais.</p><p><strong>Fonte:</strong> PNCP API.</p>',
+  'chartMpesUf':'<p><strong>O que mostra:</strong> Quantidade de MPEs que sao fornecedoras ativas por estado.</p><p><strong>Calculo:</strong> Contagem distinta de CNPJs classificados como MEI/ME/EPP que possuem pelo menos um contrato ativo.</p><p><strong>Fonte:</strong> PNCP API + RF (classificacao porte).</p>',
+  'chartNatureza':'<p><strong>O que mostra:</strong> Distribuicao dos fornecedores MPE por natureza juridica.</p><p><strong>Calculo:</strong> Contagem de fornecedores agrupados por natureza (EIRELI, LTDA, MEI, SA, etc.). Predominancia de LTDA e MEI.</p><p><strong>Fonte:</strong> PNCP API + RF OLAP.</p>',
+  'chartPibContratos':'<p><strong>O que mostra:</strong> Relacao entre PIB municipal e valor de contratos com MPEs.</p><p><strong>Calculo:</strong> Dispersao: X = PIB municipal (IBGE), Y = valor de contratos MPE. Municipios acima da linha de tendencia tem participacao MPE proporcionalmente alta.</p><p><strong>Fonte:</strong> PNCP API + IBGE PIB Municipal.</p>',
+  'tableFornecedores':'<p><strong>O que mostra:</strong> Ranking dos 20 maiores fornecedores MPE por valor contratado.</p><p><strong>Calculo:</strong> Soma do valor de todos os contratos por CNPJ, filtrado por porte MPE, ordenado decrescente.</p><p><strong>Fonte:</strong> PNCP API.</p>',
+  'kpi_contratacoes':'<p><strong>Indicador:</strong> Total de contratacoes recentes publicadas no PNCP.</p><p><strong>Calculo:</strong> Contagem de publicacoes nos ultimos 30 dias via API PNCP.</p><p><strong>Fonte:</strong> PNCP API — publica, sem autenticacao.</p>',
+  'kpi_valor_total':'<p><strong>Indicador:</strong> Valor total contratado (R$).</p><p><strong>Calculo:</strong> Soma de valorTotalEstimado de todas as contratacoes no periodo.</p><p><strong>Fonte:</strong> PNCP API.</p>',
+  'kpi_mpes_forn':'<p><strong>Indicador:</strong> Total de MPEs fornecedoras ativas.</p><p><strong>Calculo:</strong> Contagem distinta de CNPJs com porte MEI/ME/EPP que possuem contrato ativo.</p><p><strong>Fonte:</strong> PNCP API + RF (classificacao LC 123/2006).</p>',
+  'kpi_pct_mpe':'<p><strong>Indicador:</strong> Percentual do valor destinado a MPEs.</p><p><strong>Calculo:</strong> (valor contratos MPE / valor total) * 100. Meta da LC 123: minimo 25% em cotas.</p><p><strong>Fonte:</strong> PNCP API.</p>'
+};
+function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')hideCI()});
 </script>
 </body>
 </html>

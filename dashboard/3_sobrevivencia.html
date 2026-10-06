@@ -161,6 +161,8 @@ a{color:var(--accent);text-decoration:none}
   font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
   border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
 }
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:6px;line-height:1}
+.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
 </style>
 </head>
 <body>
@@ -201,21 +203,21 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiSobrev"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao da Taxa de Sobrevivencia (2015-2026)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao da Taxa de Sobrevivencia (2015-2026)<button class="ci" onclick="showCI('chartEvolSobrev')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartEvolSobrev" height="200"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Taxa de Sobrevivencia por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Taxa de Sobrevivencia por UF<button class="ci" onclick="showCI('chartSobrevUF')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSobrevUF" height="450"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Sobrevivencia por Porte</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Sobrevivencia por Porte<button class="ci" onclick="showCI('chartSobrevPorte')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSobrevPorte" height="200"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Tempo Medio de Vida por Setor (Top 15)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Tempo Medio de Vida por Setor (Top 15)<button class="ci" onclick="showCI('chartTempoVida')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartTempoVida" height="350"></canvas></div>
     </div>
   </div>
@@ -226,23 +228,23 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiEmprego"></div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao Mensal CAGED — Admissoes vs Desligamentos</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Evolucao Mensal CAGED — Admissoes vs Desligamentos<button class="ci" onclick="showCI('chartCaged')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartCaged" height="200"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Saldo de Empregos por UF</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Saldo de Empregos por UF<button class="ci" onclick="showCI('chartSaldoUF')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSaldoUF" height="450"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Empregos por Porte de Empresa (Top 10 UFs)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Empregos por Porte de Empresa (Top 10 UFs)<button class="ci" onclick="showCI('chartEmpregoPorte')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartEmpregoPorte" height="300"></canvas></div>
     </div>
   </div>
   <div class="chart-grid full">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao Salarial Media por Porte</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao Salarial Media por Porte<button class="ci" onclick="showCI('chartSalario')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartSalario" height="180"></canvas></div>
     </div>
   </div>
@@ -253,26 +255,33 @@ a{color:var(--accent);text-decoration:none}
   <div class="kpi-row" id="kpiPib"></div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Top 20 Municipios — PIB Municipal</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Top 20 Municipios — PIB Municipal<button class="ci" onclick="showCI('chartPibMun')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPibMun" height="450"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Composicao do PIB — Valor Adicionado por Setor</div>
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Composicao do PIB — Valor Adicionado por Setor<button class="ci" onclick="showCI('chartPibComp')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPibComp" height="280"></canvas></div>
     </div>
   </div>
   <div class="chart-grid">
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do PIB Mensal (BCB)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do PIB Mensal (BCB)<button class="ci" onclick="showCI('chartPibMensal')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPibMensal" height="200"></canvas></div>
     </div>
     <div class="chart-box">
-      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao do PIB por UF (Top 15)</div>
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao do PIB por UF (Top 15)<button class="ci" onclick="showCI('chartPibUF')" title="Info">i</button></div>
       <div class="chart-canvas"><canvas id="chartPibUF" height="350"></canvas></div>
     </div>
   </div>
 </div>
 
+</div>
+
+<div id="ciModal" class="info-overlay" onclick="if(event.target===this)hideCI()">
+  <div class="info-modal" style="max-width:520px">
+    <button class="info-close" onclick="hideCI()">&times;</button>
+    <div id="ciBody"></div>
+  </div>
 </div>
 
 <div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
@@ -673,13 +682,13 @@ function renderSobrevivencia() {
 
   document.getElementById('kpiSobrev').innerHTML = `
     <div class="kpi kpi-green">
-      <div class="kpi-label">Taxa sobrevivencia 2 anos</div>
+      <div class="kpi-label">Taxa sobrevivencia 2 anos <button class="ci" onclick="showCI('kpi_sobrevivencia')" title="Info">i</button></div>
       <div class="kpi-value">${s.taxa_2a.toFixed(1)}%</div>
       <div class="kpi-detail">Empresas que sobrevivem apos 2 anos</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${s.taxa_2a}%;background:var(--green)"></div></div>
     </div>
     <div class="kpi kpi-blue">
-      <div class="kpi-label">Taxa sobrevivencia 5 anos</div>
+      <div class="kpi-label">Taxa sobrevivencia 5 anos <button class="ci" onclick="showCI('kpi_mortalidade')" title="Info">i</button></div>
       <div class="kpi-value">${s.taxa_5a.toFixed(1)}%</div>
       <div class="kpi-detail">Empresas que sobrevivem apos 5 anos</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${s.taxa_5a}%;background:var(--accent)"></div></div>
@@ -822,12 +831,12 @@ function renderEmprego() {
 
   document.getElementById('kpiEmprego').innerHTML = `
     <div class="kpi kpi-green">
-      <div class="kpi-label">Admissoes (ultimo mes)</div>
+      <div class="kpi-label">Admissoes (ultimo mes) <button class="ci" onclick="showCI('kpi_saldo_empregos')" title="Info">i</button></div>
       <div class="kpi-value">${fmt(e.admissoes)}</div>
       <div class="kpi-detail">CAGED — admissoes formais</div>
     </div>
     <div class="kpi kpi-red">
-      <div class="kpi-label">Desligamentos</div>
+      <div class="kpi-label">Desligamentos <button class="ci" onclick="showCI('kpi_desligamentos')" title="Info">i</button></div>
       <div class="kpi-value">${fmt(e.desligamentos)}</div>
       <div class="kpi-detail">CAGED — desligamentos formais</div>
     </div>
@@ -986,12 +995,12 @@ function renderPib() {
 
   document.getElementById('kpiPib').innerHTML = `
     <div class="kpi kpi-blue">
-      <div class="kpi-label">PIB Brasil</div>
+      <div class="kpi-label">PIB Brasil <button class="ci" onclick="showCI('kpi_pib')" title="Info">i</button></div>
       <div class="kpi-value">${fmtTri(p.pib_brasil)}</div>
       <div class="kpi-detail">Estimativa anualizada</div>
     </div>
     <div class="kpi kpi-purple">
-      <div class="kpi-label">Valor adicionado servicos</div>
+      <div class="kpi-label">Valor adicionado servicos <button class="ci" onclick="showCI('kpi_va_servicos')" title="Info">i</button></div>
       <div class="kpi-value">${fmtTri(p.va_servicos)}</div>
       <div class="kpi-detail">Maior componente do PIB</div>
     </div>
@@ -1122,7 +1131,30 @@ document.addEventListener('DOMContentLoaded', renderAll);
 
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeInfo();hideCI()}});
+
+const CI={
+  'chartEvolSobrev':'<p><strong>O que mostra:</strong> Evolucao da taxa de sobrevivencia de empresas (2015-2026).</p><p><strong>Calculo:</strong> (empresas abertas no ano X que permanecem ativas 2 anos depois / total de empresas abertas no ano X) * 100. Coorte de 2 anos (padrao Sebrae/IBGE).</p><p><strong>Fonte:</strong> RF OLAP + RF SQL (historico de aberturas e baixas).</p>',
+  'chartSobrevUF':'<p><strong>O que mostra:</strong> Taxa de sobrevivencia em 2 anos por UF.</p><p><strong>Calculo:</strong> Mesmo calculo da coorte aplicado por estado. Permite comparar ambientes de negocios regionais.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'chartSobrevPorte':'<p><strong>O que mostra:</strong> Taxa de sobrevivencia separada por porte (MEI, ME, EPP).</p><p><strong>Calculo:</strong> Coorte de 2 anos por porte SEBRAE. MEIs tendem a ter menor sobrevivencia pela menor estrutura de gestao.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'chartTempoVida':'<p><strong>O que mostra:</strong> Os 15 setores com maior tempo medio de vida antes do encerramento.</p><p><strong>Calculo:</strong> Mediana do tempo (meses) entre data de abertura e data de baixa, por divisao CNAE, para empresas encerradas.</p><p><strong>Fonte:</strong> RF OLAP (datas de abertura e encerramento).</p>',
+  'chartCaged':'<p><strong>O que mostra:</strong> Evolucao mensal de admissoes vs desligamentos (CAGED).</p><p><strong>Calculo:</strong> Contagem mensal de movimentacoes no CAGED: admissoes (entrada) e desligamentos (saida). Area entre as curvas = saldo liquido de empregos.</p><p><strong>Fonte:</strong> CAGED_movements OLAP (1 mes de defasagem) + BCB SGS serie 28763.</p>',
+  'chartSaldoUF':'<p><strong>O que mostra:</strong> Saldo de empregos formais por UF nos ultimos 12 meses.</p><p><strong>Calculo:</strong> Admissoes - Desligamentos por estado, acumulado 12 meses. Valores positivos = criacao liquida de empregos.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
+  'chartEmpregoPorte':'<p><strong>O que mostra:</strong> Composicao do emprego formal por porte nas 10 maiores UFs.</p><p><strong>Calculo:</strong> Estoque de empregos formais (RAIS) por porte de empresa. Barra empilhada mostra a contribuicao de cada porte.</p><p><strong>Fonte:</strong> RAIS_workers OLAP (anual, ate 2023).</p>',
+  'chartSalario':'<p><strong>O que mostra:</strong> Evolucao do salario medio de admissao por porte.</p><p><strong>Calculo:</strong> Media do salario de admissao (CAGED) por porte (MEI, ME/EPP, Media/Grande) ao longo dos meses. Permite comparar remuneracao entre portes.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
+  'chartPibMun':'<p><strong>O que mostra:</strong> Os 20 municipios com maior PIB.</p><p><strong>Calculo:</strong> PIB a precos correntes por municipio (ultimo dado disponivel). Defasagem de ~2 anos.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP.</p>',
+  'chartPibComp':'<p><strong>O que mostra:</strong> Composicao do PIB por setor de atividade.</p><p><strong>Calculo:</strong> Valor Adicionado Bruto (VAB) decomposto em: Agropecuaria, Industria, Servicos, Administracao Publica. Servicos e tipicamente dominante.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP + IBGE SIDRA tabela 5938.</p>',
+  'chartPibMensal':'<p><strong>O que mostra:</strong> Evolucao mensal do indice de atividade economica (proxy PIB).</p><p><strong>Calculo:</strong> Indice BCB SGS serie 24364 (IBC-Br), proxy mensal do PIB. Atualizado mensalmente sem auth.</p><p><strong>Fonte:</strong> BCB SGS serie 24364.</p>',
+  'chartPibUF':'<p><strong>O que mostra:</strong> Distribuicao do PIB entre as 15 maiores UFs.</p><p><strong>Calculo:</strong> PIB a precos correntes por UF, ordenado decrescentemente. Permite comparar o peso economico de cada estado.</p><p><strong>Fonte:</strong> IBGE_PIB_Municipal_VAB OLAP (agregado por UF).</p>',
+  'kpi_sobrevivencia':'<p><strong>Indicador:</strong> Taxa nacional de sobrevivencia (2 anos).</p><p><strong>Calculo:</strong> Percentual de empresas abertas ha 2 anos que permanecem ativas. Coorte padrao Sebrae.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'kpi_mortalidade':'<p><strong>Indicador:</strong> Total de empresas encerradas no periodo.</p><p><strong>Calculo:</strong> Contagem de CNPJs com data de baixa nos ultimos 12 meses.</p><p><strong>Fonte:</strong> RF OLAP.</p>',
+  'kpi_saldo_empregos':'<p><strong>Indicador:</strong> Saldo de empregos formais (12 meses).</p><p><strong>Calculo:</strong> Admissoes - Desligamentos acumulado nos ultimos 12 meses via CAGED.</p><p><strong>Fonte:</strong> CAGED_movements OLAP + BCB SGS serie 28763.</p>',
+  'kpi_desligamentos':'<p><strong>Indicador:</strong> Total de desligamentos formais (ultimo mes).</p><p><strong>Calculo:</strong> Contagem de desligamentos (rescisoes, demissoes) registrados no CAGED no ultimo mes disponivel.</p><p><strong>Fonte:</strong> CAGED_movements OLAP.</p>',
+  'kpi_pib':'<p><strong>Indicador:</strong> PIB nacional (ultimo dado).</p><p><strong>Calculo:</strong> PIB a precos correntes. Proxy mensal via BCB SGS serie 24364 (IBC-Br).</p><p><strong>Fonte:</strong> BCB SGS + IBGE SIDRA.</p>',
+  'kpi_va_servicos':'<p><strong>Indicador:</strong> Valor Adicionado Bruto de Servicos.</p><p><strong>Calculo:</strong> Soma do valor adicionado pelo setor de servicos na composicao do PIB. Maior componente individual.</p><p><strong>Fonte:</strong> IBGE SIDRA tabela 5938 + IBGE_PIB_Municipal_VAB OLAP.</p>'
+};
+function showCI(k){const c=CI[k];if(!c)return;document.getElementById('ciBody').innerHTML=c;document.getElementById('ciModal').classList.add('active')}
+function hideCI(){document.getElementById('ciModal').classList.remove('active')}
 </script>
 </body>
 </html>
