@@ -80,6 +80,47 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 
 .footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
 
+.portal-btn{
+  display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,.12);
+  border:1px solid rgba(16,185,129,.3);color:#6ee7b7;padding:8px 16px;
+  border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.portal-btn:hover{background:rgba(16,185,129,.22);border-color:#10b981;color:#fff}
+.portal-btn svg{width:14px;height:14px}
+
+.info-btn{
+  width:32px;height:32px;border-radius:50%;background:rgba(59,130,246,.15);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:15px;font-weight:700;
+  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
+  font-family:'Segoe UI',system-ui,sans-serif;
+}
+.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
+.info-overlay{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;
+  justify-content:center;align-items:center;backdrop-filter:blur(4px);
+}
+.info-overlay.active{display:flex}
+.info-modal{
+  background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;
+  max-width:760px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;
+  box-shadow:0 24px 64px rgba(0,0,0,.5);
+}
+.info-modal h2{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:var(--accent)}
+.info-modal h3{font-size:.9rem;font-weight:600;margin:1.2rem 0 .5rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
+.info-modal p,.info-modal li{font-size:.8rem;color:var(--text2);line-height:1.7}
+.info-modal ul{padding-left:1.2rem;margin-bottom:.6rem}
+.info-modal .info-close{
+  position:absolute;top:12px;right:16px;width:28px;height:28px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:none;color:var(--text2);font-size:18px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;
+}
+.info-modal .info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+.info-source{
+  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
+  border-left:3px solid var(--accent);margin:.5rem 0;color:var(--text2);line-height:1.6;
+}
+.header-actions{display:flex;align-items:center;gap:10px;margin-top:.8rem}
+
 @media(max-width:700px){
   .grid{grid-template-columns:1fr}
   .header{padding:1.5rem 1rem}
@@ -97,6 +138,13 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
   <div class="header-logo">AN</div>
   <h1><span>PIPPA</span> Ambiente de Negocios</h1>
   <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Indicadores Compostos</div>
+  <div class="header-actions">
+    <button class="info-btn" onclick="openInfo()" title="Sobre este painel">i</button>
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="portal-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Portal PIPPA
+    </a>
+  </div>
 </div>
 
 <div class="main">
@@ -175,10 +223,53 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
   </div>
 </div>
 
+<div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
+  <div class="info-modal">
+    <button class="info-close" onclick="closeInfo()">&times;</button>
+    <h2>Sobre — PIPPA Indicadores de Ambiente de Negocios</h2>
+    <p>Painel de indicadores compostos para avaliacao do ambiente de negocios brasileiro, organizado em 5 temas com 13 sub-indicadores. Os dados combinam consultas ao Observatorio Sebrae (OLAP) com 5 APIs publicas sem autenticacao.</p>
+
+    <h3>Estrutura dos 5 Temas</h3>
+    <ul>
+      <li><strong>Tema 1 — Burocracia, Formalizacao e Ambiente de Negocios:</strong> Tempo medio de abertura por empresa no ano corrente, taxa de formalizacao, massa empresarial por porte/setor e adesao a Lei Geral. 4 sub-indicadores.</li>
+      <li><strong>Tema 2 — Compras Publicas e Participacao das MPEs:</strong> Volume de contratacoes publicas destinadas a MPEs, participacao percentual, modalidades e descentralizacao. 2 sub-indicadores.</li>
+      <li><strong>Tema 3 — Sobrevivencia, Emprego e Renda:</strong> Taxas de sobrevivencia/mortalidade de empresas, empregos formais via CAGED/RAIS, impacto no PIB local. 3 sub-indicadores.</li>
+      <li><strong>Tema 4 — Inclusao, Diversidade e Empreendedorismo:</strong> Inclusao produtiva por genero e grupos prioritarios, distribuicao territorial e APLs. 2 sub-indicadores.</li>
+      <li><strong>Tema 5 — Credito, Financiamento e Acesso a Recursos:</strong> Operacoes de credito PJ, Selic, IPCA, inadimplencia, infraestrutura financeira. 2 sub-indicadores.</li>
+    </ul>
+
+    <h3>Fontes de Dados</h3>
+    <div class="info-source"><strong>APIs Publicas (sem autenticacao):</strong> REDESIM Gov (estatistica.redesim.gov.br) · PNCP (pncp.gov.br/api/consulta/v1) · BCB SGS (api.bcb.gov.br/dados/serie) · IBGE SIDRA (apisidra.ibge.gov.br) · IBGE Localidades (servicodados.ibge.gov.br)</div>
+    <div class="info-source"><strong>Observatorio Sebrae (OLAP, requer token):</strong> REDESIM_Tempo_Abertura · RF · RAIS_workers · CAGED_movements · IBGE_PIB_Municipal_VAB · IBGE_Censo_Pop_Sit · IBGE_Censo_Pop_Ocup · bcb_scr_mensais · credito_bacen_valores · BCB_ESTBAN_MUN</div>
+
+    <h3>Botao "Consultar APIs"</h3>
+    <p>Cada dashboard tematico possui um botao <strong>Consultar APIs</strong> que busca dados em tempo real das APIs publicas listadas acima, sem necessidade de autenticacao. Os dados retornados atualizam os graficos e KPIs diretamente no navegador.</p>
+
+    <h3>Scripts de Coleta (Python)</h3>
+    <p>14 scripts na pasta <code>scripts/</code> coletam e cruzam dados de todas as fontes. Scripts que acessam o Observatorio OLAP requerem o token OBSERVATORIO_TOKEN configurado em variavel de ambiente. Scripts que acessam APIs publicas (BCB SGS, PNCP, IBGE SIDRA, REDESIM Gov) nao requerem autenticacao.</p>
+
+    <h3>Metodologia Geral</h3>
+    <p>Os indicadores compostos sao construidos por agregacao ponderada dos sub-indicadores de cada tema. Cada sub-indicador e normalizado em escala 0-100 antes da composicao. Os pesos refletem a relevancia para a avaliacao do ambiente de negocios segundo a literatura de competitividade territorial (GEM, Doing Business, ICE/CLP). A cobertura varia de 30% (Lei Geral, proxy) a 100% (massa empresarial RF) conforme disponibilidade dos dados.</p>
+
+    <h3>Informacoes Tecnicas</h3>
+    <ul>
+      <li><strong>Versao:</strong> 2.0</li>
+      <li><strong>Responsavel:</strong> Julio Albuquerque — Sebrae Nacional / UCOMP-DADOS</li>
+      <li><strong>Ultima atualizacao:</strong> Outubro 2026</li>
+      <li><strong>Tecnologias:</strong> HTML5, Chart.js 4.4.4, Python 3.x, APIs REST</li>
+    </ul>
+  </div>
+</div>
+
 <div class="footer">
   PIPPA Ambiente de Negocios v2.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
   Sebrae Nacional · UCOMP/DADOS · 2026
 </div>
 
+<script>
+function openInfo(){document.getElementById('infoModal').classList.add('active')}
+function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+</script>
 </body>
 </html>

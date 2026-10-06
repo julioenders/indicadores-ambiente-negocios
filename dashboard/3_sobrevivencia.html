@@ -129,6 +129,38 @@ a{color:var(--accent);text-decoration:none}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
+
+.info-btn{
+  width:32px;height:32px;border-radius:50%;background:rgba(59,130,246,.15);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:15px;font-weight:700;
+  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
+  font-family:'Segoe UI',system-ui,sans-serif;
+}
+.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
+.info-overlay{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;
+  justify-content:center;align-items:center;backdrop-filter:blur(4px);
+}
+.info-overlay.active{display:flex}
+.info-modal{
+  background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;
+  max-width:760px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;
+  box-shadow:0 24px 64px rgba(0,0,0,.5);
+}
+.info-modal h2{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#3b82f6}
+.info-modal h3{font-size:.9rem;font-weight:600;margin:1.2rem 0 .5rem;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
+.info-modal p,.info-modal li{font-size:.8rem;color:#94a3b8;line-height:1.7}
+.info-modal ul{padding-left:1.2rem;margin-bottom:.6rem}
+.info-modal .info-close{
+  position:absolute;top:12px;right:16px;width:28px;height:28px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:18px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;
+}
+.info-modal .info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+.info-source{
+  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
+  border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
+}
 </style>
 </head>
 <body>
@@ -143,8 +175,13 @@ a{color:var(--accent);text-decoration:none}
   </div>
   <div class="header-controls">
     <div class="thermometer" id="thermometer"></div>
+    <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
     <button class="btn" onclick="fetchData()">&#x1F4E1; Consultar APIs</button>
-    <a href="../index.html" class="pippa-home-btn">
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="pippa-home-btn" style="border-color:rgba(16,185,129,.3);color:#6ee7b7">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Portal PIPPA
+    </a>
+    <a href="index.html" class="pippa-home-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       Painel Principal
     </a>
@@ -236,6 +273,52 @@ a{color:var(--accent);text-decoration:none}
   </div>
 </div>
 
+</div>
+
+<div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
+  <div class="info-modal">
+    <button class="info-close" onclick="closeInfo()">&times;</button>
+    <h2>Metodologia — Tema 3: Sobrevivencia, Emprego e Renda</h2>
+    <p>Este dashboard apresenta 3 sub-indicadores que avaliam a dinamica de sobrevivencia empresarial, o mercado de trabalho formal e o impacto economico das MPEs no PIB municipal.</p>
+
+    <h3>Aba 3.1: Sobrevivencia</h3>
+    <ul>
+      <li><strong>KPIs:</strong> Taxa nacional de sobrevivencia (2 anos), total de empresas encerradas no periodo, taxa de mortalidade, tempo medio de vida (meses).</li>
+      <li><strong>Evolucao da Taxa de Sobrevivencia (2015-2026):</strong> Linha temporal — <em>calculo: (empresas abertas no ano X que permanecem ativas 2 anos depois / total de empresas abertas no ano X) * 100.</em> Fonte: RF OLAP + RF SQL.</li>
+      <li><strong>Taxa de Sobrevivencia por UF:</strong> Barra horizontal — taxa de sobrevivencia em 2 anos por unidade federativa. Permite comparar o ambiente de negocios entre estados.</li>
+      <li><strong>Sobrevivencia por Porte:</strong> Barra agrupada — taxa de sobrevivencia separada por porte (MEI, ME, EPP). MEIs tendem a ter menor sobrevivencia por conta de menor estrutura de gestao.</li>
+      <li><strong>Tempo Medio de Vida por Setor (Top 15):</strong> Barra horizontal — <em>calculo: mediana do tempo de operacao (em meses) entre a data de abertura e a data de baixa, para os 15 setores CNAE com mais empresas encerradas.</em></li>
+    </ul>
+    <div class="info-source"><strong>Fontes:</strong> RF OLAP (estoque de empresas, datas de abertura e baixa) + RF SQL via VPN (historico detalhado). Cobertura ~80%. A taxa de sobrevivencia usa a coorte de 2 anos (padrao Sebrae/IBGE).</div>
+
+    <h3>Aba 3.2: Emprego (CAGED/RAIS)</h3>
+    <ul>
+      <li><strong>KPIs:</strong> Saldo de empregos formais (ultimos 12 meses), total de admissoes, total de desligamentos, salario medio.</li>
+      <li><strong>Evolucao Mensal CAGED — Admissoes vs Desligamentos:</strong> Grafico de area com 2 series — admissoes e desligamentos mensais, com saldo liquido visivel pela diferenca entre as areas.</li>
+      <li><strong>Saldo de Empregos por UF:</strong> Barra horizontal — saldo (admissoes - desligamentos) por estado nos ultimos 12 meses.</li>
+      <li><strong>Empregos por Porte de Empresa (Top 10 UFs):</strong> Barra empilhada — composicao do emprego formal por porte de empresa nas 10 UFs com maior estoque de empregos.</li>
+      <li><strong>Evolucao Salarial Media por Porte:</strong> Linha temporal com 3 series (MEI, ME/EPP, Media/Grande) — <em>calculo: salario medio de admissao informado no CAGED por porte, atualizado mensalmente.</em></li>
+    </ul>
+    <div class="info-source"><strong>Fontes:</strong> CAGED_movements OLAP (movimentacoes mensais, admissoes e desligamentos) + RAIS_workers OLAP (emprego formal anual). CAGED e mensal com 1 mes de defasagem; RAIS e anual, disponivel ate 2023.</div>
+
+    <h3>Aba 3.3: PIB e Arrecadacao</h3>
+    <ul>
+      <li><strong>KPIs:</strong> PIB nacional (ultimo dado), PIB per capita, participacao das MPEs no PIB (estimativa), variacao anual.</li>
+      <li><strong>Top 20 Municipios — PIB Municipal:</strong> Barra horizontal — os 20 municipios com maior PIB (IBGE PIB Municipal). Fonte: cubo OLAP IBGE_PIB_Municipal_VAB.</li>
+      <li><strong>Composicao do PIB — Valor Adicionado por Setor:</strong> Barra empilhada — decomposicao do PIB por setores (Agropecuaria, Industria, Servicos, Administracao Publica).</li>
+      <li><strong>Evolucao do PIB Mensal (BCB):</strong> Linha temporal — <em>calculo: indice de atividade economica mensal (serie BCB SGS 24364, proxy do PIB mensal).</em></li>
+    </ul>
+    <div class="info-source"><strong>Fontes:</strong> IBGE_PIB_Municipal_VAB OLAP (PIB municipal, defasado ~2 anos) + BCB SGS serie 24364 (proxy PIB mensal, sem auth) + IBGE SIDRA tabela 5938 (PIB trimestral). Cobertura ~70% — PIB municipal tem defasagem significativa.</div>
+
+    <h3>Botao "Consultar APIs"</h3>
+    <p>Ao clicar, busca dados em tempo real de 2 fontes publicas:</p>
+    <ul>
+      <li><code>api.bcb.gov.br/dados/serie/bcdata.sgs.28763</code> — CAGED mensal (saldo de empregos)</li>
+      <li><code>api.bcb.gov.br/dados/serie/bcdata.sgs.24364</code> — PIB mensal (proxy)</li>
+      <li><code>apisidra.ibge.gov.br/values/t/5938</code> — PIB trimestral IBGE</li>
+    </ul>
+    <p>Os dados retornados atualizam os graficos de evolucao e os KPIs das abas 3.2 e 3.3.</p>
+  </div>
 </div>
 
 <div class="footer">
@@ -1036,6 +1119,10 @@ function renderPib() {
    INIT
    ============================================================ */
 document.addEventListener('DOMContentLoaded', renderAll);
+
+function openInfo(){document.getElementById('infoModal').classList.add('active')}
+function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
 </script>
 </body>
 </html>

@@ -127,6 +127,38 @@ a{color:var(--accent);text-decoration:none}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
+
+.info-btn{
+  width:32px;height:32px;border-radius:50%;background:rgba(59,130,246,.15);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:15px;font-weight:700;
+  cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
+  font-family:'Segoe UI',system-ui,sans-serif;
+}
+.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
+.info-overlay{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;
+  justify-content:center;align-items:center;backdrop-filter:blur(4px);
+}
+.info-overlay.active{display:flex}
+.info-modal{
+  background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;
+  max-width:760px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;
+  box-shadow:0 24px 64px rgba(0,0,0,.5);
+}
+.info-modal h2{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#3b82f6}
+.info-modal h3{font-size:.9rem;font-weight:600;margin:1.2rem 0 .5rem;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
+.info-modal p,.info-modal li{font-size:.8rem;color:#94a3b8;line-height:1.7}
+.info-modal ul{padding-left:1.2rem;margin-bottom:.6rem}
+.info-modal .info-close{
+  position:absolute;top:12px;right:16px;width:28px;height:28px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:18px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;
+}
+.info-modal .info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+.info-source{
+  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
+  border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
+}
 </style>
 </head>
 <body>
@@ -141,11 +173,16 @@ a{color:var(--accent);text-decoration:none}
   </div>
   <div class="header-controls">
     <div class="thermometer" id="thermometer"></div>
+    <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
     <button class="btn" id="btnFetch" onclick="fetchData()">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
       Consultar APIs
     </button>
-    <a href="../index.html" class="pippa-home-btn">
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="pippa-home-btn" style="border-color:rgba(16,185,129,.3);color:#6ee7b7">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Portal PIPPA
+    </a>
+    <a href="index.html" class="pippa-home-btn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       PIPPA Portal
     </a>
@@ -209,6 +246,42 @@ a{color:var(--accent);text-decoration:none}
   </div>
 </div>
 
+</div>
+
+<div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
+  <div class="info-modal">
+    <button class="info-close" onclick="closeInfo()">&times;</button>
+    <h2>Metodologia — Tema 4: Inclusao, Diversidade e Empreendedorismo</h2>
+    <p>Este dashboard apresenta 2 sub-indicadores que avaliam a inclusao produtiva de grupos prioritarios e a distribuicao territorial do empreendedorismo no Brasil.</p>
+
+    <h3>Aba 4.1: Inclusao Produtiva</h3>
+    <ul>
+      <li><strong>KPIs:</strong> Percentual de empreendedoras mulheres, total de empreendedores jovens (18-29), indice de diversidade empreendedora.</li>
+      <li><strong>Distribuicao por Genero do Empreendedor:</strong> Rosca (doughnut) — <em>calculo: percentual de socios/titulares por genero com base nos dados da RF (CPF dos quadros societarios), cruzados com proxy de genero pelo primeiro nome. Limitacao: a RF nao registra genero diretamente.</em></li>
+      <li><strong>Participacao Feminina no Empreendedorismo por UF:</strong> Barra horizontal — percentual de empresas com pelo menos uma socia mulher por estado.</li>
+      <li><strong>Empreendedores por Faixa Etaria e Porte:</strong> Barra agrupada — distribuicao dos empreendedores por faixa etaria (18-24, 25-34, 35-44, 45-54, 55-64, 65+) e porte de empresa.</li>
+      <li><strong>Formalizacao por Grupo Prioritario:</strong> Barra vertical — <em>calculo: taxa de formalizacao estimada para grupos prioritarios (mulheres, jovens, negros, indigenas, populacao rural) com base em cruzamento Censo 2022 x RF OLAP.</em></li>
+    </ul>
+    <div class="info-source"><strong>Fontes:</strong> IBGE_Censo_Pop_Sit OLAP (populacao por sexo, situacao urbano/rural) + IBGE_Censo_Pop_Ocup OLAP (populacao ocupada) + RF OLAP (empresas por municipio e porte) + IBGE SIDRA tabela 9514 (populacao por sexo). Cobertura ~50% — genero e proxy; dados de raca/etnia do empreendedor nao disponiveis na RF.</div>
+
+    <h3>Aba 4.2: Distribuicao Territorial</h3>
+    <ul>
+      <li><strong>KPIs:</strong> Densidade empresarial nacional (empresas por 1000 hab.), municipios com menos de 100 empresas, concentracao nos 100 maiores municipios.</li>
+      <li><strong>Densidade Empresarial por Regiao:</strong> Barra vertical — <em>calculo: (total de empresas ativas na regiao / populacao da regiao) * 1000.</em> Permite comparar Norte/Nordeste (menor densidade) com Sul/Sudeste.</li>
+      <li><strong>Empreendimentos Urbano vs Rural por UF:</strong> Barra empilhada horizontal — <em>calculo: cruzamento populacao urbana/rural (Censo) com localizacao dos estabelecimentos (RF) por UF.</em></li>
+      <li><strong>Top 20 APLs por N. de Empresas:</strong> Barra horizontal — Arranjos Produtivos Locais (APLs) com maior concentracao de empresas. Dados de APLs sem API publica direta — proxy via concentracao setorial por municipio.</li>
+      <li><strong>Indicadores por Regiao:</strong> Tabela comparativa com densidade empresarial, taxa de formalizacao, participacao feminina e taxa de urbanizacao por regiao.</li>
+    </ul>
+    <div class="info-source"><strong>Fontes:</strong> RF OLAP (empresas por municipio) + IBGE SIDRA (populacao por municipio) + IBGE Localidades API (dados de municipios e regioes). Cobertura ~60% — APLs sem dados oficiais atualizados; distribuicao rural e proxy.</div>
+
+    <h3>Botao "Consultar APIs"</h3>
+    <p>Ao clicar, busca dados em tempo real de 2 fontes publicas:</p>
+    <ul>
+      <li><code>apisidra.ibge.gov.br/values/t/9514</code> — Populacao por sexo e UF (Censo 2022)</li>
+      <li><code>servicodados.ibge.gov.br/api/v1/localidades/estados</code> — Lista de estados e regioes</li>
+    </ul>
+    <p>Os dados retornados atualizam os graficos demograficos e de distribuicao territorial.</p>
+  </div>
 </div>
 
 <div class="footer">
@@ -775,6 +848,10 @@ function init() {
 }
 
 init();
+
+function openInfo(){document.getElementById('infoModal').classList.add('active')}
+function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
 </script>
 </body>
 </html>
