@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIPPA | Ambiente de Negocios — Tema 1</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg:#0f172a; --surface:#1e293b; --surface2:#334155;
+  --text:#e2e8f0; --text2:#94a3b8; --accent:#3b82f6;
+  --accent2:#8b5cf6; --green:#22c55e; --red:#ef4444;
+  --yellow:#eab308; --orange:#f97316; --cyan:#06b6d4;
+  --radius:12px; --shadow:0 4px 24px rgba(0,0,0,.4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+
+.header{
+  background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);
+  padding:1.2rem 2rem;display:flex;align-items:center;gap:1.5rem;
+  border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;
+}
+.header-brand{display:flex;align-items:center;gap:.8rem}
+.header-logo{
+  width:44px;height:44px;background:var(--accent);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;
+}
+.header h1{font-size:1.3rem;font-weight:700;letter-spacing:-.5px}
+.header h1 span{color:var(--accent)}
+.header-sub{font-size:.75rem;color:var(--text2);margin-top:2px}
+.header-controls{margin-left:auto;display:flex;align-items:center;gap:10px}
+.thermometer{display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 12px;border-radius:20px;font-weight:600}
+.thermo-green{background:rgba(34,197,94,.15);color:var(--green)}
+.thermo-yellow{background:rgba(234,179,8,.15);color:var(--yellow)}
+.thermo-red{background:rgba(239,68,68,.15);color:var(--red)}
+
+.btn{
+  background:var(--accent);color:#fff;border:none;padding:8px 20px;
+  border-radius:var(--radius);font-size:14px;font-weight:600;cursor:pointer;
+  transition:all .2s;display:flex;align-items:center;gap:6px;
+}
+.btn:hover{background:#2563eb;transform:translateY(-1px)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+.pippa-home-btn{
+  display:flex;align-items:center;gap:6px;background:rgba(15,23,42,.85);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;padding:7px 14px;
+  border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.pippa-home-btn:hover{background:rgba(59,130,246,.15);border-color:var(--accent);color:#fff}
+.pippa-home-btn svg{width:13px;height:13px}
+
+.api-status{font-size:.72rem;padding:4px 10px;border-radius:20px;font-weight:600;margin-left:4px}
+.api-ok{background:rgba(34,197,94,.15);color:var(--green)}
+.api-err{background:rgba(239,68,68,.15);color:var(--red)}
+
+.tabs{display:flex;gap:0;padding:0 2rem;background:var(--surface);border-bottom:2px solid var(--surface2)}
+.tab{
+  padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:var(--text2);
+  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;
+  transition:all .2s;letter-spacing:.3px;
+}
+.tab:hover{color:var(--text);background:rgba(255,255,255,.03)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab-icon{margin-right:6px}
+
+.main{padding:1.5rem 2rem 3rem;max-width:1400px;margin:0 auto}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.kpi{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden}
+.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius)}
+.kpi.kpi-blue::before{background:var(--accent)}
+.kpi.kpi-green::before{background:var(--green)}
+.kpi.kpi-yellow::before{background:var(--yellow)}
+.kpi.kpi-red::before{background:var(--red)}
+.kpi.kpi-purple::before{background:var(--accent2)}
+.kpi.kpi-cyan::before{background:var(--cyan)}
+.kpi-label{font-size:.7rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.kpi-value{font-size:1.6rem;font-weight:700;margin:4px 0}
+.kpi-detail{font-size:.72rem;color:var(--text2)}
+.kpi-bar{height:4px;background:var(--surface2);border-radius:2px;margin-top:8px}
+.kpi-bar-fill{height:100%;border-radius:2px;transition:width .6s ease}
+
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
+.chart-grid.full{grid-template-columns:1fr}
+.chart-box{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06)}
+.chart-title{font-size:.85rem;font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.chart-title .dot{width:8px;height:8px;border-radius:50%}
+.chart-canvas{position:relative;width:100%}
+
+.section-title{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+
+.data-table{width:100%;border-collapse:collapse;font-size:.78rem;background:var(--surface);border-radius:var(--radius);overflow:hidden}
+.data-table th{background:var(--surface2);padding:10px 12px;text-align:left;font-weight:600;color:var(--text2);text-transform:uppercase;font-size:.68rem;letter-spacing:.5px;position:sticky;top:0}
+.data-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.data-table tr:hover td{background:rgba(255,255,255,.02)}
+.data-table .num{text-align:right;font-variant-numeric:tabular-nums}
+.pct-bar{height:6px;background:var(--surface2);border-radius:3px}
+.pct-bar-fill{height:100%;border-radius:3px}
+
+.table-wrapper{border-radius:var(--radius);overflow:auto;max-height:500px;border:1px solid rgba(255,255,255,.06)}
+
+.alert-item{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:.6rem}
+.alert-item.warning{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow)}
+.alert-item.info{background:rgba(59,130,246,.08);border-left:3px solid var(--accent)}
+.alert-item.success{background:rgba(34,197,94,.08);border-left:3px solid var(--green)}
+.alert-title{font-weight:600}
+.alert-desc{color:var(--text2);font-size:.74rem;margin-top:2px}
+
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600}
+.badge-ok{background:rgba(34,197,94,.15);color:var(--green)}
+.badge-warn{background:rgba(234,179,8,.15);color:var(--yellow)}
+.badge-danger{background:rgba(239,68,68,.15);color:var(--red)}
+
+.footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
+
+@media(max-width:900px){
+  .chart-grid{grid-template-columns:1fr}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .header{padding:1rem;flex-wrap:wrap}
+  .main{padding:1rem}
+  .tabs{padding:0 1rem;overflow-x:auto}
+}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">
+    <div class="header-logo">AN</div>
+    <div>
+      <h1><span>PIPPA</span> Ambiente de Negocios</h1>
+      <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Tema 1: Burocracia, Formalizacao e Ambiente de Negocios</div>
+    </div>
+  </div>
+  <div class="header-controls">
+    <div class="thermometer" id="thermometer"></div>
+    <span class="api-status" id="apiStatus"></span>
+    <button class="btn" id="btnFetch" onclick="fetchData()">Consultar APIs</button>
+    <a href="index.html" class="pippa-home-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      PIPPA Portal
+    </a>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="geral" onclick="switchTab('geral')"><span class="tab-icon">&#x1F4CA;</span>Visao Geral</div>
+  <div class="tab" data-tab="tempo" onclick="switchTab('tempo')"><span class="tab-icon">&#x23F1;</span>1.1 Tempo de Abertura</div>
+  <div class="tab" data-tab="formal" onclick="switchTab('formal')"><span class="tab-icon">&#x1F4CB;</span>1.2 Formalizacao</div>
+  <div class="tab" data-tab="massa" onclick="switchTab('massa')"><span class="tab-icon">&#x1F3E2;</span>1.3 Massa Empresarial</div>
+  <div class="tab" data-tab="lei" onclick="switchTab('lei')"><span class="tab-icon">&#x2696;</span>1.4 Lei Geral</div>
+</div>
+
+<div class="main">
+
+<!-- VISAO GERAL -->
+<div class="tab-content active" id="tab-geral">
+  <div class="kpi-row" id="kpiGeral"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Cobertura por Sub-indicador</div>
+      <div class="chart-canvas"><canvas id="chartCobertura" height="180"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo de Abertura vs Formalizacao</div>
+      <div class="chart-canvas"><canvas id="chartScatter" height="180"></canvas></div>
+    </div>
+  </div>
+  <div class="section-title">&#x1F4C1; Status das Fontes de Dados</div>
+  <div class="table-wrapper" id="tableFontes"></div>
+</div>
+
+<!-- 1.1 TEMPO DE ABERTURA -->
+<div class="tab-content" id="tab-tempo">
+  <div class="kpi-row" id="kpiTempo"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Ranking Estadual — Tempo Medio por Empresa (horas)</div>
+      <div class="chart-canvas"><canvas id="chartRanking" height="450"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Integracao REDESIM por UF (%)</div>
+      <div class="chart-canvas"><canvas id="chartIntegracao" height="450"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid full">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Evolucao do Tempo Medio por Empresa (Nacional)</div>
+      <div class="chart-canvas"><canvas id="chartEvolucao" height="180"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Tempo por Autoridade Registradora</div>
+      <div class="chart-canvas"><canvas id="chartAutoridade" height="200"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 15 Setores CNAE — Tempo</div>
+      <div class="chart-canvas"><canvas id="chartCnae" height="300"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- 1.2 FORMALIZACAO -->
+<div class="tab-content" id="tab-formal">
+  <div class="kpi-row" id="kpiFormal"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Proxy de Formalizacao por Estado (%)</div>
+      <div class="chart-canvas"><canvas id="chartFormProxy" height="450"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>MPEs por 1.000 Ocupados</div>
+      <div class="chart-canvas"><canvas id="chartMpes1k" height="450"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid full">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Formalizacao vs Concentracao MEI</div>
+      <div class="chart-canvas"><canvas id="chartFormScatter" height="250"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- 1.3 MASSA EMPRESARIAL -->
+<div class="tab-content" id="tab-massa">
+  <div class="kpi-row" id="kpiMassa"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Distribuicao por Porte — Top 15</div>
+      <div class="chart-canvas"><canvas id="chartPorte" height="350"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Concentracao MEI por Estado</div>
+      <div class="chart-canvas"><canvas id="chartMeiConc" height="350"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid full">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Detalhamento por Estado</div>
+      <div class="table-wrapper" id="tableMassa"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 1.4 LEI GERAL -->
+<div class="tab-content" id="tab-lei">
+  <div class="kpi-row" id="kpiLei"></div>
+  <div class="alert-item warning">
+    <div>
+      <div class="alert-title">&#x26A0; Limitacao de cobertura (~30%)</div>
+      <div class="alert-desc">Este indicador usa como proxy o percentual de municipios integrados ao REDESIM. Dados diretos de legislacao municipal (Lei Geral) e Salas do Empreendedor nao estao disponiveis em APIs publicas.</div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Score Proxy Lei Geral por UF</div>
+      <div class="chart-canvas"><canvas id="chartLeiScore" height="450"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Cobertura: PJs em Municipios Integrados (%)</div>
+      <div class="chart-canvas"><canvas id="chartLeiPJ" height="450"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid full">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Top 20 Municipios: Ativas vs Baixadas</div>
+      <div class="chart-canvas"><canvas id="chartMunicipios" height="200"></canvas></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  PIPPA Ambiente de Negocios v1.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
+  Sebrae Nacional · UCOMP/DADOS · 2026
+</div>
+
+<script>
+const DATA = {"ranking":[{"uf":"Sergipe","tempo":119.7},{"uf":"Goiás","tempo":120.1},{"uf":"Tocantins","tempo":134.1},{"uf":"Paraná","tempo":136.5},{"uf":"Ceará","tempo":137.7},{"uf":"Mato Grosso","tempo":138.5},{"uf":"Roraima","tempo":145.8},{"uf":"Rondônia","tempo":146.8},{"uf":"Maranhão","tempo":150.7},{"uf":"Piauí","tempo":151.1},{"uf":"Mato Grosso do Sul","tempo":154.2},{"uf":"Espírito Santo","tempo":154.6},{"uf":"Distrito Federal","tempo":167.2},{"uf":"Rio Grande do Sul","tempo":167.5},{"uf":"Rio Grande do Norte","tempo":171.0},{"uf":"Alagoas","tempo":175.3},{"uf":"Paraíba","tempo":182.4},{"uf":"Amazonas","tempo":183.7},{"uf":"Amapá","tempo":186.5},{"uf":"Acre","tempo":187.3},{"uf":"Santa Catarina","tempo":215.7},{"uf":"São Paulo","tempo":224.1},{"uf":"Minas Gerais","tempo":232.5},{"uf":"Pernambuco","tempo":253.4},{"uf":"Pará","tempo":269.9},{"uf":"Rio de Janeiro","tempo":298.7},{"uf":"Bahia","tempo":327.5}],"tempo_nacional":[{"ano":2025,"mes":10,"dias":1,"horas":3,"total_h":27},{"ano":2025,"mes":11,"dias":1,"horas":1,"total_h":25},{"ano":2025,"mes":12,"dias":1,"horas":23,"total_h":47},{"ano":2026,"mes":1,"dias":3,"horas":11,"total_h":83},{"ano":2026,"mes":2,"dias":3,"horas":18,"total_h":90},{"ano":2026,"mes":3,"dias":2,"horas":17,"total_h":65},{"ano":2026,"mes":4,"dias":2,"horas":1,"total_h":49},{"ano":2026,"mes":5,"dias":1,"horas":10,"total_h":34},{"ano":2026,"mes":6,"dias":1,"horas":10,"total_h":34},{"ano":2026,"mes":7,"dias":1,"horas":9,"total_h":33},{"ano":2026,"mes":8,"dias":1,"horas":5,"total_h":29},{"ano":2026,"mes":9,"dias":1,"horas":7,"total_h":31}],"integracao":[{"uf":"MG","pct":37.4,"mun_int":319,"mun_total":853},{"uf":"PE","pct":57.3,"mun_int":106,"mun_total":185},{"uf":"PI","pct":62.5,"mun_int":140,"mun_total":224},{"uf":"BA","pct":63.1,"mun_int":263,"mun_total":417},{"uf":"MA","pct":64.5,"mun_int":140,"mun_total":217},{"uf":"PB","pct":65.9,"mun_int":147,"mun_total":223},{"uf":"RN","pct":70.1,"mun_int":117,"mun_total":167},{"uf":"GO","pct":72.4,"mun_int":178,"mun_total":246},{"uf":"AL","pct":72.5,"mun_int":74,"mun_total":102},{"uf":"TO","pct":72.7,"mun_int":101,"mun_total":139},{"uf":"SP","pct":82.8,"mun_int":534,"mun_total":645},{"uf":"PA","pct":84.0,"mun_int":121,"mun_total":144},{"uf":"MS","pct":88.6,"mun_int":70,"mun_total":79},{"uf":"SE","pct":90.7,"mun_int":68,"mun_total":75},{"uf":"ES","pct":91.0,"mun_int":71,"mun_total":78},{"uf":"RO","pct":92.3,"mun_int":48,"mun_total":52},{"uf":"AP","pct":93.8,"mun_int":15,"mun_total":16},{"uf":"PR","pct":95.5,"mun_int":381,"mun_total":399},{"uf":"SC","pct":95.6,"mun_int":282,"mun_total":295},{"uf":"RS","pct":98.6,"mun_int":490,"mun_total":497},{"uf":"RJ","pct":98.9,"mun_int":91,"mun_total":92},{"uf":"MT","pct":99.3,"mun_int":141,"mun_total":142},{"uf":"RR","pct":100.0,"mun_int":15,"mun_total":15},{"uf":"DF","pct":100.0,"mun_int":1,"mun_total":1},{"uf":"AC","pct":100.0,"mun_int":22,"mun_total":22},{"uf":"CE","pct":100.0,"mun_int":184,"mun_total":184},{"uf":"AM","pct":100.0,"mun_int":62,"mun_total":62}],"agilidade":[{"uf":"PR","tempo_h":9.0,"pct_int":95.5,"score":152.8},{"uf":"PI","tempo_h":6.0,"pct_int":62.5,"score":150.0},{"uf":"SE","tempo_h":10.0,"pct_int":90.7,"score":130.61},{"uf":"ES","tempo_h":12.0,"pct_int":91.0,"score":109.2},{"uf":"AL","tempo_h":11.0,"pct_int":72.5,"score":94.91},{"uf":"SC","tempo_h":19.0,"pct_int":95.6,"score":72.45},{"uf":"CE","tempo_h":20.0,"pct_int":100.0,"score":72.0},{"uf":"RO","tempo_h":19.0,"pct_int":92.3,"score":69.95},{"uf":"MS","tempo_h":20.0,"pct_int":88.6,"score":63.79},{"uf":"MA","tempo_h":15.0,"pct_int":64.5,"score":61.92},{"uf":"RS","tempo_h":23.0,"pct_int":98.6,"score":61.73},{"uf":"AC","tempo_h":24.0,"pct_int":100.0,"score":60.0},{"uf":"DF","tempo_h":25.0,"pct_int":100.0,"score":57.6},{"uf":"GO","tempo_h":19.0,"pct_int":72.4,"score":54.87},{"uf":"AM","tempo_h":27.0,"pct_int":100.0,"score":53.33},{"uf":"PB","tempo_h":19.0,"pct_int":65.9,"score":49.95},{"uf":"RJ","tempo_h":30.0,"pct_int":98.9,"score":47.47},{"uf":"RN","tempo_h":22.0,"pct_int":70.1,"score":45.88},{"uf":"TO","tempo_h":23.0,"pct_int":72.7,"score":45.52},{"uf":"RR","tempo_h":34.0,"pct_int":100.0,"score":42.35},{"uf":"AP","tempo_h":32.0,"pct_int":93.8,"score":42.21},{"uf":"PE","tempo_h":23.0,"pct_int":57.3,"score":35.87},{"uf":"BA","tempo_h":28.0,"pct_int":63.1,"score":32.45},{"uf":"SP","tempo_h":40.0,"pct_int":82.8,"score":29.81},{"uf":"MT","tempo_h":64.0,"pct_int":99.3,"score":22.34},{"uf":"PA","tempo_h":57.0,"pct_int":84.0,"score":21.22},{"uf":"MG","tempo_h":40.0,"pct_int":37.4,"score":13.46}],"formalizacao":[{"uf":"Distrito Federal","mpes":450439,"meis":208576,"pct_mei":46.3,"rais":1201764,"ibge":1403487,"proxy":100.5,"mpes_1k":320.9},{"uf":"Santa Catarina","mpes":1474727,"meis":746461,"pct_mei":50.6,"rais":2750663,"ibge":3984456,"proxy":87.8,"mpes_1k":370.1},{"uf":"São Paulo","mpes":8402276,"meis":3856033,"pct_mei":45.9,"rais":14818750,"ibge":21309441,"proxy":87.6,"mpes_1k":394.3},{"uf":"Rio de Janeiro","mpes":2189406,"meis":1293946,"pct_mei":59.1,"rais":4339847,"ibge":6820843,"proxy":82.6,"mpes_1k":321.0},{"uf":"Mato Grosso","mpes":549369,"meis":269173,"pct_mei":49.0,"rais":1162983,"ibge":1736125,"proxy":82.5,"mpes_1k":316.4},{"uf":"Paraná","mpes":1923078,"meis":944527,"pct_mei":49.1,"rais":3621254,"ibge":5661840,"proxy":80.6,"mpes_1k":339.7},{"uf":"Espírito Santo","mpes":577764,"meis":331621,"pct_mei":57.4,"rais":1085430,"ibge":1785368,"proxy":79.4,"mpes_1k":323.6},{"uf":"Mato Grosso do Sul","mpes":365544,"meis":186782,"pct_mei":51.1,"rais":829312,"ibge":1285147,"proxy":79.1,"mpes_1k":284.4},{"uf":"Rio Grande do Sul","mpes":1644301,"meis":842394,"pct_mei":51.2,"rais":3220568,"ibge":5279157,"proxy":77.0,"mpes_1k":311.5},{"uf":"Minas Gerais","mpes":2769478,"meis":1525858,"pct_mei":55.1,"rais":5633160,"ibge":9574558,"proxy":74.8,"mpes_1k":289.3},{"uf":"Tocantins","mpes":168783,"meis":87804,"pct_mei":52.0,"rais":392811,"ibge":649497,"proxy":74.0,"mpes_1k":259.9},{"uf":"Goiás","mpes":1005787,"meis":533711,"pct_mei":53.1,"rais":1856886,"ibge":3399548,"proxy":70.3,"mpes_1k":295.9},{"uf":"Pernambuco","mpes":726366,"meis":400927,"pct_mei":55.2,"rais":1905908,"ibge":3337920,"proxy":69.1,"mpes_1k":217.6},{"uf":"Rio Grande do Norte","mpes":289936,"meis":154642,"pct_mei":53.3,"rais":691655,"ibge":1236248,"proxy":68.5,"mpes_1k":234.5},{"uf":"Alagoas","mpes":221007,"meis":122650,"pct_mei":55.5,"rais":621725,"ibge":1090884,"proxy":68.2,"mpes_1k":202.6},{"uf":"Acre","mpes":50143,"meis":22986,"pct_mei":45.8,"rais":173314,"ibge":294788,"proxy":66.6,"mpes_1k":170.1},{"uf":"Amazonas","mpes":275750,"meis":136605,"pct_mei":49.5,"rais":770780,"ibge":1367628,"proxy":66.3,"mpes_1k":201.6},{"uf":"Rondônia","mpes":161482,"meis":81453,"pct_mei":50.4,"rais":362367,"ibge":675423,"proxy":65.7,"mpes_1k":239.1},{"uf":"Ceará","mpes":711794,"meis":365503,"pct_mei":51.3,"rais":1739427,"ibge":3263637,"proxy":64.5,"mpes_1k":218.1},{"uf":"Paraíba","mpes":329207,"meis":181290,"pct_mei":55.1,"rais":714135,"ibge":1393547,"proxy":64.3,"mpes_1k":236.2},{"uf":"Roraima","mpes":47779,"meis":24654,"pct_mei":51.6,"rais":125882,"ibge":236479,"proxy":63.7,"mpes_1k":202.0},{"uf":"Sergipe","mpes":162782,"meis":87635,"pct_mei":53.8,"rais":452104,"ibge":854640,"proxy":63.2,"mpes_1k":190.5},{"uf":"Amapá","mpes":47860,"meis":20084,"pct_mei":42.0,"rais":158396,"ibge":283374,"proxy":63.0,"mpes_1k":168.9},{"uf":"Bahia","mpes":1187528,"meis":636439,"pct_mei":53.6,"rais":2712334,"ibge":5405884,"proxy":61.9,"mpes_1k":219.7},{"uf":"Piauí","mpes":211031,"meis":97273,"pct_mei":46.1,"rais":559039,"ibge":1133891,"proxy":57.9,"mpes_1k":186.1},{"uf":"Pará","mpes":519485,"meis":247495,"pct_mei":47.6,"rais":1375238,"ibge":2923295,"proxy":55.5,"mpes_1k":177.7},{"uf":"Maranhão","mpes":334268,"meis":143106,"pct_mei":42.8,"rais":929882,"ibge":2292450,"proxy":46.8,"mpes_1k":145.8}],"massa":[{"uf":"São Paulo","total":8402276,"mei":3856033,"me":2780199,"epp":523175,"demais":1242869,"pct_mei":45.9},{"uf":"Minas Gerais","total":2769478,"mei":1525858,"me":960648,"epp":130515,"demais":152457,"pct_mei":55.1},{"uf":"Rio de Janeiro","total":2189406,"mei":1293946,"me":645932,"epp":114612,"demais":134916,"pct_mei":59.1},{"uf":"Paraná","total":1923078,"mei":944527,"me":766584,"epp":95782,"demais":116185,"pct_mei":49.1},{"uf":"Rio Grande do Sul","total":1644301,"mei":842394,"me":599690,"epp":105133,"demais":97084,"pct_mei":51.2},{"uf":"Santa Catarina","total":1474727,"mei":746461,"me":531124,"epp":93061,"demais":104081,"pct_mei":50.6},{"uf":"Bahia","total":1187528,"mei":636439,"me":446513,"epp":52037,"demais":52539,"pct_mei":53.6},{"uf":"Goiás","total":1005787,"mei":533711,"me":369316,"epp":49137,"demais":53623,"pct_mei":53.1},{"uf":"Pernambuco","total":726366,"mei":400927,"me":240878,"epp":43778,"demais":40783,"pct_mei":55.2},{"uf":"Ceará","total":711794,"mei":365503,"me":278171,"epp":30714,"demais":37406,"pct_mei":51.3},{"uf":"Espírito Santo","total":577764,"mei":331621,"me":181181,"epp":31187,"demais":33775,"pct_mei":57.4},{"uf":"Mato Grosso","total":549369,"mei":269173,"me":191966,"epp":51898,"demais":36332,"pct_mei":49.0},{"uf":"Pará","total":519485,"mei":247495,"me":197722,"epp":52482,"demais":21786,"pct_mei":47.6},{"uf":"Distrito Federal","total":450439,"mei":208576,"me":178599,"epp":33256,"demais":30008,"pct_mei":46.3},{"uf":"Mato Grosso do Sul","total":365544,"mei":186782,"me":129119,"epp":26619,"demais":23024,"pct_mei":51.1},{"uf":"Maranhão","total":334268,"mei":143106,"me":150030,"epp":25149,"demais":15983,"pct_mei":42.8},{"uf":"Paraíba","total":329207,"mei":181290,"me":117802,"epp":16078,"demais":14037,"pct_mei":55.1},{"uf":"Rio Grande do Norte","total":289936,"mei":154642,"me":104293,"epp":15005,"demais":15996,"pct_mei":53.3},{"uf":"Amazonas","total":275750,"mei":136605,"me":95261,"epp":30075,"demais":13809,"pct_mei":49.5},{"uf":"Alagoas","total":221007,"mei":122650,"me":73749,"epp":13831,"demais":10777,"pct_mei":55.5},{"uf":"Piauí","total":211031,"mei":97273,"me":89552,"epp":14148,"demais":10058,"pct_mei":46.1},{"uf":"Tocantins","total":168783,"mei":87804,"me":59889,"epp":11738,"demais":9352,"pct_mei":52.0},{"uf":"Sergipe","total":162782,"mei":87635,"me":59566,"epp":8622,"demais":6959,"pct_mei":53.8},{"uf":"Rondônia","total":161482,"mei":81453,"me":59453,"epp":11510,"demais":9066,"pct_mei":50.4},{"uf":"Acre","total":50143,"mei":22986,"me":21284,"epp":3465,"demais":2408,"pct_mei":45.8},{"uf":"Amapá","total":47860,"mei":20084,"me":20129,"epp":5393,"demais":2254,"pct_mei":42.0},{"uf":"Roraima","total":47779,"mei":24654,"me":17193,"epp":3745,"demais":2187,"pct_mei":51.6}],"lei_geral":[{"uf":"RR","pct_mun":100.0,"pct_pj":100.0,"score":100.0,"cls":"ALTA"},{"uf":"DF","pct_mun":100.0,"pct_pj":100.0,"score":100.0,"cls":"ALTA"},{"uf":"AC","pct_mun":100.0,"pct_pj":100.0,"score":100.0,"cls":"ALTA"},{"uf":"CE","pct_mun":100.0,"pct_pj":100.0,"score":100.0,"cls":"ALTA"},{"uf":"AM","pct_mun":100.0,"pct_pj":100.0,"score":100.0,"cls":"ALTA"},{"uf":"MT","pct_mun":99.3,"pct_pj":100.0,"score":99.7,"cls":"ALTA"},{"uf":"RJ","pct_mun":98.9,"pct_pj":99.9,"score":99.4,"cls":"ALTA"},{"uf":"RS","pct_mun":98.6,"pct_pj":99.9,"score":99.2,"cls":"ALTA"},{"uf":"AP","pct_mun":93.8,"pct_pj":99.8,"score":96.8,"cls":"ALTA"},{"uf":"SC","pct_mun":95.6,"pct_pj":97.6,"score":96.6,"cls":"ALTA"},{"uf":"ES","pct_mun":91.0,"pct_pj":99.0,"score":95.0,"cls":"ALTA"},{"uf":"SE","pct_mun":90.7,"pct_pj":98.0,"score":94.3,"cls":"ALTA"},{"uf":"MS","pct_mun":88.6,"pct_pj":96.7,"score":92.7,"cls":"ALTA"},{"uf":"PA","pct_mun":84.0,"pct_pj":97.8,"score":90.9,"cls":"ALTA"},{"uf":"PR","pct_mun":95.5,"pct_pj":82.4,"score":89.0,"cls":"ALTA"},{"uf":"RO","pct_mun":92.3,"pct_pj":81.9,"score":87.1,"cls":"ALTA"},{"uf":"SP","pct_mun":82.8,"pct_pj":84.5,"score":83.7,"cls":"ALTA"},{"uf":"TO","pct_mun":72.7,"pct_pj":93.5,"score":83.1,"cls":"ALTA"},{"uf":"AL","pct_mun":72.5,"pct_pj":92.3,"score":82.4,"cls":"ALTA"},{"uf":"PI","pct_mun":62.5,"pct_pj":91.9,"score":77.2,"cls":"MEDIA"},{"uf":"GO","pct_mun":72.4,"pct_pj":79.7,"score":76.1,"cls":"MEDIA"},{"uf":"RN","pct_mun":70.1,"pct_pj":81.6,"score":75.8,"cls":"MEDIA"},{"uf":"BA","pct_mun":63.1,"pct_pj":86.7,"score":74.9,"cls":"MEDIA"},{"uf":"MA","pct_mun":64.5,"pct_pj":60.2,"score":62.4,"cls":"MEDIA"},{"uf":"PE","pct_mun":57.3,"pct_pj":67.0,"score":62.1,"cls":"MEDIA"},{"uf":"MG","pct_mun":37.4,"pct_pj":71.8,"score":54.6,"cls":"MEDIA"},{"uf":"PB","pct_mun":65.9,"pct_pj":38.9,"score":52.4,"cls":"MEDIA"}],"autoridade":[{"tipo":"Junta Comercial","tempo":186.3},{"tipo":"OAB","tempo":538.6},{"tipo":"Cartório de Registro de PJ","tempo":1058.8},{"tipo":"Ato Legal","tempo":371.2},{"tipo":"Não Informado","tempo":373.3}],"cnae_top15":[{"setor":"Atividades De Organizações Associativas","tempo":1172.2},{"setor":"Organismos Internacionais E Outras Instituições Extraterritoriais","tempo":905.0},{"setor":"Captação, Tratamento E Distribuição De Água","tempo":552.8},{"setor":"Serviços De Assistência Social Sem Alojamento","tempo":469.9},{"setor":"Atividades Jurídicas, De Contabilidade E De Auditoria","tempo":416.3},{"setor":"Fabricação De Coque, De Produtos Derivados Do Petróleo E De Biocombustíveis","tempo":395.2},{"setor":"Administração Pública, Defesa E Seguridade Social","tempo":388.4},{"setor":"Eletricidade, Gás E Outras Utilidades","tempo":378.0},{"setor":"Descontaminação E Outros Serviços De Gestão De Resíduos","tempo":363.4},{"setor":"Transporte Aéreo","tempo":345.0},{"setor":"Seguros, Resseguros, Previdência Complementar E Planos De Saúde","tempo":333.3},{"setor":"Atividades Ligadas Ao Patrimônio Cultural E Ambiental","tempo":308.7},{"setor":"Produção Florestal","tempo":304.9},{"setor":"Extração De Petróleo E Gás Natural","tempo":300.2},{"setor":"Fabricação De Produtos Farmoquímicos E Farmacêuticos","tempo":300.0}],"municipios_top20":[{"nome":"SAO PAULO","uf":"SP","ativa":2749321,"baixada":2950879},{"nome":"RIO DE JANEIRO","uf":"RJ","ativa":1067481,"baixada":1176068},{"nome":"BELO HORIZONTE","uf":"MG","ativa":539953,"baixada":692597},{"nome":"CURITIBA","uf":"PR","ativa":483994,"baixada":522267},{"nome":"BRASILIA","uf":"DF","ativa":480408,"baixada":592068},{"nome":"FORTALEZA","uf":"CE","ativa":345453,"baixada":444256},{"nome":"SALVADOR","uf":"BA","ativa":333309,"baixada":498361},{"nome":"GOIANIA","uf":"GO","ativa":326001,"baixada":357471},{"nome":"PORTO ALEGRE","uf":"RS","ativa":298017,"baixada":441849},{"nome":"CAMPINAS","uf":"SP","ativa":237022,"baixada":268896},{"nome":"RECIFE","uf":"PE","ativa":212396,"baixada":313060},{"nome":"GUARULHOS","uf":"SP","ativa":212263,"baixada":235624},{"nome":"RIBEIRAO PRETO","uf":"SP","ativa":159629,"baixada":177665},{"nome":"UBERLANDIA","uf":"MG","ativa":146964,"baixada":169698},{"nome":"SOROCABA","uf":"SP","ativa":142207,"baixada":158272},{"nome":"SAO BERNARDO DO CAMPO","uf":"SP","ativa":135657,"baixada":158111},{"nome":"SANTO ANDRE","uf":"SP","ativa":130169,"baixada":150677},{"nome":"SAO JOSE DOS CAMPOS","uf":"SP","ativa":127289,"baixada":152155},{"nome":"OSASCO","uf":"SP","ativa":119387,"baixada":143373},{"nome":"LONDRINA","uf":"PR","ativa":113944,"baixada":135387}],"fontes":{"redesim_ranking_estadual.csv":true,"redesim_gov_tempo_abertura_mensal.csv":true,"redesim_gov_integracao_municipal.csv":true,"redesim_gov_estabelecimentos_uf.csv":true,"redesim_gov_estabelecimentos_municipios.csv":true,"rf_estoque_porte_estado.csv":true,"rf_estoque_setor_estado.csv":true,"rf_estoque_divisao_cnae.csv":true,"inf_rais_emprego_formal_estado.csv":true,"inf_populacao_ocupada_estado.csv":true,"rf_aberturas_por_ano.csv":false,"rf_taxa_sobrevivencia.csv":false}};
+
+const charts = {};
+
+function fmt(v) {
+  if (v>=1e6) return (v/1e6).toFixed(1)+'M';
+  if (v>=1e3) return (v/1e3).toFixed(1)+'k';
+  return v.toLocaleString('pt-BR');
+}
+
+function colorForPct(p) { return p>=75?'#22c55e':p>=50?'#3b82f6':p>=30?'#eab308':'#ef4444'; }
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.tab===name));
+  document.querySelectorAll('.tab-content').forEach(c=> c.classList.toggle('active', c.id==='tab-'+name));
+}
+
+function init() {
+  renderThermometer();
+  renderGeral();
+  renderTempo();
+  renderFormal();
+  renderMassa();
+  renderLei();
+}
+
+function renderThermometer() {
+  const fontes = DATA.fontes;
+  const ok = Object.values(fontes).filter(v=>v).length;
+  const total = Object.keys(fontes).length;
+  const pct = ok/total*100;
+  const el = document.getElementById('thermometer');
+  const cls = pct>=80?'thermo-green':pct>=50?'thermo-yellow':'thermo-red';
+  const label = pct>=80?'Operacional':pct>=50?'Parcial':'Incompleto';
+  el.className='thermometer '+cls;
+  el.innerHTML=`${ok}/${total} fontes · 4 indicadores — ${label}`;
+}
+
+/* ========== VISAO GERAL ========== */
+function renderGeral() {
+  const tn = DATA.tempo_nacional;
+  const ultimo = tn[tn.length-1];
+  const tempoStr = ultimo.dias+'d '+ultimo.horas+'h';
+
+  const totalMpes = DATA.massa.reduce((s,m)=>s+m.total,0);
+  const formArr = DATA.formalizacao.filter(f=>f.proxy>0);
+  const mediaForm = formArr.reduce((s,f)=>s+f.proxy,0)/formArr.length;
+  const totalInt = DATA.integracao.reduce((s,i)=>s+i.mun_int,0);
+
+  document.getElementById('kpiGeral').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa</div><div class="kpi-value">${tempoStr}</div><div class="kpi-detail">Nacional — ano corrente (por empresa)</div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">MPEs ativas</div><div class="kpi-value">${fmt(totalMpes)}</div><div class="kpi-detail">Filtro Sebrae (OLAP)</div></div>
+    <div class="kpi kpi-cyan"><div class="kpi-label">Formalizacao media</div><div class="kpi-value">${mediaForm.toFixed(1)}%</div><div class="kpi-detail">Proxy RAIS+MEI / IBGE</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(mediaForm,100)}%;background:var(--cyan)"></div></div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">Municipios integrados</div><div class="kpi-value">${fmt(totalInt)}</div><div class="kpi-detail">REDESIM Gov</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(totalInt/5570*100,100)}%;background:var(--green)"></div></div></div>
+  `;
+
+  // Cobertura chart
+  const cob = [{n:'1.1 Tempo abertura',v:92},{n:'1.2 Informalidade',v:70},{n:'1.3 Massa',v:100},{n:'1.4 Lei Geral',v:30}];
+  charts.cobertura = new Chart(document.getElementById('chartCobertura'),{
+    type:'bar', data:{labels:cob.map(c=>c.n),datasets:[{data:cob.map(c=>c.v),backgroundColor:cob.map(c=>colorForPct(c.v)),borderRadius:6}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw+'%'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},max:110},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:11}}}}}
+  });
+
+  // Scatter tempo x formalizacao
+  const scatterData = DATA.formalizacao.filter(f=>f.proxy>0).map(f=>{
+    const rk = DATA.ranking.find(r=>r.uf===f.uf || mapUF(f.uf)===r.uf);
+    return rk ? {x:rk.tempo,y:f.proxy,label:mapSigla(f.uf),r:Math.max(4,Math.sqrt(f.mpes/100000))} : null;
+  }).filter(Boolean);
+
+  charts.scatter = new Chart(document.getElementById('chartScatter'),{
+    type:'bubble', data:{datasets:[{data:scatterData.map(d=>({x:d.x,y:d.y,r:d.r})),backgroundColor:'rgba(59,130,246,.5)',borderColor:'#3b82f6',borderWidth:1}]},
+    options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>{const d=scatterData[ctx.dataIndex];return d?d.label+': '+d.x.toFixed(0)+'h / '+d.y.toFixed(1)+'%':''}}}},
+      scales:{x:{title:{display:true,text:'Tempo Abertura (h)',color:'#94a3b8'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}},
+              y:{title:{display:true,text:'Formalizacao (%)',color:'#94a3b8'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}}}}
+  });
+
+  // Fontes table
+  const fontesMap = {
+    'redesim_ranking_estadual.csv':'REDESIM OLAP (tempo abertura)',
+    'redesim_gov_tempo_abertura_mensal.csv':'REDESIM Gov (tempo mensal)',
+    'redesim_gov_integracao_municipal.csv':'REDESIM Gov (integracao)',
+    'redesim_gov_estabelecimentos_uf.csv':'REDESIM Gov (estabelecimentos)',
+    'redesim_gov_estabelecimentos_municipios.csv':'REDESIM Gov (5.571 municipios)',
+    'rf_estoque_porte_estado.csv':'RF OLAP (estoque porte)',
+    'rf_estoque_setor_estado.csv':'RF OLAP (estoque setor)',
+    'rf_estoque_divisao_cnae.csv':'RF OLAP (divisao CNAE)',
+    'inf_rais_emprego_formal_estado.csv':'RAIS (emprego formal)',
+    'inf_populacao_ocupada_estado.csv':'IBGE Censo (pop. ocupada)',
+    'rf_aberturas_por_ano.csv':'RF SQL (aberturas/baixas)',
+    'rf_taxa_sobrevivencia.csv':'RF SQL (sobrevivencia)',
+  };
+  let rows='';
+  for(const [arq,nome] of Object.entries(fontesMap)){
+    const ok=DATA.fontes[arq];
+    const badge=ok?'<span class="badge badge-ok">OK</span>':'<span class="badge badge-danger">Pendente</span>';
+    rows+=`<tr><td>${nome}</td><td style="font-family:monospace;font-size:.72rem">${arq}</td><td>${badge}</td></tr>`;
+  }
+  document.getElementById('tableFontes').innerHTML=`<table class="data-table"><thead><tr><th>Fonte</th><th>Arquivo</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+/* ========== 1.1 TEMPO ========== */
+function renderTempo() {
+  const tn = DATA.tempo_nacional;
+  const ultimo = tn[tn.length-1];
+  const totalInt = DATA.integracao.reduce((s,i)=>s+i.mun_int,0);
+  const topAgil = DATA.agilidade[0];
+
+  document.getElementById('kpiTempo').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Tempo medio por empresa</div><div class="kpi-value">${ultimo.dias}d ${ultimo.horas}h</div><div class="kpi-detail">REDESIM Gov — ${ultimo.ano}-${String(ultimo.mes).padStart(2,'0')} (por empresa)</div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">Estados monitorados</div><div class="kpi-value">${DATA.ranking.length}</div><div class="kpi-detail">REDESIM OLAP</div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">Municipios integrados</div><div class="kpi-value">${fmt(totalInt)}</div><div class="kpi-detail">REDESIM Gov</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(totalInt/5570*100,100)}%;background:var(--green)"></div></div></div>
+    <div class="kpi kpi-cyan"><div class="kpi-label">UF mais agil</div><div class="kpi-value">${topAgil.uf}</div><div class="kpi-detail">Score: ${topAgil.score.toFixed(1)}</div></div>
+  `;
+
+  // Ranking
+  const rk = DATA.ranking;
+  charts.ranking = new Chart(document.getElementById('chartRanking'),{
+    type:'bar', data:{labels:rk.map(r=>r.uf),datasets:[{data:rk.map(r=>r.tempo),backgroundColor:rk.map(r=>r.tempo<100?'rgba(34,197,94,.6)':r.tempo<200?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'h'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  // Integracao
+  const ig = DATA.integracao;
+  charts.integracao = new Chart(document.getElementById('chartIntegracao'),{
+    type:'bar', data:{labels:ig.map(i=>i.uf),datasets:[{data:ig.map(i=>i.pct),backgroundColor:ig.map(i=>i.pct>=80?'rgba(34,197,94,.6)':i.pct>=50?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},max:110},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  // Evolucao nacional
+  const labels = tn.map(t=>t.ano+'-'+String(t.mes).padStart(2,'0'));
+  charts.evolucao = new Chart(document.getElementById('chartEvolucao'),{
+    type:'line', data:{labels,datasets:[{label:'Tempo total (h)',data:tn.map(t=>t.total_h),borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',fill:true,tension:.3,pointRadius:3,borderWidth:2.5}]},
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}}}}
+  });
+
+  // Autoridade
+  const au = DATA.autoridade;
+  charts.autoridade = new Chart(document.getElementById('chartAutoridade'),{
+    type:'bar', data:{labels:au.map(a=>a.tipo),datasets:[{data:au.map(a=>a.tempo),backgroundColor:'rgba(139,92,246,.6)',borderRadius:6}]},
+    options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'h'}}},
+      scales:{x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}}}}
+  });
+
+  // CNAE top 15
+  const cn = DATA.cnae_top15;
+  charts.cnae = new Chart(document.getElementById('chartCnae'),{
+    type:'bar', data:{labels:cn.map(c=>c.setor.length>35?c.setor.substring(0,33)+'...':c.setor),datasets:[{data:cn.map(c=>c.tempo),backgroundColor:'rgba(249,115,22,.6)',borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'h'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'h'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+  });
+}
+
+/* ========== 1.2 FORMALIZACAO ========== */
+function renderFormal() {
+  const fm = DATA.formalizacao;
+  const mediaProxy = fm.reduce((s,f)=>s+f.proxy,0)/fm.length;
+  const totalMeis = fm.reduce((s,f)=>s+f.meis,0);
+  const totalMpes = fm.reduce((s,f)=>s+f.mpes,0);
+  const pctMei = totalMpes>0?totalMeis/totalMpes*100:0;
+
+  document.getElementById('kpiFormal').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Formalizacao media</div><div class="kpi-value">${mediaProxy.toFixed(1)}%</div><div class="kpi-detail">Proxy (MEI+RAIS / IBGE)</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(mediaProxy,100)}%;background:var(--accent)"></div></div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">Total MEIs ativos</div><div class="kpi-value">${fmt(totalMeis)}</div><div class="kpi-detail">Todas as UFs</div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">Total MPEs ativas</div><div class="kpi-value">${fmt(totalMpes)}</div><div class="kpi-detail">MEI + ME + EPP</div></div>
+    <div class="kpi kpi-cyan"><div class="kpi-label">% MEI sobre MPEs</div><div class="kpi-value">${pctMei.toFixed(1)}%</div><div class="kpi-detail">Concentracao nacional</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${pctMei}%;background:var(--cyan)"></div></div></div>
+  `;
+
+  const sorted = [...fm].sort((a,b)=>a.proxy-b.proxy);
+  charts.formProxy = new Chart(document.getElementById('chartFormProxy'),{
+    type:'bar', data:{labels:sorted.map(f=>mapSigla(f.uf)),datasets:[{data:sorted.map(f=>f.proxy),backgroundColor:sorted.map(f=>colorForPct(f.proxy)),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  const sorted2 = [...fm].filter(f=>f.mpes_1k>0).sort((a,b)=>a.mpes_1k-b.mpes_1k);
+  charts.mpes1k = new Chart(document.getElementById('chartMpes1k'),{
+    type:'bar', data:{labels:sorted2.map(f=>mapSigla(f.uf)),datasets:[{data:sorted2.map(f=>f.mpes_1k),backgroundColor:'rgba(6,182,212,.6)',borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+' MPEs/1.000'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  // Scatter formalizacao vs MEI
+  const bubbles = fm.filter(f=>f.proxy>0).map(f=>({x:f.proxy,y:f.pct_mei,r:Math.max(3,Math.sqrt(f.mpes/80000)),label:mapSigla(f.uf)}));
+  charts.formScatter = new Chart(document.getElementById('chartFormScatter'),{
+    type:'bubble', data:{datasets:[{data:bubbles.map(b=>({x:b.x,y:b.y,r:b.r})),backgroundColor:'rgba(139,92,246,.4)',borderColor:'#8b5cf6',borderWidth:1}]},
+    options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>{const d=bubbles[ctx.dataIndex];return d?d.label+': '+d.x.toFixed(1)+'% form. / '+d.y.toFixed(1)+'% MEI':''}}}},
+      scales:{x:{title:{display:true,text:'Formalizacao (%)',color:'#94a3b8'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}},
+              y:{title:{display:true,text:'% MEI sobre MPEs',color:'#94a3b8'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}}}}
+  });
+}
+
+/* ========== 1.3 MASSA ========== */
+function renderMassa() {
+  const ms = DATA.massa;
+  const total = ms.reduce((s,m)=>s+m.total,0);
+  const mei = ms.reduce((s,m)=>s+m.mei,0);
+  const me = ms.reduce((s,m)=>s+m.me,0);
+  const epp = ms.reduce((s,m)=>s+m.epp,0);
+
+  document.getElementById('kpiMassa').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Total empresas</div><div class="kpi-value">${fmt(total)}</div><div class="kpi-detail">MPEs ativas (filtro Sebrae)</div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">MEI</div><div class="kpi-value">${fmt(mei)}</div><div class="kpi-detail">${(mei/total*100).toFixed(1)}% do total</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${mei/total*100}%;background:var(--green)"></div></div></div>
+    <div class="kpi kpi-purple"><div class="kpi-label">ME</div><div class="kpi-value">${fmt(me)}</div><div class="kpi-detail">${(me/total*100).toFixed(1)}% do total</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${me/total*100}%;background:var(--accent2)"></div></div></div>
+    <div class="kpi kpi-cyan"><div class="kpi-label">EPP</div><div class="kpi-value">${fmt(epp)}</div><div class="kpi-detail">${(epp/total*100).toFixed(1)}% do total</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${epp/total*100}%;background:var(--cyan)"></div></div></div>
+  `;
+
+  const top15 = [...ms].sort((a,b)=>a.total-b.total).slice(-15);
+  charts.porte = new Chart(document.getElementById('chartPorte'),{
+    type:'bar', data:{labels:top15.map(m=>mapSigla(m.uf)),datasets:[
+      {label:'MEI',data:top15.map(m=>m.mei),backgroundColor:'rgba(34,197,94,.6)',borderRadius:2},
+      {label:'ME',data:top15.map(m=>m.me),backgroundColor:'rgba(59,130,246,.6)',borderRadius:2},
+      {label:'EPP',data:top15.map(m=>m.epp),backgroundColor:'rgba(139,92,246,.6)',borderRadius:2},
+      {label:'Demais',data:top15.map(m=>m.demais),backgroundColor:'rgba(51,65,85,.6)',borderRadius:2},
+    ]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,font:{size:11}}}},
+      scales:{x:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},y:{stacked:true,grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  const sortedMei = [...ms].sort((a,b)=>a.pct_mei-b.pct_mei);
+  charts.meiConc = new Chart(document.getElementById('chartMeiConc'),{
+    type:'bar', data:{labels:sortedMei.map(m=>mapSigla(m.uf)),datasets:[{data:sortedMei.map(m=>m.pct_mei),backgroundColor:sortedMei.map(m=>m.pct_mei>=55?'rgba(34,197,94,.6)':m.pct_mei>=45?'rgba(59,130,246,.6)':'rgba(234,179,8,.6)'),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  // Table
+  let rows='';
+  [...ms].sort((a,b)=>b.total-a.total).forEach(m=>{
+    rows+=`<tr><td>${m.uf}</td><td class="num">${m.total.toLocaleString('pt-BR')}</td><td class="num">${m.mei.toLocaleString('pt-BR')}</td><td class="num">${m.me.toLocaleString('pt-BR')}</td><td class="num">${m.epp.toLocaleString('pt-BR')}</td><td class="num">${m.pct_mei.toFixed(1)}%</td></tr>`;
+  });
+  const tTotal=ms.reduce((s,m)=>s+m.total,0), tMei=ms.reduce((s,m)=>s+m.mei,0), tMe=ms.reduce((s,m)=>s+m.me,0), tEpp=ms.reduce((s,m)=>s+m.epp,0);
+  rows+=`<tr style="font-weight:700;background:var(--surface2)"><td>TOTAL</td><td class="num">${tTotal.toLocaleString('pt-BR')}</td><td class="num">${tMei.toLocaleString('pt-BR')}</td><td class="num">${tMe.toLocaleString('pt-BR')}</td><td class="num">${tEpp.toLocaleString('pt-BR')}</td><td class="num">${(tMei/tTotal*100).toFixed(1)}%</td></tr>`;
+  document.getElementById('tableMassa').innerHTML=`<table class="data-table"><thead><tr><th>Estado</th><th class="num">Total</th><th class="num">MEI</th><th class="num">ME</th><th class="num">EPP</th><th class="num">% MEI</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+/* ========== 1.4 LEI GERAL ========== */
+function renderLei() {
+  const lg = DATA.lei_geral;
+  const alta = lg.filter(l=>l.cls==='ALTA').length;
+  const media = lg.filter(l=>l.cls==='MEDIA').length;
+  const baixa = lg.filter(l=>l.cls==='BAIXA').length;
+  const scoreM = lg.reduce((s,l)=>s+l.score,0)/lg.length;
+
+  document.getElementById('kpiLei').innerHTML=`
+    <div class="kpi kpi-blue"><div class="kpi-label">Score medio</div><div class="kpi-value">${scoreM.toFixed(1)}</div><div class="kpi-detail">Proxy Lei Geral</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${scoreM}%;background:var(--accent)"></div></div></div>
+    <div class="kpi kpi-green"><div class="kpi-label">Classificacao ALTA</div><div class="kpi-value">${alta}</div><div class="kpi-detail">${alta}/27 UFs</div></div>
+    <div class="kpi kpi-yellow"><div class="kpi-label">Classificacao MEDIA</div><div class="kpi-value">${media}</div><div class="kpi-detail">${media}/27 UFs</div></div>
+    <div class="kpi kpi-red"><div class="kpi-label">Classificacao BAIXA</div><div class="kpi-value">${baixa}</div><div class="kpi-detail">${baixa}/27 UFs</div></div>
+  `;
+
+  const sortedScore = [...lg].sort((a,b)=>a.score-b.score);
+  const clsColor = c=>c==='ALTA'?'rgba(34,197,94,.6)':c==='MEDIA'?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)';
+  charts.leiScore = new Chart(document.getElementById('chartLeiScore'),{
+    type:'bar', data:{labels:sortedScore.map(l=>l.uf),datasets:[{data:sortedScore.map(l=>l.score),backgroundColor:sortedScore.map(l=>clsColor(l.cls)),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Score: '+ctx.raw.toFixed(1)+' ('+sortedScore[ctx.dataIndex].cls+')'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'},max:110},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  const sortedPJ = [...lg].sort((a,b)=>a.pct_pj-b.pct_pj);
+  charts.leiPJ = new Chart(document.getElementById('chartLeiPJ'),{
+    type:'bar', data:{labels:sortedPJ.map(l=>l.uf),datasets:[{data:sortedPJ.map(l=>l.pct_pj),backgroundColor:sortedPJ.map(l=>l.pct_pj>=80?'rgba(34,197,94,.6)':l.pct_pj>=50?'rgba(234,179,8,.6)':'rgba(239,68,68,.6)'),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(1)+'%'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},max:110},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  // Municipios ativas vs baixadas
+  const mun = DATA.municipios_top20;
+  charts.municipios = new Chart(document.getElementById('chartMunicipios'),{
+    type:'bar', data:{labels:mun.map(m=>m.nome.length>18?m.nome.substring(0,16)+'...':m.nome),datasets:[
+      {label:'Ativas',data:mun.map(m=>m.ativa),backgroundColor:'rgba(34,197,94,.6)',borderRadius:4},
+      {label:'Baixadas',data:mun.map(m=>m.baixada),backgroundColor:'rgba(239,68,68,.5)',borderRadius:4},
+    ]},
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}}},
+      scales:{x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}}}}
+  });
+}
+
+/* Helpers UF */
+const UF_MAP = {
+  'Acre':'AC','Alagoas':'AL','Amapá':'AP','Amazonas':'AM','Bahia':'BA','Ceará':'CE',
+  'Distrito Federal':'DF','Espírito Santo':'ES','Goiás':'GO','Maranhão':'MA',
+  'Mato Grosso':'MT','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Pará':'PA',
+  'Paraíba':'PB','Paraná':'PR','Pernambuco':'PE','Piauí':'PI','Rio de Janeiro':'RJ',
+  'Rio Grande do Norte':'RN','Rio Grande do Sul':'RS','Rondônia':'RO','Roraima':'RR',
+  'Santa Catarina':'SC','São Paulo':'SP','Sergipe':'SE','Tocantins':'TO'
+};
+function mapSigla(nome) { return UF_MAP[nome]||nome; }
+function mapUF(nome) {
+  const inv = Object.fromEntries(Object.entries(UF_MAP).map(([k,v])=>[v,k]));
+  return inv[nome]||nome;
+}
+
+Chart.defaults.color='#94a3b8';
+Chart.defaults.font.family="'Segoe UI',system-ui,sans-serif";
+
+/* ========== CONSULTAR APIs (REDESIM Gov) ========== */
+const REDESIM_GOV = 'https://estatistica.redesim.gov.br';
+
+async function fetchData() {
+  const btn = document.getElementById('btnFetch');
+  const status = document.getElementById('apiStatus');
+  btn.disabled = true;
+  btn.textContent = 'Consultando...';
+  status.className = 'api-status';
+  status.textContent = '';
+
+  try {
+    const [tempoResp, intResp, estResp] = await Promise.all([
+      fetch(REDESIM_GOV + '/tempos-abertura-redesim/tempo-medio-total-abertura').then(r => r.json()),
+      fetch(REDESIM_GOV + '/tempos-abertura-redesim/tempos-abertura?ano=' + new Date().getFullYear() + '&mes=').then(r => r.json()),
+      fetch(REDESIM_GOV + '/situacao-cadastral/api/qtdeestabelecimentouf').then(r => r.json()),
+    ]);
+
+    if (Array.isArray(tempoResp) && tempoResp.length > 0) {
+      const anoCorrente = new Date().getFullYear();
+      const dadosAno = tempoResp.filter(d => {
+        const a = d.ano || d.Ano || d.year;
+        return a && parseInt(a) === anoCorrente;
+      });
+      const dadosUsar = dadosAno.length > 0 ? dadosAno : tempoResp.slice(-27);
+
+      const byUF = {};
+      dadosUsar.forEach(d => {
+        const uf = d.uf || d.UF || d.siglaUf || d.estado;
+        if (!uf) return;
+        if (!byUF[uf]) byUF[uf] = { soma: 0, n: 0 };
+        const h = parseFloat(d.tempoTotal || d.tempo_total_horas || d.totalHoras || d.horas || 0);
+        if (h > 0) { byUF[uf].soma += h; byUF[uf].n++; }
+      });
+
+      const newRanking = Object.entries(byUF)
+        .map(([uf, v]) => ({ uf, tempo: Math.round(v.soma / v.n * 10) / 10 }))
+        .sort((a, b) => a.tempo - b.tempo);
+
+      if (newRanking.length > 0 && charts.ranking) {
+        charts.ranking.data.labels = newRanking.map(r => r.uf);
+        charts.ranking.data.datasets[0].data = newRanking.map(r => r.tempo);
+        charts.ranking.data.datasets[0].backgroundColor = newRanking.map(r =>
+          r.tempo < 30 ? 'rgba(34,197,94,.6)' : r.tempo < 60 ? 'rgba(234,179,8,.6)' : 'rgba(239,68,68,.6)');
+        charts.ranking.update();
+      }
+    }
+
+    if (Array.isArray(intResp) && intResp.length > 0) {
+      const newInt = intResp
+        .filter(d => d.uf || d.siglaUf)
+        .map(d => ({
+          uf: d.uf || d.siglaUf,
+          pct: parseFloat(d.pct_integrados || d.percentualIntegracao || d.percentualMunicipiosIntegrados || 0)
+        }))
+        .filter(d => d.pct > 0)
+        .sort((a, b) => a.pct - b.pct);
+
+      if (newInt.length > 0 && charts.integracao) {
+        charts.integracao.data.labels = newInt.map(i => i.uf);
+        charts.integracao.data.datasets[0].data = newInt.map(i => i.pct);
+        charts.integracao.data.datasets[0].backgroundColor = newInt.map(i =>
+          i.pct >= 80 ? 'rgba(34,197,94,.6)' : i.pct >= 50 ? 'rgba(234,179,8,.6)' : 'rgba(239,68,68,.6)');
+        charts.integracao.update();
+      }
+    }
+
+    status.className = 'api-status api-ok';
+    status.textContent = 'Dados atualizados (REDESIM Gov ' + new Date().getFullYear() + ')';
+  } catch (e) {
+    console.error('Erro ao consultar REDESIM Gov:', e);
+    status.className = 'api-status api-err';
+    status.textContent = 'Erro: ' + (e.message || 'falha na consulta');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Consultar APIs';
+  }
+}
+
+init();
+</script>
+</body>
+</html>

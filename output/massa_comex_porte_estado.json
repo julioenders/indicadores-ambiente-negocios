@@ -1,0 +1,1001 @@
+[
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 68426.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 20554.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 17921.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 16466.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 16375.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 15625.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 14377.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 14145.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 7543.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 6534.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 6430.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 5806.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 5509.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 5433.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 4680.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 4411.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 3818.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 3722.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 3634.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 3316.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 3022.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 2945.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 2810.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 2747.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 2744.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 2461.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 2367.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 2019.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 1980.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 1771.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 1710.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 1709.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 1702.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 1256.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 1171.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 1112.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 1090.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 1081.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 1040.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 834.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 819.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 776.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 693.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 668.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 573.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 557.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 505.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 498.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 482.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 482.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 450.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 447.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 443.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 434.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 420.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 401.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 382.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 314.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 291.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 266.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 248.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 246.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 227.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 222.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 212.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 187.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 168.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 165.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 161.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 159.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 157.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 154.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 151.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 126.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 110.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 110.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 110.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 108.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 101.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 99.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 98.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 89.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 88.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 87.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 76.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 60.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 54.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 39.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 37.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 36.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 29.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 25.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 19.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 19.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 16.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 11.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 10.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 9.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 8.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 7.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 6.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 6.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 5.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 4.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 4.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 4.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 4.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 3.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 3.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 2.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 1.0
+  }
+]

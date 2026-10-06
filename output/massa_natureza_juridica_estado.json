@@ -1,0 +1,3614 @@
+[
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 4885211.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 2547314.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 1811972.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 1490843.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 1139803.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 1042978.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 877095.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 862636.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 796572.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 729568.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 4120,
+    "Legal Nature": "Produtor Rural (Pessoa Física)",
+    "Establishments": 702488.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 628728.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 579860.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 576447.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 556760.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 511195.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 473817.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 386934.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 367237.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 356791.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 340459.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 338033.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 249512.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 235045.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 234848.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 220683.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 215747.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 202936.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 196897.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 196590.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 188197.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 183952.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 177502.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 170426.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 159311.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 142970.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 121562.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 111380.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 107191.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 106968.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 101719.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 87827.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 81130.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 79258.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 77690.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 62857.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 57665.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 56144.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 55300.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 52437.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 48821.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 48462.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 39608.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 32894.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 32523.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 29810.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 29209.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 22701.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 22577.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 19250.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 17430.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 17401.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 17135.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 16204.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 15517.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 14649.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 13764.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 13762.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 13107.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 13069.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 11295.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 10448.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 9263.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 9260.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 9253.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 8527.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 8287.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 7404.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 7239.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 6824.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 6766.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 6163.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 6141.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 5993.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 5967.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 5858.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 5557.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 5164.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 5067.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 5065.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 5062.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 5052.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 4757.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 4751.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 4527.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 4444.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 4425.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 4324.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 4068.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 3955.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 3786.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 3760.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 3670.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 3555.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 3407.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 3402.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 3336.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 3325.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 2957.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 2822.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 2784.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 2774.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 2600.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 2584.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 2566.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 2532.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 2447.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 2433.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 2408.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 2277.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 2229.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 2191.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 2144.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 2041.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 2027.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1986.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1985.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1918.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1872.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1826.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1795.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 1794.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1766.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1762.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 1748.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 1735.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 1632.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 1620.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1612.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 1588.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1563.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1549.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 1545.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1509.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1490.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1478.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 1474.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 1441.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1393.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1376.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 1362.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1361.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 1344.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1320.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1304.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1244.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 1241.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 1238.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1222.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1181.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1114.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 1109.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 1066.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 1055.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 1047.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 1041.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 1015.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 1003.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 1002.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 980.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 948.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 944.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 943.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 942.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 882.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 849.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 839.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 835.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 825.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 823.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 822.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 804.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 804.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 792.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 778.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 766.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 756.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 738.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 735.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 730.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 4120,
+    "Legal Nature": "Produtor Rural (Pessoa Física)",
+    "Establishments": 716.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 713.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 711.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 693.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 667.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 661.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 661.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 647.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 597.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 584.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 576.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 562.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 559.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 551.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 540.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 537.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 534.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 533.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 531.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 520.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 513.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 505.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 499.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 493.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 490.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 483.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 474.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 473.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 467.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 464.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 452.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 435.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 435.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 419.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 417.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 413.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 409.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 396.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 395.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 389.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 383.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 380.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 377.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 377.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 375.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 370.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 363.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 361.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 360.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 355.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 355.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 348.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 348.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 348.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 344.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 341.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 340.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 326.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2321,
+    "Legal Nature": "Sociedade Unipessoal de Advogados",
+    "Establishments": 322.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 298.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 298.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 291.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 290.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 290.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 282.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 273.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 272.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 271.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2062,
+    "Legal Nature": "Sociedade Empresária Limitada",
+    "Establishments": 244.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 241.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 232.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 228.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 221.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 220.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 219.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 219.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 210.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 208.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 205.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 205.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 200.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 196.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 195.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 189.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 189.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 187.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 182.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 181.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 180.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 168.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 164.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 162.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 156.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 153.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 151.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 151.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 149.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 148.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 148.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 147.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 142.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 139.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 137.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 135.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 133.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 132.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 128.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 125.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 120.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 116.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 115.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 113.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2232,
+    "Legal Nature": "Sociedade Simples Pura",
+    "Establishments": 112.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 109.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 108.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 108.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 104.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 97.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 93.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 91.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 90.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 88.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 87.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 85.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 80.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 79.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 75.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 72.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 69.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 68.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 64.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 59.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 58.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 57.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 57.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 57.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 52.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 51.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 45.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 45.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 45.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 44.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 44.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 40.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 39.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 36.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2151,
+    "Legal Nature": "Consórcio de Sociedades",
+    "Establishments": 35.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 34.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 34.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 33.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 32.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 31.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 30.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 30.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 30.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 28.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 27.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 27.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 27.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2046,
+    "Legal Nature": "Sociedade Anônima Aberta",
+    "Establishments": 27.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 24.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 24.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 24.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 24.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 23.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 22.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 22.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 22.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 22.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 21.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 19.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 18.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 17.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 17.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 16.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 15.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 14.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 14.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 14.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 14.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2127,
+    "Legal Nature": "Sociedade Empresária em Conta de Participação",
+    "Establishments": 13.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 13.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 13.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 12.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 12.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 12.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 12.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 11.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 11.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 11.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 10.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 10.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 10.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 10.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 9.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 9.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 9.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Legal Nature ID": 2054,
+    "Legal Nature": "Sociedade Anônima Fechada",
+    "Establishments": 9.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 8.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 7.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 6.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 5.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2135,
+    "Legal Nature": "Empresário (Individual)",
+    "Establishments": 4.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 4014,
+    "Legal Nature": "Empresa Individual Imobiliária",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 3.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2143,
+    "Legal Nature": "Cooperativa",
+    "Establishments": 2.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Legal Nature ID": 2330,
+    "Legal Nature": "Cooperativas de Consumo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2283,
+    "Legal Nature": "Consórcio de Empregadores",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2267,
+    "Legal Nature": "Sociedade em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2089,
+    "Legal Nature": "Sociedade Empresária em Comandita Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2160,
+    "Legal Nature": "Grupo de Sociedades",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Legal Nature ID": 2224,
+    "Legal Nature": "Clube/Fundo de Investimento",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Legal Nature ID": 2097,
+    "Legal Nature": "Sociedade Empresária em Comandita por Ações",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2291,
+    "Legal Nature": "Consórcio Simples",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2070,
+    "Legal Nature": "Sociedade Empresária em Nome Coletivo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2259,
+    "Legal Nature": "Sociedade em Nome Coletivo",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Legal Nature ID": 2305,
+    "Legal Nature": "Empresa Individual de Responsabilidade Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 93,
+    "State": "Exterior",
+    "Legal Nature ID": 2240,
+    "Legal Nature": "Sociedade Simples Limitada",
+    "Establishments": 1.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Legal Nature ID": 2348,
+    "Legal Nature": "Empresa Simples de Inovação - Inova Simples",
+    "Establishments": 1.0
+  }
+]

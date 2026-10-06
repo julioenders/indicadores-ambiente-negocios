@@ -1,0 +1,142 @@
+[
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Workers": 362367.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Workers": 173314.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Workers": 770780.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Workers": 125882.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Workers": 1375238.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Workers": 158396.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Workers": 392811.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Workers": 929882.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Workers": 559039.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Workers": 1739427.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Workers": 691655.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Workers": 714135.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Workers": 1905908.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Workers": 621725.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Workers": 452104.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Workers": 2712334.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Workers": 5633160.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Workers": 1085430.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Workers": 4339847.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Workers": 14818750.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Workers": 3621254.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Workers": 2750663.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Workers": 3220568.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Workers": 829312.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Workers": 1162983.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Workers": 1856886.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Workers": 1201764.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Workers": 771.0
+  }
+]

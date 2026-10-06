@@ -1,0 +1,517 @@
+State ID,State,Legal Nature ID,Legal Nature,Establishments
+35,São Paulo,2135,Empresário (Individual),4885211.0
+35,São Paulo,2062,Sociedade Empresária Limitada,2547314.0
+31,Minas Gerais,2135,Empresário (Individual),1811972.0
+33,Rio de Janeiro,2135,Empresário (Individual),1490843.0
+41,Paraná,2135,Empresário (Individual),1139803.0
+43,Rio Grande do Sul,2135,Empresário (Individual),1042978.0
+31,Minas Gerais,2062,Sociedade Empresária Limitada,877095.0
+42,Santa Catarina,2135,Empresário (Individual),862636.0
+29,Bahia,2135,Empresário (Individual),796572.0
+41,Paraná,2062,Sociedade Empresária Limitada,729568.0
+35,São Paulo,4120,Produtor Rural (Pessoa Física),702488.0
+52,Goiás,2135,Empresário (Individual),628728.0
+42,Santa Catarina,2062,Sociedade Empresária Limitada,579860.0
+33,Rio de Janeiro,2062,Sociedade Empresária Limitada,576447.0
+43,Rio Grande do Sul,2062,Sociedade Empresária Limitada,556760.0
+26,Pernambuco,2135,Empresário (Individual),511195.0
+23,Ceará,2135,Empresário (Individual),473817.0
+32,Espírito Santo,2135,Empresário (Individual),386934.0
+29,Bahia,2062,Sociedade Empresária Limitada,367237.0
+52,Goiás,2062,Sociedade Empresária Limitada,356791.0
+51,Mato Grosso,2135,Empresário (Individual),340459.0
+15,Pará,2135,Empresário (Individual),338033.0
+53,Distrito Federal,2135,Empresário (Individual),249512.0
+50,Mato Grosso do Sul,2135,Empresário (Individual),235045.0
+25,Paraíba,2135,Empresário (Individual),234848.0
+23,Ceará,2062,Sociedade Empresária Limitada,220683.0
+21,Maranhão,2135,Empresário (Individual),215747.0
+24,Rio Grande do Norte,2135,Empresário (Individual),202936.0
+26,Pernambuco,2062,Sociedade Empresária Limitada,196897.0
+51,Mato Grosso,2062,Sociedade Empresária Limitada,196590.0
+13,Amazonas,2135,Empresário (Individual),188197.0
+53,Distrito Federal,2062,Sociedade Empresária Limitada,183952.0
+32,Espírito Santo,2062,Sociedade Empresária Limitada,177502.0
+15,Pará,2062,Sociedade Empresária Limitada,170426.0
+27,Alagoas,2135,Empresário (Individual),159311.0
+22,Piauí,2135,Empresário (Individual),142970.0
+50,Mato Grosso do Sul,2062,Sociedade Empresária Limitada,121562.0
+21,Maranhão,2062,Sociedade Empresária Limitada,111380.0
+17,Tocantins,2135,Empresário (Individual),107191.0
+28,Sergipe,2135,Empresário (Individual),106968.0
+11,Rondônia,2135,Empresário (Individual),101719.0
+25,Paraíba,2062,Sociedade Empresária Limitada,87827.0
+13,Amazonas,2062,Sociedade Empresária Limitada,81130.0
+24,Rio Grande do Norte,2062,Sociedade Empresária Limitada,79258.0
+35,São Paulo,2240,Sociedade Simples Limitada,77690.0
+22,Piauí,2062,Sociedade Empresária Limitada,62857.0
+17,Tocantins,2062,Sociedade Empresária Limitada,57665.0
+27,Alagoas,2062,Sociedade Empresária Limitada,56144.0
+11,Rondônia,2062,Sociedade Empresária Limitada,55300.0
+28,Sergipe,2062,Sociedade Empresária Limitada,52437.0
+35,São Paulo,2054,Sociedade Anônima Fechada,48821.0
+33,Rio de Janeiro,2240,Sociedade Simples Limitada,48462.0
+35,São Paulo,2321,Sociedade Unipessoal de Advogados,39608.0
+14,Roraima,2135,Empresário (Individual),32894.0
+12,Acre,2135,Empresário (Individual),32523.0
+35,São Paulo,2224,Clube/Fundo de Investimento,29810.0
+16,Amapá,2135,Empresário (Individual),29209.0
+31,Minas Gerais,2240,Sociedade Simples Limitada,22701.0
+35,São Paulo,2232,Sociedade Simples Pura,22577.0
+31,Minas Gerais,2054,Sociedade Anônima Fechada,19250.0
+33,Rio de Janeiro,2224,Clube/Fundo de Investimento,17430.0
+16,Amapá,2062,Sociedade Empresária Limitada,17401.0
+35,São Paulo,2046,Sociedade Anônima Aberta,17135.0
+12,Acre,2062,Sociedade Empresária Limitada,16204.0
+35,São Paulo,2127,Sociedade Empresária em Conta de Participação,15517.0
+33,Rio de Janeiro,2127,Sociedade Empresária em Conta de Participação,14649.0
+14,Roraima,2062,Sociedade Empresária Limitada,13764.0
+41,Paraná,2321,Sociedade Unipessoal de Advogados,13762.0
+33,Rio de Janeiro,2054,Sociedade Anônima Fechada,13107.0
+31,Minas Gerais,2321,Sociedade Unipessoal de Advogados,13069.0
+41,Paraná,2054,Sociedade Anônima Fechada,11295.0
+33,Rio de Janeiro,2321,Sociedade Unipessoal de Advogados,10448.0
+43,Rio Grande do Sul,2321,Sociedade Unipessoal de Advogados,9263.0
+41,Paraná,2240,Sociedade Simples Limitada,9260.0
+33,Rio de Janeiro,2232,Sociedade Simples Pura,9253.0
+43,Rio Grande do Sul,2054,Sociedade Anônima Fechada,8527.0
+42,Santa Catarina,2054,Sociedade Anônima Fechada,8287.0
+42,Santa Catarina,2321,Sociedade Unipessoal de Advogados,7404.0
+43,Rio Grande do Sul,2240,Sociedade Simples Limitada,7239.0
+41,Paraná,2232,Sociedade Simples Pura,6824.0
+31,Minas Gerais,2232,Sociedade Simples Pura,6766.0
+29,Bahia,2321,Sociedade Unipessoal de Advogados,6163.0
+53,Distrito Federal,2321,Sociedade Unipessoal de Advogados,6141.0
+35,São Paulo,2151,Consórcio de Sociedades,5993.0
+29,Bahia,2054,Sociedade Anônima Fechada,5967.0
+43,Rio Grande do Sul,2232,Sociedade Simples Pura,5858.0
+52,Goiás,2321,Sociedade Unipessoal de Advogados,5557.0
+35,São Paulo,2143,Cooperativa,5164.0
+23,Ceará,2054,Sociedade Anônima Fechada,5067.0
+31,Minas Gerais,2046,Sociedade Anônima Aberta,5065.0
+43,Rio Grande do Sul,2143,Cooperativa,5062.0
+52,Goiás,2054,Sociedade Anônima Fechada,5052.0
+31,Minas Gerais,2143,Cooperativa,4757.0
+43,Rio Grande do Sul,2046,Sociedade Anônima Aberta,4751.0
+26,Pernambuco,2054,Sociedade Anônima Fechada,4527.0
+42,Santa Catarina,2232,Sociedade Simples Pura,4444.0
+33,Rio de Janeiro,2046,Sociedade Anônima Aberta,4425.0
+41,Paraná,2143,Cooperativa,4324.0
+31,Minas Gerais,2127,Sociedade Empresária em Conta de Participação,4068.0
+51,Mato Grosso,2054,Sociedade Anônima Fechada,3955.0
+26,Pernambuco,2127,Sociedade Empresária em Conta de Participação,3786.0
+26,Pernambuco,2321,Sociedade Unipessoal de Advogados,3760.0
+53,Distrito Federal,2054,Sociedade Anônima Fechada,3670.0
+23,Ceará,2321,Sociedade Unipessoal de Advogados,3555.0
+51,Mato Grosso,2321,Sociedade Unipessoal de Advogados,3407.0
+35,São Paulo,2348,Empresa Simples de Inovação - Inova Simples,3402.0
+32,Espírito Santo,2054,Sociedade Anônima Fechada,3336.0
+42,Santa Catarina,2143,Cooperativa,3325.0
+29,Bahia,2232,Sociedade Simples Pura,2957.0
+41,Paraná,2046,Sociedade Anônima Aberta,2822.0
+32,Espírito Santo,2321,Sociedade Unipessoal de Advogados,2784.0
+15,Pará,2054,Sociedade Anônima Fechada,2774.0
+31,Minas Gerais,2151,Consórcio de Sociedades,2600.0
+50,Mato Grosso do Sul,2321,Sociedade Unipessoal de Advogados,2584.0
+42,Santa Catarina,2127,Sociedade Empresária em Conta de Participação,2566.0
+42,Santa Catarina,2240,Sociedade Simples Limitada,2532.0
+41,Paraná,2127,Sociedade Empresária em Conta de Participação,2447.0
+15,Pará,2321,Sociedade Unipessoal de Advogados,2433.0
+29,Bahia,2240,Sociedade Simples Limitada,2408.0
+29,Bahia,2046,Sociedade Anônima Aberta,2277.0
+53,Distrito Federal,2232,Sociedade Simples Pura,2229.0
+50,Mato Grosso do Sul,2054,Sociedade Anônima Fechada,2191.0
+25,Paraíba,2321,Sociedade Unipessoal de Advogados,2144.0
+23,Ceará,2240,Sociedade Simples Limitada,2041.0
+13,Amazonas,2321,Sociedade Unipessoal de Advogados,2027.0
+21,Maranhão,2321,Sociedade Unipessoal de Advogados,1986.0
+52,Goiás,2232,Sociedade Simples Pura,1985.0
+21,Maranhão,2054,Sociedade Anônima Fechada,1918.0
+52,Goiás,2046,Sociedade Anônima Aberta,1872.0
+42,Santa Catarina,2046,Sociedade Anônima Aberta,1826.0
+23,Ceará,2046,Sociedade Anônima Aberta,1795.0
+32,Espírito Santo,2240,Sociedade Simples Limitada,1794.0
+24,Rio Grande do Norte,2321,Sociedade Unipessoal de Advogados,1766.0
+23,Ceará,2232,Sociedade Simples Pura,1762.0
+24,Rio Grande do Norte,2127,Sociedade Empresária em Conta de Participação,1748.0
+33,Rio de Janeiro,2151,Consórcio de Sociedades,1735.0
+29,Bahia,2143,Cooperativa,1632.0
+52,Goiás,2127,Sociedade Empresária em Conta de Participação,1620.0
+26,Pernambuco,2046,Sociedade Anônima Aberta,1612.0
+52,Goiás,2240,Sociedade Simples Limitada,1588.0
+13,Amazonas,2054,Sociedade Anônima Fechada,1563.0
+24,Rio Grande do Norte,2054,Sociedade Anônima Fechada,1549.0
+52,Goiás,2143,Cooperativa,1545.0
+22,Piauí,2321,Sociedade Unipessoal de Advogados,1509.0
+27,Alagoas,2321,Sociedade Unipessoal de Advogados,1490.0
+26,Pernambuco,2232,Sociedade Simples Pura,1478.0
+32,Espírito Santo,2127,Sociedade Empresária em Conta de Participação,1474.0
+43,Rio Grande do Sul,2127,Sociedade Empresária em Conta de Participação,1441.0
+22,Piauí,2054,Sociedade Anônima Fechada,1393.0
+17,Tocantins,2054,Sociedade Anônima Fechada,1376.0
+15,Pará,2143,Cooperativa,1362.0
+11,Rondônia,2054,Sociedade Anônima Fechada,1361.0
+15,Pará,2240,Sociedade Simples Limitada,1344.0
+25,Paraíba,2054,Sociedade Anônima Fechada,1320.0
+11,Rondônia,2321,Sociedade Unipessoal de Advogados,1304.0
+17,Tocantins,2321,Sociedade Unipessoal de Advogados,1244.0
+51,Mato Grosso,2143,Cooperativa,1241.0
+33,Rio de Janeiro,2143,Cooperativa,1238.0
+32,Espírito Santo,2232,Sociedade Simples Pura,1222.0
+15,Pará,2046,Sociedade Anônima Aberta,1181.0
+51,Mato Grosso,2232,Sociedade Simples Pura,1114.0
+21,Maranhão,2046,Sociedade Anônima Aberta,1109.0
+41,Paraná,2151,Consórcio de Sociedades,1066.0
+31,Minas Gerais,2348,Empresa Simples de Inovação - Inova Simples,1055.0
+27,Alagoas,2054,Sociedade Anônima Fechada,1047.0
+35,São Paulo,4014,Empresa Individual Imobiliária,1041.0
+28,Sergipe,2321,Sociedade Unipessoal de Advogados,1015.0
+33,Rio de Janeiro,2348,Empresa Simples de Inovação - Inova Simples,1003.0
+50,Mato Grosso do Sul,2232,Sociedade Simples Pura,1002.0
+53,Distrito Federal,2127,Sociedade Empresária em Conta de Participação,980.0
+32,Espírito Santo,2046,Sociedade Anônima Aberta,948.0
+53,Distrito Federal,2046,Sociedade Anônima Aberta,944.0
+26,Pernambuco,2240,Sociedade Simples Limitada,943.0
+53,Distrito Federal,2240,Sociedade Simples Limitada,942.0
+23,Ceará,2151,Consórcio de Sociedades,882.0
+50,Mato Grosso do Sul,2046,Sociedade Anônima Aberta,849.0
+23,Ceará,2143,Cooperativa,839.0
+50,Mato Grosso do Sul,2143,Cooperativa,835.0
+23,Ceará,2127,Sociedade Empresária em Conta de Participação,825.0
+51,Mato Grosso,2046,Sociedade Anônima Aberta,823.0
+29,Bahia,2127,Sociedade Empresária em Conta de Participação,822.0
+15,Pará,2232,Sociedade Simples Pura,804.0
+26,Pernambuco,2151,Consórcio de Sociedades,804.0
+50,Mato Grosso do Sul,2240,Sociedade Simples Limitada,792.0
+29,Bahia,2151,Consórcio de Sociedades,778.0
+42,Santa Catarina,2151,Consórcio de Sociedades,766.0
+32,Espírito Santo,2143,Cooperativa,756.0
+26,Pernambuco,2143,Cooperativa,738.0
+51,Mato Grosso,2127,Sociedade Empresária em Conta de Participação,735.0
+24,Rio Grande do Norte,2232,Sociedade Simples Pura,730.0
+27,Alagoas,4120,Produtor Rural (Pessoa Física),716.0
+43,Rio Grande do Sul,2151,Consórcio de Sociedades,713.0
+41,Paraná,2348,Empresa Simples de Inovação - Inova Simples,711.0
+28,Sergipe,2054,Sociedade Anônima Fechada,693.0
+13,Amazonas,2232,Sociedade Simples Pura,667.0
+13,Amazonas,2240,Sociedade Simples Limitada,661.0
+21,Maranhão,2232,Sociedade Simples Pura,661.0
+53,Distrito Federal,2224,Clube/Fundo de Investimento,647.0
+42,Santa Catarina,2348,Empresa Simples de Inovação - Inova Simples,597.0
+43,Rio Grande do Sul,4014,Empresa Individual Imobiliária,584.0
+43,Rio Grande do Sul,2348,Empresa Simples de Inovação - Inova Simples,576.0
+53,Distrito Federal,2151,Consórcio de Sociedades,562.0
+41,Paraná,2224,Clube/Fundo de Investimento,559.0
+25,Paraíba,2232,Sociedade Simples Pura,551.0
+11,Rondônia,2232,Sociedade Simples Pura,540.0
+24,Rio Grande do Norte,2240,Sociedade Simples Limitada,537.0
+22,Piauí,2232,Sociedade Simples Pura,534.0
+24,Rio Grande do Norte,2046,Sociedade Anônima Aberta,533.0
+25,Paraíba,2046,Sociedade Anônima Aberta,531.0
+11,Rondônia,2143,Cooperativa,520.0
+25,Paraíba,2240,Sociedade Simples Limitada,513.0
+52,Goiás,2151,Consórcio de Sociedades,505.0
+31,Minas Gerais,4014,Empresa Individual Imobiliária,499.0
+51,Mato Grosso,2240,Sociedade Simples Limitada,493.0
+27,Alagoas,2232,Sociedade Simples Pura,490.0
+29,Bahia,2348,Empresa Simples de Inovação - Inova Simples,483.0
+26,Pernambuco,2348,Empresa Simples de Inovação - Inova Simples,474.0
+13,Amazonas,2046,Sociedade Anônima Aberta,473.0
+28,Sergipe,2232,Sociedade Simples Pura,467.0
+25,Paraíba,2127,Sociedade Empresária em Conta de Participação,464.0
+31,Minas Gerais,2224,Clube/Fundo de Investimento,452.0
+22,Piauí,2240,Sociedade Simples Limitada,435.0
+53,Distrito Federal,2348,Empresa Simples de Inovação - Inova Simples,435.0
+41,Paraná,4014,Empresa Individual Imobiliária,419.0
+43,Rio Grande do Sul,2224,Clube/Fundo de Investimento,417.0
+25,Paraíba,2143,Cooperativa,413.0
+27,Alagoas,2046,Sociedade Anônima Aberta,409.0
+21,Maranhão,2143,Cooperativa,396.0
+28,Sergipe,2046,Sociedade Anônima Aberta,395.0
+52,Goiás,2348,Empresa Simples de Inovação - Inova Simples,389.0
+16,Amapá,2321,Sociedade Unipessoal de Advogados,383.0
+27,Alagoas,2240,Sociedade Simples Limitada,380.0
+12,Acre,2321,Sociedade Unipessoal de Advogados,377.0
+32,Espírito Santo,2151,Consórcio de Sociedades,377.0
+21,Maranhão,2240,Sociedade Simples Limitada,375.0
+53,Distrito Federal,2143,Cooperativa,370.0
+17,Tocantins,2232,Sociedade Simples Pura,363.0
+15,Pará,2127,Sociedade Empresária em Conta de Participação,361.0
+22,Piauí,2046,Sociedade Anônima Aberta,360.0
+15,Pará,2151,Consórcio de Sociedades,355.0
+23,Ceará,2348,Empresa Simples de Inovação - Inova Simples,355.0
+22,Piauí,2348,Empresa Simples de Inovação - Inova Simples,348.0
+27,Alagoas,2143,Cooperativa,348.0
+42,Santa Catarina,4014,Empresa Individual Imobiliária,348.0
+32,Espírito Santo,2348,Empresa Simples de Inovação - Inova Simples,344.0
+24,Rio Grande do Norte,2143,Cooperativa,341.0
+13,Amazonas,2348,Empresa Simples de Inovação - Inova Simples,340.0
+21,Maranhão,2348,Empresa Simples de Inovação - Inova Simples,326.0
+14,Roraima,2321,Sociedade Unipessoal de Advogados,322.0
+13,Amazonas,2143,Cooperativa,298.0
+27,Alagoas,2127,Sociedade Empresária em Conta de Participação,298.0
+99,Não informado,2062,Sociedade Empresária Limitada,291.0
+24,Rio Grande do Norte,2348,Empresa Simples de Inovação - Inova Simples,290.0
+50,Mato Grosso do Sul,2127,Sociedade Empresária em Conta de Participação,290.0
+51,Mato Grosso,2151,Consórcio de Sociedades,282.0
+17,Tocantins,2046,Sociedade Anônima Aberta,273.0
+28,Sergipe,2143,Cooperativa,272.0
+12,Acre,2054,Sociedade Anônima Fechada,271.0
+93,Exterior,2062,Sociedade Empresária Limitada,244.0
+11,Rondônia,2240,Sociedade Simples Limitada,241.0
+14,Roraima,2054,Sociedade Anônima Fechada,232.0
+99,Não informado,2135,Empresário (Individual),228.0
+93,Exterior,2054,Sociedade Anônima Fechada,221.0
+22,Piauí,2143,Cooperativa,220.0
+15,Pará,2348,Empresa Simples de Inovação - Inova Simples,219.0
+16,Amapá,2054,Sociedade Anônima Fechada,219.0
+11,Rondônia,2046,Sociedade Anônima Aberta,210.0
+13,Amazonas,2127,Sociedade Empresária em Conta de Participação,208.0
+17,Tocantins,2143,Cooperativa,205.0
+25,Paraíba,4014,Empresa Individual Imobiliária,205.0
+25,Paraíba,2348,Empresa Simples de Inovação - Inova Simples,200.0
+33,Rio de Janeiro,4014,Empresa Individual Imobiliária,196.0
+28,Sergipe,2240,Sociedade Simples Limitada,195.0
+24,Rio Grande do Norte,2151,Consórcio de Sociedades,189.0
+27,Alagoas,2151,Consórcio de Sociedades,189.0
+32,Espírito Santo,2224,Clube/Fundo de Investimento,187.0
+28,Sergipe,2348,Empresa Simples de Inovação - Inova Simples,182.0
+12,Acre,2143,Cooperativa,181.0
+21,Maranhão,2127,Sociedade Empresária em Conta de Participação,180.0
+25,Paraíba,2151,Consórcio de Sociedades,168.0
+17,Tocantins,2240,Sociedade Simples Limitada,164.0
+27,Alagoas,2348,Empresa Simples de Inovação - Inova Simples,162.0
+50,Mato Grosso do Sul,2151,Consórcio de Sociedades,156.0
+16,Amapá,2143,Cooperativa,153.0
+14,Roraima,2240,Sociedade Simples Limitada,151.0
+35,São Paulo,2283,Consórcio de Empregadores,151.0
+12,Acre,2232,Sociedade Simples Pura,149.0
+12,Acre,2151,Consórcio de Sociedades,148.0
+35,São Paulo,2070,Sociedade Empresária em Nome Coletivo,148.0
+51,Mato Grosso,2348,Empresa Simples de Inovação - Inova Simples,147.0
+13,Amazonas,2151,Consórcio de Sociedades,142.0
+50,Mato Grosso do Sul,2348,Empresa Simples de Inovação - Inova Simples,139.0
+21,Maranhão,2151,Consórcio de Sociedades,137.0
+35,São Paulo,2160,Grupo de Sociedades,135.0
+15,Pará,4014,Empresa Individual Imobiliária,133.0
+22,Piauí,2151,Consórcio de Sociedades,132.0
+16,Amapá,2232,Sociedade Simples Pura,128.0
+22,Piauí,4014,Empresa Individual Imobiliária,125.0
+29,Bahia,4014,Empresa Individual Imobiliária,120.0
+17,Tocantins,2348,Empresa Simples de Inovação - Inova Simples,116.0
+17,Tocantins,2127,Sociedade Empresária em Conta de Participação,115.0
+14,Roraima,2143,Cooperativa,113.0
+14,Roraima,2232,Sociedade Simples Pura,112.0
+12,Acre,2046,Sociedade Anônima Aberta,109.0
+11,Rondônia,2348,Empresa Simples de Inovação - Inova Simples,108.0
+22,Piauí,2127,Sociedade Empresária em Conta de Participação,108.0
+16,Amapá,2240,Sociedade Simples Limitada,104.0
+12,Acre,2348,Empresa Simples de Inovação - Inova Simples,97.0
+16,Amapá,2046,Sociedade Anônima Aberta,93.0
+11,Rondônia,2127,Sociedade Empresária em Conta de Participação,91.0
+41,Paraná,2070,Sociedade Empresária em Nome Coletivo,90.0
+52,Goiás,4014,Empresa Individual Imobiliária,88.0
+16,Amapá,2348,Empresa Simples de Inovação - Inova Simples,87.0
+50,Mato Grosso do Sul,4014,Empresa Individual Imobiliária,85.0
+26,Pernambuco,4014,Empresa Individual Imobiliária,80.0
+51,Mato Grosso,4014,Empresa Individual Imobiliária,79.0
+14,Roraima,2046,Sociedade Anônima Aberta,75.0
+32,Espírito Santo,4014,Empresa Individual Imobiliária,72.0
+23,Ceará,2070,Sociedade Empresária em Nome Coletivo,69.0
+28,Sergipe,2127,Sociedade Empresária em Conta de Participação,68.0
+17,Tocantins,2151,Consórcio de Sociedades,64.0
+28,Sergipe,2151,Consórcio de Sociedades,59.0
+12,Acre,2240,Sociedade Simples Limitada,58.0
+11,Rondônia,2151,Consórcio de Sociedades,57.0
+23,Ceará,4014,Empresa Individual Imobiliária,57.0
+43,Rio Grande do Sul,2070,Sociedade Empresária em Nome Coletivo,57.0
+42,Santa Catarina,2070,Sociedade Empresária em Nome Coletivo,52.0
+29,Bahia,2224,Clube/Fundo de Investimento,51.0
+33,Rio de Janeiro,2160,Grupo de Sociedades,45.0
+33,Rio de Janeiro,2330,Cooperativas de Consumo,45.0
+53,Distrito Federal,4014,Empresa Individual Imobiliária,45.0
+16,Amapá,2151,Consórcio de Sociedades,44.0
+43,Rio Grande do Sul,2160,Grupo de Sociedades,44.0
+41,Paraná,2259,Sociedade em Nome Coletivo,40.0
+31,Minas Gerais,2283,Consórcio de Empregadores,39.0
+33,Rio de Janeiro,2070,Sociedade Empresária em Nome Coletivo,36.0
+14,Roraima,2151,Consórcio de Sociedades,35.0
+31,Minas Gerais,2070,Sociedade Empresária em Nome Coletivo,34.0
+41,Paraná,2283,Consórcio de Empregadores,34.0
+29,Bahia,2070,Sociedade Empresária em Nome Coletivo,33.0
+14,Roraima,2348,Empresa Simples de Inovação - Inova Simples,32.0
+15,Pará,2070,Sociedade Empresária em Nome Coletivo,31.0
+22,Piauí,2070,Sociedade Empresária em Nome Coletivo,30.0
+23,Ceará,2224,Clube/Fundo de Investimento,30.0
+33,Rio de Janeiro,2283,Consórcio de Empregadores,30.0
+26,Pernambuco,2070,Sociedade Empresária em Nome Coletivo,28.0
+21,Maranhão,4014,Empresa Individual Imobiliária,27.0
+51,Mato Grosso,2224,Clube/Fundo de Investimento,27.0
+52,Goiás,2070,Sociedade Empresária em Nome Coletivo,27.0
+93,Exterior,2046,Sociedade Anônima Aberta,27.0
+24,Rio Grande do Norte,2070,Sociedade Empresária em Nome Coletivo,24.0
+24,Rio Grande do Norte,4014,Empresa Individual Imobiliária,24.0
+41,Paraná,2160,Grupo de Sociedades,24.0
+42,Santa Catarina,2224,Clube/Fundo de Investimento,24.0
+31,Minas Gerais,2259,Sociedade em Nome Coletivo,23.0
+14,Roraima,2127,Sociedade Empresária em Conta de Participação,22.0
+16,Amapá,2127,Sociedade Empresária em Conta de Participação,22.0
+35,São Paulo,2259,Sociedade em Nome Coletivo,22.0
+42,Santa Catarina,2283,Consórcio de Empregadores,22.0
+14,Roraima,4014,Empresa Individual Imobiliária,21.0
+11,Rondônia,4014,Empresa Individual Imobiliária,19.0
+42,Santa Catarina,2330,Cooperativas de Consumo,18.0
+28,Sergipe,4014,Empresa Individual Imobiliária,17.0
+41,Paraná,2330,Cooperativas de Consumo,17.0
+13,Amazonas,4014,Empresa Individual Imobiliária,16.0
+26,Pernambuco,2224,Clube/Fundo de Investimento,15.0
+16,Amapá,4014,Empresa Individual Imobiliária,14.0
+25,Paraíba,2070,Sociedade Empresária em Nome Coletivo,14.0
+31,Minas Gerais,2330,Cooperativas de Consumo,14.0
+35,São Paulo,2330,Cooperativas de Consumo,14.0
+12,Acre,2127,Sociedade Empresária em Conta de Participação,13.0
+27,Alagoas,4014,Empresa Individual Imobiliária,13.0
+29,Bahia,2330,Cooperativas de Consumo,13.0
+15,Pará,2224,Clube/Fundo de Investimento,12.0
+21,Maranhão,2070,Sociedade Empresária em Nome Coletivo,12.0
+33,Rio de Janeiro,2259,Sociedade em Nome Coletivo,12.0
+35,São Paulo,2097,Sociedade Empresária em Comandita por Ações,12.0
+13,Amazonas,2070,Sociedade Empresária em Nome Coletivo,11.0
+32,Espírito Santo,2070,Sociedade Empresária em Nome Coletivo,11.0
+35,São Paulo,2305,Empresa Individual de Responsabilidade Limitada,11.0
+26,Pernambuco,2160,Grupo de Sociedades,10.0
+32,Espírito Santo,2283,Consórcio de Empregadores,10.0
+43,Rio Grande do Sul,2330,Cooperativas de Consumo,10.0
+52,Goiás,2330,Cooperativas de Consumo,10.0
+26,Pernambuco,2330,Cooperativas de Consumo,9.0
+28,Sergipe,2070,Sociedade Empresária em Nome Coletivo,9.0
+42,Santa Catarina,2160,Grupo de Sociedades,9.0
+99,Não informado,2054,Sociedade Anônima Fechada,9.0
+15,Pará,2330,Cooperativas de Consumo,8.0
+21,Maranhão,2330,Cooperativas de Consumo,8.0
+23,Ceará,2259,Sociedade em Nome Coletivo,8.0
+29,Bahia,2259,Sociedade em Nome Coletivo,8.0
+32,Espírito Santo,2330,Cooperativas de Consumo,8.0
+43,Rio Grande do Sul,2259,Sociedade em Nome Coletivo,8.0
+43,Rio Grande do Sul,2283,Consórcio de Empregadores,8.0
+11,Rondônia,2070,Sociedade Empresária em Nome Coletivo,7.0
+13,Amazonas,2160,Grupo de Sociedades,7.0
+13,Amazonas,2224,Clube/Fundo de Investimento,7.0
+26,Pernambuco,2283,Consórcio de Empregadores,7.0
+31,Minas Gerais,2160,Grupo de Sociedades,7.0
+99,Não informado,2143,Cooperativa,7.0
+23,Ceará,2160,Grupo de Sociedades,6.0
+35,São Paulo,2089,Sociedade Empresária em Comandita Simples,6.0
+41,Paraná,2291,Consórcio Simples,6.0
+50,Mato Grosso do Sul,2070,Sociedade Empresária em Nome Coletivo,6.0
+52,Goiás,2224,Clube/Fundo de Investimento,6.0
+52,Goiás,2283,Consórcio de Empregadores,6.0
+12,Acre,2070,Sociedade Empresária em Nome Coletivo,5.0
+15,Pará,2283,Consórcio de Empregadores,5.0
+27,Alagoas,2330,Cooperativas de Consumo,5.0
+31,Minas Gerais,2089,Sociedade Empresária em Comandita Simples,5.0
+51,Mato Grosso,2283,Consórcio de Empregadores,5.0
+52,Goiás,2160,Grupo de Sociedades,5.0
+53,Distrito Federal,2330,Cooperativas de Consumo,5.0
+12,Acre,2224,Clube/Fundo de Investimento,4.0
+12,Acre,4014,Empresa Individual Imobiliária,4.0
+14,Roraima,2224,Clube/Fundo de Investimento,4.0
+22,Piauí,2224,Clube/Fundo de Investimento,4.0
+24,Rio Grande do Norte,2330,Cooperativas de Consumo,4.0
+35,São Paulo,2291,Consórcio Simples,4.0
+41,Paraná,2089,Sociedade Empresária em Comandita Simples,4.0
+50,Mato Grosso do Sul,2259,Sociedade em Nome Coletivo,4.0
+52,Goiás,2259,Sociedade em Nome Coletivo,4.0
+93,Exterior,2135,Empresário (Individual),4.0
+11,Rondônia,2224,Clube/Fundo de Investimento,3.0
+17,Tocantins,2070,Sociedade Empresária em Nome Coletivo,3.0
+17,Tocantins,4014,Empresa Individual Imobiliária,3.0
+24,Rio Grande do Norte,2259,Sociedade em Nome Coletivo,3.0
+25,Paraíba,2330,Cooperativas de Consumo,3.0
+27,Alagoas,2070,Sociedade Empresária em Nome Coletivo,3.0
+28,Sergipe,2330,Cooperativas de Consumo,3.0
+29,Bahia,2160,Grupo de Sociedades,3.0
+41,Paraná,2305,Empresa Individual de Responsabilidade Limitada,3.0
+42,Santa Catarina,2259,Sociedade em Nome Coletivo,3.0
+42,Santa Catarina,2267,Sociedade em Comandita Simples,3.0
+43,Rio Grande do Sul,2089,Sociedade Empresária em Comandita Simples,3.0
+51,Mato Grosso,2070,Sociedade Empresária em Nome Coletivo,3.0
+51,Mato Grosso,2160,Grupo de Sociedades,3.0
+51,Mato Grosso,2330,Cooperativas de Consumo,3.0
+52,Goiás,2089,Sociedade Empresária em Comandita Simples,3.0
+13,Amazonas,2330,Cooperativas de Consumo,2.0
+15,Pará,2267,Sociedade em Comandita Simples,2.0
+16,Amapá,2224,Clube/Fundo de Investimento,2.0
+21,Maranhão,2224,Clube/Fundo de Investimento,2.0
+22,Piauí,2283,Consórcio de Empregadores,2.0
+23,Ceará,2330,Cooperativas de Consumo,2.0
+25,Paraíba,2224,Clube/Fundo de Investimento,2.0
+26,Pernambuco,2305,Empresa Individual de Responsabilidade Limitada,2.0
+28,Sergipe,2224,Clube/Fundo de Investimento,2.0
+29,Bahia,2283,Consórcio de Empregadores,2.0
+31,Minas Gerais,2097,Sociedade Empresária em Comandita por Ações,2.0
+31,Minas Gerais,2267,Sociedade em Comandita Simples,2.0
+31,Minas Gerais,2305,Empresa Individual de Responsabilidade Limitada,2.0
+35,São Paulo,2267,Sociedade em Comandita Simples,2.0
+42,Santa Catarina,2291,Consórcio Simples,2.0
+51,Mato Grosso,2259,Sociedade em Nome Coletivo,2.0
+52,Goiás,2097,Sociedade Empresária em Comandita por Ações,2.0
+52,Goiás,2267,Sociedade em Comandita Simples,2.0
+53,Distrito Federal,2160,Grupo de Sociedades,2.0
+93,Exterior,2143,Cooperativa,2.0
+11,Rondônia,2267,Sociedade em Comandita Simples,1.0
+11,Rondônia,2291,Consórcio Simples,1.0
+13,Amazonas,2259,Sociedade em Nome Coletivo,1.0
+14,Roraima,2267,Sociedade em Comandita Simples,1.0
+14,Roraima,2330,Cooperativas de Consumo,1.0
+15,Pará,2160,Grupo de Sociedades,1.0
+15,Pará,2305,Empresa Individual de Responsabilidade Limitada,1.0
+16,Amapá,2330,Cooperativas de Consumo,1.0
+17,Tocantins,2283,Consórcio de Empregadores,1.0
+21,Maranhão,2097,Sociedade Empresária em Comandita por Ações,1.0
+21,Maranhão,2267,Sociedade em Comandita Simples,1.0
+21,Maranhão,2283,Consórcio de Empregadores,1.0
+21,Maranhão,2305,Empresa Individual de Responsabilidade Limitada,1.0
+22,Piauí,2089,Sociedade Empresária em Comandita Simples,1.0
+22,Piauí,2097,Sociedade Empresária em Comandita por Ações,1.0
+22,Piauí,2305,Empresa Individual de Responsabilidade Limitada,1.0
+22,Piauí,2330,Cooperativas de Consumo,1.0
+23,Ceará,2267,Sociedade em Comandita Simples,1.0
+24,Rio Grande do Norte,2089,Sociedade Empresária em Comandita Simples,1.0
+24,Rio Grande do Norte,2160,Grupo de Sociedades,1.0
+24,Rio Grande do Norte,2224,Clube/Fundo de Investimento,1.0
+24,Rio Grande do Norte,2283,Consórcio de Empregadores,1.0
+25,Paraíba,2097,Sociedade Empresária em Comandita por Ações,1.0
+25,Paraíba,2160,Grupo de Sociedades,1.0
+25,Paraíba,2283,Consórcio de Empregadores,1.0
+25,Paraíba,2291,Consórcio Simples,1.0
+26,Pernambuco,2259,Sociedade em Nome Coletivo,1.0
+27,Alagoas,2089,Sociedade Empresária em Comandita Simples,1.0
+27,Alagoas,2267,Sociedade em Comandita Simples,1.0
+29,Bahia,2267,Sociedade em Comandita Simples,1.0
+29,Bahia,2305,Empresa Individual de Responsabilidade Limitada,1.0
+31,Minas Gerais,2291,Consórcio Simples,1.0
+32,Espírito Santo,2089,Sociedade Empresária em Comandita Simples,1.0
+32,Espírito Santo,2097,Sociedade Empresária em Comandita por Ações,1.0
+32,Espírito Santo,2160,Grupo de Sociedades,1.0
+32,Espírito Santo,2259,Sociedade em Nome Coletivo,1.0
+32,Espírito Santo,2305,Empresa Individual de Responsabilidade Limitada,1.0
+33,Rio de Janeiro,2097,Sociedade Empresária em Comandita por Ações,1.0
+33,Rio de Janeiro,2305,Empresa Individual de Responsabilidade Limitada,1.0
+42,Santa Catarina,2089,Sociedade Empresária em Comandita Simples,1.0
+42,Santa Catarina,2097,Sociedade Empresária em Comandita por Ações,1.0
+42,Santa Catarina,2305,Empresa Individual de Responsabilidade Limitada,1.0
+43,Rio Grande do Sul,2267,Sociedade em Comandita Simples,1.0
+43,Rio Grande do Sul,2305,Empresa Individual de Responsabilidade Limitada,1.0
+50,Mato Grosso do Sul,2089,Sociedade Empresária em Comandita Simples,1.0
+50,Mato Grosso do Sul,2097,Sociedade Empresária em Comandita por Ações,1.0
+50,Mato Grosso do Sul,2160,Grupo de Sociedades,1.0
+50,Mato Grosso do Sul,2224,Clube/Fundo de Investimento,1.0
+51,Mato Grosso,2097,Sociedade Empresária em Comandita por Ações,1.0
+52,Goiás,2291,Consórcio Simples,1.0
+52,Goiás,2305,Empresa Individual de Responsabilidade Limitada,1.0
+53,Distrito Federal,2070,Sociedade Empresária em Nome Coletivo,1.0
+53,Distrito Federal,2259,Sociedade em Nome Coletivo,1.0
+53,Distrito Federal,2305,Empresa Individual de Responsabilidade Limitada,1.0
+93,Exterior,2240,Sociedade Simples Limitada,1.0
+99,Não informado,2348,Empresa Simples de Inovação - Inova Simples,1.0

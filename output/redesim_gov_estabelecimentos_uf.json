@@ -1,0 +1,164 @@
+[
+  {
+    "uf": "PA",
+    "matriz": 1426624,
+    "filial": 64680,
+    "total": 1491304
+  },
+  {
+    "uf": "ES",
+    "matriz": 1486364,
+    "filial": 70308,
+    "total": 1556672
+  },
+  {
+    "uf": "RS",
+    "matriz": 4760194,
+    "filial": 246508,
+    "total": 5006702
+  },
+  {
+    "uf": "AM",
+    "matriz": 763049,
+    "filial": 34947,
+    "total": 797996
+  },
+  {
+    "uf": "MT",
+    "matriz": 1357614,
+    "filial": 71501,
+    "total": 1429115
+  },
+  {
+    "uf": "MG",
+    "matriz": 7646740,
+    "filial": 326220,
+    "total": 7972960
+  },
+  {
+    "uf": "PR",
+    "matriz": 4800141,
+    "filial": 217860,
+    "total": 5018001
+  },
+  {
+    "uf": "CE",
+    "matriz": 2004528,
+    "filial": 85968,
+    "total": 2090496
+  },
+  {
+    "uf": "BA",
+    "matriz": 3469994,
+    "filial": 159004,
+    "total": 3628998
+  },
+  {
+    "uf": "PI",
+    "matriz": 602922,
+    "filial": 29584,
+    "total": 632506
+  },
+  {
+    "uf": "AL",
+    "matriz": 671429,
+    "filial": 27651,
+    "total": 699080
+  },
+  {
+    "uf": "SP",
+    "matriz": 20302323,
+    "filial": 1022781,
+    "total": 21325104
+  },
+  {
+    "uf": "GO",
+    "matriz": 2566490,
+    "filial": 103343,
+    "total": 2669833
+  },
+  {
+    "uf": "MS",
+    "matriz": 939490,
+    "filial": 52806,
+    "total": 992296
+  },
+  {
+    "uf": "AC",
+    "matriz": 160005,
+    "filial": 8445,
+    "total": 168450
+  },
+  {
+    "uf": "SE",
+    "matriz": 468889,
+    "filial": 23221,
+    "total": 492110
+  },
+  {
+    "uf": "PE",
+    "matriz": 2097477,
+    "filial": 101290,
+    "total": 2198767
+  },
+  {
+    "uf": "RJ",
+    "matriz": 6014387,
+    "filial": 226408,
+    "total": 6240795
+  },
+  {
+    "uf": "DF",
+    "matriz": 1235115,
+    "filial": 49873,
+    "total": 1284988
+  },
+  {
+    "uf": "RR",
+    "matriz": 138180,
+    "filial": 6903,
+    "total": 145083
+  },
+  {
+    "uf": "AP",
+    "matriz": 153632,
+    "filial": 8624,
+    "total": 162256
+  },
+  {
+    "uf": "SC",
+    "matriz": 3419913,
+    "filial": 178548,
+    "total": 3598461
+  },
+  {
+    "uf": "RO",
+    "matriz": 485604,
+    "filial": 26890,
+    "total": 512494
+  },
+  {
+    "uf": "TO",
+    "matriz": 474002,
+    "filial": 21124,
+    "total": 495126
+  },
+  {
+    "uf": "PB",
+    "matriz": 904377,
+    "filial": 39541,
+    "total": 943918
+  },
+  {
+    "uf": "RN",
+    "matriz": 799104,
+    "filial": 40563,
+    "total": 839667
+  },
+  {
+    "uf": "MA",
+    "matriz": 1050551,
+    "filial": 42785,
+    "total": 1093336
+  }
+]

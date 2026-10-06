@@ -1,0 +1,86 @@
+[
+  {
+    "ano": 2025,
+    "mes": 10,
+    "dias": 1,
+    "horas": 3,
+    "tempo_total_horas": 27
+  },
+  {
+    "ano": 2025,
+    "mes": 11,
+    "dias": 1,
+    "horas": 1,
+    "tempo_total_horas": 25
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "dias": 1,
+    "horas": 23,
+    "tempo_total_horas": 47
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "dias": 3,
+    "horas": 11,
+    "tempo_total_horas": 83
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "dias": 3,
+    "horas": 18,
+    "tempo_total_horas": 90
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "dias": 2,
+    "horas": 17,
+    "tempo_total_horas": 65
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "dias": 2,
+    "horas": 1,
+    "tempo_total_horas": 49
+  },
+  {
+    "ano": 2026,
+    "mes": 5,
+    "dias": 1,
+    "horas": 10,
+    "tempo_total_horas": 34
+  },
+  {
+    "ano": 2026,
+    "mes": 6,
+    "dias": 1,
+    "horas": 10,
+    "tempo_total_horas": 34
+  },
+  {
+    "ano": 2026,
+    "mes": 7,
+    "dias": 1,
+    "horas": 9,
+    "tempo_total_horas": 33
+  },
+  {
+    "ano": 2026,
+    "mes": 8,
+    "dias": 1,
+    "horas": 5,
+    "tempo_total_horas": 29
+  },
+  {
+    "ano": 2026,
+    "mes": 9,
+    "dias": 1,
+    "horas": 7,
+    "tempo_total_horas": 31
+  }
+]

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIPPA | Indicadores de Ambiente de Negocios</title>
+<style>
+:root {
+  --bg:#0f172a; --surface:#1e293b; --surface2:#334155;
+  --text:#e2e8f0; --text2:#94a3b8; --accent:#3b82f6;
+  --accent2:#8b5cf6; --green:#22c55e; --red:#ef4444;
+  --yellow:#eab308; --orange:#f97316; --cyan:#06b6d4;
+  --radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+
+.header{
+  background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);
+  padding:2rem 2rem 1.5rem;text-align:center;
+  border-bottom:2px solid var(--accent);
+}
+.header-logo{
+  width:64px;height:64px;background:var(--accent);border-radius:14px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:1rem;
+}
+.header h1{font-size:1.8rem;font-weight:700;letter-spacing:-.5px;margin-bottom:.3rem}
+.header h1 span{color:var(--accent)}
+.header-sub{font-size:.85rem;color:var(--text2)}
+
+.main{flex:1;padding:2rem;max-width:1200px;margin:0 auto;width:100%}
+
+.section-title{font-size:1.1rem;font-weight:700;margin:2rem 0 1.2rem;color:var(--text);display:flex;align-items:center;gap:.5rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.2rem}
+
+.card{
+  background:var(--surface);border-radius:var(--radius);padding:1.5rem;
+  border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden;
+  transition:all .25s;cursor:pointer;text-decoration:none;color:var(--text);display:block;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 8px 32px rgba(59,130,246,.15)}
+.card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius)}
+
+.card-1::before{background:var(--accent)}
+.card-2::before{background:var(--green)}
+.card-3::before{background:var(--orange)}
+.card-4::before{background:var(--accent2)}
+.card-5::before{background:var(--cyan)}
+
+.card-icon{
+  width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:1rem;
+}
+.card-1 .card-icon{background:var(--accent)}
+.card-2 .card-icon{background:var(--green)}
+.card-3 .card-icon{background:var(--orange)}
+.card-4 .card-icon{background:var(--accent2)}
+.card-5 .card-icon{background:var(--cyan)}
+
+.card-title{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.card-desc{font-size:.82rem;color:var(--text2);line-height:1.5;margin-bottom:1rem}
+
+.card-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.68rem;padding:3px 10px;border-radius:20px;font-weight:600;background:rgba(255,255,255,.06);color:var(--text2)}
+
+.card-arrow{
+  position:absolute;top:50%;right:1.2rem;transform:translateY(-50%);
+  font-size:1.2rem;color:var(--text2);transition:all .2s;
+}
+.card:hover .card-arrow{color:var(--accent);transform:translateY(-50%) translateX(4px)}
+
+.info-bar{
+  display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;
+  background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2);
+  border-radius:var(--radius);margin-bottom:1.5rem;font-size:.82rem;
+}
+.info-bar strong{color:var(--accent)}
+
+.footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
+
+@media(max-width:700px){
+  .grid{grid-template-columns:1fr}
+  .header{padding:1.5rem 1rem}
+  .main{padding:1rem}
+}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">AN</div>
+  <h1><span>PIPPA</span> Ambiente de Negocios</h1>
+  <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Indicadores Compostos</div>
+</div>
+
+<div class="main">
+
+  <div class="info-bar">
+    <strong>5 temas</strong> · 13 sub-indicadores · APIs publicas integradas (REDESIM Gov, PNCP, BCB, IBGE SIDRA) · Cada dashboard possui botao <strong>Consultar APIs</strong> para dados em tempo real
+  </div>
+
+  <div class="section-title">Dashboards por Tema</div>
+
+  <div class="grid">
+
+    <a href="1_burocracia.html" class="card card-1">
+      <div class="card-icon">1</div>
+      <div class="card-title">Burocracia, Formalizacao e Ambiente de Negocios</div>
+      <div class="card-desc">Tempo medio de abertura por empresa (ano corrente), taxa de informalidade vs formalizacao, massa empresarial por porte/setor e adesao a Lei Geral.</div>
+      <div class="card-tags">
+        <span class="tag">REDESIM Gov</span>
+        <span class="tag">REDESIM OLAP</span>
+        <span class="tag">RF OLAP</span>
+        <span class="tag">RAIS</span>
+        <span class="tag">IBGE Censo</span>
+      </div>
+      <span class="card-arrow">&#x2192;</span>
+    </a>
+
+    <a href="2_compras.html" class="card card-2">
+      <div class="card-icon">2</div>
+      <div class="card-title">Compras Publicas e Participacao das MPEs</div>
+      <div class="card-desc">Volume de contratacoes destinadas a MPEs, percentuais por porte, modalidades e descentralizacao das compras publicas.</div>
+      <div class="card-tags">
+        <span class="tag">PNCP API</span>
+        <span class="tag">Portal Transparencia</span>
+        <span class="tag">Dados Abertos</span>
+      </div>
+      <span class="card-arrow">&#x2192;</span>
+    </a>
+
+    <a href="3_sobrevivencia.html" class="card card-3">
+      <div class="card-icon">3</div>
+      <div class="card-title">Sobrevivencia, Emprego e Renda</div>
+      <div class="card-desc">Taxas de sobrevivencia/mortalidade de MPEs, empregos formais (CAGED/RAIS), impacto no PIB local e arrecadacao municipal.</div>
+      <div class="card-tags">
+        <span class="tag">BCB SGS</span>
+        <span class="tag">IBGE SIDRA</span>
+        <span class="tag">CAGED OLAP</span>
+        <span class="tag">RAIS OLAP</span>
+      </div>
+      <span class="card-arrow">&#x2192;</span>
+    </a>
+
+    <a href="4_inclusao.html" class="card card-4">
+      <div class="card-icon">4</div>
+      <div class="card-title">Inclusao, Diversidade e Empreendedorismo</div>
+      <div class="card-desc">Inclusao produtiva por genero, idade e grupos prioritarios (indigenas, quilombolas, rurais), distribuicao territorial e APLs.</div>
+      <div class="card-tags">
+        <span class="tag">IBGE SIDRA</span>
+        <span class="tag">IBGE Localidades</span>
+        <span class="tag">Censo 2022</span>
+      </div>
+      <span class="card-arrow">&#x2192;</span>
+    </a>
+
+    <a href="5_credito.html" class="card card-5">
+      <div class="card-icon">5</div>
+      <div class="card-title">Credito, Financiamento e Acesso a Recursos</div>
+      <div class="card-desc">Operacoes e concessao de credito a MPEs, Selic, IPCA, inadimplencia, infraestrutura financeira (agencias, cooperativas, correspondentes).</div>
+      <div class="card-tags">
+        <span class="tag">BCB SGS</span>
+        <span class="tag">BCB SCR OLAP</span>
+        <span class="tag">ESTBAN OLAP</span>
+      </div>
+      <span class="card-arrow">&#x2192;</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="footer">
+  PIPPA Ambiente de Negocios v2.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
+  Sebrae Nacional · UCOMP/DADOS · 2026
+</div>
+
+</body>
+</html>

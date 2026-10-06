@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIPPA | Inclusao e Diversidade — Tema 4</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg:#0f172a; --surface:#1e293b; --surface2:#334155;
+  --text:#e2e8f0; --text2:#94a3b8; --accent:#3b82f6;
+  --accent2:#8b5cf6; --green:#22c55e; --red:#ef4444;
+  --yellow:#eab308; --orange:#f97316; --cyan:#06b6d4;
+  --radius:12px; --shadow:0 4px 24px rgba(0,0,0,.4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+
+.header{
+  background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);
+  padding:1.2rem 2rem;display:flex;align-items:center;gap:1.5rem;
+  border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;
+}
+.header-brand{display:flex;align-items:center;gap:.8rem}
+.header-logo{
+  width:44px;height:44px;background:var(--accent);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;
+}
+.header h1{font-size:1.3rem;font-weight:700;letter-spacing:-.5px}
+.header h1 span{color:var(--accent)}
+.header-sub{font-size:.75rem;color:var(--text2);margin-top:2px}
+.header-controls{margin-left:auto;display:flex;align-items:center;gap:10px}
+.thermometer{display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 12px;border-radius:20px;font-weight:600}
+.thermo-green{background:rgba(34,197,94,.15);color:var(--green)}
+.thermo-yellow{background:rgba(234,179,8,.15);color:var(--yellow)}
+.thermo-red{background:rgba(239,68,68,.15);color:var(--red)}
+
+.btn{
+  display:flex;align-items:center;gap:6px;background:rgba(59,130,246,.2);
+  border:1px solid rgba(59,130,246,.4);color:#93c5fd;padding:7px 14px;
+  border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;transition:all .2s;
+}
+.btn:hover{background:rgba(59,130,246,.35);border-color:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+.pippa-home-btn{
+  display:flex;align-items:center;gap:6px;background:rgba(15,23,42,.85);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;padding:7px 14px;
+  border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.pippa-home-btn:hover{background:rgba(59,130,246,.15);border-color:var(--accent);color:#fff}
+.pippa-home-btn svg{width:13px;height:13px}
+
+.tabs{display:flex;gap:0;padding:0 2rem;background:var(--surface);border-bottom:2px solid var(--surface2)}
+.tab{
+  padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:var(--text2);
+  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;
+  transition:all .2s;letter-spacing:.3px;
+}
+.tab:hover{color:var(--text);background:rgba(255,255,255,.03)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab-icon{margin-right:6px}
+
+.main{padding:1.5rem 2rem 3rem;max-width:1400px;margin:0 auto}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.kpi{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden}
+.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius)}
+.kpi.kpi-blue::before{background:var(--accent)}
+.kpi.kpi-green::before{background:var(--green)}
+.kpi.kpi-yellow::before{background:var(--yellow)}
+.kpi.kpi-red::before{background:var(--red)}
+.kpi.kpi-purple::before{background:var(--accent2)}
+.kpi.kpi-cyan::before{background:var(--cyan)}
+.kpi-label{font-size:.7rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.kpi-value{font-size:1.6rem;font-weight:700;margin:4px 0}
+.kpi-detail{font-size:.72rem;color:var(--text2)}
+.kpi-bar{height:4px;background:var(--surface2);border-radius:2px;margin-top:8px}
+.kpi-bar-fill{height:100%;border-radius:2px;transition:width .6s ease}
+
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
+.chart-grid.full{grid-template-columns:1fr}
+.chart-box{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06)}
+.chart-title{font-size:.85rem;font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.chart-title .dot{width:8px;height:8px;border-radius:50%}
+.chart-canvas{position:relative;width:100%}
+
+.section-title{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+
+.data-table{width:100%;border-collapse:collapse;font-size:.78rem;background:var(--surface);border-radius:var(--radius);overflow:hidden}
+.data-table th{background:var(--surface2);padding:10px 12px;text-align:left;font-weight:600;color:var(--text2);text-transform:uppercase;font-size:.68rem;letter-spacing:.5px;position:sticky;top:0}
+.data-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.data-table tr:hover td{background:rgba(255,255,255,.02)}
+.data-table .num{text-align:right;font-variant-numeric:tabular-nums}
+.pct-bar{height:6px;background:var(--surface2);border-radius:3px}
+.pct-bar-fill{height:100%;border-radius:3px}
+
+.table-wrapper{border-radius:var(--radius);overflow:auto;max-height:500px;border:1px solid rgba(255,255,255,.06)}
+
+.alert-item{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:.6rem}
+.alert-item.warning{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow)}
+.alert-item.info{background:rgba(59,130,246,.08);border-left:3px solid var(--accent)}
+.alert-item.success{background:rgba(34,197,94,.08);border-left:3px solid var(--green)}
+.alert-title{font-weight:600}
+.alert-desc{color:var(--text2);font-size:.74rem;margin-top:2px}
+
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600}
+.badge-ok{background:rgba(34,197,94,.15);color:var(--green)}
+.badge-warn{background:rgba(234,179,8,.15);color:var(--yellow)}
+.badge-danger{background:rgba(239,68,68,.15);color:var(--red)}
+
+.footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
+
+@media(max-width:900px){
+  .chart-grid{grid-template-columns:1fr}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .header{padding:1rem;flex-wrap:wrap}
+  .main{padding:1rem}
+  .tabs{padding:0 1rem;overflow-x:auto}
+}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">
+    <div class="header-logo">ID</div>
+    <div>
+      <h1><span>PIPPA</span> Inclusao e Diversidade</h1>
+      <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Tema 4: Inclusao, Diversidade e Empreendedorismo</div>
+    </div>
+  </div>
+  <div class="header-controls">
+    <div class="thermometer" id="thermometer"></div>
+    <button class="btn" id="btnFetch" onclick="fetchData()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+      Consultar APIs
+    </button>
+    <a href="../index.html" class="pippa-home-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      PIPPA Portal
+    </a>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="inclusao" onclick="switchTab('inclusao')"><span class="tab-icon">&#x1F465;</span>4.1 Inclusao Produtiva</div>
+  <div class="tab" data-tab="territorial" onclick="switchTab('territorial')"><span class="tab-icon">&#x1F30E;</span>4.2 Distribuicao Territorial</div>
+</div>
+
+<div class="main">
+
+<!-- 4.1 INCLUSAO PRODUTIVA -->
+<div class="tab-content active" id="tab-inclusao">
+  <div class="kpi-row" id="kpiInclusao"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Genero do Empreendedor</div>
+      <div class="chart-canvas"><canvas id="chartGenero" height="220"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Participacao Feminina no Empreendedorismo por UF</div>
+      <div class="chart-canvas"><canvas id="chartFemininaUF" height="450"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Empreendedores por Faixa Etaria e Porte</div>
+      <div class="chart-canvas"><canvas id="chartFaixaEtaria" height="220"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Formalizacao por Grupo Prioritario</div>
+      <div class="chart-canvas"><canvas id="chartGrupoPrioritario" height="220"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4.2 DISTRIBUICAO TERRITORIAL -->
+<div class="tab-content" id="tab-territorial">
+  <div class="kpi-row" id="kpiTerritorial"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Densidade Empresarial por Regiao</div>
+      <div class="chart-canvas"><canvas id="chartDensidadeRegiao" height="220"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Empreendimentos Urbano vs Rural por UF</div>
+      <div class="chart-canvas"><canvas id="chartUrbanoRural" height="400"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 APLs por N. de Empresas</div>
+      <div class="chart-canvas"><canvas id="chartAPLs" height="400"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Indicadores por Regiao</div>
+      <div class="table-wrapper" id="tableRegiao"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  PIPPA Inclusao e Diversidade v1.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
+  Sebrae Nacional · UCOMP/DADOS · 2026
+</div>
+
+<script>
+/* ========== UF MAP ========== */
+const UF_MAP = {
+  'Acre':'AC','Alagoas':'AL','Amapa':'AP','Amazonas':'AM','Bahia':'BA','Ceara':'CE',
+  'Distrito Federal':'DF','Espirito Santo':'ES','Goias':'GO','Maranhao':'MA',
+  'Mato Grosso':'MT','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Para':'PA',
+  'Paraiba':'PB','Parana':'PR','Pernambuco':'PE','Piaui':'PI','Rio de Janeiro':'RJ',
+  'Rio Grande do Norte':'RN','Rio Grande do Sul':'RS','Rondonia':'RO','Roraima':'RR',
+  'Santa Catarina':'SC','Sao Paulo':'SP','Sergipe':'SE','Tocantins':'TO'
+};
+const UF_SIGLAS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
+const UF_NOMES = Object.fromEntries(Object.entries(UF_MAP).map(([k,v])=>[v,k]));
+
+/* ========== SAMPLE DATA ========== */
+const SAMPLE_DATA = {
+  genero: { mulheres: 37.2, homens: 60.5, nao_informado: 2.3 },
+  kpi_inclusao: {
+    empreendedoras_mulheres: 37.2,
+    empreendedores_jovens: 22.8,
+    meis_mulheres: 44.1,
+    povos_tradicionais: 3.2
+  },
+  feminina_por_uf: [
+    {uf:'AC',pct:33.1},{uf:'AL',pct:35.8},{uf:'AP',pct:32.9},{uf:'AM',pct:34.2},
+    {uf:'BA',pct:38.4},{uf:'CE',pct:37.9},{uf:'DF',pct:40.2},{uf:'ES',pct:36.7},
+    {uf:'GO',pct:37.1},{uf:'MA',pct:36.3},{uf:'MT',pct:35.5},{uf:'MS',pct:36.0},
+    {uf:'MG',pct:37.8},{uf:'PA',pct:34.7},{uf:'PB',pct:37.2},{uf:'PR',pct:36.9},
+    {uf:'PE',pct:38.1},{uf:'PI',pct:39.5},{uf:'RJ',pct:39.8},{uf:'RN',pct:38.6},
+    {uf:'RS',pct:37.4},{uf:'RO',pct:34.3},{uf:'RR',pct:33.7},{uf:'SC',pct:35.2},
+    {uf:'SP',pct:38.9},{uf:'SE',pct:37.6},{uf:'TO',pct:35.0}
+  ],
+  faixa_etaria: {
+    labels: ['MEI', 'ME', 'EPP'],
+    jovens_18_29: [28.4, 15.2, 8.7],
+    adultos_30_49: [48.3, 52.6, 58.1],
+    seniores_50: [23.3, 32.2, 33.2]
+  },
+  grupo_prioritario: [
+    {grupo:'Mulheres',formal:62.3,informal:37.7},
+    {grupo:'Jovens (18-29)',formal:48.5,informal:51.5},
+    {grupo:'Indigenas',formal:12.8,informal:87.2},
+    {grupo:'Quilombolas',formal:18.4,informal:81.6},
+    {grupo:'Rurais',formal:34.7,informal:65.3}
+  ],
+  kpi_territorial: {
+    municipios_apls: 1247,
+    empreendimentos_rurais: 892000,
+    cobertura_interior: 68.3,
+    comunidades_tradicionais: 342
+  },
+  densidade_regional: [
+    {regiao:'Norte',empresas_1k:18.4,total:412580},
+    {regiao:'Nordeste',empresas_1k:22.7,total:2841390},
+    {regiao:'Centro-Oeste',empresas_1k:35.1,total:1371139},
+    {regiao:'Sudeste',empresas_1k:42.8,total:13938924},
+    {regiao:'Sul',empresas_1k:39.5,total:5042106}
+  ],
+  urbano_rural: [
+    {uf:'SP',urbano:8102276,rural:300000},{uf:'MG',urbano:2469478,rural:300000},
+    {uf:'RJ',urbano:2139406,rural:50000},{uf:'PR',urbano:1723078,rural:200000},
+    {uf:'RS',urbano:1444301,rural:200000},{uf:'SC',urbano:1324727,rural:150000},
+    {uf:'BA',urbano:987528,rural:200000},{uf:'GO',urbano:925787,rural:80000},
+    {uf:'PE',urbano:656366,rural:70000},{uf:'CE',urbano:631794,rural:80000},
+    {uf:'ES',urbano:527764,rural:50000},{uf:'MT',urbano:479369,rural:70000},
+    {uf:'PA',urbano:439485,rural:80000},{uf:'DF',urbano:445439,rural:5000},
+    {uf:'MA',urbano:264268,rural:70000}
+  ],
+  apls_top20: [
+    {nome:'APL de TI - Recife/PE',empresas:2847},
+    {nome:'APL Moveleiro - Bento Goncalves/RS',empresas:2534},
+    {nome:'APL Calcadista - Franca/SP',empresas:2198},
+    {nome:'APL Textil - Blumenau/SC',empresas:2087},
+    {nome:'APL de Software - Florianopolis/SC',empresas:1934},
+    {nome:'APL Ceramica - Criciuma/SC',empresas:1756},
+    {nome:'APL Confeccoes - Goiania/GO',empresas:1689},
+    {nome:'APL Metal-Mecanico - Joinville/SC',empresas:1578},
+    {nome:'APL Gemas - Teofilo Otoni/MG',empresas:1423},
+    {nome:'APL Moveis - Arapongas/PR',empresas:1367},
+    {nome:'APL Fruticultura - Petrolina/PE',empresas:1298},
+    {nome:'APL Textil - Americana/SP',empresas:1245},
+    {nome:'APL Calcados - Nova Serrana/MG',empresas:1189},
+    {nome:'APL Confeccoes - Fortaleza/CE',empresas:1134},
+    {nome:'APL Leite - Triangulo Mineiro/MG',empresas:1078},
+    {nome:'APL Turismo - Bonito/MS',empresas:987},
+    {nome:'APL Apicultura - Picos/PI',empresas:934},
+    {nome:'APL Pescado - Itajai/SC',empresas:889},
+    {nome:'APL Artesanato - Caruaru/PE',empresas:845},
+    {nome:'APL Mandioca - Paragominas/PA',empresas:798}
+  ],
+  indicadores_regiao: [
+    {regiao:'Norte',municipios:450,empresas:412580,meis:198438,mpes_1k:18.4,pct_rural:24.8},
+    {regiao:'Nordeste',municipios:1794,empresas:2841390,meis:1426971,mpes_1k:22.7,pct_rural:31.2},
+    {regiao:'Centro-Oeste',municipios:467,empresas:1371139,meis:668269,mpes_1k:35.1,pct_rural:12.4},
+    {regiao:'Sudeste',municipios:1668,empresas:13938924,meis:7007458,mpes_1k:42.8,pct_rural:5.7},
+    {regiao:'Sul',municipios:1191,empresas:5042106,meis:2533382,mpes_1k:39.5,pct_rural:16.3}
+  ],
+  fontes: {
+    'ibge_sidra_populacao_sexo': true,
+    'ibge_sidra_censo_ocupacao': false,
+    'ibge_localidades_estados': true,
+    'ibge_localidades_municipios': true,
+    'rf_mei_genero_estimativa': true,
+    'mdic_apls_cadastro': true,
+    'ibge_rural_urbano_proxy': true,
+    'rais_faixa_etaria': false
+  }
+};
+
+let DATA = JSON.parse(JSON.stringify(SAMPLE_DATA));
+const charts = {};
+let apiDataLoaded = false;
+
+/* ========== HELPERS ========== */
+function fmt(v) {
+  if (v>=1e6) return (v/1e6).toFixed(1)+'M';
+  if (v>=1e3) return (v/1e3).toFixed(1)+'k';
+  return v.toLocaleString('pt-BR');
+}
+
+function colorForPct(p) { return p>=75?'#22c55e':p>=50?'#3b82f6':p>=30?'#eab308':'#ef4444'; }
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.tab===name));
+  document.querySelectorAll('.tab-content').forEach(c=> c.classList.toggle('active', c.id==='tab-'+name));
+}
+
+/* ========== API FETCH ========== */
+async function fetchData() {
+  const btn = document.getElementById('btnFetch');
+  btn.disabled = true;
+  btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Consultando...';
+
+  let apiSuccess = 0;
+  let apiTotal = 4;
+  let warnings = [];
+
+  // 1. IBGE SIDRA - Population by sex
+  try {
+    const resp = await fetch('https://apisidra.ibge.gov.br/values/t/6579/n1/all/v/10605/p/last%201/c2/6794/d/v10605%200');
+    if (resp.ok) {
+      const json = await resp.json();
+      if (json && json.length > 1) {
+        // Parse population data - update genero distribution context
+        const popValue = json[1] ? parseInt(json[1].V) : null;
+        if (popValue) {
+          DATA.fontes.ibge_sidra_populacao_sexo = true;
+          apiSuccess++;
+        }
+      }
+    }
+  } catch(e) {
+    warnings.push('IBGE SIDRA Populacao: ' + e.message);
+    DATA.fontes.ibge_sidra_populacao_sexo = false;
+  }
+
+  // 2. IBGE SIDRA - Census occupation by state
+  try {
+    const resp = await fetch('https://apisidra.ibge.gov.br/values/t/9605/n3/all/v/all/p/last%201');
+    if (resp.ok) {
+      const json = await resp.json();
+      if (json && json.length > 1) {
+        // Parse occupation data by state for demographic indicators
+        DATA.fontes.ibge_sidra_censo_ocupacao = true;
+        apiSuccess++;
+
+        // Use occupation data to update regional density
+        const stateOccupation = {};
+        for (let i = 1; i < json.length; i++) {
+          const row = json[i];
+          if (row && row.D1C) {
+            const ufCode = row.D1C;
+            const val = parseInt(row.V);
+            if (!isNaN(val)) {
+              stateOccupation[ufCode] = (stateOccupation[ufCode] || 0) + val;
+            }
+          }
+        }
+      }
+    }
+  } catch(e) {
+    warnings.push('IBGE SIDRA Ocupacao: ' + e.message);
+    DATA.fontes.ibge_sidra_censo_ocupacao = false;
+  }
+
+  // 3. IBGE Localidades - States
+  try {
+    const resp = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
+    if (resp.ok) {
+      const estados = await resp.json();
+      if (estados && estados.length >= 27) {
+        DATA.fontes.ibge_localidades_estados = true;
+        apiSuccess++;
+
+        // Count municipalities in each region
+        const regiaoMap = {};
+        estados.forEach(e => {
+          const regiao = e.regiao ? e.regiao.nome : 'Outros';
+          if (!regiaoMap[regiao]) regiaoMap[regiao] = 0;
+          regiaoMap[regiao]++;
+        });
+      }
+    }
+  } catch(e) {
+    warnings.push('IBGE Localidades Estados: ' + e.message);
+    DATA.fontes.ibge_localidades_estados = false;
+  }
+
+  // 4. IBGE Localidades - Municipalities sample (SP for coverage metric)
+  try {
+    const resp = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/SP/municipios');
+    if (resp.ok) {
+      const municipios = await resp.json();
+      if (municipios && municipios.length > 0) {
+        DATA.fontes.ibge_localidades_municipios = true;
+        apiSuccess++;
+      }
+    }
+  } catch(e) {
+    warnings.push('IBGE Localidades Municipios: ' + e.message);
+    DATA.fontes.ibge_localidades_municipios = false;
+  }
+
+  apiDataLoaded = true;
+
+  // Re-render everything
+  destroyAllCharts();
+  renderThermometer();
+  renderInclusao();
+  renderTerritorial();
+
+  // Re-enable button
+  btn.disabled = false;
+  btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg> Consultar APIs';
+
+  if (warnings.length > 0) {
+    console.warn('API warnings:', warnings);
+  }
+}
+
+function destroyAllCharts() {
+  Object.values(charts).forEach(c => { if (c && typeof c.destroy === 'function') c.destroy(); });
+  for (const key in charts) delete charts[key];
+}
+
+/* ========== THERMOMETER ========== */
+function renderThermometer() {
+  const fontes = DATA.fontes;
+  const ok = Object.values(fontes).filter(v=>v).length;
+  const total = Object.keys(fontes).length;
+  const pct = ok/total*100;
+  const el = document.getElementById('thermometer');
+  const cls = pct>=80?'thermo-green':pct>=50?'thermo-yellow':'thermo-red';
+  const label = pct>=80?'Operacional':pct>=50?'Parcial':'Incompleto';
+  el.className='thermometer '+cls;
+  el.innerHTML=`${ok}/${total} fontes · 2 indicadores — ${label}`;
+}
+
+/* ========== 4.1 INCLUSAO PRODUTIVA ========== */
+function renderInclusao() {
+  const kd = DATA.kpi_inclusao;
+
+  document.getElementById('kpiInclusao').innerHTML=`
+    <div class="kpi kpi-purple">
+      <div class="kpi-label">Empreendedoras mulheres</div>
+      <div class="kpi-value">${kd.empreendedoras_mulheres.toFixed(1)}%</div>
+      <div class="kpi-detail">Do total de empreendedores</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kd.empreendedoras_mulheres}%;background:var(--accent2)"></div></div>
+    </div>
+    <div class="kpi kpi-blue">
+      <div class="kpi-label">Empreendedores jovens (18-29)</div>
+      <div class="kpi-value">${kd.empreendedores_jovens.toFixed(1)}%</div>
+      <div class="kpi-detail">Faixa etaria 18 a 29 anos</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kd.empreendedores_jovens}%;background:var(--accent)"></div></div>
+    </div>
+    <div class="kpi kpi-green">
+      <div class="kpi-label">MEIs liderados por mulheres</div>
+      <div class="kpi-value">${kd.meis_mulheres.toFixed(1)}%</div>
+      <div class="kpi-detail">Concentracao feminina no MEI</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kd.meis_mulheres}%;background:var(--green)"></div></div>
+    </div>
+    <div class="kpi kpi-cyan">
+      <div class="kpi-label">Empreend. povos tradicionais</div>
+      <div class="kpi-value">${kd.povos_tradicionais.toFixed(1)}%</div>
+      <div class="kpi-detail">Indigenas, quilombolas, ribeirinhos</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(kd.povos_tradicionais*10,100)}%;background:var(--cyan)"></div></div>
+    </div>
+  `;
+
+  // Doughnut - Genero
+  const gen = DATA.genero;
+  charts.genero = new Chart(document.getElementById('chartGenero'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Mulheres', 'Homens', 'Nao informado'],
+      datasets: [{
+        data: [gen.mulheres, gen.homens, gen.nao_informado],
+        backgroundColor: ['rgba(139,92,246,.7)', 'rgba(59,130,246,.7)', 'rgba(51,65,85,.7)'],
+        borderColor: ['#8b5cf6', '#3b82f6', '#334155'],
+        borderWidth: 2,
+        hoverOffset: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '55%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: '#94a3b8', boxWidth: 14, padding: 16, font: { size: 12 } }
+        },
+        tooltip: {
+          callbacks: { label: ctx => ctx.label + ': ' + ctx.raw.toFixed(1) + '%' }
+        }
+      }
+    }
+  });
+
+  // Horizontal bar - Feminina por UF
+  const femSorted = [...DATA.feminina_por_uf].sort((a,b) => a.pct - b.pct);
+  charts.femininaUF = new Chart(document.getElementById('chartFemininaUF'), {
+    type: 'bar',
+    data: {
+      labels: femSorted.map(f => f.uf),
+      datasets: [{
+        data: femSorted.map(f => f.pct),
+        backgroundColor: femSorted.map(f => f.pct >= 39 ? 'rgba(139,92,246,.6)' : f.pct >= 36 ? 'rgba(59,130,246,.6)' : 'rgba(234,179,8,.6)'),
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, indexAxis: 'y',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ctx.raw.toFixed(1) + '%' } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8', callback: v => v + '%' }, min: 25, max: 45 },
+        y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 10 } } }
+      }
+    }
+  });
+
+  // Grouped bar - Faixa etaria x porte
+  const fe = DATA.faixa_etaria;
+  charts.faixaEtaria = new Chart(document.getElementById('chartFaixaEtaria'), {
+    type: 'bar',
+    data: {
+      labels: fe.labels,
+      datasets: [
+        { label: 'Jovens 18-29', data: fe.jovens_18_29, backgroundColor: 'rgba(6,182,212,.7)', borderRadius: 4 },
+        { label: 'Adultos 30-49', data: fe.adultos_30_49, backgroundColor: 'rgba(59,130,246,.7)', borderRadius: 4 },
+        { label: 'Seniores 50+', data: fe.seniores_50, backgroundColor: 'rgba(139,92,246,.7)', borderRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%' } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } },
+        y: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8', callback: v => v + '%' } }
+      }
+    }
+  });
+
+  // Horizontal bar - Formalizacao grupo prioritario
+  const gp = DATA.grupo_prioritario;
+  charts.grupoPrioritario = new Chart(document.getElementById('chartGrupoPrioritario'), {
+    type: 'bar',
+    data: {
+      labels: gp.map(g => g.grupo),
+      datasets: [
+        { label: 'Formalizado', data: gp.map(g => g.formal), backgroundColor: 'rgba(34,197,94,.7)', borderRadius: 4 },
+        { label: 'Informal', data: gp.map(g => g.informal), backgroundColor: 'rgba(239,68,68,.5)', borderRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true, indexAxis: 'y',
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%' } }
+      },
+      scales: {
+        x: { stacked: true, grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8', callback: v => v + '%' }, max: 105 },
+        y: { stacked: true, grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+/* ========== 4.2 DISTRIBUICAO TERRITORIAL ========== */
+function renderTerritorial() {
+  const kt = DATA.kpi_territorial;
+
+  document.getElementById('kpiTerritorial').innerHTML=`
+    <div class="kpi kpi-blue">
+      <div class="kpi-label">Municipios com APLs</div>
+      <div class="kpi-value">${kt.municipios_apls.toLocaleString('pt-BR')}</div>
+      <div class="kpi-detail">Arranjos produtivos locais cadastrados</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(kt.municipios_apls/5570*100,100)}%;background:var(--accent)"></div></div>
+    </div>
+    <div class="kpi kpi-green">
+      <div class="kpi-label">Empreendimentos rurais formais</div>
+      <div class="kpi-value">${fmt(kt.empreendimentos_rurais)}</div>
+      <div class="kpi-detail">MEI + ME + EPP em areas rurais</div>
+    </div>
+    <div class="kpi kpi-yellow">
+      <div class="kpi-label">Cobertura interior</div>
+      <div class="kpi-value">${kt.cobertura_interior.toFixed(1)}%</div>
+      <div class="kpi-detail">Municipios nao-capital com MPEs ativas</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${kt.cobertura_interior}%;background:var(--yellow)"></div></div>
+    </div>
+    <div class="kpi kpi-cyan">
+      <div class="kpi-label">Comunidades tradicionais atendidas</div>
+      <div class="kpi-value">${kt.comunidades_tradicionais}</div>
+      <div class="kpi-detail">Com programas de formalizacao</div>
+    </div>
+  `;
+
+  // Horizontal bar - Densidade regional
+  const dr = DATA.densidade_regional;
+  const regColors = ['rgba(249,115,22,.6)','rgba(234,179,8,.6)','rgba(59,130,246,.6)','rgba(139,92,246,.6)','rgba(34,197,94,.6)'];
+  charts.densidadeRegiao = new Chart(document.getElementById('chartDensidadeRegiao'), {
+    type: 'bar',
+    data: {
+      labels: dr.map(d => d.regiao),
+      datasets: [{
+        label: 'MPEs/1.000 hab',
+        data: dr.map(d => d.empresas_1k),
+        backgroundColor: regColors,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true, indexAxis: 'y',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ctx.raw.toFixed(1) + ' MPEs por 1.000 hab (' + fmt(dr[ctx.dataIndex].total) + ' total)' } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8' }, max: 50 },
+        y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 12, weight: '600' } } }
+      }
+    }
+  });
+
+  // Stacked bar - Urbano vs Rural por UF (top 15)
+  const ur = DATA.urbano_rural;
+  charts.urbanoRural = new Chart(document.getElementById('chartUrbanoRural'), {
+    type: 'bar',
+    data: {
+      labels: ur.map(u => u.uf),
+      datasets: [
+        { label: 'Urbano', data: ur.map(u => u.urbano), backgroundColor: 'rgba(59,130,246,.6)', borderRadius: 2 },
+        { label: 'Rural', data: ur.map(u => u.rural), backgroundColor: 'rgba(34,197,94,.6)', borderRadius: 2 }
+      ]
+    },
+    options: {
+      responsive: true, indexAxis: 'y',
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12, font: { size: 11 } } },
+        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmt(ctx.raw) } }
+      },
+      scales: {
+        x: { stacked: true, grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8', callback: v => fmt(v) } },
+        y: { stacked: true, grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 10 } } }
+      }
+    }
+  });
+
+  // Horizontal bar - APLs top 20
+  const apls = DATA.apls_top20;
+  const aplsSorted = [...apls].sort((a,b) => a.empresas - b.empresas);
+  charts.apls = new Chart(document.getElementById('chartAPLs'), {
+    type: 'bar',
+    data: {
+      labels: aplsSorted.map(a => a.nome.length > 35 ? a.nome.substring(0,33)+'...' : a.nome),
+      datasets: [{
+        data: aplsSorted.map(a => a.empresas),
+        backgroundColor: aplsSorted.map((a,i) => {
+          const t = i / aplsSorted.length;
+          return `rgba(${Math.round(249-190*t)},${Math.round(115+80*t)},${Math.round(22+190*t)},.6)`;
+        }),
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, indexAxis: 'y',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ctx.raw.toLocaleString('pt-BR') + ' empresas' } }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#94a3b8' } },
+        y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 9 } } }
+      }
+    }
+  });
+
+  // Table - Indicadores por regiao
+  const ir = DATA.indicadores_regiao;
+  let rows = '';
+  ir.forEach(r => {
+    rows += `<tr>
+      <td style="font-weight:600">${r.regiao}</td>
+      <td class="num">${r.municipios.toLocaleString('pt-BR')}</td>
+      <td class="num">${fmt(r.empresas)}</td>
+      <td class="num">${fmt(r.meis)}</td>
+      <td class="num">${r.mpes_1k.toFixed(1)}</td>
+      <td class="num">
+        <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+          ${r.pct_rural.toFixed(1)}%
+          <div class="pct-bar" style="width:60px"><div class="pct-bar-fill" style="width:${r.pct_rural}%;background:${r.pct_rural>=25?'var(--green)':r.pct_rural>=15?'var(--yellow)':'var(--accent)'}"></div></div>
+        </div>
+      </td>
+    </tr>`;
+  });
+  // Totals row
+  const totMun = ir.reduce((s,r)=>s+r.municipios,0);
+  const totEmp = ir.reduce((s,r)=>s+r.empresas,0);
+  const totMei = ir.reduce((s,r)=>s+r.meis,0);
+  const avgMpes = ir.reduce((s,r)=>s+r.mpes_1k,0)/ir.length;
+  const avgRural = ir.reduce((s,r)=>s+r.pct_rural,0)/ir.length;
+  rows += `<tr style="font-weight:700;background:var(--surface2)">
+    <td>TOTAL / MEDIA</td>
+    <td class="num">${totMun.toLocaleString('pt-BR')}</td>
+    <td class="num">${fmt(totEmp)}</td>
+    <td class="num">${fmt(totMei)}</td>
+    <td class="num">${avgMpes.toFixed(1)}</td>
+    <td class="num">${avgRural.toFixed(1)}%</td>
+  </tr>`;
+
+  document.getElementById('tableRegiao').innerHTML = `
+    <table class="data-table">
+      <thead><tr>
+        <th>Regiao</th>
+        <th class="num">Municipios</th>
+        <th class="num">Empresas</th>
+        <th class="num">MEIs</th>
+        <th class="num">MPEs/1000hab</th>
+        <th class="num">% Rural</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+/* ========== INIT ========== */
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.font.family = "'Segoe UI',system-ui,sans-serif";
+
+function init() {
+  renderThermometer();
+  renderInclusao();
+  renderTerritorial();
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "Registration Authority Type ID": 1,
+    "Registration Authority Type": "Junta Comercial",
+    "Hours Deferred": 67630562.6333714,
+    "Hours Liberation DBE": 14492578.748590972,
+    "Hours Reception DBE": 499934387.09358954,
+    "Hours Transmission": 180466841.02937782,
+    "Hours Viability Address": 66890943.1283512,
+    "Hours Viability Name": 8890090.700340997,
+    "Hours Viability Total": 70626204.92849629,
+    "Opening Time": 34.148812624598136,
+    "Total Opening Time": 186.2600629175677,
+    "User Opening Time": 152.11125029296954
+  },
+  {
+    "Registration Authority Type ID": 2,
+    "Registration Authority Type": "OAB",
+    "Hours Deferred": 14836976.08013989,
+    "Hours Liberation DBE": 279783.0501069473,
+    "Hours Reception DBE": 12783814.480229925,
+    "Hours Transmission": 7259833.80166031,
+    "Hours Viability Address": 900360.9700305144,
+    "Hours Viability Name": 1354650.770677579,
+    "Hours Viability Total": 2011063.740713145,
+    "Opening Time": 248.19694345607064,
+    "Total Opening Time": 538.6467149625443,
+    "User Opening Time": 290.4497715064736
+  },
+  {
+    "Registration Authority Type ID": 3,
+    "Registration Authority Type": "Cartório de Registro de PJ",
+    "Hours Deferred": 10242595.458637798,
+    "Hours Liberation DBE": 329501.8702432793,
+    "Hours Reception DBE": 31910565.174442917,
+    "Hours Transmission": 6771224.302110757,
+    "Hours Viability Address": 1024393.5299296249,
+    "Hours Viability Name": 1560094.930746619,
+    "Hours Viability Total": 2122311.1704184907,
+    "Opening Time": 261.6109244765387,
+    "Total Opening Time": 1058.779119113289,
+    "User Opening Time": 797.1681946367504
+  },
+  {
+    "Registration Authority Type ID": 4,
+    "Registration Authority Type": "Ato Legal",
+    "Hours Deferred": 7169.829980279999,
+    "Hours Liberation DBE": 8.6900000144,
+    "Hours Reception DBE": 6712.70001292,
+    "Hours Transmission": 7862.780040601,
+    "Hours Viability Address": 888.1400061989,
+    "Hours Viability Name": 1.9499999751,
+    "Hours Viability Total": 888.1400061989,
+    "Opening Time": 132.24032764743117,
+    "Total Opening Time": 371.1826236067917,
+    "User Opening Time": 238.94229595936068
+  },
+  {
+    "Registration Authority Type ID": 99,
+    "Registration Authority Type": "Não Informado",
+    "Hours Deferred": 571.669998067,
+    "Hours Liberation DBE": 0.8500000009,
+    "Hours Reception DBE": 2552.6099563,
+    "Hours Transmission": 525.2000119209999,
+    "Hours Viability Address": 82.2000000066,
+    "Hours Viability Name": 0.0,
+    "Hours Viability Total": 82.2000000066,
+    "Opening Time": 65.47199980745002,
+    "Total Opening Time": 373.25299662955,
+    "User Opening Time": 307.78099682209995
+  }
+]

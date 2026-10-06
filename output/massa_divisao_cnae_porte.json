@@ -1,0 +1,2284 @@
+[
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "G47",
+    "Division": "Comércio Varejista",
+    "Establishments": 2514355.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "G47",
+    "Division": "Comércio Varejista",
+    "Establishments": 2086501.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "S96",
+    "Division": "Outras Atividades De Serviços Pessoais",
+    "Establishments": 1241955.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H49",
+    "Division": "Transporte Terrestre",
+    "Establishments": 1190828.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "I56",
+    "Division": "Alimentação",
+    "Establishments": 1180516.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "F43",
+    "Division": "Serviços Especializados Para Construção",
+    "Establishments": 1165640.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N82",
+    "Division": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas",
+    "Establishments": 766604.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "A01",
+    "Division": "Agricultura, Pecuária E Serviços Relacionados",
+    "Establishments": 728055.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "Q86",
+    "Division": "Atividades De Atenção À Saúde Humana",
+    "Establishments": 692564.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "P85",
+    "Division": "Educação",
+    "Establishments": 657333.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M73",
+    "Division": "Publicidade E Pesquisa De Mercado",
+    "Establishments": 654269.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N82",
+    "Division": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas",
+    "Establishments": 610060.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H53",
+    "Division": "Correio E Outras Atividades De Entrega",
+    "Establishments": 597160.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "G45",
+    "Division": "Comércio E Reparação De Veículos Automotores E Motocicletas",
+    "Establishments": 592083.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "I56",
+    "Division": "Alimentação",
+    "Establishments": 536302.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "G45",
+    "Division": "Comércio E Reparação De Veículos Automotores E Motocicletas",
+    "Establishments": 441910.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "G47",
+    "Division": "Comércio Varejista",
+    "Establishments": 391020.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "G46",
+    "Division": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
+    "Establishments": 379318.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "F43",
+    "Division": "Serviços Especializados Para Construção",
+    "Establishments": 367007.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H49",
+    "Division": "Transporte Terrestre",
+    "Establishments": 333437.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "P85",
+    "Division": "Educação",
+    "Establishments": 308649.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M69",
+    "Division": "Atividades Jurídicas, De Contabilidade E De Auditoria",
+    "Establishments": 276162.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "K64",
+    "Division": "Atividades De Serviços Financeiros",
+    "Establishments": 273563.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M73",
+    "Division": "Publicidade E Pesquisa De Mercado",
+    "Establishments": 273263.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "T97",
+    "Division": "Serviços Domésticos",
+    "Establishments": 268734.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C10",
+    "Division": "Fabricação De Produtos Alimentícios",
+    "Establishments": 267584.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "S96",
+    "Division": "Outras Atividades De Serviços Pessoais",
+    "Establishments": 256209.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "S95",
+    "Division": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
+    "Establishments": 254664.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C14",
+    "Division": "Confecção De Artigos Do Vestuário E Acessórios",
+    "Establishments": 240189.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J62",
+    "Division": "Atividades Dos Serviços De Tecnologia Da Informação",
+    "Establishments": 225822.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "G47",
+    "Division": "Comércio Varejista",
+    "Establishments": 200755.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M71",
+    "Division": "Serviços De Arquitetura E Engenharia, Testes E Análises Técnicas",
+    "Establishments": 190484.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "L68",
+    "Division": "Atividades Imobiliárias",
+    "Establishments": 182420.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C25",
+    "Division": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos",
+    "Establishments": 173774.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "Q87",
+    "Division": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares",
+    "Establishments": 167030.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "F41",
+    "Division": "Construção De Edifícios",
+    "Establishments": 165492.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C33",
+    "Division": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos",
+    "Establishments": 156598.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J58",
+    "Division": "Edição E Edição Integrada À Impressão",
+    "Establishments": 143412.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "F41",
+    "Division": "Construção De Edifícios",
+    "Establishments": 142642.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M74",
+    "Division": "Outras Atividades Profissionais, Científicas E Técnicas",
+    "Establishments": 139506.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "L68",
+    "Division": "Atividades Imobiliárias",
+    "Establishments": 119747.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M70",
+    "Division": "Atividades De Sedes De Empresas E De Consultoria Em Gestão Empresarial",
+    "Establishments": 118213.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "G46",
+    "Division": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
+    "Establishments": 115505.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "G46",
+    "Division": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
+    "Establishments": 115394.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "R90",
+    "Division": "Atividades Artísticas, Criativas E De Espetáculos",
+    "Establishments": 113494.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J59",
+    "Division": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música",
+    "Establishments": 112745.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "Q86",
+    "Division": "Atividades De Atenção À Saúde Humana",
+    "Establishments": 112516.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C32",
+    "Division": "Fabricação De Produtos Diversos",
+    "Establishments": 112421.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M74",
+    "Division": "Outras Atividades Profissionais, Científicas E Técnicas",
+    "Establishments": 110451.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C10",
+    "Division": "Fabricação De Produtos Alimentícios",
+    "Establishments": 100344.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "R93",
+    "Division": "Atividades Esportivas E De Recreação E Lazer",
+    "Establishments": 100137.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C33",
+    "Division": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos",
+    "Establishments": 97999.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N81",
+    "Division": "Serviços Para Edifícios E Atividades Paisagísticas",
+    "Establishments": 96720.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N77",
+    "Division": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
+    "Establishments": 94458.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "S95",
+    "Division": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
+    "Establishments": 92628.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "Q86",
+    "Division": "Atividades De Atenção À Saúde Humana",
+    "Establishments": 91835.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N82",
+    "Division": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas",
+    "Establishments": 87659.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C31",
+    "Division": "Fabricação De Móveis",
+    "Establishments": 87514.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C14",
+    "Division": "Confecção De Artigos Do Vestuário E Acessórios",
+    "Establishments": 85206.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C25",
+    "Division": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos",
+    "Establishments": 83041.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "K66",
+    "Division": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 82215.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H52",
+    "Division": "Armazenamento E Atividades Auxiliares Dos Transportes",
+    "Establishments": 75443.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H52",
+    "Division": "Armazenamento E Atividades Auxiliares Dos Transportes",
+    "Establishments": 75396.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N77",
+    "Division": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
+    "Establishments": 74285.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "A01",
+    "Division": "Agricultura, Pecuária E Serviços Relacionados",
+    "Establishments": 73789.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N79",
+    "Division": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
+    "Establishments": 72192.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C13",
+    "Division": "Fabricação De Produtos Têxteis",
+    "Establishments": 68832.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "G45",
+    "Division": "Comércio E Reparação De Veículos Automotores E Motocicletas",
+    "Establishments": 67307.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "I56",
+    "Division": "Alimentação",
+    "Establishments": 64753.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "F41",
+    "Division": "Construção De Edifícios",
+    "Establishments": 64400.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H53",
+    "Division": "Correio E Outras Atividades De Entrega",
+    "Establishments": 62001.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N81",
+    "Division": "Serviços Para Edifícios E Atividades Paisagísticas",
+    "Establishments": 56573.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "A01",
+    "Division": "Agricultura, Pecuária E Serviços Relacionados",
+    "Establishments": 55974.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H49",
+    "Division": "Transporte Terrestre",
+    "Establishments": 55321.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J59",
+    "Division": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música",
+    "Establishments": 54054.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J63",
+    "Division": "Atividades De Prestação De Serviços De Informação",
+    "Establishments": 52894.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C18",
+    "Division": "Impressão E Reprodução De Gravações",
+    "Establishments": 50477.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "L68",
+    "Division": "Atividades Imobiliárias",
+    "Establishments": 49789.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H49",
+    "Division": "Transporte Terrestre",
+    "Establishments": 48617.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H55",
+    "Division": "Alojamento",
+    "Establishments": 47539.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "R90",
+    "Division": "Atividades Artísticas, Criativas E De Espetáculos",
+    "Establishments": 46375.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N79",
+    "Division": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
+    "Establishments": 45041.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C31",
+    "Division": "Fabricação De Móveis",
+    "Establishments": 44515.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M75",
+    "Division": "Atividades Veterinárias",
+    "Establishments": 41188.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N82",
+    "Division": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas",
+    "Establishments": 38926.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "F43",
+    "Division": "Serviços Especializados Para Construção",
+    "Establishments": 38787.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C16",
+    "Division": "Fabricação De Produtos De Madeira",
+    "Establishments": 38667.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "G45",
+    "Division": "Comércio E Reparação De Veículos Automotores E Motocicletas",
+    "Establishments": 37517.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J58",
+    "Division": "Edição E Edição Integrada À Impressão",
+    "Establishments": 37112.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C23",
+    "Division": "Fabricação De Produtos De Minerais Não Metálicos",
+    "Establishments": 36783.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "P85",
+    "Division": "Educação",
+    "Establishments": 36775.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "K64",
+    "Division": "Atividades De Serviços Financeiros",
+    "Establishments": 35875.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C32",
+    "Division": "Fabricação De Produtos Diversos",
+    "Establishments": 35803.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C23",
+    "Division": "Fabricação De Produtos De Minerais Não Metálicos",
+    "Establishments": 33398.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M71",
+    "Division": "Serviços De Arquitetura E Engenharia, Testes E Análises Técnicas",
+    "Establishments": 32594.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C18",
+    "Division": "Impressão E Reprodução De Gravações",
+    "Establishments": 32405.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J61",
+    "Division": "Telecomunicações",
+    "Establishments": 31439.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "E38",
+    "Division": "Coleta, Tratamento E Disposição De Resíduos, Recuperação De Materiais",
+    "Establishments": 30991.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J62",
+    "Division": "Atividades Dos Serviços De Tecnologia Da Informação",
+    "Establishments": 30821.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "I56",
+    "Division": "Alimentação",
+    "Establishments": 29841.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H55",
+    "Division": "Alojamento",
+    "Establishments": 29591.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M69",
+    "Division": "Atividades Jurídicas, De Contabilidade E De Auditoria",
+    "Establishments": 28354.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M73",
+    "Division": "Publicidade E Pesquisa De Mercado",
+    "Establishments": 28329.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "Q87",
+    "Division": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares",
+    "Establishments": 26899.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M70",
+    "Division": "Atividades De Sedes De Empresas E De Consultoria Em Gestão Empresarial",
+    "Establishments": 25541.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J61",
+    "Division": "Telecomunicações",
+    "Establishments": 25531.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M70",
+    "Division": "Atividades De Sedes De Empresas E De Consultoria Em Gestão Empresarial",
+    "Establishments": 25502.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C15",
+    "Division": "Preparação De Couros E Fabricação De Artefatos De Couro, Artigos Para Viagem E Calçados",
+    "Establishments": 25382.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N77",
+    "Division": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
+    "Establishments": 25156.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "F42",
+    "Division": "Obras De Infraestrutura",
+    "Establishments": 25009.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "K64",
+    "Division": "Atividades De Serviços Financeiros",
+    "Establishments": 23463.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N77",
+    "Division": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
+    "Establishments": 23059.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M74",
+    "Division": "Outras Atividades Profissionais, Científicas E Técnicas",
+    "Establishments": 22820.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M71",
+    "Division": "Serviços De Arquitetura E Engenharia, Testes E Análises Técnicas",
+    "Establishments": 21819.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "D35",
+    "Division": "Eletricidade, Gás E Outras Utilidades",
+    "Establishments": 21460.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "A02",
+    "Division": "Produção Florestal",
+    "Establishments": 21213.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C17",
+    "Division": "Fabricação De Celulose, Papel E Produtos De Papel",
+    "Establishments": 21053.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J62",
+    "Division": "Atividades Dos Serviços De Tecnologia Da Informação",
+    "Establishments": 20969.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M69",
+    "Division": "Atividades Jurídicas, De Contabilidade E De Auditoria",
+    "Establishments": 20949.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H52",
+    "Division": "Armazenamento E Atividades Auxiliares Dos Transportes",
+    "Establishments": 19996.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C16",
+    "Division": "Fabricação De Produtos De Madeira",
+    "Establishments": 19811.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N80",
+    "Division": "Atividades De Vigilância, Segurança E Investigação",
+    "Establishments": 19108.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C13",
+    "Division": "Fabricação De Produtos Têxteis",
+    "Establishments": 18463.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "A01",
+    "Division": "Agricultura, Pecuária E Serviços Relacionados",
+    "Establishments": 18045.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "R93",
+    "Division": "Atividades Esportivas E De Recreação E Lazer",
+    "Establishments": 17108.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C10",
+    "Division": "Fabricação De Produtos Alimentícios",
+    "Establishments": 17093.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "F42",
+    "Division": "Obras De Infraestrutura",
+    "Establishments": 16740.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "E38",
+    "Division": "Coleta, Tratamento E Disposição De Resíduos, Recuperação De Materiais",
+    "Establishments": 16684.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "K66",
+    "Division": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 16229.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "S96",
+    "Division": "Outras Atividades De Serviços Pessoais",
+    "Establishments": 16151.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C10",
+    "Division": "Fabricação De Produtos Alimentícios",
+    "Establishments": 16147.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M74",
+    "Division": "Outras Atividades Profissionais, Científicas E Técnicas",
+    "Establishments": 15863.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "K66",
+    "Division": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 15362.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C25",
+    "Division": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos",
+    "Establishments": 15303.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C33",
+    "Division": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos",
+    "Establishments": 14567.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H52",
+    "Division": "Armazenamento E Atividades Auxiliares Dos Transportes",
+    "Establishments": 14510.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C14",
+    "Division": "Confecção De Artigos Do Vestuário E Acessórios",
+    "Establishments": 14315.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C15",
+    "Division": "Preparação De Couros E Fabricação De Artefatos De Couro, Artigos Para Viagem E Calçados",
+    "Establishments": 13828.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "P85",
+    "Division": "Educação",
+    "Establishments": 13676.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "T97",
+    "Division": "Serviços Domésticos",
+    "Establishments": 13108.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C22",
+    "Division": "Fabricação De Produtos De Borracha E De Material Plástico",
+    "Establishments": 12874.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "F43",
+    "Division": "Serviços Especializados Para Construção",
+    "Establishments": 11704.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "B08",
+    "Division": "Extração De Minerais Não Metálicos",
+    "Establishments": 11698.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C28",
+    "Division": "Fabricação De Máquinas E Equipamentos",
+    "Establishments": 11048.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "A03",
+    "Division": "Pesca E Aqüicultura",
+    "Establishments": 10849.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "R93",
+    "Division": "Atividades Esportivas E De Recreação E Lazer",
+    "Establishments": 10826.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C22",
+    "Division": "Fabricação De Produtos De Borracha E De Material Plástico",
+    "Establishments": 9916.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N81",
+    "Division": "Serviços Para Edifícios E Atividades Paisagísticas",
+    "Establishments": 9704.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "A02",
+    "Division": "Produção Florestal",
+    "Establishments": 9296.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C23",
+    "Division": "Fabricação De Produtos De Minerais Não Metálicos",
+    "Establishments": 9213.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J61",
+    "Division": "Telecomunicações",
+    "Establishments": 9100.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J63",
+    "Division": "Atividades De Prestação De Serviços De Informação",
+    "Establishments": 8878.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H50",
+    "Division": "Transporte Aquaviário",
+    "Establishments": 8834.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "N78",
+    "Division": "Seleção, Agenciamento E Locação De Mão De Obra",
+    "Establishments": 8659.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H55",
+    "Division": "Alojamento",
+    "Establishments": 8287.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N80",
+    "Division": "Atividades De Vigilância, Segurança E Investigação",
+    "Establishments": 8141.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J63",
+    "Division": "Atividades De Prestação De Serviços De Informação",
+    "Establishments": 8017.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C20",
+    "Division": "Fabricação De Produtos Químicos",
+    "Establishments": 7957.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "F42",
+    "Division": "Obras De Infraestrutura",
+    "Establishments": 7951.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M73",
+    "Division": "Publicidade E Pesquisa De Mercado",
+    "Establishments": 7826.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C29",
+    "Division": "Fabricação De Veículos Automotores, Reboques E Carrocerias",
+    "Establishments": 7630.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C22",
+    "Division": "Fabricação De Produtos De Borracha E De Material Plástico",
+    "Establishments": 6772.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C28",
+    "Division": "Fabricação De Máquinas E Equipamentos",
+    "Establishments": 6557.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J63",
+    "Division": "Atividades De Prestação De Serviços De Informação",
+    "Establishments": 6477.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N79",
+    "Division": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
+    "Establishments": 6323.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "X99",
+    "Division": "Atividade não Informada",
+    "Establishments": 6236.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C31",
+    "Division": "Fabricação De Móveis",
+    "Establishments": 6203.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C11",
+    "Division": "Fabricação De Bebidas",
+    "Establishments": 6100.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C25",
+    "Division": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos",
+    "Establishments": 6049.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J59",
+    "Division": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música",
+    "Establishments": 6009.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C20",
+    "Division": "Fabricação De Produtos Químicos",
+    "Establishments": 5992.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C17",
+    "Division": "Fabricação De Celulose, Papel E Produtos De Papel",
+    "Establishments": 5949.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "R93",
+    "Division": "Atividades Esportivas E De Recreação E Lazer",
+    "Establishments": 5882.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J61",
+    "Division": "Telecomunicações",
+    "Establishments": 5848.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "S95",
+    "Division": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
+    "Establishments": 5822.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C28",
+    "Division": "Fabricação De Máquinas E Equipamentos",
+    "Establishments": 5683.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C22",
+    "Division": "Fabricação De Produtos De Borracha E De Material Plástico",
+    "Establishments": 5668.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "B08",
+    "Division": "Extração De Minerais Não Metálicos",
+    "Establishments": 5362.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "S96",
+    "Division": "Outras Atividades De Serviços Pessoais",
+    "Establishments": 5299.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C16",
+    "Division": "Fabricação De Produtos De Madeira",
+    "Establishments": 5281.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H55",
+    "Division": "Alojamento",
+    "Establishments": 5257.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C32",
+    "Division": "Fabricação De Produtos Diversos",
+    "Establishments": 5221.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C23",
+    "Division": "Fabricação De Produtos De Minerais Não Metálicos",
+    "Establishments": 5201.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "R90",
+    "Division": "Atividades Artísticas, Criativas E De Espetáculos",
+    "Establishments": 5061.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C18",
+    "Division": "Impressão E Reprodução De Gravações",
+    "Establishments": 5033.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "J60",
+    "Division": "Atividades De Rádio E De Televisão",
+    "Establishments": 4993.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "M72",
+    "Division": "Pesquisa E Desenvolvimento Científico",
+    "Establishments": 4731.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "E38",
+    "Division": "Coleta, Tratamento E Disposição De Resíduos, Recuperação De Materiais",
+    "Establishments": 4397.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "E36",
+    "Division": "Captação, Tratamento E Distribuição De Água",
+    "Establishments": 4051.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C33",
+    "Division": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos",
+    "Establishments": 3979.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C20",
+    "Division": "Fabricação De Produtos Químicos",
+    "Establishments": 3948.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C14",
+    "Division": "Confecção De Artigos Do Vestuário E Acessórios",
+    "Establishments": 3932.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N80",
+    "Division": "Atividades De Vigilância, Segurança E Investigação",
+    "Establishments": 3830.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C29",
+    "Division": "Fabricação De Veículos Automotores, Reboques E Carrocerias",
+    "Establishments": 3651.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "B08",
+    "Division": "Extração De Minerais Não Metálicos",
+    "Establishments": 3646.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C27",
+    "Division": "Fabricação De Máquinas, Aparelhos E Materiais Elétricos",
+    "Establishments": 3600.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C13",
+    "Division": "Fabricação De Produtos Têxteis",
+    "Establishments": 3540.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N81",
+    "Division": "Serviços Para Edifícios E Atividades Paisagísticas",
+    "Establishments": 3535.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H50",
+    "Division": "Transporte Aquaviário",
+    "Establishments": 3501.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N78",
+    "Division": "Seleção, Agenciamento E Locação De Mão De Obra",
+    "Establishments": 3478.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M75",
+    "Division": "Atividades Veterinárias",
+    "Establishments": 3462.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "K65",
+    "Division": "Seguros, Resseguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 3456.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J58",
+    "Division": "Edição E Edição Integrada À Impressão",
+    "Establishments": 3428.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "E38",
+    "Division": "Coleta, Tratamento E Disposição De Resíduos, Recuperação De Materiais",
+    "Establishments": 3375.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "A03",
+    "Division": "Pesca E Aqüicultura",
+    "Establishments": 2977.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N80",
+    "Division": "Atividades De Vigilância, Segurança E Investigação",
+    "Establishments": 2860.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "N78",
+    "Division": "Seleção, Agenciamento E Locação De Mão De Obra",
+    "Establishments": 2833.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C13",
+    "Division": "Fabricação De Produtos Têxteis",
+    "Establishments": 2827.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H53",
+    "Division": "Correio E Outras Atividades De Entrega",
+    "Establishments": 2721.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C15",
+    "Division": "Preparação De Couros E Fabricação De Artefatos De Couro, Artigos Para Viagem E Calçados",
+    "Establishments": 2692.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "N79",
+    "Division": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
+    "Establishments": 2672.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "A02",
+    "Division": "Produção Florestal",
+    "Establishments": 2624.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C29",
+    "Division": "Fabricação De Veículos Automotores, Reboques E Carrocerias",
+    "Establishments": 2609.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C27",
+    "Division": "Fabricação De Máquinas, Aparelhos E Materiais Elétricos",
+    "Establishments": 2573.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "E37",
+    "Division": "Esgoto E Atividades Relacionadas",
+    "Establishments": 2484.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C29",
+    "Division": "Fabricação De Veículos Automotores, Reboques E Carrocerias",
+    "Establishments": 2472.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C26",
+    "Division": "Fabricação De Equipamentos De Informática, Produtos Eletrônicos E Ópticos",
+    "Establishments": 2372.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C27",
+    "Division": "Fabricação De Máquinas, Aparelhos E Materiais Elétricos",
+    "Establishments": 2347.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J59",
+    "Division": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música",
+    "Establishments": 2308.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J58",
+    "Division": "Edição E Edição Integrada À Impressão",
+    "Establishments": 2283.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C16",
+    "Division": "Fabricação De Produtos De Madeira",
+    "Establishments": 2272.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "B07",
+    "Division": "Extração De Minerais Metálicos",
+    "Establishments": 2179.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "Q87",
+    "Division": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares",
+    "Establishments": 2134.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "E37",
+    "Division": "Esgoto E Atividades Relacionadas",
+    "Establishments": 2118.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C17",
+    "Division": "Fabricação De Celulose, Papel E Produtos De Papel",
+    "Establishments": 2033.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C32",
+    "Division": "Fabricação De Produtos Diversos",
+    "Establishments": 2016.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "E36",
+    "Division": "Captação, Tratamento E Distribuição De Água",
+    "Establishments": 2012.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C31",
+    "Division": "Fabricação De Móveis",
+    "Establishments": 1995.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "E36",
+    "Division": "Captação, Tratamento E Distribuição De Água",
+    "Establishments": 1856.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C24",
+    "Division": "Metalurgia",
+    "Establishments": 1837.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "R90",
+    "Division": "Atividades Artísticas, Criativas E De Espetáculos",
+    "Establishments": 1831.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C17",
+    "Division": "Fabricação De Celulose, Papel E Produtos De Papel",
+    "Establishments": 1819.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C24",
+    "Division": "Metalurgia",
+    "Establishments": 1790.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C26",
+    "Division": "Fabricação De Equipamentos De Informática, Produtos Eletrônicos E Ópticos",
+    "Establishments": 1790.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C11",
+    "Division": "Fabricação De Bebidas",
+    "Establishments": 1725.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "Q88",
+    "Division": "Serviços De Assistência Social Sem Alojamento",
+    "Establishments": 1723.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C15",
+    "Division": "Preparação De Couros E Fabricação De Artefatos De Couro, Artigos Para Viagem E Calçados",
+    "Establishments": 1641.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "J60",
+    "Division": "Atividades De Rádio E De Televisão",
+    "Establishments": 1585.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C11",
+    "Division": "Fabricação De Bebidas",
+    "Establishments": 1576.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C30",
+    "Division": "Fabricação De Outros Equipamentos De Transporte, Exceto Veículos Automotores",
+    "Establishments": 1506.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "A03",
+    "Division": "Pesca E Aqüicultura",
+    "Establishments": 1506.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C26",
+    "Division": "Fabricação De Equipamentos De Informática, Produtos Eletrônicos E Ópticos",
+    "Establishments": 1475.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "S95",
+    "Division": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
+    "Establishments": 1449.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H51",
+    "Division": "Transporte Aéreo",
+    "Establishments": 1447.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "X99",
+    "Division": "Atividade não Informada",
+    "Establishments": 1386.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "J60",
+    "Division": "Atividades De Rádio E De Televisão",
+    "Establishments": 1344.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C18",
+    "Division": "Impressão E Reprodução De Gravações",
+    "Establishments": 1316.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M72",
+    "Division": "Pesquisa E Desenvolvimento Científico",
+    "Establishments": 1290.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H50",
+    "Division": "Transporte Aquaviário",
+    "Establishments": 1280.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "D35",
+    "Division": "Eletricidade, Gás E Outras Utilidades",
+    "Establishments": 1047.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C24",
+    "Division": "Metalurgia",
+    "Establishments": 1040.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "B09",
+    "Division": "Atividades De Apoio À Extração De Minerais",
+    "Establishments": 1038.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H50",
+    "Division": "Transporte Aquaviário",
+    "Establishments": 971.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "B07",
+    "Division": "Extração De Minerais Metálicos",
+    "Establishments": 936.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C19",
+    "Division": "Fabricação De Coque, De Produtos Derivados Do Petróleo E De Biocombustíveis",
+    "Establishments": 929.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "B09",
+    "Division": "Atividades De Apoio À Extração De Minerais",
+    "Establishments": 914.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "K65",
+    "Division": "Seguros, Resseguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 894.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "Q87",
+    "Division": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares",
+    "Establishments": 884.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "B06",
+    "Division": "Extração De Petróleo E Gás Natural",
+    "Establishments": 856.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "M72",
+    "Division": "Pesquisa E Desenvolvimento Científico",
+    "Establishments": 838.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "R91",
+    "Division": "Atividades Ligadas Ao Patrimônio Cultural E Ambiental",
+    "Establishments": 761.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C30",
+    "Division": "Fabricação De Outros Equipamentos De Transporte, Exceto Veículos Automotores",
+    "Establishments": 695.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C30",
+    "Division": "Fabricação De Outros Equipamentos De Transporte, Exceto Veículos Automotores",
+    "Establishments": 690.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C21",
+    "Division": "Fabricação De Produtos Farmoquímicos E Farmacêuticos",
+    "Establishments": 679.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "M75",
+    "Division": "Atividades Veterinárias",
+    "Establishments": 657.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C27",
+    "Division": "Fabricação De Máquinas, Aparelhos E Materiais Elétricos",
+    "Establishments": 639.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "D35",
+    "Division": "Eletricidade, Gás E Outras Utilidades",
+    "Establishments": 583.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "A03",
+    "Division": "Pesca E Aqüicultura",
+    "Establishments": 547.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "E37",
+    "Division": "Esgoto E Atividades Relacionadas",
+    "Establishments": 520.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "H53",
+    "Division": "Correio E Outras Atividades De Entrega",
+    "Establishments": 515.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "R92",
+    "Division": "Atividades De Exploração De Jogos De Azar E Apostas",
+    "Establishments": 478.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "E37",
+    "Division": "Esgoto E Atividades Relacionadas",
+    "Establishments": 435.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "H51",
+    "Division": "Transporte Aéreo",
+    "Establishments": 427.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "B07",
+    "Division": "Extração De Minerais Metálicos",
+    "Establishments": 408.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "E36",
+    "Division": "Captação, Tratamento E Distribuição De Água",
+    "Establishments": 405.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C12",
+    "Division": "Fabricação De Produtos Do Fumo",
+    "Establishments": 340.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "R92",
+    "Division": "Atividades De Exploração De Jogos De Azar E Apostas",
+    "Establishments": 318.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C12",
+    "Division": "Fabricação De Produtos Do Fumo",
+    "Establishments": 315.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "K65",
+    "Division": "Seguros, Resseguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 313.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C21",
+    "Division": "Fabricação De Produtos Farmoquímicos E Farmacêuticos",
+    "Establishments": 311.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "B09",
+    "Division": "Atividades De Apoio À Extração De Minerais",
+    "Establishments": 297.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C11",
+    "Division": "Fabricação De Bebidas",
+    "Establishments": 242.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "H51",
+    "Division": "Transporte Aéreo",
+    "Establishments": 217.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "C19",
+    "Division": "Fabricação De Coque, De Produtos Derivados Do Petróleo E De Biocombustíveis",
+    "Establishments": 187.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "Q86",
+    "Division": "Atividades De Atenção À Saúde Humana",
+    "Establishments": 154.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C19",
+    "Division": "Fabricação De Coque, De Produtos Derivados Do Petróleo E De Biocombustíveis",
+    "Establishments": 153.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "R91",
+    "Division": "Atividades Ligadas Ao Patrimônio Cultural E Ambiental",
+    "Establishments": 153.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "R91",
+    "Division": "Atividades Ligadas Ao Patrimônio Cultural E Ambiental",
+    "Establishments": 145.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "G46",
+    "Division": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
+    "Establishments": 144.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "C12",
+    "Division": "Fabricação De Produtos Do Fumo",
+    "Establishments": 139.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C21",
+    "Division": "Fabricação De Produtos Farmoquímicos E Farmacêuticos",
+    "Establishments": 135.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J62",
+    "Division": "Atividades Dos Serviços De Tecnologia Da Informação",
+    "Establishments": 123.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "E39",
+    "Division": "Descontaminação E Outros Serviços De Gestão De Resíduos",
+    "Establishments": 111.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "R92",
+    "Division": "Atividades De Exploração De Jogos De Azar E Apostas",
+    "Establishments": 105.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M71",
+    "Division": "Serviços De Arquitetura E Engenharia, Testes E Análises Técnicas",
+    "Establishments": 99.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "C12",
+    "Division": "Fabricação De Produtos Do Fumo",
+    "Establishments": 92.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "Q88",
+    "Division": "Serviços De Assistência Social Sem Alojamento",
+    "Establishments": 87.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "B05",
+    "Division": "Extração De Carvão Mineral",
+    "Establishments": 82.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M70",
+    "Division": "Atividades De Sedes De Empresas E De Consultoria Em Gestão Empresarial",
+    "Establishments": 77.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "L68",
+    "Division": "Atividades Imobiliárias",
+    "Establishments": 75.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "E39",
+    "Division": "Descontaminação E Outros Serviços De Gestão De Resíduos",
+    "Establishments": 70.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "X99",
+    "Division": "Atividade não Informada",
+    "Establishments": 63.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "F41",
+    "Division": "Construção De Edifícios",
+    "Establishments": 58.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "E39",
+    "Division": "Descontaminação E Outros Serviços De Gestão De Resíduos",
+    "Establishments": 52.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "Q88",
+    "Division": "Serviços De Assistência Social Sem Alojamento",
+    "Establishments": 49.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "B08",
+    "Division": "Extração De Minerais Não Metálicos",
+    "Establishments": 45.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M69",
+    "Division": "Atividades Jurídicas, De Contabilidade E De Auditoria",
+    "Establishments": 42.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "B05",
+    "Division": "Extração De Carvão Mineral",
+    "Establishments": 39.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "Division ID": "B06",
+    "Division": "Extração De Petróleo E Gás Natural",
+    "Establishments": 32.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "T97",
+    "Division": "Serviços Domésticos",
+    "Establishments": 30.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "K66",
+    "Division": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
+    "Establishments": 26.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "B05",
+    "Division": "Extração De Carvão Mineral",
+    "Establishments": 15.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "F42",
+    "Division": "Obras De Infraestrutura",
+    "Establishments": 14.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M75",
+    "Division": "Atividades Veterinárias",
+    "Establishments": 12.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "Division ID": "T97",
+    "Division": "Serviços Domésticos",
+    "Establishments": 11.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "Division ID": "B06",
+    "Division": "Extração De Petróleo E Gás Natural",
+    "Establishments": 7.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C28",
+    "Division": "Fabricação De Máquinas E Equipamentos",
+    "Establishments": 5.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "N78",
+    "Division": "Seleção, Agenciamento E Locação De Mão De Obra",
+    "Establishments": 5.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "K64",
+    "Division": "Atividades De Serviços Financeiros",
+    "Establishments": 3.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "A02",
+    "Division": "Produção Florestal",
+    "Establishments": 2.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C20",
+    "Division": "Fabricação De Produtos Químicos",
+    "Establishments": 2.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "J60",
+    "Division": "Atividades De Rádio E De Televisão",
+    "Establishments": 2.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "C26",
+    "Division": "Fabricação De Equipamentos De Informática, Produtos Eletrônicos E Ópticos",
+    "Establishments": 1.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "H51",
+    "Division": "Transporte Aéreo",
+    "Establishments": 1.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "M72",
+    "Division": "Pesquisa E Desenvolvimento Científico",
+    "Establishments": 1.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "Division ID": "Q88",
+    "Division": "Serviços De Assistência Social Sem Alojamento",
+    "Establishments": 1.0
+  }
+]

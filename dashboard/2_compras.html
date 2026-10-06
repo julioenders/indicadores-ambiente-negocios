@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIPPA | Compras Publicas — Tema 2</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg:#0f172a; --surface:#1e293b; --surface2:#334155;
+  --text:#e2e8f0; --text2:#94a3b8; --accent:#3b82f6;
+  --accent2:#8b5cf6; --green:#22c55e; --red:#ef4444;
+  --yellow:#eab308; --orange:#f97316; --cyan:#06b6d4;
+  --radius:12px; --shadow:0 4px 24px rgba(0,0,0,.4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+
+.header{
+  background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);
+  padding:1.2rem 2rem;display:flex;align-items:center;gap:1.5rem;
+  border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:100;
+}
+.header-brand{display:flex;align-items:center;gap:.8rem}
+.header-logo{
+  width:44px;height:44px;background:var(--accent);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff;
+}
+.header h1{font-size:1.3rem;font-weight:700;letter-spacing:-.5px}
+.header h1 span{color:var(--accent)}
+.header-sub{font-size:.75rem;color:var(--text2);margin-top:2px}
+.header-controls{margin-left:auto;display:flex;align-items:center;gap:10px}
+.thermometer{display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 12px;border-radius:20px;font-weight:600}
+.thermo-green{background:rgba(34,197,94,.15);color:var(--green)}
+.thermo-yellow{background:rgba(234,179,8,.15);color:var(--yellow)}
+.thermo-red{background:rgba(239,68,68,.15);color:var(--red)}
+
+.btn{
+  display:flex;align-items:center;gap:6px;background:var(--accent);
+  border:none;color:#fff;padding:8px 16px;
+  border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;
+  font-family:inherit;
+}
+.btn:hover{background:#2563eb;transform:translateY(-1px)}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn svg{width:14px;height:14px}
+
+.pippa-home-btn{
+  display:flex;align-items:center;gap:6px;background:rgba(15,23,42,.85);
+  border:1px solid rgba(59,130,246,.3);color:#93c5fd;padding:7px 14px;
+  border-radius:8px;font-size:11.5px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;
+}
+.pippa-home-btn:hover{background:rgba(59,130,246,.15);border-color:var(--accent);color:#fff}
+.pippa-home-btn svg{width:13px;height:13px}
+
+.tabs{display:flex;gap:0;padding:0 2rem;background:var(--surface);border-bottom:2px solid var(--surface2)}
+.tab{
+  padding:.7rem 1.4rem;font-size:.8rem;font-weight:600;color:var(--text2);
+  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;
+  transition:all .2s;letter-spacing:.3px;
+}
+.tab:hover{color:var(--text);background:rgba(255,255,255,.03)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab-icon{margin-right:6px}
+
+.main{padding:1.5rem 2rem 3rem;max-width:1400px;margin:0 auto}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.kpi{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden}
+.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;border-radius:var(--radius) 0 0 var(--radius)}
+.kpi.kpi-blue::before{background:var(--accent)}
+.kpi.kpi-green::before{background:var(--green)}
+.kpi.kpi-yellow::before{background:var(--yellow)}
+.kpi.kpi-red::before{background:var(--red)}
+.kpi.kpi-purple::before{background:var(--accent2)}
+.kpi.kpi-cyan::before{background:var(--cyan)}
+.kpi-label{font-size:.7rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.kpi-value{font-size:1.6rem;font-weight:700;margin:4px 0}
+.kpi-detail{font-size:.72rem;color:var(--text2)}
+.kpi-bar{height:4px;background:var(--surface2);border-radius:2px;margin-top:8px}
+.kpi-bar-fill{height:100%;border-radius:2px;transition:width .6s ease}
+
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
+.chart-grid.full{grid-template-columns:1fr}
+.chart-box{background:var(--surface);border-radius:var(--radius);padding:1.2rem;border:1px solid rgba(255,255,255,.06)}
+.chart-title{font-size:.85rem;font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.chart-title .dot{width:8px;height:8px;border-radius:50%}
+.chart-canvas{position:relative;width:100%}
+
+.section-title{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+
+.data-table{width:100%;border-collapse:collapse;font-size:.78rem;background:var(--surface);border-radius:var(--radius);overflow:hidden}
+.data-table th{background:var(--surface2);padding:10px 12px;text-align:left;font-weight:600;color:var(--text2);text-transform:uppercase;font-size:.68rem;letter-spacing:.5px;position:sticky;top:0}
+.data-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.data-table tr:hover td{background:rgba(255,255,255,.02)}
+.data-table .num{text-align:right;font-variant-numeric:tabular-nums}
+.pct-bar{height:6px;background:var(--surface2);border-radius:3px}
+.pct-bar-fill{height:100%;border-radius:3px}
+
+.table-wrapper{border-radius:var(--radius);overflow:auto;max-height:500px;border:1px solid rgba(255,255,255,.06)}
+
+.alert-item{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem 1rem;border-radius:8px;font-size:.8rem;margin-bottom:.6rem}
+.alert-item.warning{background:rgba(234,179,8,.08);border-left:3px solid var(--yellow)}
+.alert-item.info{background:rgba(59,130,246,.08);border-left:3px solid var(--accent)}
+.alert-item.success{background:rgba(34,197,94,.08);border-left:3px solid var(--green)}
+.alert-title{font-weight:600}
+.alert-desc{color:var(--text2);font-size:.74rem;margin-top:2px}
+
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600}
+.badge-ok{background:rgba(34,197,94,.15);color:var(--green)}
+.badge-warn{background:rgba(234,179,8,.15);color:var(--yellow)}
+.badge-danger{background:rgba(239,68,68,.15);color:var(--red)}
+
+.footer{text-align:center;padding:2rem;font-size:.7rem;color:var(--text2)}
+
+@media(max-width:900px){
+  .chart-grid{grid-template-columns:1fr}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .header{padding:1rem;flex-wrap:wrap}
+  .main{padding:1rem}
+  .tabs{padding:0 1rem;overflow-x:auto}
+}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(59,130,246,.45)}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">
+    <div class="header-logo">CP</div>
+    <div>
+      <h1><span>PIPPA</span> Compras Publicas</h1>
+      <div class="header-sub">Plataforma de Inteligencia em Politicas Publicas Aplicadas — Tema 2: Compras Publicas e Participacao das MPEs</div>
+    </div>
+  </div>
+  <div class="header-controls">
+    <div class="thermometer" id="thermometer"></div>
+    <button class="btn" onclick="fetchData()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
+      Consultar APIs
+    </button>
+    <a href="../index.html" class="pippa-home-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      PIPPA Portal
+    </a>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="volume" onclick="switchTab('volume')"><span class="tab-icon">&#x1F4E6;</span>2.1 Volume de Compras</div>
+  <div class="tab" data-tab="fornecedoras" onclick="switchTab('fornecedoras')"><span class="tab-icon">&#x1F3ED;</span>2.2 MPEs Fornecedoras</div>
+</div>
+
+<div class="main">
+
+<!-- 2.1 VOLUME DE COMPRAS -->
+<div class="tab-content active" id="tab-volume">
+  <div id="alertVolume"></div>
+  <div class="kpi-row" id="kpiVolume"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>Volume de Contratacoes por Modalidade</div>
+      <div class="chart-canvas"><canvas id="chartModalidade" height="220"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Evolucao Mensal de Contratacoes</div>
+      <div class="chart-canvas"><canvas id="chartEvolucao" height="220"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent2)"></span>Distribuicao por Porte de Empresa</div>
+      <div class="chart-canvas"><canvas id="chartPorte" height="240"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 10 UFs por Valor Contratado</div>
+      <div class="chart-canvas"><canvas id="chartUfValor" height="240"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2.2 MPEs FORNECEDORAS -->
+<div class="tab-content" id="tab-fornecedoras">
+  <div id="alertFornecedoras"></div>
+  <div class="kpi-row" id="kpiFornecedoras"></div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--accent)"></span>MPEs Fornecedoras por UF</div>
+      <div class="chart-canvas"><canvas id="chartMpesUf" height="380"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--green)"></span>Distribuicao por Natureza Juridica</div>
+      <div class="chart-canvas"><canvas id="chartNatureza" height="380"></canvas></div>
+    </div>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title"><span class="dot" style="background:var(--cyan)"></span>Relacao PIB Municipal vs Contratos com MPEs</div>
+      <div class="chart-canvas"><canvas id="chartPibContratos" height="260"></canvas></div>
+    </div>
+    <div class="chart-box" style="grid-column:1/-1">
+      <div class="chart-title"><span class="dot" style="background:var(--orange)"></span>Top 20 Fornecedores MPE</div>
+      <div class="table-wrapper" id="tableFornecedores"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  PIPPA Compras Publicas v1.0 — Plataforma Integrada de Pesquisa, Prospeccao e Analise<br>
+  Sebrae Nacional · UCOMP/DADOS · 2026
+</div>
+
+<script>
+/* ============================================================
+   UF_MAP — all 27 Brazilian states + DF
+   ============================================================ */
+const UF_MAP = {
+  'Acre':'AC','Alagoas':'AL','Amapa':'AP','Amazonas':'AM','Bahia':'BA','Ceara':'CE',
+  'Distrito Federal':'DF','Espirito Santo':'ES','Goias':'GO','Maranhao':'MA',
+  'Mato Grosso':'MT','Mato Grosso do Sul':'MS','Minas Gerais':'MG','Para':'PA',
+  'Paraiba':'PB','Parana':'PR','Pernambuco':'PE','Piaui':'PI','Rio de Janeiro':'RJ',
+  'Rio Grande do Norte':'RN','Rio Grande do Sul':'RS','Rondonia':'RO','Roraima':'RR',
+  'Santa Catarina':'SC','Sao Paulo':'SP','Sergipe':'SE','Tocantins':'TO'
+};
+function mapSigla(nome) { return UF_MAP[nome]||nome; }
+
+/* ============================================================
+   SAMPLE_DATA — realistic demonstration data
+   ============================================================ */
+const SAMPLE_DATA = {
+  /* --- Tab 2.1: Volume de Compras --- */
+  contratacoes_recentes: 1247,
+  valor_total: 3_842_567_890.45,
+  pct_mpe: 32.7,
+  modalidades_ativas: 8,
+
+  modalidades: [
+    {nome:'Pregao Eletronico',          qtd:582, valor:1_245_800_000},
+    {nome:'Dispensa de Licitacao',      qtd:341, valor:  187_340_000},
+    {nome:'Inexigibilidade',            qtd:112, valor:  856_200_000},
+    {nome:'Concorrencia',               qtd: 78, valor:  724_500_000},
+    {nome:'Pregao Presencial',          qtd: 54, valor:  312_600_000},
+    {nome:'Leilao',                     qtd: 32, valor:  198_400_000},
+    {nome:'Dialogo Competitivo',        qtd: 28, valor:  245_700_000},
+    {nome:'Concurso',                   qtd: 20, valor:   72_027_890},
+  ],
+
+  evolucao_mensal: [
+    {mes:'2025-11', qtd:980,  valor:2_810_000_000},
+    {mes:'2025-12', qtd:870,  valor:2_440_000_000},
+    {mes:'2026-01', qtd:1120, valor:3_150_000_000},
+    {mes:'2026-02', qtd:1045, valor:2_980_000_000},
+    {mes:'2026-03', qtd:1230, valor:3_560_000_000},
+    {mes:'2026-04', qtd:1180, valor:3_320_000_000},
+    {mes:'2026-05', qtd:1350, valor:3_890_000_000},
+    {mes:'2026-06', qtd:1280, valor:3_710_000_000},
+    {mes:'2026-07', qtd:1190, valor:3_450_000_000},
+    {mes:'2026-08', qtd:1410, valor:4_120_000_000},
+    {mes:'2026-09', qtd:1320, valor:3_840_000_000},
+    {mes:'2026-10', qtd:1247, valor:3_842_567_890},
+  ],
+
+  porte: [
+    {tipo:'MEI',    pct:18.4, valor:  707_832_812},
+    {tipo:'ME',     pct:28.6, valor:1_098_974_416},
+    {tipo:'EPP',    pct:21.3, valor:  818_467_161},
+    {tipo:'Demais', pct:31.7, valor:1_217_293_501},
+  ],
+
+  uf_valor: [
+    {uf:'SP', valor:892_400_000},
+    {uf:'RJ', valor:534_600_000},
+    {uf:'MG', valor:412_300_000},
+    {uf:'PR', valor:298_700_000},
+    {uf:'RS', valor:276_500_000},
+    {uf:'BA', valor:245_800_000},
+    {uf:'SC', valor:231_400_000},
+    {uf:'DF', valor:218_900_000},
+    {uf:'PE', valor:187_600_000},
+    {uf:'GO', valor:165_200_000},
+  ],
+
+  /* --- Tab 2.2: MPEs Fornecedoras --- */
+  mpes_fornecedoras: 28_463,
+  descentralizacao: 0.72,
+  regime_simplificado_pct: 64.8,
+  municipios_atendidos: 3_847,
+
+  mpes_por_uf: [
+    {uf:'SP', qtd:6842},{uf:'MG', qtd:3215},{uf:'RJ', qtd:2876},{uf:'PR', qtd:2134},
+    {uf:'RS', qtd:1987},{uf:'SC', qtd:1654},{uf:'BA', qtd:1432},{uf:'GO', qtd:1198},
+    {uf:'PE', qtd:1087},{uf:'CE', qtd:945},{uf:'DF', qtd:876},{uf:'ES', qtd:734},
+    {uf:'MT', qtd:612},{uf:'PA', qtd:543},{uf:'MA', qtd:478},
+  ],
+
+  natureza_juridica: [
+    {tipo:'Empresario Individual',                          qtd:8_540},
+    {tipo:'Sociedade Empresaria Ltda',                      qtd:7_230},
+    {tipo:'MEI',                                            qtd:5_890},
+    {tipo:'Sociedade Simples',                              qtd:2_410},
+    {tipo:'EIRELI',                                         qtd:1_980},
+    {tipo:'Sociedade Anonima Fechada',                      qtd:1_245},
+    {tipo:'Cooperativa',                                    qtd:  678},
+    {tipo:'Outros',                                         qtd:  490},
+  ],
+
+  pib_contratos: [
+    {municipio:'Sao Paulo',         uf:'SP', pib:780_000, contratos:1842, r:18},
+    {municipio:'Rio de Janeiro',    uf:'RJ', pib:364_000, contratos:1205, r:14},
+    {municipio:'Brasilia',          uf:'DF', pib:278_000, contratos:987,  r:12},
+    {municipio:'Belo Horizonte',    uf:'MG', pib:102_000, contratos:643,  r:10},
+    {municipio:'Curitiba',          uf:'PR', pib: 98_000, contratos:578,  r:9},
+    {municipio:'Porto Alegre',      uf:'RS', pib: 87_000, contratos:512,  r:9},
+    {municipio:'Salvador',          uf:'BA', pib: 73_000, contratos:487,  r:8},
+    {municipio:'Goiania',           uf:'GO', pib: 62_000, contratos:398,  r:8},
+    {municipio:'Recife',            uf:'PE', pib: 55_000, contratos:367,  r:7},
+    {municipio:'Fortaleza',         uf:'CE', pib: 52_000, contratos:345,  r:7},
+    {municipio:'Campinas',          uf:'SP', pib: 68_000, contratos:312,  r:7},
+    {municipio:'Florianopolis',     uf:'SC', pib: 28_000, contratos:278,  r:6},
+    {municipio:'Manaus',            uf:'AM', pib: 98_000, contratos:198,  r:6},
+    {municipio:'Vitoria',           uf:'ES', pib: 42_000, contratos:234,  r:6},
+    {municipio:'Belem',             uf:'PA', pib: 38_000, contratos:187,  r:5},
+    {municipio:'Campo Grande',      uf:'MS', pib: 34_000, contratos:167,  r:5},
+    {municipio:'Cuiaba',            uf:'MT', pib: 27_000, contratos:145,  r:5},
+    {municipio:'Sao Luis',          uf:'MA', pib: 32_000, contratos:132,  r:5},
+    {municipio:'Natal',             uf:'RN', pib: 22_000, contratos:123,  r:4},
+    {municipio:'Joao Pessoa',       uf:'PB', pib: 21_000, contratos:118,  r:4},
+  ],
+
+  fornecedores_top20: [
+    {cnpj:'12.345.678/0001-90', razao:'Tech Solutions Ltda',             uf:'SP', porte:'ME',  contratos:47, valor:12_450_000},
+    {cnpj:'23.456.789/0001-01', razao:'Servicos Integrados SA',          uf:'RJ', porte:'EPP', contratos:42, valor:18_920_000},
+    {cnpj:'34.567.890/0001-12', razao:'Brasil Suprimentos Ltda',         uf:'MG', porte:'ME',  contratos:38, valor: 8_340_000},
+    {cnpj:'45.678.901/0001-23', razao:'Construtora Minas Ltda',          uf:'MG', porte:'EPP', contratos:35, valor:22_780_000},
+    {cnpj:'56.789.012/0001-34', razao:'Infotech Comercio ME',            uf:'SP', porte:'ME',  contratos:33, valor: 6_120_000},
+    {cnpj:'67.890.123/0001-45', razao:'Distribuidora Centro-Oeste',      uf:'GO', porte:'EPP', contratos:31, valor:14_560_000},
+    {cnpj:'78.901.234/0001-56', razao:'Logistica Express Ltda',          uf:'PR', porte:'ME',  contratos:29, valor: 9_870_000},
+    {cnpj:'89.012.345/0001-67', razao:'Alimentacao e Servicos ME',       uf:'BA', porte:'MEI', contratos:28, valor: 1_240_000},
+    {cnpj:'90.123.456/0001-78', razao:'Engenharia Nordeste Ltda',        uf:'PE', porte:'EPP', contratos:27, valor:31_450_000},
+    {cnpj:'01.234.567/0001-89', razao:'Papelaria Digital Ltda',          uf:'RS', porte:'ME',  contratos:26, valor: 4_560_000},
+    {cnpj:'11.223.344/0001-55', razao:'Clean Service Ltda',              uf:'DF', porte:'ME',  contratos:25, valor: 7_890_000},
+    {cnpj:'22.334.455/0001-66', razao:'TI Sul Solucoes ME',              uf:'SC', porte:'ME',  contratos:24, valor: 5_340_000},
+    {cnpj:'33.445.566/0001-77', razao:'Farmacia Popular Ltda',           uf:'CE', porte:'ME',  contratos:23, valor: 3_120_000},
+    {cnpj:'44.556.677/0001-88', razao:'Estrutural Engenharia EPP',       uf:'SP', porte:'EPP', contratos:22, valor:16_780_000},
+    {cnpj:'55.667.788/0001-99', razao:'Eletrica Forca Ltda',             uf:'RJ', porte:'ME',  contratos:21, valor: 8_450_000},
+    {cnpj:'66.778.899/0001-00', razao:'Transportes Rapido ME',           uf:'MG', porte:'MEI', contratos:20, valor:   980_000},
+    {cnpj:'77.889.900/0001-11', razao:'Grafica Nacional Ltda',           uf:'SP', porte:'ME',  contratos:19, valor: 2_340_000},
+    {cnpj:'88.990.011/0001-22', razao:'Consultoria Gestao Publica',      uf:'DF', porte:'EPP', contratos:18, valor:11_200_000},
+    {cnpj:'99.001.122/0001-33', razao:'Seguranca Patrimonial Ltda',      uf:'PR', porte:'EPP', contratos:17, valor:13_670_000},
+    {cnpj:'10.112.233/0001-44', razao:'Manutencao Predial ME',           uf:'GO', porte:'ME',  contratos:16, valor: 4_890_000},
+  ],
+
+  /* Data source status */
+  fontes: {
+    'pncp_contratacoes_recentes': true,
+    'pncp_modalidades': true,
+    'portal_transparencia_contratos': false,
+    'rf_cnpj_fornecedores': true,
+    'ibge_pib_municipal': true,
+  },
+
+  /* Tracking API source */
+  fonte_api: 'amostra',
+};
+
+/* ============================================================
+   State
+   ============================================================ */
+let DATA = JSON.parse(JSON.stringify(SAMPLE_DATA));
+const charts = {};
+
+/* ============================================================
+   Helpers
+   ============================================================ */
+function fmt(v) {
+  if (v >= 1e9) return 'R$ '+(v/1e9).toFixed(2)+'B';
+  if (v >= 1e6) return (v/1e6).toFixed(1)+'M';
+  if (v >= 1e3) return (v/1e3).toFixed(1)+'k';
+  return v.toLocaleString('pt-BR');
+}
+function fmtCurrency(v) {
+  if (v >= 1e9) return 'R$ '+(v/1e9).toFixed(2)+'B';
+  if (v >= 1e6) return 'R$ '+(v/1e6).toFixed(1)+'M';
+  if (v >= 1e3) return 'R$ '+(v/1e3).toFixed(1)+'k';
+  return 'R$ '+v.toLocaleString('pt-BR',{minimumFractionDigits:2});
+}
+function fmtBRL(v) {
+  return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:0,maximumFractionDigits:0});
+}
+
+function colorForPct(p) { return p>=75?'#22c55e':p>=50?'#3b82f6':p>=30?'#eab308':'#ef4444'; }
+
+function destroyChart(key) {
+  if (charts[key]) { charts[key].destroy(); delete charts[key]; }
+}
+
+/* ============================================================
+   Tab switching
+   ============================================================ */
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.tab===name));
+  document.querySelectorAll('.tab-content').forEach(c=> c.classList.toggle('active', c.id==='tab-'+name));
+}
+
+/* ============================================================
+   API Fetch — PNCP + Portal da Transparencia
+   ============================================================ */
+async function fetchData() {
+  const btn = document.querySelector('.btn');
+  btn.disabled = true;
+  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:spin 1s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Consultando...';
+
+  const style = document.createElement('style');
+  style.textContent = '@keyframes spin{to{transform:rotate(360deg)}}';
+  document.head.appendChild(style);
+
+  let usedApi = false;
+
+  try {
+    /* ---------- PNCP ---------- */
+    const hoje = new Date();
+    const ini  = new Date(hoje);
+    ini.setDate(ini.getDate() - 30);
+    const fmtD = d => d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');
+
+    const urlPncp = `https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=${fmtD(ini)}&dataFinal=${fmtD(hoje)}&pagina=1&tamanhoPagina=50`;
+
+    const resPncp = await fetch(urlPncp, {
+      mode: 'cors',
+      headers: {'Accept':'application/json'},
+      signal: AbortSignal.timeout(12000),
+    });
+
+    if (resPncp.ok) {
+      const json = await resPncp.json();
+      const items = json.data || json.content || json.resultado || json || [];
+      const list = Array.isArray(items) ? items : (items.contratacoes || []);
+
+      if (list.length > 0) {
+        usedApi = true;
+
+        /* Parse PNCP results */
+        let valorSum = 0;
+        const modalMap = {};
+        const ufMap = {};
+        list.forEach(c => {
+          const val = parseFloat(c.valorTotalEstimado || c.valorTotal || c.valorInicial || 0);
+          valorSum += val;
+          const mod = c.modalidadeNome || c.modalidadeLicitacao || c.modalidade || 'Nao informado';
+          modalMap[mod] = (modalMap[mod]||0) + 1;
+          const uf = c.unidadeOrgao?.ufSigla || c.uf || c.orgaoEntidade?.ufSigla || '';
+          if (uf) ufMap[uf] = (ufMap[uf]||0) + val;
+        });
+
+        DATA.contratacoes_recentes = list.length;
+        DATA.valor_total = valorSum;
+        DATA.modalidades_ativas = Object.keys(modalMap).length;
+        DATA.modalidades = Object.entries(modalMap)
+          .map(([nome,qtd])=>({nome,qtd,valor:Math.round(valorSum*qtd/list.length)}))
+          .sort((a,b)=>b.qtd-a.qtd);
+        DATA.uf_valor = Object.entries(ufMap)
+          .map(([uf,valor])=>({uf,valor}))
+          .sort((a,b)=>b.valor-a.valor)
+          .slice(0,10);
+        DATA.fonte_api = 'PNCP API';
+        DATA.fontes['pncp_contratacoes_recentes'] = true;
+        DATA.fontes['pncp_modalidades'] = true;
+      }
+    }
+  } catch(e) {
+    console.warn('PNCP fetch falhou:', e.message);
+  }
+
+  try {
+    /* ---------- Portal da Transparencia ---------- */
+    const urlTransp = 'https://api.portaldatransparencia.gov.br/api-de-dados/contratos?pagina=1&tamanhoPagina=10';
+    const resTransp = await fetch(urlTransp, {
+      mode: 'cors',
+      headers: {'Accept':'application/json'},
+      signal: AbortSignal.timeout(8000),
+    });
+    if (resTransp.ok) {
+      DATA.fontes['portal_transparencia_contratos'] = true;
+    }
+  } catch(e) {
+    console.warn('Portal Transparencia indisponivel:', e.message);
+  }
+
+  if (!usedApi) {
+    DATA = JSON.parse(JSON.stringify(SAMPLE_DATA));
+    DATA.fonte_api = 'amostra (CORS/API indisponivel)';
+  }
+
+  /* Re-render */
+  renderAll();
+
+  btn.disabled = false;
+  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg> Consultar APIs';
+}
+
+/* ============================================================
+   Render all
+   ============================================================ */
+function renderAll() {
+  renderThermometer();
+  renderVolume();
+  renderFornecedoras();
+}
+
+/* ============================================================
+   Thermometer
+   ============================================================ */
+function renderThermometer() {
+  const fontes = DATA.fontes;
+  const ok = Object.values(fontes).filter(v=>v).length;
+  const total = Object.keys(fontes).length;
+  const pct = ok/total*100;
+  const el = document.getElementById('thermometer');
+  const cls = pct>=80?'thermo-green':pct>=50?'thermo-yellow':'thermo-red';
+  const label = pct>=80?'Operacional':pct>=50?'Parcial':'Incompleto';
+  el.className='thermometer '+cls;
+  el.innerHTML=`${ok}/${total} fontes · 2 indicadores — ${label}`;
+}
+
+/* ============================================================
+   Tab 2.1 — Volume de Compras
+   ============================================================ */
+function renderVolume() {
+  /* Alert */
+  const isSample = DATA.fonte_api.includes('amostra');
+  document.getElementById('alertVolume').innerHTML = isSample
+    ? `<div class="alert-item warning"><div><div class="alert-title">Dados demonstrativos</div><div class="alert-desc">Exibindo dados de amostra. Clique em "Consultar APIs" para buscar dados reais do PNCP. APIs externas podem estar sujeitas a restricoes de CORS.</div></div></div>`
+    : `<div class="alert-item success"><div><div class="alert-title">Dados atualizados via ${DATA.fonte_api}</div><div class="alert-desc">Ultima consulta realizada com sucesso.</div></div></div>`;
+
+  /* KPIs */
+  const pctMpe = DATA.pct_mpe;
+  document.getElementById('kpiVolume').innerHTML=`
+    <div class="kpi kpi-blue">
+      <div class="kpi-label">Contratacoes recentes</div>
+      <div class="kpi-value">${DATA.contratacoes_recentes.toLocaleString('pt-BR')}</div>
+      <div class="kpi-detail">Ultimos 30 dias — ${DATA.fonte_api}</div>
+    </div>
+    <div class="kpi kpi-green">
+      <div class="kpi-label">Valor total (R$)</div>
+      <div class="kpi-value">${fmtCurrency(DATA.valor_total)}</div>
+      <div class="kpi-detail">Soma dos contratos recentes</div>
+    </div>
+    <div class="kpi kpi-purple">
+      <div class="kpi-label">% destinado a MPEs</div>
+      <div class="kpi-value">${pctMpe.toFixed(1)}%</div>
+      <div class="kpi-detail">MEI + ME + EPP</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${pctMpe}%;background:var(--accent2)"></div></div>
+    </div>
+    <div class="kpi kpi-cyan">
+      <div class="kpi-label">Modalidades ativas</div>
+      <div class="kpi-value">${DATA.modalidades_ativas}</div>
+      <div class="kpi-detail">Tipos de licitacao em uso</div>
+    </div>
+  `;
+
+  /* Chart: Modalidade (horizontal bar) */
+  destroyChart('modalidade');
+  const mod = DATA.modalidades;
+  charts.modalidade = new Chart(document.getElementById('chartModalidade'), {
+    type:'bar',
+    data:{
+      labels: mod.map(m=>m.nome.length>30 ? m.nome.substring(0,28)+'...' : m.nome),
+      datasets:[{
+        data: mod.map(m=>m.qtd),
+        backgroundColor:'rgba(59,130,246,.6)',
+        borderRadius:4,
+      }]
+    },
+    options:{
+      responsive:true, indexAxis:'y',
+      plugins:{legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.raw+' contratacoes'}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}},
+        y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}
+      }
+    }
+  });
+
+  /* Chart: Evolucao mensal (line with fill) */
+  destroyChart('evolucao');
+  const ev = DATA.evolucao_mensal;
+  charts.evolucao = new Chart(document.getElementById('chartEvolucao'), {
+    type:'line',
+    data:{
+      labels: ev.map(e=>e.mes),
+      datasets:[{
+        label:'Contratacoes',
+        data: ev.map(e=>e.qtd),
+        borderColor:'#22c55e',
+        backgroundColor:'rgba(34,197,94,.08)',
+        fill:true, tension:.3, pointRadius:4, pointHoverRadius:7,
+        borderWidth:2.5,
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',font:{size:10}}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}}
+      }
+    }
+  });
+
+  /* Chart: Porte (doughnut) */
+  destroyChart('porte');
+  const pt = DATA.porte;
+  const porteCores = ['rgba(59,130,246,.75)','rgba(34,197,94,.75)','rgba(139,92,246,.75)','rgba(51,65,85,.75)'];
+  const porteBorders = ['#3b82f6','#22c55e','#8b5cf6','#334155'];
+  charts.porte = new Chart(document.getElementById('chartPorte'), {
+    type:'doughnut',
+    data:{
+      labels: pt.map(p=>p.tipo),
+      datasets:[{
+        data: pt.map(p=>p.pct),
+        backgroundColor: porteCores,
+        borderColor: porteBorders,
+        borderWidth: 2,
+        hoverOffset: 8,
+      }]
+    },
+    options:{
+      responsive:true, cutout:'55%',
+      plugins:{
+        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:14,padding:16,font:{size:12}}},
+        tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw.toFixed(1)+'% ('+fmtCurrency(pt[ctx.dataIndex].valor)+')'}}
+      }
+    }
+  });
+
+  /* Chart: Top 10 UFs por valor (horizontal bar) */
+  destroyChart('ufValor');
+  const ufv = DATA.uf_valor;
+  charts.ufValor = new Chart(document.getElementById('chartUfValor'), {
+    type:'bar',
+    data:{
+      labels: ufv.map(u=>u.uf),
+      datasets:[{
+        data: ufv.map(u=>u.valor),
+        backgroundColor:'rgba(249,115,22,.6)',
+        borderRadius:4,
+      }]
+    },
+    options:{
+      responsive:true, indexAxis:'y',
+      plugins:{legend:{display:false}, tooltip:{callbacks:{label:ctx=>fmtBRL(ctx.raw)}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},
+        y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:11}}}
+      }
+    }
+  });
+}
+
+/* ============================================================
+   Tab 2.2 — MPEs Fornecedoras
+   ============================================================ */
+function renderFornecedoras() {
+  /* Alert */
+  const isSample = DATA.fonte_api.includes('amostra');
+  document.getElementById('alertFornecedoras').innerHTML = isSample
+    ? `<div class="alert-item warning"><div><div class="alert-title">Dados demonstrativos</div><div class="alert-desc">Exibindo dados de amostra. Clique em "Consultar APIs" para buscar dados reais.</div></div></div>`
+    : `<div class="alert-item success"><div><div class="alert-title">Dados atualizados via ${DATA.fonte_api}</div><div class="alert-desc">Complementados com dados de amostra para indicadores sem API direta.</div></div></div>`;
+
+  /* KPIs */
+  document.getElementById('kpiFornecedoras').innerHTML=`
+    <div class="kpi kpi-blue">
+      <div class="kpi-label">MPEs fornecedoras</div>
+      <div class="kpi-value">${DATA.mpes_fornecedoras.toLocaleString('pt-BR')}</div>
+      <div class="kpi-detail">Empresas com contratos vigentes</div>
+    </div>
+    <div class="kpi kpi-green">
+      <div class="kpi-label">Descentralizacao</div>
+      <div class="kpi-value">${DATA.descentralizacao.toFixed(2)}</div>
+      <div class="kpi-detail">Indice Herfindahl-Hirschman inverso</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${DATA.descentralizacao*100}%;background:var(--green)"></div></div>
+    </div>
+    <div class="kpi kpi-yellow">
+      <div class="kpi-label">Regime simplificado</div>
+      <div class="kpi-value">${DATA.regime_simplificado_pct.toFixed(1)}%</div>
+      <div class="kpi-detail">Simples Nacional / MEI</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${DATA.regime_simplificado_pct}%;background:var(--yellow)"></div></div>
+    </div>
+    <div class="kpi kpi-cyan">
+      <div class="kpi-label">Municipios atendidos</div>
+      <div class="kpi-value">${DATA.municipios_atendidos.toLocaleString('pt-BR')}</div>
+      <div class="kpi-detail">${(DATA.municipios_atendidos/5570*100).toFixed(1)}% dos 5.570</div>
+      <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${Math.min(DATA.municipios_atendidos/5570*100,100)}%;background:var(--cyan)"></div></div>
+    </div>
+  `;
+
+  /* Chart: MPEs por UF (horizontal bar) */
+  destroyChart('mpesUf');
+  const mu = DATA.mpes_por_uf;
+  const muSorted = [...mu].sort((a,b)=>a.qtd-b.qtd);
+  charts.mpesUf = new Chart(document.getElementById('chartMpesUf'), {
+    type:'bar',
+    data:{
+      labels: muSorted.map(m=>m.uf),
+      datasets:[{
+        data: muSorted.map(m=>m.qtd),
+        backgroundColor: muSorted.map(m=>m.qtd>=2000?'rgba(59,130,246,.6)':m.qtd>=1000?'rgba(6,182,212,.6)':'rgba(139,92,246,.6)'),
+        borderRadius:4,
+      }]
+    },
+    options:{
+      responsive:true, indexAxis:'y',
+      plugins:{legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.raw.toLocaleString('pt-BR')+' MPEs'}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8'}},
+        y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}
+      }
+    }
+  });
+
+  /* Chart: Natureza Juridica (vertical bar) */
+  destroyChart('natureza');
+  const nj = DATA.natureza_juridica;
+  /* Fixed categorical palette — 8 distinct hues assigned in order */
+  const catCores = [
+    'rgba(59,130,246,.65)',   /* accent */
+    'rgba(34,197,94,.65)',    /* green */
+    'rgba(139,92,246,.65)',   /* accent2 */
+    'rgba(6,182,212,.65)',    /* cyan */
+    'rgba(249,115,22,.65)',   /* orange */
+    'rgba(234,179,8,.65)',    /* yellow */
+    'rgba(236,72,153,.65)',   /* pink */
+    'rgba(51,65,85,.65)',     /* surface2 */
+  ];
+  charts.natureza = new Chart(document.getElementById('chartNatureza'), {
+    type:'bar',
+    data:{
+      labels: nj.map(n=>n.tipo.length>22 ? n.tipo.substring(0,20)+'...' : n.tipo),
+      datasets:[{
+        data: nj.map(n=>n.qtd),
+        backgroundColor: nj.map((_,i)=>catCores[i % catCores.length]),
+        borderRadius:4,
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{legend:{display:false}, tooltip:{callbacks:{
+        title: ctx => nj[ctx[0].dataIndex].tipo,
+        label: ctx => ctx.raw.toLocaleString('pt-BR')+' empresas',
+      }}},
+      scales:{
+        x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9},maxRotation:45,minRotation:30}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}}
+      }
+    }
+  });
+
+  /* Chart: PIB vs Contratos (bubble/scatter) */
+  destroyChart('pibContratos');
+  const pc = DATA.pib_contratos;
+  charts.pibContratos = new Chart(document.getElementById('chartPibContratos'), {
+    type:'bubble',
+    data:{
+      datasets:[{
+        data: pc.map(p=>({x:p.pib, y:p.contratos, r:p.r})),
+        backgroundColor:'rgba(6,182,212,.4)',
+        borderColor:'#06b6d4',
+        borderWidth:1.5,
+      }]
+    },
+    options:{
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{
+          label: ctx => {
+            const d = pc[ctx.dataIndex];
+            return d ? `${d.municipio} (${d.uf}): PIB R$ ${fmt(d.pib*1e6)} · ${d.contratos} contratos` : '';
+          }
+        }}
+      },
+      scales:{
+        x:{
+          title:{display:true,text:'PIB Municipal (R$ milhoes)',color:'#94a3b8',font:{size:11}},
+          grid:{color:'rgba(255,255,255,.04)'},
+          ticks:{color:'#94a3b8',callback:v=>'R$ '+fmt(v)+'M'}
+        },
+        y:{
+          title:{display:true,text:'Contratos com MPEs',color:'#94a3b8',font:{size:11}},
+          grid:{color:'rgba(255,255,255,.04)'},
+          ticks:{color:'#94a3b8'}
+        }
+      }
+    }
+  });
+
+  /* Table: Top 20 Fornecedores */
+  const forn = DATA.fornecedores_top20;
+  let rows = '';
+  forn.forEach((f,i) => {
+    const porteBadge = f.porte==='MEI' ? 'badge-warn'
+                     : f.porte==='ME'  ? 'badge-ok'
+                     : f.porte==='EPP' ? 'badge-ok'
+                     : '';
+    rows += `<tr>
+      <td style="color:var(--text2)">${i+1}</td>
+      <td style="font-family:monospace;font-size:.72rem">${f.cnpj}</td>
+      <td>${f.razao}</td>
+      <td>${f.uf}</td>
+      <td><span class="badge ${porteBadge}">${f.porte}</span></td>
+      <td class="num">${f.contratos}</td>
+      <td class="num">${fmtBRL(f.valor)}</td>
+    </tr>`;
+  });
+  document.getElementById('tableFornecedores').innerHTML = `
+    <table class="data-table">
+      <thead><tr>
+        <th>#</th>
+        <th>CNPJ</th>
+        <th>Razao Social</th>
+        <th>UF</th>
+        <th>Porte</th>
+        <th class="num">Contratos</th>
+        <th class="num">Valor Total</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+/* ============================================================
+   Init
+   ============================================================ */
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.font.family = "'Segoe UI',system-ui,sans-serif";
+
+renderAll();
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+[
+  {
+    "Year": 2020,
+    "Hours Deferred": 17655721.330973092,
+    "Hours Liberation DBE": 3981899.6422437713,
+    "Hours Reception DBE": 70276182.90725824,
+    "Hours Transmission": 26629855.77704963,
+    "Hours Viability Address": 13895915.861601802,
+    "Hours Viability Name": 4272699.220256151,
+    "Hours Viability Total": 15646082.821715321,
+    "Opening Time": 78.00427598998807,
+    "Total Opening Time": 280.7492990757647,
+    "User Opening Time": 202.74502308577846
+  },
+  {
+    "Year": 2021,
+    "Hours Deferred": 18381576.881452136,
+    "Hours Liberation DBE": 3836569.020178091,
+    "Hours Reception DBE": 98015515.17685579,
+    "Hours Transmission": 36493384.968096055,
+    "Hours Viability Address": 15917606.174549397,
+    "Hours Viability Name": 2460111.6898881695,
+    "Hours Viability Total": 16865210.084405422,
+    "Opening Time": 52.81113530952982,
+    "Total Opening Time": 234.56542806855379,
+    "User Opening Time": 181.75429275902678
+  },
+  {
+    "Year": 2022,
+    "Hours Deferred": 13414580.791412394,
+    "Hours Liberation DBE": 3734494.7288882216,
+    "Hours Reception DBE": 86054240.16628419,
+    "Hours Transmission": 30426629.63722161,
+    "Hours Viability Address": 10785623.152410079,
+    "Hours Viability Name": 1575482.830177123,
+    "Hours Viability Total": 11613115.712525068,
+    "Opening Time": 40.54656329606875,
+    "Total Opening Time": 204.75167972957942,
+    "User Opening Time": 164.205116433509
+  },
+  {
+    "Year": 2023,
+    "Hours Deferred": 13682418.916735638,
+    "Hours Liberation DBE": 1047179.0385203436,
+    "Hours Reception DBE": 86698171.61934721,
+    "Hours Transmission": 30267635.232815187,
+    "Hours Viability Address": 9602053.440006286,
+    "Hours Viability Name": 1231162.8306447314,
+    "Hours Viability Total": 10360745.920477012,
+    "Opening Time": 32.8482453801432,
+    "Total Opening Time": 185.97972670202472,
+    "User Opening Time": 153.1314813218787
+  },
+  {
+    "Year": 2024,
+    "Hours Deferred": 11907896.022306038,
+    "Hours Liberation DBE": 1093725.4797913171,
+    "Hours Reception DBE": 93170365.94018817,
+    "Hours Transmission": 31571535.647961497,
+    "Hours Viability Address": 8808166.929941567,
+    "Hours Viability Name": 1016908.2801880611,
+    "Hours Viability Total": 9529276.93014692,
+    "Opening Time": 25.53064737637974,
+    "Total Opening Time": 166.88060339714923,
+    "User Opening Time": 141.34995602076458
+  },
+  {
+    "Year": 2025,
+    "Hours Deferred": 14970580.840461744,
+    "Hours Liberation DBE": 1008836.7899290691,
+    "Hours Reception DBE": 91288903.20641893,
+    "Hours Transmission": 32023073.890837226,
+    "Hours Viability Address": 8268534.410164304,
+    "Hours Viability Name": 1047049.5105374545,
+    "Hours Viability Total": 9068775.360657293,
+    "Opening Time": 27.64234405343155,
+    "Total Opening Time": 163.72529814314828,
+    "User Opening Time": 136.08295408971264
+  },
+  {
+    "Year": 2026,
+    "Hours Deferred": 2705100.888784539,
+    "Hours Liberation DBE": 399168.50939036964,
+    "Hours Reception DBE": 19134653.04187903,
+    "Hours Transmission": 7094171.9592209775,
+    "Hours Viability Address": 1538767.999643447,
+    "Hours Viability Name": 201423.99007357238,
+    "Hours Viability Total": 1677343.3497071306,
+    "Opening Time": 43.1631408907897,
+    "Total Opening Time": 279.9281255549927,
+    "User Opening Time": 236.7649846641995
+  }
+]

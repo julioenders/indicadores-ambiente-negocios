@@ -1,0 +1,74 @@
+[
+  {
+    "ano": 2025,
+    "mes": 10,
+    "uf": "BR",
+    "solicitacoes": 68644
+  },
+  {
+    "ano": 2025,
+    "mes": 11,
+    "uf": "BR",
+    "solicitacoes": 70677
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "BR",
+    "solicitacoes": 5292
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "BR",
+    "solicitacoes": 4810
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "BR",
+    "solicitacoes": 5473
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "BR",
+    "solicitacoes": 8497
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "BR",
+    "solicitacoes": 6850
+  },
+  {
+    "ano": 2026,
+    "mes": 5,
+    "uf": "BR",
+    "solicitacoes": 85155
+  },
+  {
+    "ano": 2026,
+    "mes": 6,
+    "uf": "BR",
+    "solicitacoes": 82650
+  },
+  {
+    "ano": 2026,
+    "mes": 7,
+    "uf": "BR",
+    "solicitacoes": 94576
+  },
+  {
+    "ano": 2026,
+    "mes": 8,
+    "uf": "BR",
+    "solicitacoes": 97261
+  },
+  {
+    "ano": 2026,
+    "mes": 9,
+    "uf": "BR",
+    "solicitacoes": 85860
+  }
+]

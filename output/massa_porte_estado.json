@@ -1,0 +1,807 @@
+[
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 3856033.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 2780199.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 1525858.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 1293946.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 1242869.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 960648.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 944527.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 842394.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 766584.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 746461.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 645932.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 636439.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 599690.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 533711.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 531124.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 523175.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 446513.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 400927.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 369316.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 365503.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 331621.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 278171.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 269173.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 247495.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 240878.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 208576.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 197722.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 191966.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 186782.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 181290.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 181181.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 178599.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 154642.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 152457.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 150030.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 143106.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 136605.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 134916.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 130515.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 129119.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 122650.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 117802.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 116185.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 114612.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 105133.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 104293.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 104081.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 97273.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 97084.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 95782.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 95261.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 93061.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 89552.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 87804.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 87635.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 81453.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 73749.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 59889.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 59566.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 59453.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 53623.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 52539.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 52482.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 52037.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 51898.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 49137.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 43778.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 40783.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 37406.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 36332.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 33775.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 33256.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 31187.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 30714.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 30075.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 30008.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 26619.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 25149.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 24654.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 23024.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 22986.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 21786.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 21284.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 20129.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 20084.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 17193.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 16078.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 15996.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 15983.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 15005.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 14148.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 14037.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 13831.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 13809.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 11738.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 11510.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 10777.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 10058.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 9352.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 9066.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 8622.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 6959.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 5393.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 3745.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 3465.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 2408.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 2254.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 2187.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 424.0
+  },
+  {
+    "Company Size Sebrae ID": 5,
+    "Company Size Sebrae": "Micro Empresário Individual (MEI)",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 197.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 185.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 80.0
+  },
+  {
+    "Company Size Sebrae ID": 9,
+    "Company Size Sebrae": "Outros",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 74.0
+  },
+  {
+    "Company Size Sebrae ID": 4,
+    "Company Size Sebrae": "Microempresa (ME)",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 58.0
+  },
+  {
+    "Company Size Sebrae ID": 3,
+    "Company Size Sebrae": "Empresa de Pequeno Porte (EPP)",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 17.0
+  }
+]

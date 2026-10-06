@@ -1,0 +1,112 @@
+COMEX Indicator ID,COMEX Indicator,Company Size Sebrae ID,Company Size Sebrae,State ID,State,Establishments
+1,Sim,9,Outros,35,São Paulo,68426.0
+1,Sim,9,Outros,31,Minas Gerais,20554.0
+1,Sim,9,Outros,42,Santa Catarina,17921.0
+1,Sim,9,Outros,41,Paraná,16466.0
+1,Sim,9,Outros,43,Rio Grande do Sul,16375.0
+1,Sim,4,Microempresa (ME),35,São Paulo,15625.0
+1,Sim,9,Outros,33,Rio de Janeiro,14377.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),35,São Paulo,14145.0
+1,Sim,9,Outros,29,Bahia,7543.0
+1,Sim,9,Outros,52,Goiás,6534.0
+1,Sim,9,Outros,32,Espírito Santo,6430.0
+1,Sim,9,Outros,26,Pernambuco,5806.0
+1,Sim,9,Outros,23,Ceará,5509.0
+1,Sim,9,Outros,51,Mato Grosso,5433.0
+1,Sim,4,Microempresa (ME),42,Santa Catarina,4680.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),42,Santa Catarina,4411.0
+1,Sim,4,Microempresa (ME),41,Paraná,3818.0
+1,Sim,9,Outros,15,Pará,3722.0
+1,Sim,9,Outros,13,Amazonas,3634.0
+1,Sim,9,Outros,50,Mato Grosso do Sul,3316.0
+1,Sim,4,Microempresa (ME),31,Minas Gerais,3022.0
+1,Sim,9,Outros,53,Distrito Federal,2945.0
+1,Sim,4,Microempresa (ME),43,Rio Grande do Sul,2810.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),41,Paraná,2747.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),43,Rio Grande do Sul,2744.0
+1,Sim,9,Outros,21,Maranhão,2461.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),31,Minas Gerais,2367.0
+1,Sim,9,Outros,24,Rio Grande do Norte,2019.0
+1,Sim,4,Microempresa (ME),33,Rio de Janeiro,1980.0
+1,Sim,9,Outros,25,Paraíba,1771.0
+1,Sim,9,Outros,11,Rondônia,1710.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),33,Rio de Janeiro,1709.0
+1,Sim,9,Outros,27,Alagoas,1702.0
+1,Sim,9,Outros,22,Piauí,1256.0
+1,Sim,9,Outros,17,Tocantins,1171.0
+1,Sim,9,Outros,28,Sergipe,1112.0
+1,Sim,4,Microempresa (ME),32,Espírito Santo,1090.0
+1,Sim,4,Microempresa (ME),52,Goiás,1081.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),32,Espírito Santo,1040.0
+1,Sim,4,Microempresa (ME),23,Ceará,834.0
+1,Sim,4,Microempresa (ME),29,Bahia,819.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),26,Pernambuco,776.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),52,Goiás,693.0
+1,Sim,4,Microempresa (ME),26,Pernambuco,668.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),29,Bahia,573.0
+1,Sim,9,Outros,14,Roraima,557.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),13,Amazonas,505.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),15,Pará,498.0
+1,Sim,5,Micro Empresário Individual (MEI),35,São Paulo,482.0
+1,Sim,9,Outros,16,Amapá,482.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),51,Mato Grosso,450.0
+1,Sim,9,Outros,12,Acre,447.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),23,Ceará,443.0
+1,Sim,4,Microempresa (ME),53,Distrito Federal,434.0
+1,Sim,4,Microempresa (ME),13,Amazonas,420.0
+1,Sim,4,Microempresa (ME),51,Mato Grosso,401.0
+1,Sim,4,Microempresa (ME),15,Pará,382.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),27,Alagoas,314.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),53,Distrito Federal,291.0
+1,Sim,9,Outros,93,Exterior,266.0
+1,Sim,4,Microempresa (ME),50,Mato Grosso do Sul,248.0
+1,Sim,4,Microempresa (ME),24,Rio Grande do Norte,246.0
+1,Sim,4,Microempresa (ME),25,Paraíba,227.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),50,Mato Grosso do Sul,222.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),11,Rondônia,212.0
+1,Sim,4,Microempresa (ME),21,Maranhão,187.0
+1,Sim,4,Microempresa (ME),27,Alagoas,168.0
+1,Sim,4,Microempresa (ME),11,Rondônia,165.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),14,Roraima,161.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),24,Rio Grande do Norte,159.0
+1,Sim,4,Microempresa (ME),14,Roraima,157.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),21,Maranhão,154.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),25,Paraíba,151.0
+1,Sim,5,Micro Empresário Individual (MEI),42,Santa Catarina,126.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),17,Tocantins,110.0
+1,Sim,4,Microempresa (ME),22,Piauí,110.0
+1,Sim,5,Micro Empresário Individual (MEI),41,Paraná,110.0
+1,Sim,5,Micro Empresário Individual (MEI),31,Minas Gerais,108.0
+1,Sim,5,Micro Empresário Individual (MEI),33,Rio de Janeiro,101.0
+1,Sim,4,Microempresa (ME),28,Sergipe,99.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),28,Sergipe,98.0
+1,Sim,4,Microempresa (ME),16,Amapá,89.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),22,Piauí,88.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),16,Amapá,87.0
+1,Sim,4,Microempresa (ME),17,Tocantins,76.0
+1,Sim,4,Microempresa (ME),12,Acre,60.0
+1,Sim,5,Micro Empresário Individual (MEI),43,Rio Grande do Sul,54.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),12,Acre,39.0
+1,Sim,5,Micro Empresário Individual (MEI),52,Goiás,37.0
+1,Sim,5,Micro Empresário Individual (MEI),29,Bahia,36.0
+1,Sim,5,Micro Empresário Individual (MEI),32,Espírito Santo,29.0
+1,Sim,5,Micro Empresário Individual (MEI),23,Ceará,25.0
+1,Sim,5,Micro Empresário Individual (MEI),26,Pernambuco,19.0
+1,Sim,5,Micro Empresário Individual (MEI),53,Distrito Federal,19.0
+1,Sim,9,Outros,99,Não informado,16.0
+1,Sim,5,Micro Empresário Individual (MEI),50,Mato Grosso do Sul,11.0
+1,Sim,5,Micro Empresário Individual (MEI),13,Amazonas,10.0
+1,Sim,5,Micro Empresário Individual (MEI),51,Mato Grosso,9.0
+1,Sim,5,Micro Empresário Individual (MEI),15,Pará,8.0
+1,Sim,5,Micro Empresário Individual (MEI),14,Roraima,7.0
+1,Sim,5,Micro Empresário Individual (MEI),16,Amapá,6.0
+1,Sim,5,Micro Empresário Individual (MEI),27,Alagoas,6.0
+1,Sim,5,Micro Empresário Individual (MEI),28,Sergipe,5.0
+1,Sim,5,Micro Empresário Individual (MEI),17,Tocantins,4.0
+1,Sim,5,Micro Empresário Individual (MEI),21,Maranhão,4.0
+1,Sim,5,Micro Empresário Individual (MEI),22,Piauí,4.0
+1,Sim,5,Micro Empresário Individual (MEI),25,Paraíba,4.0
+1,Sim,4,Microempresa (ME),93,Exterior,3.0
+1,Sim,5,Micro Empresário Individual (MEI),11,Rondônia,3.0
+1,Sim,5,Micro Empresário Individual (MEI),24,Rio Grande do Norte,2.0
+1,Sim,3,Empresa de Pequeno Porte (EPP),93,Exterior,1.0

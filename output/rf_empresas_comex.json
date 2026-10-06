@@ -1,0 +1,205 @@
+[
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 11,
+    "State": "Rondônia",
+    "Establishments": 2090.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 12,
+    "State": "Acre",
+    "Establishments": 546.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 13,
+    "State": "Amazonas",
+    "Establishments": 4569.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 14,
+    "State": "Roraima",
+    "Establishments": 882.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 15,
+    "State": "Pará",
+    "Establishments": 4610.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 16,
+    "State": "Amapá",
+    "Establishments": 664.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 17,
+    "State": "Tocantins",
+    "Establishments": 1361.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 21,
+    "State": "Maranhão",
+    "Establishments": 2806.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 22,
+    "State": "Piauí",
+    "Establishments": 1458.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 23,
+    "State": "Ceará",
+    "Establishments": 6811.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Establishments": 2426.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 25,
+    "State": "Paraíba",
+    "Establishments": 2153.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Establishments": 7269.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 27,
+    "State": "Alagoas",
+    "Establishments": 2190.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 28,
+    "State": "Sergipe",
+    "Establishments": 1314.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 29,
+    "State": "Bahia",
+    "Establishments": 8971.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Establishments": 26051.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Establishments": 8589.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Establishments": 18167.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 35,
+    "State": "São Paulo",
+    "Establishments": 98678.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 41,
+    "State": "Paraná",
+    "Establishments": 23141.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Establishments": 27138.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Establishments": 21983.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Establishments": 3797.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Establishments": 6293.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 52,
+    "State": "Goiás",
+    "Establishments": 8345.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Establishments": 3689.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 93,
+    "State": "Exterior",
+    "Establishments": 270.0
+  },
+  {
+    "COMEX Indicator ID": 1,
+    "COMEX Indicator": "Sim",
+    "State ID": 99,
+    "State": "Não informado",
+    "Establishments": 16.0
+  }
+]

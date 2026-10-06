@@ -1,0 +1,218 @@
+[
+  {
+    "ano": 2025,
+    "mes": 10,
+    "tipo": "viabilidade",
+    "percentual1": 88,
+    "percentual2": 8,
+    "percentual3": 2,
+    "percentual4": 2
+  },
+  {
+    "ano": 2025,
+    "mes": 10,
+    "tipo": "registro_inscricao",
+    "percentual1": 94,
+    "percentual2": 2,
+    "percentual3": 1,
+    "percentual4": 3
+  },
+  {
+    "ano": 2025,
+    "mes": 11,
+    "tipo": "viabilidade",
+    "percentual1": 88,
+    "percentual2": 8,
+    "percentual3": 2,
+    "percentual4": 2
+  },
+  {
+    "ano": 2025,
+    "mes": 11,
+    "tipo": "registro_inscricao",
+    "percentual1": 94,
+    "percentual2": 2,
+    "percentual3": 1,
+    "percentual4": 3
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "tipo": "viabilidade",
+    "percentual1": 83,
+    "percentual2": 9,
+    "percentual3": 4,
+    "percentual4": 4
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "tipo": "registro_inscricao",
+    "percentual1": 83,
+    "percentual2": 6,
+    "percentual3": 3,
+    "percentual4": 8
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "tipo": "viabilidade",
+    "percentual1": 81,
+    "percentual2": 8,
+    "percentual3": 5,
+    "percentual4": 6
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "tipo": "registro_inscricao",
+    "percentual1": 73,
+    "percentual2": 5,
+    "percentual3": 2,
+    "percentual4": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "tipo": "viabilidade",
+    "percentual1": 82,
+    "percentual2": 8,
+    "percentual3": 4,
+    "percentual4": 6
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "tipo": "registro_inscricao",
+    "percentual1": 72,
+    "percentual2": 4,
+    "percentual3": 3,
+    "percentual4": 21
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "tipo": "viabilidade",
+    "percentual1": 81,
+    "percentual2": 7,
+    "percentual3": 5,
+    "percentual4": 7
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "tipo": "registro_inscricao",
+    "percentual1": 79,
+    "percentual2": 4,
+    "percentual3": 3,
+    "percentual4": 14
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "tipo": "viabilidade",
+    "percentual1": 80,
+    "percentual2": 7,
+    "percentual3": 4,
+    "percentual4": 9
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "tipo": "registro_inscricao",
+    "percentual1": 84,
+    "percentual2": 3,
+    "percentual3": 2,
+    "percentual4": 11
+  },
+  {
+    "ano": 2026,
+    "mes": 5,
+    "tipo": "viabilidade",
+    "percentual1": 85,
+    "percentual2": 7,
+    "percentual3": 3,
+    "percentual4": 5
+  },
+  {
+    "ano": 2026,
+    "mes": 5,
+    "tipo": "registro_inscricao",
+    "percentual1": 90,
+    "percentual2": 3,
+    "percentual3": 3,
+    "percentual4": 4
+  },
+  {
+    "ano": 2026,
+    "mes": 6,
+    "tipo": "viabilidade",
+    "percentual1": 83,
+    "percentual2": 7,
+    "percentual3": 4,
+    "percentual4": 6
+  },
+  {
+    "ano": 2026,
+    "mes": 6,
+    "tipo": "registro_inscricao",
+    "percentual1": 89,
+    "percentual2": 4,
+    "percentual3": 3,
+    "percentual4": 4
+  },
+  {
+    "ano": 2026,
+    "mes": 7,
+    "tipo": "viabilidade",
+    "percentual1": 86,
+    "percentual2": 6,
+    "percentual3": 3,
+    "percentual4": 5
+  },
+  {
+    "ano": 2026,
+    "mes": 7,
+    "tipo": "registro_inscricao",
+    "percentual1": 90,
+    "percentual2": 3,
+    "percentual3": 2,
+    "percentual4": 5
+  },
+  {
+    "ano": 2026,
+    "mes": 8,
+    "tipo": "viabilidade",
+    "percentual1": 87,
+    "percentual2": 6,
+    "percentual3": 3,
+    "percentual4": 4
+  },
+  {
+    "ano": 2026,
+    "mes": 8,
+    "tipo": "registro_inscricao",
+    "percentual1": 90,
+    "percentual2": 4,
+    "percentual3": 3,
+    "percentual4": 3
+  },
+  {
+    "ano": 2026,
+    "mes": 9,
+    "tipo": "viabilidade",
+    "percentual1": 87,
+    "percentual2": 6,
+    "percentual3": 3,
+    "percentual4": 4
+  },
+  {
+    "ano": 2026,
+    "mes": 9,
+    "tipo": "registro_inscricao",
+    "percentual1": 89,
+    "percentual2": 3,
+    "percentual3": 3,
+    "percentual4": 5
+  }
+]

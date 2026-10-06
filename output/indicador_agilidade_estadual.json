@@ -1,0 +1,234 @@
+[
+  {
+    "estado": "Acre",
+    "estoque_mpes": 50143,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 187.3,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Alagoas",
+    "estoque_mpes": 221007,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 175.3,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Amapá",
+    "estoque_mpes": 47860,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 186.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Amazonas",
+    "estoque_mpes": 275750,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 183.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Bahia",
+    "estoque_mpes": 1187528,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 327.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Ceará",
+    "estoque_mpes": 711794,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 137.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Distrito Federal",
+    "estoque_mpes": 450439,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 167.2,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Espírito Santo",
+    "estoque_mpes": 577764,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 154.6,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Exterior",
+    "estoque_mpes": 499,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": null,
+    "indice_agilidade": null
+  },
+  {
+    "estado": "Goiás",
+    "estoque_mpes": 1005787,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 120.1,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Maranhão",
+    "estoque_mpes": 334268,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 150.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Mato Grosso",
+    "estoque_mpes": 549369,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 138.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Mato Grosso do Sul",
+    "estoque_mpes": 365544,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 154.2,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Minas Gerais",
+    "estoque_mpes": 2769478,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 232.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Não informado",
+    "estoque_mpes": 536,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": null,
+    "indice_agilidade": null
+  },
+  {
+    "estado": "Paraná",
+    "estoque_mpes": 1923078,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 136.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Paraíba",
+    "estoque_mpes": 329207,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 182.4,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Pará",
+    "estoque_mpes": 519485,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 269.9,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Pernambuco",
+    "estoque_mpes": 726366,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 253.4,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Piauí",
+    "estoque_mpes": 211031,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 151.1,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Rio Grande do Norte",
+    "estoque_mpes": 289936,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 171.0,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Rio Grande do Sul",
+    "estoque_mpes": 1644301,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 167.5,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Rio de Janeiro",
+    "estoque_mpes": 2189406,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 298.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Rondônia",
+    "estoque_mpes": 161482,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 146.8,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Roraima",
+    "estoque_mpes": 47779,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 145.8,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Santa Catarina",
+    "estoque_mpes": 1474727,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 215.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Sergipe",
+    "estoque_mpes": 162782,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 119.7,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "São Paulo",
+    "estoque_mpes": 8402276,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 224.1,
+    "indice_agilidade": 0.0
+  },
+  {
+    "estado": "Tocantins",
+    "estoque_mpes": 168783,
+    "aberturas_recentes_2024_2026": 0,
+    "taxa_dinamismo_pct": 0.0,
+    "tempo_abertura_horas": 134.1,
+    "indice_agilidade": 0.0
+  }
+]

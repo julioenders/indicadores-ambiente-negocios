@@ -1,0 +1,137 @@
+[
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Employed": 675423.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Employed": 294788.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Employed": 1367628.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Employed": 236479.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Employed": 2923295.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Employed": 283374.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Employed": 649497.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Employed": 2292450.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Employed": 1133891.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Employed": 3263637.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Employed": 1236248.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Employed": 1393547.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Employed": 3337920.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Employed": 1090884.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Employed": 854640.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Employed": 5405884.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Employed": 9574558.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Employed": 1785368.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Employed": 6820843.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Employed": 21309441.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Employed": 5661840.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Employed": 3984456.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Employed": 5279157.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Employed": 1285147.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Employed": 1736125.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Employed": 3399548.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Employed": 1403487.0
+  }
+]

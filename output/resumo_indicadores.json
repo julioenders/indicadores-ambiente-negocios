@@ -1,0 +1,31 @@
+{
+  "data_geracao": "2026-10-02T17:44:38.021301",
+  "indicadores_gerados": [
+    "Indice de Agilidade Estadual (OLAP)",
+    "Indice de Agilidade REDESIM Gov",
+    "Evolucao Tempo Abertura"
+  ],
+  "fontes_utilizadas": [
+    "REDESIM OLAP (tempo abertura)",
+    "REDESIM Gov (tempo mensal)",
+    "REDESIM Gov (integracao)",
+    "REDESIM Gov (estabelecimentos)",
+    "REDESIM Gov (municipios)",
+    "RF OLAP (estoque porte)",
+    "RF OLAP (estoque setor)",
+    "RF OLAP (divisao CNAE)"
+  ],
+  "cobertura": {
+    "REDESIM OLAP (tempo abertura)": "OK",
+    "REDESIM Gov (tempo mensal)": "OK",
+    "REDESIM Gov (integracao)": "OK",
+    "REDESIM Gov (estabelecimentos)": "OK",
+    "REDESIM Gov (municipios)": "OK",
+    "RF SQL (aberturas/baixas)": "NAO COLETADO",
+    "RF SQL (sobrevivencia)": "NAO COLETADO",
+    "RF SQL (tempo de vida)": "NAO COLETADO",
+    "RF OLAP (estoque porte)": "OK",
+    "RF OLAP (estoque setor)": "OK",
+    "RF OLAP (divisao CNAE)": "OK"
+  }
+}
