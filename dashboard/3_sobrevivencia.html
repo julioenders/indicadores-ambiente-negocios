@@ -229,22 +229,22 @@ const DATA = {
     ]
   },
   emprego: {
-    saldo: 271413,
+    saldo: 165827,
     salario_medio: 2187.50,
     estoque_mpe_pct: 54.3,
     mensal: [
-      {mes:'2024-11', saldo:155323},
-      {mes:'2024-12', saldo:-239035},
-      {mes:'2025-01', saldo:589246},
-      {mes:'2025-02', saldo:222222},
-      {mes:'2025-03', saldo:264198},
-      {mes:'2025-04', saldo:230865},
-      {mes:'2025-05', saldo:235802},
-      {mes:'2025-06', saldo:111111},
-      {mes:'2025-07', saldo:211111},
-      {mes:'2025-08', saldo:255566},
-      {mes:'2025-09', saldo:286420},
-      {mes:'2025-10', saldo:271413}
+      {mes:'2025-09', saldo:214688},
+      {mes:'2025-10', saldo:92597},
+      {mes:'2025-11', saldo:81468},
+      {mes:'2025-12', saldo:-635078},
+      {mes:'2026-01', saldo:117787},
+      {mes:'2026-02', saldo:268156},
+      {mes:'2026-03', saldo:228133},
+      {mes:'2026-04', saldo:79608},
+      {mes:'2026-05', saldo:81648},
+      {mes:'2026-06', saldo:136959},
+      {mes:'2026-07', saldo:55915},
+      {mes:'2026-08', saldo:165827}
     ],
     setores_emprego: [
       {setor:'Comercio varejista', saldo:68420},
@@ -445,15 +445,16 @@ async function fetchAPIs(){
     const resp=await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.28763/dados?formato=json');
     if(!resp.ok)throw new Error('HTTP '+resp.status);
     const json=await resp.json();
-    const last12=json.slice(-12);
+    const last13=json.slice(-13);
 
-    if(last12.length>0){
-      DATA.emprego.mensal=last12.map(d=>{
-        const parts=d.data.split('/');
-        const mesLabel=parts[2]+'-'+parts[1];
-        const saldo=parseFloat(d.valor);
-        return{mes:mesLabel,saldo:saldo};
-      });
+    if(last13.length>1){
+      DATA.emprego.mensal=[];
+      for(let i=1;i<last13.length;i++){
+        const prev=parseFloat(last13[i-1].valor);
+        const curr=parseFloat(last13[i].valor);
+        const parts=last13[i].data.split('/');
+        DATA.emprego.mensal.push({mes:parts[2]+'-'+parts[1],saldo:Math.round(curr-prev)});
+      }
 
       const ultimo=DATA.emprego.mensal[DATA.emprego.mensal.length-1];
       DATA.emprego.saldo=ultimo.saldo;
