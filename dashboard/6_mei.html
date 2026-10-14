@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIPPA | Microempreendedor Individual (MEI)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--surface:#1e293b;--border:rgba(255,255,255,.06);--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4;--orange:#f97316;--rose:#f43f5e;--radius:12px}
+body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);padding:1rem 2rem;border-bottom:2px solid rgba(244,63,94,.3);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.header-brand{display:flex;align-items:center;gap:.8rem}
+.header-logo{width:40px;height:40px;background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fda4af}
+.header h1{font-size:1.1rem;font-weight:700}
+.header h1 span{color:var(--rose)}
+.header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
+.header-controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.info-btn{width:30px;height:30px;border-radius:50%;background:rgba(244,63,94,.15);border:1px solid rgba(244,63,94,.3);color:#fda4af;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
+.info-btn:hover{background:rgba(244,63,94,.3);color:#fff}
+.nav-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.4rem .8rem;border-radius:8px;font-size:.7rem;font-weight:600;text-decoration:none;transition:all .2s}
+.nav-home{border:1px solid rgba(59,130,246,.3);color:#93c5fd}
+.nav-home:hover{background:rgba(59,130,246,.1)}
+.nav-portal{border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
+.nav-portal:hover{background:rgba(16,185,129,.1)}
+.nav-btn svg{width:13px;height:13px}
+
+.main{max-width:1300px;margin:0 auto;padding:1.5rem 2rem}
+.narrative{background:rgba(244,63,94,.06);border:1px solid rgba(244,63,94,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#94a3b8;line-height:1.8}
+.narrative strong{color:var(--text)}
+
+.tabs{display:flex;gap:.3rem;margin-bottom:1.2rem;border-bottom:1px solid var(--border);padding-bottom:.4rem;flex-wrap:wrap}
+.tab{padding:.45rem 1.1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s;font-family:inherit}
+.tab.active{color:var(--rose);background:rgba(244,63,94,.1);border-bottom:2px solid var(--rose)}
+.tab:hover:not(.active){color:var(--text)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-bottom:1.2rem}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;text-align:center}
+.kpi-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.3rem}
+.kpi-value{font-size:1.5rem;font-weight:800}
+.kpi-detail{font-size:.65rem;color:var(--muted);margin-top:.2rem;line-height:1.4}
+
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1rem;margin-bottom:1rem}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem}
+.chart-box.full{grid-column:1/-1}
+.chart-title{font-size:.78rem;font-weight:600;margin-bottom:.6rem;color:var(--text)}
+
+.insight{background:rgba(34,197,94,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#94a3b8;line-height:1.7}
+.insight strong{color:var(--green)}
+
+.table-wrapper{overflow-x:auto;margin-top:.5rem;border-radius:var(--radius);border:1px solid var(--border);max-height:600px}
+table{width:100%;border-collapse:collapse;font-size:.72rem}
+th{text-align:left;padding:.5rem .7rem;background:rgba(255,255,255,.04);color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1}
+td{padding:.45rem .7rem;border-bottom:1px solid var(--border)}
+tr:hover td{background:rgba(255,255,255,.02)}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+
+.fonte{margin-top:1.5rem;padding:1rem;background:rgba(255,255,255,.02);border-radius:var(--radius);font-size:.68rem;color:var(--muted);line-height:1.7}
+.fonte strong{color:#94a3b8}
+
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.info-overlay.active{display:flex}
+.info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
+.info-modal h2{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--rose)}
+.info-modal h3{font-size:.82rem;font-weight:600;margin:1rem 0 .3rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:.25rem}
+.info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
+.info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+
+.footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.65rem}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(244,63,94,.25);border-radius:3px}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}.header{padding:.8rem 1rem}.main{padding:1rem}}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-brand">
+    <div class="header-logo">AN</div>
+    <div>
+      <h1><span>PIPPA</span> Ambiente de Negocios</h1>
+      <div class="header-sub">Tema 6 &mdash; Microempreendedor Individual (MEI)</div>
+    </div>
+  </div>
+  <div class="header-controls">
+    <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
+    <a href="index.html" class="nav-btn nav-home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Inicio
+    </a>
+    <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="nav-btn nav-portal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Portal
+    </a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="narrative">
+    <strong>Quantos microempreendedores individuais existem no Brasil e onde estao?</strong> Este painel apresenta o panorama completo dos MEIs ativos no pais: distribuicao por estado, regiao, setor economico e atividade CNAE, alem do ranking dos municipios com maior concentracao. Dados da Receita Federal via API do Observatorio Setorial Territorial.
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="panorama" onclick="switchTab('panorama')">Panorama Nacional</button>
+    <button class="tab" data-tab="setores" onclick="switchTab('setores')">Setores e CNAE</button>
+    <button class="tab" data-tab="ranking" onclick="switchTab('ranking')">Ranking Municipal</button>
+  </div>
+
+  <div class="tab-content active" id="panorama">
+    <div class="kpi-row" id="kpiPanorama"></div>
+    <div class="grid-2">
+      <div class="chart-box"><div class="chart-title">MEIs ativas por estado</div><canvas id="chartEstados" height="550"></canvas></div>
+      <div class="chart-box"><div class="chart-title">Participacao MEI no total de empresas (%)</div><canvas id="chartPctMei" height="550"></canvas></div>
+    </div>
+    <div class="grid-2">
+      <div class="chart-box"><div class="chart-title">Distribuicao por regiao</div><canvas id="chartRegioes" height="250"></canvas></div>
+      <div class="chart-box"><div class="chart-title">Top 10 estados — MEIs ativas</div><canvas id="chartTop10" height="250"></canvas></div>
+    </div>
+    <div class="insight"><strong>O que isso significa?</strong> Mais da metade das empresas ativas no Brasil sao MEIs. O Sudeste concentra a maior parte, mas estados do Nordeste apresentam as maiores proporcoes de MEI sobre o total — indicando que o MEI e a principal via de formalizacao nessas regioes.</div>
+  </div>
+
+  <div class="tab-content" id="setores">
+    <div class="kpi-row" id="kpiSetores"></div>
+    <div class="grid-2">
+      <div class="chart-box"><div class="chart-title">MEIs por grande setor economico</div><canvas id="chartSetores" height="280"></canvas></div>
+      <div class="chart-box"><div class="chart-title">Top 15 atividades CNAE (divisao)</div><canvas id="chartCnae" height="420"></canvas></div>
+    </div>
+    <div class="insight"><strong>O que isso significa?</strong> Servicos e comercio varejista dominam o universo MEI. Atividades como transporte terrestre (motoristas de app), alimentacao e construcao civil sao as portas de entrada mais comuns para a formalizacao individual.</div>
+  </div>
+
+  <div class="tab-content" id="ranking">
+    <div class="kpi-row" id="kpiRanking"></div>
+    <div class="chart-box">
+      <div class="chart-title">Top 50 municipios por quantidade de MEIs ativas</div>
+      <div class="table-wrapper" id="tableMunicipios"></div>
+    </div>
+    <div class="insight"><strong>O que isso significa?</strong> As capitais e grandes centros urbanos concentram a maior parte dos MEIs. Sao Paulo sozinha tem mais de 1 milhao de MEIs — mais do que muitos estados inteiros.</div>
+  </div>
+
+  <div class="fonte">
+    <strong>Fonte:</strong> Receita Federal — Cubo RF / API Observatorio Setorial Territorial Sebrae<br>
+    <strong>Ultima carga:</strong> Agosto/2026 (snapshot da Receita Federal)<br>
+    <strong>Filtros:</strong> Situacao Cadastral = Ativa | Empresa Mercantil = Sim | MEI = Sim
+  </div>
+</div>
+
+<div id="infoModal" class="info-overlay" onclick="if(event.target===this)closeInfo()">
+  <div class="info-modal">
+    <button class="info-close" onclick="closeInfo()">&times;</button>
+    <h2>Metodologia — Microempreendedor Individual</h2>
+    <p>Este painel apresenta o panorama dos MEIs ativos no Brasil, com dados da Receita Federal via API do Observatorio Setorial Territorial.</p>
+    <h3>Panorama Nacional</h3>
+    <ul>
+      <li><strong>MEIs por estado:</strong> Quantidade absoluta de MEIs com situacao cadastral ativa e indicador mercantil.</li>
+      <li><strong>Participacao MEI (%):</strong> Proporcao de MEIs sobre o total de empresas ativas em cada estado.</li>
+      <li><strong>Distribuicao regional:</strong> Agregacao por grande regiao.</li>
+    </ul>
+    <h3>Setores e CNAE</h3>
+    <ul>
+      <li><strong>Grandes setores:</strong> Servicos, Comercio, Industria, Construcao, Agropecuaria.</li>
+      <li><strong>Divisao CNAE:</strong> Top 15 atividades com maior concentracao de MEIs.</li>
+    </ul>
+    <h3>Ranking Municipal</h3>
+    <ul><li><strong>Top 50 municipios:</strong> Cidades com maior numero absoluto de MEIs ativas.</li></ul>
+    <h3>Filtros Aplicados</h3>
+    <ul>
+      <li>Registration Status = 2 (Ativa)</li>
+      <li>Sebrae Commercial Company Indicator = 1 (Mercantil)</li>
+      <li>MEI Indicator = 1 (MEI)</li>
+    </ul>
+    <h3>Fonte</h3>
+    <p>Receita Federal do Brasil, cubo OLAP "RF". Ultima carga completa: agosto/2026.</p>
+    <h3>Informacoes Tecnicas</h3>
+    <ul><li><strong>Responsavel:</strong> Julio Albuquerque — Sebrae Nacional / UCOMP-DADOS</li><li><strong>Atualizacao:</strong> Outubro 2026</li></ul>
+  </div>
+</div>
+
+<div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
+
+<script>
+const DATA = {"estados": [{"uf": "São Paulo", "mei": 3922867, "total": 8532264, "pct": 46.0}, {"uf": "Minas Gerais", "mei": 1503047, "total": 2752706, "pct": 54.6}, {"uf": "Rio de Janeiro", "mei": 1306823, "total": 2213558, "pct": 59.0}, {"uf": "Paraná", "mei": 936300, "total": 1918629, "pct": 48.8}, {"uf": "Rio Grande do Sul", "mei": 853505, "total": 1663900, "pct": 51.3}, {"uf": "Santa Catarina", "mei": 745366, "total": 1475648, "pct": 50.5}, {"uf": "Bahia", "mei": 627738, "total": 1182051, "pct": 53.1}, {"uf": "Goiás", "mei": 529835, "total": 1005638, "pct": 52.7}, {"uf": "Pernambuco", "mei": 383513, "total": 693788, "pct": 55.3}, {"uf": "Ceará", "mei": 358925, "total": 708499, "pct": 50.7}, {"uf": "Espírito Santo", "mei": 336444, "total": 585967, "pct": 57.4}, {"uf": "Mato Grosso", "mei": 266145, "total": 546704, "pct": 48.7}, {"uf": "Pará", "mei": 231828, "total": 479915, "pct": 48.3}, {"uf": "Distrito Federal", "mei": 208916, "total": 454108, "pct": 46.0}, {"uf": "Mato Grosso do Sul", "mei": 181390, "total": 361123, "pct": 50.2}, {"uf": "Paraíba", "mei": 175989, "total": 318630, "pct": 55.2}, {"uf": "Rio Grande do Norte", "mei": 157096, "total": 294222, "pct": 53.4}, {"uf": "Maranhão", "mei": 144921, "total": 339115, "pct": 42.7}, {"uf": "Amazonas", "mei": 131440, "total": 271002, "pct": 48.5}, {"uf": "Alagoas", "mei": 119848, "total": 218261, "pct": 54.9}, {"uf": "Piauí", "mei": 98482, "total": 214950, "pct": 45.8}, {"uf": "Sergipe", "mei": 89229, "total": 165514, "pct": 53.9}, {"uf": "Tocantins", "mei": 86007, "total": 167192, "pct": 51.4}, {"uf": "Rondônia", "mei": 82415, "total": 163972, "pct": 50.3}, {"uf": "Roraima", "mei": 25150, "total": 48690, "pct": 51.7}, {"uf": "Acre", "mei": 21988, "total": 49202, "pct": 44.7}, {"uf": "Amapá", "mei": 19335, "total": 47036, "pct": 41.1}], "regioes": [{"regiao": "Sudeste", "mei": 7069181}, {"regiao": "Sul", "mei": 2535171}, {"regiao": "Nordeste", "mei": 2155741}, {"regiao": "Centro-Oeste", "mei": 1186286}, {"regiao": "Norte", "mei": 598163}], "setores": [{"setor": "Serviço", "mei": 7883227}, {"setor": "Comércio", "mei": 3093130}, {"setor": "Industria Transformação", "mei": 1315308}, {"setor": "Construção", "mei": 1164413}, {"setor": "Agropecuária", "mei": 74871}, {"setor": "SIUP - Serviços Industrias De Utilidade Pública", "mei": 13760}, {"setor": "Extrativa Mineral", "mei": 42}], "divisoes": [{"cnae": "Comércio Varejista", "mei": 2501225}, {"cnae": "Outras Atividades De Serviços Pessoais", "mei": 1241583}, {"cnae": "Transporte Terrestre", "mei": 1190054}, {"cnae": "Alimentação", "mei": 1175506}, {"cnae": "Serviços Especializados Para Construção", "mei": 1164331}, {"cnae": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas", "mei": 772519}, {"cnae": "Educação", "mei": 658468}, {"cnae": "Publicidade E Pesquisa De Mercado", "mei": 653009}, {"cnae": "Correio E Outras Atividades De Entrega", "mei": 603228}, {"cnae": "Comércio E Reparação De Veículos Automotores E Motocicletas", "mei": 591703}, {"cnae": "Serviços Domésticos", "mei": 268928}, {"cnae": "Fabricação De Produtos Alimentícios", "mei": 268860}, {"cnae": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos", "mei": 253749}, {"cnae": "Confecção De Artigos Do Vestuário E Acessórios", "mei": 239955}, {"cnae": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos", "mei": 174094}, {"cnae": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares", "mei": 167075}, {"cnae": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos", "mei": 156774}, {"cnae": "Edição E Edição Integrada À Impressão", "mei": 142070}, {"cnae": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música", "mei": 113756}, {"cnae": "Atividades Artísticas, Criativas E De Espetáculos", "mei": 113462}], "municipios": [{"municipio": "São Paulo", "uf": "São Paulo", "cod_ibge": 3550308, "mei": 1100383}, {"municipio": "Rio de Janeiro", "uf": "Rio de Janeiro", "cod_ibge": 3304557, "mei": 538026}, {"municipio": "Belo Horizonte", "uf": "Minas Gerais", "cod_ibge": 3106200, "mei": 231151}, {"municipio": "Brasília", "uf": "Distrito Federal", "cod_ibge": 5300108, "mei": 208916}, {"municipio": "Curitiba", "uf": "Paraná", "cod_ibge": 4106902, "mei": 188130}, {"municipio": "Salvador", "uf": "Bahia", "cod_ibge": 2927408, "mei": 183355}, {"municipio": "Fortaleza", "uf": "Ceará", "cod_ibge": 2304400, "mei": 163238}, {"municipio": "Goiânia", "uf": "Goiás", "cod_ibge": 5208707, "mei": 149119}, {"municipio": "Guarulhos", "uf": "São Paulo", "cod_ibge": 3518800, "mei": 121843}, {"municipio": "Porto Alegre", "uf": "Rio Grande do Sul", "cod_ibge": 4314902, "mei": 114306}, {"municipio": "Campinas", "uf": "São Paulo", "cod_ibge": 3509502, "mei": 110933}, {"municipio": "Manaus", "uf": "Amazonas", "cod_ibge": 1302603, "mei": 106766}, {"municipio": "Recife", "uf": "Pernambuco", "cod_ibge": 2611606, "mei": 98424}, {"municipio": "Campo Grande", "uf": "Mato Grosso do Sul", "cod_ibge": 5002704, "mei": 77357}, {"municipio": "Sorocaba", "uf": "São Paulo", "cod_ibge": 3552205, "mei": 73329}, {"municipio": "Uberlândia", "uf": "Minas Gerais", "cod_ibge": 3170206, "mei": 72347}, {"municipio": "Ribeirão Preto", "uf": "São Paulo", "cod_ibge": 3543402, "mei": 71918}, {"municipio": "Florianópolis", "uf": "Santa Catarina", "cod_ibge": 4205407, "mei": 69294}, {"municipio": "Joinville", "uf": "Santa Catarina", "cod_ibge": 4209102, "mei": 67599}, {"municipio": "Duque de Caxias", "uf": "Rio de Janeiro", "cod_ibge": 3301702, "mei": 66297}, {"municipio": "São Bernardo do Campo", "uf": "São Paulo", "cod_ibge": 3548708, "mei": 65445}, {"municipio": "Nova Iguaçu", "uf": "Rio de Janeiro", "cod_ibge": 3303500, "mei": 65051}, {"municipio": "São José dos Campos", "uf": "São Paulo", "cod_ibge": 3549904, "mei": 63827}, {"municipio": "Osasco", "uf": "São Paulo", "cod_ibge": 3534401, "mei": 63400}, {"municipio": "São Gonçalo", "uf": "Rio de Janeiro", "cod_ibge": 3304904, "mei": 63203}, {"municipio": "Belém", "uf": "Pará", "cod_ibge": 1501402, "mei": 62761}, {"municipio": "Contagem", "uf": "Minas Gerais", "cod_ibge": 3118601, "mei": 62543}, {"municipio": "Santo André", "uf": "São Paulo", "cod_ibge": 3547809, "mei": 61859}, {"municipio": "João Pessoa", "uf": "Paraíba", "cod_ibge": 2507507, "mei": 61453}, {"municipio": "Maceió", "uf": "Alagoas", "cod_ibge": 2704302, "mei": 59396}, {"municipio": "Natal", "uf": "Rio Grande do Norte", "cod_ibge": 2408102, "mei": 54887}, {"municipio": "Serra", "uf": "Espírito Santo", "cod_ibge": 3205002, "mei": 53939}, {"municipio": "Aparecida de Goiânia", "uf": "Goiás", "cod_ibge": 5201405, "mei": 53287}, {"municipio": "Cuiabá", "uf": "Mato Grosso", "cod_ibge": 5103403, "mei": 52465}, {"municipio": "Vila Velha", "uf": "Espírito Santo", "cod_ibge": 3205200, "mei": 51885}, {"municipio": "São José do Rio Preto", "uf": "São Paulo", "cod_ibge": 3549805, "mei": 50221}, {"municipio": "Londrina", "uf": "Paraná", "cod_ibge": 4113700, "mei": 47576}, {"municipio": "Juiz de Fora", "uf": "Minas Gerais", "cod_ibge": 3136702, "mei": 47506}, {"municipio": "São Luís", "uf": "Maranhão", "cod_ibge": 2111300, "mei": 47226}, {"municipio": "Teresina", "uf": "Piauí", "cod_ibge": 2211001, "mei": 44602}, {"municipio": "Maringá", "uf": "Paraná", "cod_ibge": 4115200, "mei": 43715}, {"municipio": "Caxias do Sul", "uf": "Rio Grande do Sul", "cod_ibge": 4305108, "mei": 43208}, {"municipio": "Jundiaí", "uf": "São Paulo", "cod_ibge": 3525904, "mei": 42901}, {"municipio": "Aracaju", "uf": "Sergipe", "cod_ibge": 2800308, "mei": 42102}, {"municipio": "Praia Grande", "uf": "São Paulo", "cod_ibge": 3541000, "mei": 41993}, {"municipio": "Santos", "uf": "São Paulo", "cod_ibge": 3548500, "mei": 41716}, {"municipio": "Niterói", "uf": "Rio de Janeiro", "cod_ibge": 3303302, "mei": 41571}, {"municipio": "Feira de Santana", "uf": "Bahia", "cod_ibge": 2910800, "mei": 39942}, {"municipio": "Bauru", "uf": "São Paulo", "cod_ibge": 3506003, "mei": 39502}, {"municipio": "Mogi das Cruzes", "uf": "São Paulo", "cod_ibge": 3530607, "mei": 38911}]};
+
+const charts = {};
+Chart.defaults.color='#94a3b8';
+Chart.defaults.font.family="'Inter','Segoe UI',system-ui,sans-serif";
+
+function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
+function fmtN(v){return v.toLocaleString('pt-BR')}
+
+function switchTab(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.toggle('active',c.id===id));
+}
+
+function init(){renderPanorama();renderSetores();renderRanking()}
+
+function renderPanorama(){
+  const es=DATA.estados,rg=DATA.regioes;
+  const totalMei=es.reduce((s,e)=>s+e.mei,0);
+  const totalEmp=es.reduce((s,e)=>s+e.total,0);
+  const pctN=(totalMei/totalEmp*100).toFixed(1);
+  const topUf=es[0];
+  const maiorPct=[...es].sort((a,b)=>b.pct-a.pct)[0];
+
+  document.getElementById('kpiPanorama').innerHTML=
+    '<div class="kpi"><div class="kpi-label">Total de MEIs ativas</div><div class="kpi-value" style="color:var(--rose)">'+fmt(totalMei)+'</div><div class="kpi-detail">Microempreendedores individuais no Brasil</div></div>'+
+    '<div class="kpi"><div class="kpi-label">% do total de empresas</div><div class="kpi-value" style="color:var(--accent)">'+pctN+'%</div><div class="kpi-detail">'+fmt(totalEmp)+' empresas ativas no pais</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Estado com mais MEIs</div><div class="kpi-value" style="color:var(--green)">'+topUf.uf+'</div><div class="kpi-detail">'+fmt(topUf.mei)+' MEIs ('+topUf.pct+'% do estado)</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Maior proporcao MEI</div><div class="kpi-value" style="color:var(--orange)">'+maiorPct.uf+'</div><div class="kpi-detail">'+maiorPct.pct+'% das empresas sao MEI</div></div>';
+
+  const esSorted=[...es].sort((a,b)=>a.mei-b.mei);
+  charts.estados=new Chart(document.getElementById('chartEstados'),{
+    type:'bar',
+    data:{labels:esSorted.map(e=>e.uf),datasets:[{data:esSorted.map(e=>e.mei),backgroundColor:'rgba(244,63,94,.5)',borderRadius:3}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+  });
+
+  const esPct=[...es].sort((a,b)=>a.pct-b.pct);
+  charts.pctMei=new Chart(document.getElementById('chartPctMei'),{
+    type:'bar',
+    data:{labels:esPct.map(e=>e.uf),datasets:[{data:esPct.map(e=>e.pct),backgroundColor:esPct.map(e=>e.pct>=55?'rgba(34,197,94,.6)':e.pct>=48?'rgba(234,179,8,.6)':'rgba(239,68,68,.5)'),borderRadius:3}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+'% MEI'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},max:70},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+  });
+
+  const regColors=['rgba(244,63,94,.7)','rgba(59,130,246,.7)','rgba(249,115,22,.7)','rgba(34,197,94,.7)','rgba(139,92,246,.7)'];
+  charts.regioes=new Chart(document.getElementById('chartRegioes'),{
+    type:'doughnut',
+    data:{labels:rg.map(r=>r.regiao),datasets:[{data:rg.map(r=>r.mei),backgroundColor:regColors,borderWidth:0}]},
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,padding:14}},
+      tooltip:{callbacks:{label:function(c){var v=c.raw;var t=rg.reduce(function(s,r){return s+r.mei},0);return c.label+': '+fmt(v)+' ('+(v/t*100).toFixed(1)+'%)'}}}}}
+  });
+
+  const top10=es.slice(0,10);
+  charts.top10=new Chart(document.getElementById('chartTop10'),{
+    type:'bar',
+    data:{labels:top10.map(e=>e.uf),datasets:[{data:top10.map(e=>e.mei),backgroundColor:'rgba(244,63,94,.6)',borderRadius:4}]},
+    options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
+      scales:{x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}}}}
+  });
+}
+
+function renderSetores(){
+  const st=DATA.setores,dv=DATA.divisoes;
+  const totalMei=st.reduce(function(s,x){return s+x.mei},0);
+
+  document.getElementById('kpiSetores').innerHTML=
+    '<div class="kpi"><div class="kpi-label">Principal setor</div><div class="kpi-value" style="color:var(--rose)">'+st[0].setor+'</div><div class="kpi-detail">'+fmt(st[0].mei)+' MEIs ('+(st[0].mei/totalMei*100).toFixed(1)+'%)</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Segundo setor</div><div class="kpi-value" style="color:var(--accent)">'+st[1].setor+'</div><div class="kpi-detail">'+fmt(st[1].mei)+' MEIs ('+(st[1].mei/totalMei*100).toFixed(1)+'%)</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Principal CNAE</div><div class="kpi-value" style="color:var(--green);font-size:1.1rem">'+dv[0].cnae+'</div><div class="kpi-detail">'+fmt(dv[0].mei)+' MEIs</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Setores com MEI</div><div class="kpi-value" style="color:var(--cyan)">'+st.length+'</div><div class="kpi-detail">Grandes setores da economia</div></div>';
+
+  const stColors=['rgba(244,63,94,.7)','rgba(59,130,246,.7)','rgba(249,115,22,.7)','rgba(34,197,94,.7)','rgba(139,92,246,.7)','rgba(6,182,212,.7)','rgba(100,116,139,.5)'];
+  var stSorted=st.slice().reverse();
+  charts.setores=new Chart(document.getElementById('chartSetores'),{
+    type:'bar',
+    data:{labels:stSorted.map(function(s){return s.setor}),datasets:[{data:stSorted.map(function(s){return s.mei}),backgroundColor:stColors.slice().reverse(),borderRadius:4}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:function(c){var v=c.raw;return fmtN(v)+' MEIs ('+(v/totalMei*100).toFixed(1)+'%)'}}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:function(v){return fmt(v)}}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+  });
+
+  var top15=dv.slice(0,15).reverse();
+  charts.cnae=new Chart(document.getElementById('chartCnae'),{
+    type:'bar',
+    data:{labels:top15.map(function(d){return d.cnae.length>45?d.cnae.substring(0,42)+'...':d.cnae}),datasets:[{data:top15.map(function(d){return d.mei}),backgroundColor:'rgba(59,130,246,.5)',borderRadius:3}]},
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{title:function(c){var i=14-c[0].dataIndex;return dv[i].cnae},label:c=>fmtN(c.raw)+' MEIs'}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+  });
+}
+
+function renderRanking(){
+  const mn=DATA.municipios;
+  const totalMei=DATA.estados.reduce(function(s,e){return s+e.mei},0);
+
+  document.getElementById('kpiRanking').innerHTML=
+    '<div class="kpi"><div class="kpi-label">Municipio com mais MEIs</div><div class="kpi-value" style="color:var(--rose);font-size:1.2rem">'+mn[0].municipio+'</div><div class="kpi-detail">'+fmtN(mn[0].mei)+' MEIs ativas</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Concentracao top 10</div><div class="kpi-value" style="color:var(--accent)">'+(mn.slice(0,10).reduce(function(s,m){return s+m.mei},0)/totalMei*100).toFixed(1)+'%</div><div class="kpi-detail">dos MEIs estao nos 10 maiores municipios</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Municipios no ranking</div><div class="kpi-value" style="color:var(--green)">50</div><div class="kpi-detail">Top 50 por quantidade de MEIs</div></div>'+
+    '<div class="kpi"><div class="kpi-label">Total nacional</div><div class="kpi-value" style="color:var(--orange)">'+fmt(totalMei)+'</div><div class="kpi-detail">Distribuidos em 5.571 municipios</div></div>';
+
+  var rows='';
+  mn.forEach(function(m,i){
+    rows+='<tr><td class="num">'+(i+1)+'</td><td>'+m.municipio+'</td><td>'+m.uf+'</td><td class="num">'+m.cod_ibge+'</td><td class="num">'+fmtN(m.mei)+'</td><td class="num">'+(m.mei/totalMei*100).toFixed(2)+'%</td></tr>';
+  });
+  document.getElementById('tableMunicipios').innerHTML='<table><thead><tr><th class="num">#</th><th>Municipio</th><th>Estado</th><th class="num">Cod. IBGE</th><th class="num">MEIs Ativas</th><th class="num">% Nacional</th></tr></thead><tbody>'+rows+'</tbody></table>';
+}
+
+function openInfo(){document.getElementById('infoModal').classList.add('active')}
+function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+
+init();
+</script>
+</body>
+</html>

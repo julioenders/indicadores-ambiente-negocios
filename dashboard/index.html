@@ -37,6 +37,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 .card:nth-child(3)::before{background:var(--orange)}
 .card:nth-child(4)::before{background:var(--purple)}
 .card:nth-child(5)::before{background:var(--cyan)}
+.card:nth-child(6)::before{background:#f43f5e}
 .card:hover{transform:translateY(-3px);border-color:rgba(59,130,246,.3);box-shadow:0 8px 32px rgba(0,0,0,.3)}
 
 .card-num{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;flex-shrink:0}
@@ -45,6 +46,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 .card:nth-child(3) .card-num{background:rgba(249,115,22,.12);color:var(--orange)}
 .card:nth-child(4) .card-num{background:rgba(168,85,247,.12);color:var(--purple)}
 .card:nth-child(5) .card-num{background:rgba(6,182,212,.12);color:var(--cyan)}
+.card:nth-child(6) .card-num{background:rgba(244,63,94,.12);color:#f43f5e}
 
 .card-body h3{font-size:.92rem;font-weight:700;margin-bottom:.35rem}
 .card-body p{font-size:.78rem;color:var(--muted);line-height:1.65}
@@ -89,7 +91,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 
 <div class="main">
   <div class="intro">
-    <strong>Bem-vindo ao Painel de Ambiente de Negocios.</strong> Aqui voce encontra dados publicos organizados em 5 temas para entender como esta o cenario para os micro e pequenos negocios no Brasil. Cada painel responde perguntas praticas — da abertura de uma empresa ate o acesso ao credito.
+    <strong>Bem-vindo ao Painel de Ambiente de Negocios.</strong> Aqui voce encontra dados publicos organizados em 6 temas para entender como esta o cenario para os micro e pequenos negocios no Brasil. Cada painel responde perguntas praticas — da abertura de uma empresa ate o perfil do microempreendedor individual.
   </div>
 
   <div class="section-title">Escolha um tema para explorar</div>
@@ -139,6 +141,15 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
       </div>
       <span class="card-arrow">&rsaquo;</span>
     </a>
+
+    <a href="6_mei.html" class="card">
+      <div class="card-num">6</div>
+      <div class="card-body">
+        <h3>Microempreendedor Individual</h3>
+        <p>Quantos MEIs existem no Brasil? Como se distribuem por estado, setor economico e atividade CNAE? Quais municipios concentram mais microempreendedores?</p>
+      </div>
+      <span class="card-arrow">&rsaquo;</span>
+    </a>
   </div>
 </div>
 
@@ -155,6 +166,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
       <li><strong>Tema 3 — Sobrevivencia e Emprego:</strong> Taxas de sobrevivencia por porte, saldo de empregos formais (CAGED), salario medio.</li>
       <li><strong>Tema 4 — Inclusao e Diversidade:</strong> Participacao feminina, jovens e grupos prioritarios no empreendedorismo.</li>
       <li><strong>Tema 5 — Credito e Financiamento:</strong> Evolucao do credito para empresas, inadimplencia, taxa Selic, cobertura bancaria.</li>
+      <li><strong>Tema 6 — Microempreendedor Individual:</strong> Panorama dos MEIs ativos por estado, regiao, setor economico, CNAE e municipio.</li>
     </ul>
 
     <h3>Fontes de Dados</h3>
