@@ -344,7 +344,7 @@ function renderMapa(estados){
     var uf=ufNames[i];
     var val=meiByUf[uf]||0;
     var color=val?getColor(val):'#1e293b';
-    svg+='<path d="'+UF_PATHS[uf]+'" fill="'+color+'" stroke="rgba(255,255,255,.2)" stroke-width="1" vector-effect="non-scaling-stroke" data-uf="'+uf+'" data-mei="'+val+'" data-pct="'+(pctByUf[uf]||0)+'"/>';
+    svg+='<path d="'+UF_PATHS[uf]+'" fill="'+color+'" stroke="rgba(255,255,255,.2)" stroke-width="1" vector-effect="non-scaling-stroke" pointer-events="all" data-uf="'+uf+'" data-mei="'+val+'" data-pct="'+(pctByUf[uf]||0)+'"/>';
   }
   svg+='</g></svg>';
   svg+='<div class="map-legend"><span>Menor</span><div class="map-legend-bar"></div><span>Maior</span></div>';
@@ -354,35 +354,50 @@ function renderMapa(estados){
   tooltip.className='map-tooltip';
   document.body.appendChild(tooltip);
 
-  var paths=container.querySelectorAll('svg path');
-  for(var j=0;j<paths.length;j++){
-    paths[j].addEventListener('mouseenter',function(){
-      this.setAttribute('stroke','#fff');
-      this.setAttribute('stroke-width','2');
-      this.style.filter='brightness(1.3)';
-      this.parentNode.appendChild(this);
-    });
-    paths[j].addEventListener('mouseleave',function(){
-      this.setAttribute('stroke','rgba(255,255,255,.2)');
-      this.setAttribute('stroke-width','1');
-      this.style.filter='';
-      tooltip.style.display='none';
-    });
-    paths[j].addEventListener('mousemove',function(ev){
-      var uf=this.getAttribute('data-uf');
-      var mei=parseInt(this.getAttribute('data-mei'));
-      var pct=this.getAttribute('data-pct');
-      tooltip.innerHTML='<strong>'+uf+'</strong><br>'+fmtN(mei)+' MEIs<br><span style="color:#94a3b8;font-size:.7rem">'+pct+'% das empresas sao MEI</span>';
-      tooltip.style.display='block';
-      var rect=container.getBoundingClientRect();
-      var tx=ev.clientX+14;
-      var ty=ev.clientY-50;
-      if(tx+200>window.innerWidth)tx=ev.clientX-210;
-      if(ty<0)ty=ev.clientY+20;
-      tooltip.style.left=tx+'px';
-      tooltip.style.top=ty+'px';
-    });
+  var svgEl=container.querySelector('svg');
+  var activePath=null;
+
+  function resetPath(p){
+    if(!p)return;
+    p.setAttribute('stroke','rgba(255,255,255,.2)');
+    p.setAttribute('stroke-width','1');
+    p.style.filter='';
   }
+
+  svgEl.addEventListener('mousemove',function(ev){
+    var target=ev.target;
+    while(target&&target.tagName!=='path'&&target!==svgEl)target=target.parentNode;
+    if(!target||target.tagName!=='path'){
+      if(activePath){resetPath(activePath);activePath=null}
+      tooltip.style.display='none';
+      return;
+    }
+    if(target!==activePath){
+      resetPath(activePath);
+      activePath=target;
+      target.setAttribute('stroke','#fff');
+      target.setAttribute('stroke-width','2.5');
+      target.style.filter='brightness(1.3)';
+      target.parentNode.appendChild(target);
+    }
+    var uf=target.getAttribute('data-uf');
+    var mei=parseInt(target.getAttribute('data-mei'));
+    var pct=target.getAttribute('data-pct');
+    tooltip.innerHTML='<strong>'+uf+'</strong><br>'+fmtN(mei)+' MEIs<br><span style="color:#94a3b8;font-size:.7rem">'+pct+'% das empresas sao MEI</span>';
+    tooltip.style.display='block';
+    var tx=ev.clientX+14;
+    var ty=ev.clientY-50;
+    if(tx+220>window.innerWidth)tx=ev.clientX-230;
+    if(ty<10)ty=ev.clientY+20;
+    tooltip.style.left=tx+'px';
+    tooltip.style.top=ty+'px';
+  });
+
+  svgEl.addEventListener('mouseleave',function(){
+    resetPath(activePath);
+    activePath=null;
+    tooltip.style.display='none';
+  });
 }
 
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
