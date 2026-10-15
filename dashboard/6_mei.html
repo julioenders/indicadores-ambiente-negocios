@@ -4,36 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PIPPA | Microempreendedor Individual (MEI)</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>(function(){var t=localStorage.getItem('pippa-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0f172a;--surface:#1e293b;--border:rgba(255,255,255,.06);--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4;--orange:#f97316;--rose:#f43f5e;--radius:12px}
-body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+:root{--bg:#071a5c;--surface:#0b2574;--surface2:#0f2f88;--border:rgba(101,183,251,.12);--text:#eff3ee;--text2:#a8c4e0;--muted:#7a9bc0;--accent:#2a4fda;--accent-light:#65b7fb;--green:#61b466;--yellow:#fbec76;--red:#e0565d;--purple:#be64e3;--cyan:#65b7fb;--orange:#f39d72;--rose:#e0565d;--radius:12px;--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Figtree',sans-serif}
+[data-theme="light"]{--bg:#eff3ee;--surface:#ffffff;--surface2:#e5eae4;--border:rgba(42,79,218,.1);--text:#000000;--text2:#4a5568;--muted:#6b7280;--accent-light:#0b2574;--card:rgba(42,79,218,.04)}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 
-.header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);padding:1rem 2rem;border-bottom:2px solid rgba(244,63,94,.3);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.header{background:var(--surface);padding:12px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
 .header-brand{display:flex;align-items:center;gap:.8rem}
-.header-logo{width:40px;height:40px;background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fda4af}
-.header h1{font-size:1.1rem;font-weight:700}
+.header-logo{width:40px;height:40px;background:rgba(42,79,218,.1);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--accent)}
+.header h1{font-size:1.1rem;font-weight:700;color:var(--accent)}
 .header h1 span{color:var(--rose)}
 .header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
 .header-controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-.info-btn{width:30px;height:30px;border-radius:50%;background:rgba(244,63,94,.15);border:1px solid rgba(244,63,94,.3);color:#fda4af;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
-.info-btn:hover{background:rgba(244,63,94,.3);color:#fff}
+.info-btn{width:30px;height:30px;border-radius:50%;background:transparent;border:1px solid var(--border);color:var(--muted);font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
+.info-btn:hover{border-color:var(--accent);color:var(--accent)}
 .nav-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.4rem .8rem;border-radius:8px;font-size:.7rem;font-weight:600;text-decoration:none;transition:all .2s}
-.nav-home{border:1px solid rgba(59,130,246,.3);color:#93c5fd}
-.nav-home:hover{background:rgba(59,130,246,.1)}
-.nav-portal{border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
-.nav-portal:hover{background:rgba(16,185,129,.1)}
+.nav-home{border:1px solid var(--border);color:var(--muted)}
+.nav-home:hover{border-color:var(--accent);color:var(--accent)}
+.nav-portal{border:1px solid var(--border);color:var(--muted)}
+.nav-portal:hover{border-color:var(--accent);color:var(--accent)}
 .nav-btn svg{width:13px;height:13px}
 
 .main{max-width:1300px;margin:0 auto;padding:1.5rem 2rem}
-.narrative{background:rgba(244,63,94,.06);border:1px solid rgba(244,63,94,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#94a3b8;line-height:1.8}
+.narrative{background:rgba(224,86,93,.06);border:1px solid rgba(224,86,93,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#a8c4e0;line-height:1.8}
 .narrative strong{color:var(--text)}
 
 .tabs{display:flex;gap:.3rem;margin-bottom:1.2rem;border-bottom:1px solid var(--border);padding-bottom:.4rem;flex-wrap:wrap}
 .tab{padding:.45rem 1.1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s;font-family:inherit}
-.tab.active{color:var(--rose);background:rgba(244,63,94,.1);border-bottom:2px solid var(--rose)}
+.tab.active{color:var(--rose);background:rgba(224,86,93,.1);border-bottom:2px solid var(--rose)}
 .tab:hover:not(.active){color:var(--text)}
 .tab-content{display:none}
 .tab-content.active{display:block}
@@ -49,7 +51,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 .chart-box.full{grid-column:1/-1}
 .chart-title{font-size:.78rem;font-weight:600;margin-bottom:.6rem;color:var(--text)}
 
-.insight{background:rgba(34,197,94,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#94a3b8;line-height:1.7}
+.insight{background:rgba(97,180,102,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#a8c4e0;line-height:1.7}
 .insight strong{color:var(--green)}
 
 .table-wrapper{overflow-x:auto;margin-top:.5rem;border-radius:var(--radius);border:1px solid var(--border);max-height:600px}
@@ -60,27 +62,34 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .num{text-align:right;font-variant-numeric:tabular-nums}
 
 .fonte{margin-top:1.5rem;padding:1rem;background:rgba(255,255,255,.02);border-radius:var(--radius);font-size:.68rem;color:var(--muted);line-height:1.7}
-.fonte strong{color:#94a3b8}
+.fonte strong{color:#a8c4e0}
 
-.info-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(7,26,92,.85);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
 .info-overlay.active{display:flex}
 .info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
 .info-modal h2{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--rose)}
 .info-modal h3{font-size:.82rem;font-weight:600;margin:1rem 0 .3rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:.25rem}
 .info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
 .info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
-.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#a8c4e0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close:hover{background:rgba(224,86,93,.2);color:#e0565d}
 
 .footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.65rem}
+.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--muted);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+.theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.icon-moon{display:none}
+[data-theme="light"] .icon-sun{display:none}
+[data-theme="light"] .icon-moon{display:block}
+[data-theme="light"] .narrative{background:rgba(224,86,93,.06);border-color:rgba(224,86,93,.12)}
+[data-theme="light"] .insight{background:rgba(97,180,102,.05)}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:rgba(244,63,94,.25);border-radius:3px}
+::-webkit-scrollbar-thumb{background:rgba(224,86,93,.25);border-radius:3px}
 #mapaContainer svg path{transition:all .2s ease;cursor:pointer}
-.map-tooltip{position:fixed;background:rgba(15,23,42,.95);border:1px solid rgba(244,63,94,.4);border-radius:8px;padding:.6rem .8rem;font-size:.75rem;color:var(--text);pointer-events:none;z-index:100;box-shadow:0 6px 24px rgba(0,0,0,.5);white-space:nowrap;display:none;line-height:1.5}
-.map-tooltip strong{color:#fda4af;font-size:.82rem}
+.map-tooltip{position:fixed;background:rgba(7,26,92,.95);border:1px solid rgba(224,86,93,.4);border-radius:8px;padding:.6rem .8rem;font-size:.75rem;color:var(--text);pointer-events:none;z-index:100;box-shadow:0 6px 24px rgba(0,0,0,.5);white-space:nowrap;display:none;line-height:1.5}
+.map-tooltip strong{color:#ff80c8;font-size:.82rem}
 .map-legend{display:flex;align-items:center;gap:.4rem;margin-top:.8rem;justify-content:center;font-size:.68rem;color:var(--muted)}
-.map-legend-bar{height:12px;border-radius:4px;flex:1;max-width:220px;background:linear-gradient(90deg,rgb(40,42,60),rgb(244,63,94))}
+.map-legend-bar{height:12px;border-radius:4px;flex:1;max-width:220px;background:linear-gradient(90deg,rgb(7,26,92),rgb(224,86,93))}
 @media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}.header{padding:.8rem 1rem}.main{padding:1rem}}
 @media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
 </style>
@@ -96,6 +105,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
   <div class="header-controls">
+    <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
     <a href="index.html" class="nav-btn nav-home">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -105,6 +115,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       Portal
     </a>
+    <button class="nav-btn nav-home" onclick="exportWhatsApp()" title="Compartilhar via WhatsApp">📤 WhatsApp</button>
   </div>
 </div>
 
@@ -191,11 +202,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
 const DATA = {"estados": [{"uf": "São Paulo", "mei": 3922867, "total": 8532264, "pct": 46.0}, {"uf": "Minas Gerais", "mei": 1503047, "total": 2752706, "pct": 54.6}, {"uf": "Rio de Janeiro", "mei": 1306823, "total": 2213558, "pct": 59.0}, {"uf": "Paraná", "mei": 936300, "total": 1918629, "pct": 48.8}, {"uf": "Rio Grande do Sul", "mei": 853505, "total": 1663900, "pct": 51.3}, {"uf": "Santa Catarina", "mei": 745366, "total": 1475648, "pct": 50.5}, {"uf": "Bahia", "mei": 627738, "total": 1182051, "pct": 53.1}, {"uf": "Goiás", "mei": 529835, "total": 1005638, "pct": 52.7}, {"uf": "Pernambuco", "mei": 383513, "total": 693788, "pct": 55.3}, {"uf": "Ceará", "mei": 358925, "total": 708499, "pct": 50.7}, {"uf": "Espírito Santo", "mei": 336444, "total": 585967, "pct": 57.4}, {"uf": "Mato Grosso", "mei": 266145, "total": 546704, "pct": 48.7}, {"uf": "Pará", "mei": 231828, "total": 479915, "pct": 48.3}, {"uf": "Distrito Federal", "mei": 208916, "total": 454108, "pct": 46.0}, {"uf": "Mato Grosso do Sul", "mei": 181390, "total": 361123, "pct": 50.2}, {"uf": "Paraíba", "mei": 175989, "total": 318630, "pct": 55.2}, {"uf": "Rio Grande do Norte", "mei": 157096, "total": 294222, "pct": 53.4}, {"uf": "Maranhão", "mei": 144921, "total": 339115, "pct": 42.7}, {"uf": "Amazonas", "mei": 131440, "total": 271002, "pct": 48.5}, {"uf": "Alagoas", "mei": 119848, "total": 218261, "pct": 54.9}, {"uf": "Piauí", "mei": 98482, "total": 214950, "pct": 45.8}, {"uf": "Sergipe", "mei": 89229, "total": 165514, "pct": 53.9}, {"uf": "Tocantins", "mei": 86007, "total": 167192, "pct": 51.4}, {"uf": "Rondônia", "mei": 82415, "total": 163972, "pct": 50.3}, {"uf": "Roraima", "mei": 25150, "total": 48690, "pct": 51.7}, {"uf": "Acre", "mei": 21988, "total": 49202, "pct": 44.7}, {"uf": "Amapá", "mei": 19335, "total": 47036, "pct": 41.1}], "regioes": [{"regiao": "Sudeste", "mei": 7069181}, {"regiao": "Sul", "mei": 2535171}, {"regiao": "Nordeste", "mei": 2155741}, {"regiao": "Centro-Oeste", "mei": 1186286}, {"regiao": "Norte", "mei": 598163}], "setores": [{"setor": "Serviço", "mei": 7883227}, {"setor": "Comércio", "mei": 3093130}, {"setor": "Industria Transformação", "mei": 1315308}, {"setor": "Construção", "mei": 1164413}, {"setor": "Agropecuária", "mei": 74871}, {"setor": "SIUP - Serviços Industrias De Utilidade Pública", "mei": 13760}, {"setor": "Extrativa Mineral", "mei": 42}], "divisoes": [{"cnae": "Comércio Varejista", "mei": 2501225}, {"cnae": "Outras Atividades De Serviços Pessoais", "mei": 1241583}, {"cnae": "Transporte Terrestre", "mei": 1190054}, {"cnae": "Alimentação", "mei": 1175506}, {"cnae": "Serviços Especializados Para Construção", "mei": 1164331}, {"cnae": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às Empresas", "mei": 772519}, {"cnae": "Educação", "mei": 658468}, {"cnae": "Publicidade E Pesquisa De Mercado", "mei": 653009}, {"cnae": "Correio E Outras Atividades De Entrega", "mei": 603228}, {"cnae": "Comércio E Reparação De Veículos Automotores E Motocicletas", "mei": 591703}, {"cnae": "Serviços Domésticos", "mei": 268928}, {"cnae": "Fabricação De Produtos Alimentícios", "mei": 268860}, {"cnae": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos", "mei": 253749}, {"cnae": "Confecção De Artigos Do Vestuário E Acessórios", "mei": 239955}, {"cnae": "Fabricação De Produtos De Metal, Exceto Máquinas E Equipamentos", "mei": 174094}, {"cnae": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares", "mei": 167075}, {"cnae": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos", "mei": 156774}, {"cnae": "Edição E Edição Integrada À Impressão", "mei": 142070}, {"cnae": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão, Gravação De Som E Edição De Música", "mei": 113756}, {"cnae": "Atividades Artísticas, Criativas E De Espetáculos", "mei": 113462}], "municipios": [{"municipio": "São Paulo", "uf": "São Paulo", "cod_ibge": 3550308, "mei": 1100383}, {"municipio": "Rio de Janeiro", "uf": "Rio de Janeiro", "cod_ibge": 3304557, "mei": 538026}, {"municipio": "Belo Horizonte", "uf": "Minas Gerais", "cod_ibge": 3106200, "mei": 231151}, {"municipio": "Brasília", "uf": "Distrito Federal", "cod_ibge": 5300108, "mei": 208916}, {"municipio": "Curitiba", "uf": "Paraná", "cod_ibge": 4106902, "mei": 188130}, {"municipio": "Salvador", "uf": "Bahia", "cod_ibge": 2927408, "mei": 183355}, {"municipio": "Fortaleza", "uf": "Ceará", "cod_ibge": 2304400, "mei": 163238}, {"municipio": "Goiânia", "uf": "Goiás", "cod_ibge": 5208707, "mei": 149119}, {"municipio": "Guarulhos", "uf": "São Paulo", "cod_ibge": 3518800, "mei": 121843}, {"municipio": "Porto Alegre", "uf": "Rio Grande do Sul", "cod_ibge": 4314902, "mei": 114306}, {"municipio": "Campinas", "uf": "São Paulo", "cod_ibge": 3509502, "mei": 110933}, {"municipio": "Manaus", "uf": "Amazonas", "cod_ibge": 1302603, "mei": 106766}, {"municipio": "Recife", "uf": "Pernambuco", "cod_ibge": 2611606, "mei": 98424}, {"municipio": "Campo Grande", "uf": "Mato Grosso do Sul", "cod_ibge": 5002704, "mei": 77357}, {"municipio": "Sorocaba", "uf": "São Paulo", "cod_ibge": 3552205, "mei": 73329}, {"municipio": "Uberlândia", "uf": "Minas Gerais", "cod_ibge": 3170206, "mei": 72347}, {"municipio": "Ribeirão Preto", "uf": "São Paulo", "cod_ibge": 3543402, "mei": 71918}, {"municipio": "Florianópolis", "uf": "Santa Catarina", "cod_ibge": 4205407, "mei": 69294}, {"municipio": "Joinville", "uf": "Santa Catarina", "cod_ibge": 4209102, "mei": 67599}, {"municipio": "Duque de Caxias", "uf": "Rio de Janeiro", "cod_ibge": 3301702, "mei": 66297}, {"municipio": "São Bernardo do Campo", "uf": "São Paulo", "cod_ibge": 3548708, "mei": 65445}, {"municipio": "Nova Iguaçu", "uf": "Rio de Janeiro", "cod_ibge": 3303500, "mei": 65051}, {"municipio": "São José dos Campos", "uf": "São Paulo", "cod_ibge": 3549904, "mei": 63827}, {"municipio": "Osasco", "uf": "São Paulo", "cod_ibge": 3534401, "mei": 63400}, {"municipio": "São Gonçalo", "uf": "Rio de Janeiro", "cod_ibge": 3304904, "mei": 63203}, {"municipio": "Belém", "uf": "Pará", "cod_ibge": 1501402, "mei": 62761}, {"municipio": "Contagem", "uf": "Minas Gerais", "cod_ibge": 3118601, "mei": 62543}, {"municipio": "Santo André", "uf": "São Paulo", "cod_ibge": 3547809, "mei": 61859}, {"municipio": "João Pessoa", "uf": "Paraíba", "cod_ibge": 2507507, "mei": 61453}, {"municipio": "Maceió", "uf": "Alagoas", "cod_ibge": 2704302, "mei": 59396}, {"municipio": "Natal", "uf": "Rio Grande do Norte", "cod_ibge": 2408102, "mei": 54887}, {"municipio": "Serra", "uf": "Espírito Santo", "cod_ibge": 3205002, "mei": 53939}, {"municipio": "Aparecida de Goiânia", "uf": "Goiás", "cod_ibge": 5201405, "mei": 53287}, {"municipio": "Cuiabá", "uf": "Mato Grosso", "cod_ibge": 5103403, "mei": 52465}, {"municipio": "Vila Velha", "uf": "Espírito Santo", "cod_ibge": 3205200, "mei": 51885}, {"municipio": "São José do Rio Preto", "uf": "São Paulo", "cod_ibge": 3549805, "mei": 50221}, {"municipio": "Londrina", "uf": "Paraná", "cod_ibge": 4113700, "mei": 47576}, {"municipio": "Juiz de Fora", "uf": "Minas Gerais", "cod_ibge": 3136702, "mei": 47506}, {"municipio": "São Luís", "uf": "Maranhão", "cod_ibge": 2111300, "mei": 47226}, {"municipio": "Teresina", "uf": "Piauí", "cod_ibge": 2211001, "mei": 44602}, {"municipio": "Maringá", "uf": "Paraná", "cod_ibge": 4115200, "mei": 43715}, {"municipio": "Caxias do Sul", "uf": "Rio Grande do Sul", "cod_ibge": 4305108, "mei": 43208}, {"municipio": "Jundiaí", "uf": "São Paulo", "cod_ibge": 3525904, "mei": 42901}, {"municipio": "Aracaju", "uf": "Sergipe", "cod_ibge": 2800308, "mei": 42102}, {"municipio": "Praia Grande", "uf": "São Paulo", "cod_ibge": 3541000, "mei": 41993}, {"municipio": "Santos", "uf": "São Paulo", "cod_ibge": 3548500, "mei": 41716}, {"municipio": "Niterói", "uf": "Rio de Janeiro", "cod_ibge": 3303302, "mei": 41571}, {"municipio": "Feira de Santana", "uf": "Bahia", "cod_ibge": 2910800, "mei": 39942}, {"municipio": "Bauru", "uf": "São Paulo", "cod_ibge": 3506003, "mei": 39502}, {"municipio": "Mogi das Cruzes", "uf": "São Paulo", "cod_ibge": 3530607, "mei": 38911}]};
 
 const charts = {};
-Chart.defaults.color='#94a3b8';
-Chart.defaults.font.family="'Inter','Segoe UI',system-ui,sans-serif";
+Chart.defaults.color='#a8c4e0';
+Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
 function fmtN(v){return v.toLocaleString('pt-BR')}
@@ -224,17 +236,17 @@ function renderPanorama(){
   const esSorted=[...es].sort((a,b)=>b.mei-a.mei);
   charts.estados=new Chart(document.getElementById('chartEstados'),{
     type:'bar',
-    data:{labels:esSorted.map(e=>e.uf),datasets:[{data:esSorted.map(e=>e.mei),backgroundColor:'rgba(244,63,94,.5)',borderRadius:3}]},
+    data:{labels:esSorted.map(e=>e.uf),datasets:[{data:esSorted.map(e=>e.mei),backgroundColor:'rgba(224,86,93,.5)',borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
   });
 
   const esPct=[...es].sort((a,b)=>b.pct-a.pct);
   charts.pctMei=new Chart(document.getElementById('chartPctMei'),{
     type:'bar',
-    data:{labels:esPct.map(e=>e.uf),datasets:[{data:esPct.map(e=>e.pct),backgroundColor:esPct.map(e=>e.pct>=55?'rgba(34,197,94,.6)':e.pct>=48?'rgba(234,179,8,.6)':'rgba(239,68,68,.5)'),borderRadius:3}]},
+    data:{labels:esPct.map(e=>e.uf),datasets:[{data:esPct.map(e=>e.pct),backgroundColor:esPct.map(e=>e.pct>=55?'rgba(97,180,102,.6)':e.pct>=48?'rgba(251,236,118,.6)':'rgba(224,86,93,.5)'),borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+'% MEI'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v+'%'},max:70},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>v+'%'},max:70},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
   });
 
   renderMapa(es);
@@ -242,9 +254,9 @@ function renderPanorama(){
   const top10=es.slice(0,10);
   charts.top10=new Chart(document.getElementById('chartTop10'),{
     type:'bar',
-    data:{labels:top10.map(e=>e.uf),datasets:[{data:top10.map(e=>e.mei),backgroundColor:'rgba(244,63,94,.6)',borderRadius:4}]},
+    data:{labels:top10.map(e=>e.uf),datasets:[{data:top10.map(e=>e.mei),backgroundColor:'rgba(224,86,93,.6)',borderRadius:4}]},
     options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}}}}
+      scales:{x:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>fmt(v)}}}}
   });
 }
 
@@ -258,22 +270,22 @@ function renderSetores(){
     '<div class="kpi"><div class="kpi-label">Principal CNAE</div><div class="kpi-value" style="color:var(--green);font-size:1.1rem">'+dv[0].cnae+'</div><div class="kpi-detail">'+fmt(dv[0].mei)+' MEIs</div></div>'+
     '<div class="kpi"><div class="kpi-label">Setores com MEI</div><div class="kpi-value" style="color:var(--cyan)">'+st.length+'</div><div class="kpi-detail">Grandes setores da economia</div></div>';
 
-  const stColors=['rgba(244,63,94,.7)','rgba(59,130,246,.7)','rgba(249,115,22,.7)','rgba(34,197,94,.7)','rgba(139,92,246,.7)','rgba(6,182,212,.7)','rgba(100,116,139,.5)'];
+  const stColors=['rgba(224,86,93,.7)','rgba(42,79,218,.7)','rgba(243,157,114,.7)','rgba(97,180,102,.7)','rgba(190,100,227,.7)','rgba(101,183,251,.7)','rgba(100,116,139,.5)'];
   var stSorted=st.slice();
   charts.setores=new Chart(document.getElementById('chartSetores'),{
     type:'bar',
     data:{labels:stSorted.map(function(s){return s.setor}),datasets:[{data:stSorted.map(function(s){return s.mei}),backgroundColor:stColors,borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},
       tooltip:{callbacks:{label:function(c){var v=c.raw;return fmtN(v)+' MEIs ('+(v/totalMei*100).toFixed(1)+'%)'}}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:function(v){return fmt(v)}}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:10}}}}}
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:function(v){return fmt(v)}}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
   });
 
   var top15=dv.slice(0,15);
   charts.cnae=new Chart(document.getElementById('chartCnae'),{
     type:'bar',
-    data:{labels:top15.map(function(d){return d.cnae.length>45?d.cnae.substring(0,42)+'...':d.cnae}),datasets:[{data:top15.map(function(d){return d.mei}),backgroundColor:'rgba(59,130,246,.5)',borderRadius:3}]},
+    data:{labels:top15.map(function(d){return d.cnae.length>45?d.cnae.substring(0,42)+'...':d.cnae}),datasets:[{data:top15.map(function(d){return d.mei}),backgroundColor:'rgba(42,79,218,.5)',borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{title:function(c){return dv[c[0].dataIndex].cnae},label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#e2e8f0',font:{size:9}}}}}
+      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
   });
 }
 
@@ -343,7 +355,7 @@ function renderMapa(estados){
   for(var i=0;i<ufNames.length;i++){
     var uf=ufNames[i];
     var val=meiByUf[uf]||0;
-    var color=val?getColor(val):'#1e293b';
+    var color=val?getColor(val):'#0b2574';
     svg+='<path d="'+UF_PATHS[uf]+'" fill="'+color+'" stroke="rgba(255,255,255,.2)" stroke-width="1" vector-effect="non-scaling-stroke" pointer-events="all" data-uf="'+uf+'" data-mei="'+val+'" data-pct="'+(pctByUf[uf]||0)+'"/>';
   }
   svg+='</g></svg>';
@@ -383,7 +395,7 @@ function renderMapa(estados){
     var uf=target.getAttribute('data-uf');
     var mei=parseInt(target.getAttribute('data-mei'));
     var pct=target.getAttribute('data-pct');
-    tooltip.innerHTML='<strong>'+uf+'</strong><br>'+fmtN(mei)+' MEIs<br><span style="color:#94a3b8;font-size:.7rem">'+pct+'% das empresas sao MEI</span>';
+    tooltip.innerHTML='<strong>'+uf+'</strong><br>'+fmtN(mei)+' MEIs<br><span style="color:#a8c4e0;font-size:.7rem">'+pct+'% das empresas sao MEI</span>';
     tooltip.style.display='block';
     var tx=ev.clientX+14;
     var ty=ev.clientY-50;
@@ -403,6 +415,20 @@ function renderMapa(estados){
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInfo()});
+
+function exportWhatsApp(){
+  var kpis=document.querySelectorAll('#kpiPanorama .kpi');
+  var lines=['*PIPPA Ambiente de Negocios*','_Tema 6 — Microempreendedor Individual (MEI)_',''];
+  kpis.forEach(function(k){
+    var label=k.querySelector('.kpi-label');
+    var value=k.querySelector('.kpi-value');
+    if(label&&value) lines.push('• '+label.textContent.trim()+': *'+value.textContent.trim()+'*');
+  });
+  lines.push('');
+  lines.push('📅 '+new Date().toLocaleDateString('pt-BR'));
+  lines.push('🔗 https://julioenders.github.io/indicadores-ambiente-negocios/dashboard/6_mei.html');
+  window.open('https://wa.me/?text='+encodeURIComponent(lines.join('\n')),'_blank');
+}
 
 init();
 </script>

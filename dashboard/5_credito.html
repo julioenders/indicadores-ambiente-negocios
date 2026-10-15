@@ -4,40 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PIPPA | Credito e Financiamento</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>(function(){var t=localStorage.getItem('pippa-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0f172a;--surface:#1e293b;--border:rgba(255,255,255,.06);--text:#e2e8f0;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4;--orange:#f97316;--radius:12px}
-body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+:root{--bg:#071a5c;--surface:#0b2574;--surface2:#0f2f88;--border:rgba(101,183,251,.12);--text:#eff3ee;--text2:#a8c4e0;--muted:#7a9bc0;--accent:#2a4fda;--accent-light:#65b7fb;--green:#61b466;--yellow:#fbec76;--red:#e0565d;--purple:#be64e3;--cyan:#65b7fb;--orange:#f39d72;--radius:12px;--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Figtree',sans-serif}
+[data-theme="light"]{--bg:#eff3ee;--surface:#ffffff;--surface2:#e5eae4;--border:rgba(42,79,218,.1);--text:#000000;--text2:#4a5568;--muted:#6b7280;--accent-light:#0b2574;--card:rgba(42,79,218,.04)}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 
-.header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);padding:1rem 2rem;border-bottom:2px solid rgba(59,130,246,.3);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.header{background:var(--surface);padding:12px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
 .header-brand{display:flex;align-items:center;gap:.8rem}
-.header-logo{width:40px;height:40px;background:rgba(59,130,246,.2);border:1px solid rgba(59,130,246,.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#93c5fd}
-.header h1{font-size:1.1rem;font-weight:700}
+.header-logo{width:40px;height:40px;background:rgba(42,79,218,.2);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--accent)}
+.header h1{font-size:1.1rem;font-weight:700;color:var(--accent)}
 .header h1 span{color:var(--accent)}
 .header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
 .header-controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-.info-btn{width:30px;height:30px;border-radius:50%;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
-.info-btn:hover{background:rgba(59,130,246,.3);color:#fff}
-.btn{background:rgba(59,130,246,.2);color:#93c5fd;border:1px solid rgba(59,130,246,.3);padding:.4rem 1rem;border-radius:8px;font-size:.72rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
-.btn:hover{background:rgba(59,130,246,.35)}
+.info-btn{width:30px;height:30px;border-radius:50%;background:transparent;border:1px solid var(--border);color:var(--muted);font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
+.info-btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn{background:transparent;color:var(--muted);border:1px solid var(--border);padding:.4rem 1rem;border-radius:8px;font-size:.72rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .nav-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.4rem .8rem;border-radius:8px;font-size:.7rem;font-weight:600;text-decoration:none;transition:all .2s}
-.nav-home{border:1px solid rgba(59,130,246,.3);color:#93c5fd}
-.nav-home:hover{background:rgba(59,130,246,.1)}
-.nav-portal{border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
-.nav-portal:hover{background:rgba(16,185,129,.1)}
+.nav-home{border:1px solid var(--border);color:var(--muted)}
+.nav-home:hover{border-color:var(--accent);color:var(--accent)}
+.nav-portal{border:1px solid var(--border);color:var(--muted)}
+.nav-portal:hover{border-color:var(--accent);color:var(--accent)}
 .nav-btn svg{width:13px;height:13px}
 .api-status{font-size:.65rem;padding:.2rem .5rem;border-radius:5px;display:none;font-weight:600}
 
 .main{max-width:1300px;margin:0 auto;padding:1.5rem 2rem}
-.narrative{background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#94a3b8;line-height:1.8}
+.narrative{background:rgba(42,79,218,.06);border:1px solid rgba(42,79,218,.12);border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:1.2rem;font-size:.82rem;color:#a8c4e0;line-height:1.8}
 .narrative strong{color:var(--text)}
 
 .tabs{display:flex;gap:.3rem;margin-bottom:1.2rem;border-bottom:1px solid var(--border);padding-bottom:.4rem}
 .tab{padding:.45rem 1.1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s;font-family:inherit}
-.tab.active{color:var(--accent);background:rgba(59,130,246,.1);border-bottom:2px solid var(--accent)}
+.tab.active{color:var(--accent);background:rgba(42,79,218,.1);border-bottom:2px solid var(--accent)}
 .tab:hover:not(.active){color:var(--text)}
 .tab-content{display:none}
 .tab-content.active{display:block}
@@ -53,7 +55,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 .chart-box.full{grid-column:1/-1}
 .chart-title{font-size:.78rem;font-weight:600;margin-bottom:.6rem;color:var(--text)}
 
-.insight{background:rgba(34,197,94,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#94a3b8;line-height:1.7}
+.insight{background:rgba(97,180,102,.05);border-left:3px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:.7rem 1rem;margin:1rem 0;font-size:.75rem;color:#a8c4e0;line-height:1.7}
 .insight strong{color:var(--green)}
 
 .table-wrapper{overflow-x:auto;margin-top:.5rem;border-radius:var(--radius);border:1px solid var(--border);max-height:500px}
@@ -63,21 +65,29 @@ td{padding:.45rem .7rem;border-bottom:1px solid var(--border)}
 tr:hover td{background:rgba(255,255,255,.02)}
 .num{text-align:right;font-variant-numeric:tabular-nums}
 
-.info-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(7,26,92,.85);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
 .info-overlay.active{display:flex}
 .info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
 .info-modal h2{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--accent)}
 .info-modal h3{font-size:.82rem;font-weight:600;margin:1rem 0 .3rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:.25rem}
 .info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
 .info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
-.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#94a3b8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.info-close:hover{background:rgba(239,68,68,.2);color:#ef4444}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#a8c4e0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close:hover{background:rgba(224,86,93,.2);color:#e0565d}
 
-.data-range{display:inline-block;font-size:.7rem;padding:.3rem .8rem;border-radius:6px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15);color:#94a3b8;margin-bottom:1.2rem}
+.data-range{display:inline-block;font-size:.7rem;padding:.3rem .8rem;border-radius:6px;background:rgba(42,79,218,.08);border:1px solid rgba(42,79,218,.15);color:#a8c4e0;margin-bottom:1.2rem}
 .footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);margin-top:2rem;color:var(--muted);font-size:.65rem}
+.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--muted);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+.theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.icon-moon{display:none}
+[data-theme="light"] .icon-sun{display:none}
+[data-theme="light"] .icon-moon{display:block}
+[data-theme="light"] .header h1{color:var(--accent)}
+[data-theme="light"] .narrative{background:rgba(42,79,218,.06);border-color:rgba(42,79,218,.12)}
+[data-theme="light"] .insight{background:rgba(97,180,102,.05)}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:rgba(59,130,246,.25);border-radius:3px}
+::-webkit-scrollbar-thumb{background:rgba(42,79,218,.25);border-radius:3px}
 @media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}.header{padding:.8rem 1rem}.main{padding:1rem}}
 @media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
 </style>
@@ -93,7 +103,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
   <div class="header-controls">
+    <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     <button class="info-btn" onclick="openInfo()" title="Metodologia">i</button>
+    <button class="btn" onclick="exportWhatsApp()">&#x1F4E4; WhatsApp</button>
     <button class="btn" id="btnApi" onclick="fetchAPIs()">Consultar APIs</button>
     <span class="api-status" id="apiStatus"></span>
     <a href="index.html" class="nav-btn nav-home">
@@ -195,6 +207,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
 /* ========== SAMPLE DATA ========== */
 const SAMPLE_DATA = {
   saldo_credito: [
@@ -267,8 +280,8 @@ const SAMPLE_DATA = {
 /* ========== GLOBALS ========== */
 const charts = {};
 let DATA = null;
-Chart.defaults.color='#94a3b8';
-Chart.defaults.font.family="'Inter','Segoe UI',system-ui,sans-serif";
+Chart.defaults.color='#a8c4e0';
+Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 /* ========== HELPERS ========== */
 function fmtBRL(v){
@@ -344,13 +357,13 @@ function renderCredito(){
       datasets:[{
         label:'Saldo PJ (R$ bilhoes)',
         data:d.saldo_credito.map(item=>item.valor/1000),
-        borderColor:'#3b82f6',
-        backgroundColor:'rgba(59,130,246,.08)',
+        borderColor:'#2a4fda',
+        backgroundColor:'rgba(42,79,218,.08)',
         fill:true,
         tension:.3,
         pointRadius:3,
         borderWidth:2.5,
-        pointBackgroundColor:'#3b82f6'
+        pointBackgroundColor:'#2a4fda'
       }]
     },
     options:{
@@ -360,15 +373,15 @@ function renderCredito(){
         tooltip:{callbacks:{label:ctx=>'R$ '+ctx.raw.toFixed(1)+' bilhoes'}}
       },
       scales:{
-        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',maxRotation:45,font:{size:10}}},
-        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>'R$ '+v.toFixed(0)+'B'}}
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',maxRotation:45,font:{size:10}}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>'R$ '+v.toFixed(0)+'B'}}
       }
     }
   });
 
   // Chart 2: Credito por porte de empresa (doughnut: MPE vs Media vs Grande)
   const porte=d.credito_porte;
-  const porteColors=['rgba(59,130,246,.7)','rgba(234,179,8,.7)','rgba(139,92,246,.7)'];
+  const porteColors=['rgba(42,79,218,.7)','rgba(251,236,118,.7)','rgba(190,100,227,.7)'];
   const porteTotal=porte.reduce((s,p)=>s+p.valor,0);
 
   charts.porteCredito=new Chart(document.getElementById('chartPorteCredito'),{
@@ -378,7 +391,7 @@ function renderCredito(){
       datasets:[{
         data:porte.map(p=>p.valor),
         backgroundColor:porteColors,
-        borderColor:'#1e293b',
+        borderColor:'#0b2574',
         borderWidth:3
       }]
     },
@@ -386,7 +399,7 @@ function renderCredito(){
       responsive:true,
       cutout:'50%',
       plugins:{
-        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,padding:16,font:{size:11}}},
+        legend:{position:'bottom',labels:{color:'#a8c4e0',boxWidth:12,padding:16,font:{size:11}}},
         tooltip:{callbacks:{label:ctx=>{
           const pct=(ctx.raw/porteTotal*100).toFixed(1);
           return ctx.label+': '+fmtBRL(ctx.raw*1e6)+' ('+pct+'%)';
@@ -422,13 +435,13 @@ function renderCobertura(){
       datasets:[{
         label:'Selic (% a.a.)',
         data:d.selic.map(item=>item.valor),
-        borderColor:'#eab308',
-        backgroundColor:'rgba(234,179,8,.08)',
+        borderColor:'#fbec76',
+        backgroundColor:'rgba(251,236,118,.08)',
         fill:true,
         tension:.3,
         pointRadius:3,
         borderWidth:2.5,
-        pointBackgroundColor:'#eab308'
+        pointBackgroundColor:'#fbec76'
       }]
     },
     options:{
@@ -438,15 +451,15 @@ function renderCobertura(){
         tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(2)+'% ao ano'}}
       },
       scales:{
-        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',maxRotation:45,font:{size:10}}},
-        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#94a3b8',callback:v=>v.toFixed(1)+'%'}}
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',maxRotation:45,font:{size:10}}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>v.toFixed(1)+'%'}}
       }
     }
   });
 
   // Chart 2: Distribuicao por tipo de instituicao financeira (doughnut)
   const tipos=d.tipo_instituicao;
-  const tipoColors=['#3b82f6','#22c55e','#06b6d4','#a855f7'];
+  const tipoColors=['#2a4fda','#61b466','#65b7fb','#be64e3'];
   const tipoTotal=tipos.reduce((s,t)=>s+t.valor,0);
 
   charts.tipoInstituicao=new Chart(document.getElementById('chartTipoInstituicao'),{
@@ -456,7 +469,7 @@ function renderCobertura(){
       datasets:[{
         data:tipos.map(t=>t.valor),
         backgroundColor:tipoColors,
-        borderColor:'#1e293b',
+        borderColor:'#0b2574',
         borderWidth:3
       }]
     },
@@ -464,7 +477,7 @@ function renderCobertura(){
       responsive:true,
       cutout:'50%',
       plugins:{
-        legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,padding:16,font:{size:11}}},
+        legend:{position:'bottom',labels:{color:'#a8c4e0',boxWidth:12,padding:16,font:{size:11}}},
         tooltip:{callbacks:{label:ctx=>{
           const pct=(ctx.raw/tipoTotal*100).toFixed(1);
           return ctx.label+': '+fmtNum(ctx.raw)+' ('+pct+'%)';
@@ -520,14 +533,14 @@ async function fetchAPIs(){
     DATA=apiData;
     renderAll();
 
-    st.style.display='inline';st.style.background='rgba(34,197,94,.15)';st.style.color='#22c55e';
+    st.style.display='inline';st.style.background='rgba(97,180,102,.15)';st.style.color='#61b466';
     st.textContent='Atualizado (BCB SGS '+now.getFullYear()+')';
   }catch(e){
     console.error('Erro ao consultar BCB:',e);
     DATA={...SAMPLE_DATA};
     renderAll();
 
-    st.style.display='inline';st.style.background='rgba(239,68,68,.15)';st.style.color='#ef4444';
+    st.style.display='inline';st.style.background='rgba(224,86,93,.15)';st.style.color='#e0565d';
     st.textContent='Erro: '+(e.message||'falha na consulta')+' — usando dados amostrais';
   }finally{
     btn.disabled=false;btn.textContent='Consultar APIs';
@@ -537,6 +550,22 @@ async function fetchAPIs(){
 function openInfo(){document.getElementById('infoModal').classList.add('active')}
 function closeInfo(){document.getElementById('infoModal').classList.remove('active')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo()});
+
+function exportWhatsApp(){
+  var title=document.querySelector('.header h1').textContent;
+  var subtitle=document.querySelector('.header-sub').textContent;
+  var date=new Date().toLocaleDateString('pt-BR');
+  var msg='*'+title+'*\n'+subtitle+'\n📅 '+date+'\n\n';
+  var activeTab=document.querySelector('.tab-content.active');
+  var kpis=activeTab.querySelectorAll('.kpi');
+  kpis.forEach(function(kpi){
+    var label=kpi.querySelector('.kpi-label');
+    var value=kpi.querySelector('.kpi-value');
+    if(label&&value) msg+='📊 '+label.textContent+': '+value.textContent+'\n';
+  });
+  msg+='\n🔗 https://julioenders.github.io/indicadores-ambiente-negocios/dashboard/5_credito.html';
+  window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank');
+}
 
 init();
 </script>
