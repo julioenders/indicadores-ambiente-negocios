@@ -9,13 +9,13 @@
 <script>(function(){var t=localStorage.getItem('pippa-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#071a5c;--surface:#0b2574;--surface2:#0f2f88;--border:rgba(101,183,251,.12);--text:#eff3ee;--text2:#a8c4e0;--muted:#7a9bc0;--accent:#2a4fda;--accent-light:#65b7fb;--green:#61b466;--yellow:#fbec76;--red:#e0565d;--purple:#be64e3;--cyan:#65b7fb;--orange:#f39d72;--radius:12px;--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Figtree',sans-serif;--card:rgba(42,79,218,.04)}
-[data-theme="light"]{--bg:#eff3ee;--surface:#ffffff;--surface2:#e5eae4;--border:rgba(42,79,218,.1);--text:#000000;--text2:#4a5568;--muted:#6b7280;--accent-light:#0b2574;--card:rgba(42,79,218,.04)}
+:root{--bg:#080f1e;--surface:#0f1a2e;--surface2:#162038;--border:rgba(255,255,255,.08);--text:#eff3ee;--text2:#8b9dc3;--muted:#8b9dc3;--accent:#65b7fb;--accent-light:#90ccfd;--green:#61b466;--yellow:#fbec76;--red:#e0565d;--purple:#be64e3;--cyan:#65b7fb;--orange:#f39d72;--radius:12px;--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Figtree',sans-serif;--card:rgba(255,255,255,.04)}
+[data-theme="light"]{--bg:#eff3ee;--surface:#ffffff;--surface2:#e5eae4;--border:rgba(42,79,218,.1);--text:#000000;--text2:#4a5568;--muted:#6b7280;--accent:#2a4fda;--accent-light:#0b2574;--card:rgba(42,79,218,.04)}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 .container{max-width:1400px;margin:0 auto;padding:1.5rem}
 header{display:flex;align-items:center;justify-content:space-between;background:var(--surface);padding:12px 24px;border-bottom:1px solid var(--border);margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
 .header-brand{display:flex;align-items:center;gap:.8rem}
-.header-logo{width:40px;height:40px;background:rgba(42,79,218,.08);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--accent)}
+.header-logo{width:40px;height:40px;background:rgba(101,183,251,.08);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--accent)}
 header h1{font-size:1.1rem;font-weight:700;color:var(--accent);font-family:var(--font-heading)}
 header h1 span{color:var(--accent)}
 .header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
@@ -31,7 +31,7 @@ header h1 span{color:var(--accent)}
 
 .kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1.5rem}
 .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.2rem;text-align:center;transition:border-color .2s}
-.kpi:hover{border-color:rgba(42,79,218,.3)}
+.kpi:hover{border-color:rgba(101,183,251,.3)}
 .kpi-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
 .kpi-value{font-size:1.5rem;font-weight:800;color:var(--text)}
 .kpi-detail{font-size:.65rem;color:var(--muted);margin-top:.2rem}
@@ -43,7 +43,7 @@ header h1 span{color:var(--accent)}
 
 .tabs{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:.5rem}
 .tab{padding:.5rem 1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s}
-.tab.active{color:var(--accent);background:rgba(42,79,218,.1);border-bottom:2px solid var(--accent)}
+.tab.active{color:var(--accent);background:rgba(101,183,251,.1);border-bottom:2px solid var(--accent)}
 .tab:hover{color:var(--text)}
 .tab-content{display:none}
 .tab-content.active{display:block}
@@ -65,7 +65,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .tag-green{background:rgba(97,180,102,.15);color:var(--green)}
 .tag-yellow{background:rgba(251,236,118,.15);color:var(--yellow)}
 .tag-red{background:rgba(224,86,93,.15);color:var(--red)}
-.tag-blue{background:rgba(42,79,218,.15);color:var(--accent)}
+.tag-blue{background:rgba(101,183,251,.15);color:var(--accent)}
 
 .empty{text-align:center;color:var(--muted);padding:2rem;font-size:.8rem}
 
@@ -77,12 +77,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .benchmark-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;font-size:.6rem;font-weight:600;color:#fff;min-width:fit-content;white-space:nowrap}
 
 .ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:auto;line-height:1}
-.ci:hover{background:rgba(42,79,218,.2);color:var(--accent-light);border-color:rgba(42,79,218,.3)}
+.ci:hover{background:rgba(101,183,251,.2);color:var(--accent-light);border-color:rgba(101,183,251,.3)}
 
-.info-overlay{display:none;position:fixed;inset:0;background:rgba(7,26,92,.85);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(8,15,30,.85);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
 .info-overlay.active{display:flex}
 .info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
-.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#a8c4e0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:var(--muted);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .info-close:hover{background:rgba(224,86,93,.2);color:#e0565d}
 
 .info-btn{
@@ -97,12 +97,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
 .info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
 .info-source{
-  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(42,79,218,.08);
+  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(101,183,251,.08);
   border-left:3px solid var(--accent);margin:.5rem 0;color:var(--muted);line-height:1.6;
 }
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:rgba(42,79,218,.25);border-radius:3px}
+::-webkit-scrollbar-thumb{background:rgba(42,79,218,.3);border-radius:3px}
 @media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}header{padding:12px 16px}.container{padding:1rem}}
 @media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
 </style>
@@ -237,7 +237,7 @@ function pct(v){return v!=null&&v!==undefined?v.toFixed(1)+'%':'N/D'}
 
 function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
 
-const CHART_COLORS = ['#2a4fda','#61b466','#be64e3','#fbec76','#e0565d','#65b7fb','#f39d72','#ec4899','#14b8a6','#6366f1','#84cc16','#f43f5e'];
+const CHART_COLORS = ['#65b7fb','#61b466','#be64e3','#fbec76','#e0565d','#65b7fb','#f39d72','#ec4899','#14b8a6','#6366f1','#84cc16','#f43f5e'];
 
 // ── KPIs ────────────────────────────────────────────────────
 function renderKPIs(){
@@ -326,10 +326,10 @@ function renderEmpresas(){
   `;
 
   if(e.por_porte&&e.por_porte.length>0){
-    new Chart(document.getElementById('chartPorte'),{type:'doughnut',data:{labels:e.por_porte.map(p=>p.porte),datasets:[{data:e.por_porte.map(p=>p.qtd),backgroundColor:CHART_COLORS.slice(0,e.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartPorte'),{type:'doughnut',data:{labels:e.por_porte.map(p=>p.porte),datasets:[{data:e.por_porte.map(p=>p.qtd),backgroundColor:CHART_COLORS.slice(0,e.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#8b9dc3',font:{size:11}}}}}});
   }
   if(e.por_cnae&&e.por_cnae.length>0){
-    new Chart(document.getElementById('chartCnae'),{type:'bar',data:{labels:e.por_cnae.map(c=>c.divisao.length>30?c.divisao.substring(0,30)+'...':c.divisao),datasets:[{label:'Empresas',data:e.por_cnae.map(c=>c.qtd),backgroundColor:'rgba(42,79,218,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartCnae'),{type:'bar',data:{labels:e.por_cnae.map(c=>c.divisao.length>30?c.divisao.substring(0,30)+'...':c.divisao),datasets:[{label:'Empresas',data:e.por_cnae.map(c=>c.qtd),backgroundColor:'rgba(101,183,251,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -371,17 +371,17 @@ function renderEmprego(){
     new Chart(document.getElementById('chartCaged'),{type:'line',data:{labels,datasets:[
       {label:'Admissoes',data:em.mensal.map(m=>m.admissoes),borderColor:'#61b466',backgroundColor:'rgba(97,180,102,.1)',fill:true,tension:.3},
       {label:'Desligamentos',data:em.mensal.map(m=>m.desligamentos),borderColor:'#e0565d',backgroundColor:'rgba(224,86,93,.1)',fill:true,tension:.3}
-    ]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    ]},options:{responsive:true,plugins:{legend:{labels:{color:'#8b9dc3'}}},scales:{x:{ticks:{color:'#8b9dc3',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3'},grid:{color:'rgba(255,255,255,.05)'}}}}});
 
     let acum=0;
     const acumData=em.mensal.map(m=>{acum+=m.saldo;return acum});
-    new Chart(document.getElementById('chartSaldoAcum'),{type:'bar',data:{labels,datasets:[{label:'Saldo acumulado',data:acumData,backgroundColor:acumData.map(v=>v>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartSaldoAcum'),{type:'bar',data:{labels,datasets:[{label:'Saldo acumulado',data:acumData,backgroundColor:acumData.map(v=>v>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3'},grid:{color:'rgba(255,255,255,.05)'}}}}});
 
-    new Chart(document.getElementById('chartSalario'),{type:'line',data:{labels,datasets:[{label:'Salario medio (R$)',data:em.mensal.map(m=>m.salario),borderColor:'#be64e3',backgroundColor:'rgba(190,100,227,.1)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0',callback:v=>'R$ '+v.toLocaleString('pt-BR')},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartSalario'),{type:'line',data:{labels,datasets:[{label:'Salario medio (R$)',data:em.mensal.map(m=>m.salario),borderColor:'#be64e3',backgroundColor:'rgba(190,100,227,.1)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3',callback:v=>'R$ '+v.toLocaleString('pt-BR')},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   if(em.por_setor&&em.por_setor.length>0){
-    new Chart(document.getElementById('chartSetorEmprego'),{type:'bar',data:{labels:em.por_setor.map(s=>s.divisao.length>25?s.divisao.substring(0,25)+'...':s.divisao),datasets:[{label:'Saldo',data:em.por_setor.map(s=>s.saldo),backgroundColor:em.por_setor.map(s=>s.saldo>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartSetorEmprego'),{type:'bar',data:{labels:em.por_setor.map(s=>s.divisao.length>25?s.divisao.substring(0,25)+'...':s.divisao),datasets:[{label:'Saldo',data:em.por_setor.map(s=>s.saldo),backgroundColor:em.por_setor.map(s=>s.saldo>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -412,12 +412,12 @@ function renderEconomia(){
   `;
 
   if(p.vab_setores&&p.vab_setores.length>0){
-    new Chart(document.getElementById('chartVAB'),{type:'doughnut',data:{labels:p.vab_setores.map(s=>s.setor),datasets:[{data:p.vab_setores.map(s=>s.valor),backgroundColor:['#61b466','#2a4fda','#be64e3','#fbec76','#e0565d'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartVAB'),{type:'doughnut',data:{labels:p.vab_setores.map(s=>s.setor),datasets:[{data:p.vab_setores.map(s=>s.valor),backgroundColor:['#61b466','#65b7fb','#be64e3','#fbec76','#e0565d'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#8b9dc3',font:{size:11}}}}}});
   }
 
   const urb=pf.pop_urbana||0,rur=pf.pop_rural||0;
   if(urb>0||rur>0){
-    new Chart(document.getElementById('chartDemog'),{type:'doughnut',data:{labels:['Urbana','Rural'],datasets:[{data:[urb,rur],backgroundColor:['#2a4fda','#61b466'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0'}}}}});
+    new Chart(document.getElementById('chartDemog'),{type:'doughnut',data:{labels:['Urbana','Rural'],datasets:[{data:[urb,rur],backgroundColor:['#65b7fb','#61b466'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#8b9dc3'}}}}});
   }
 }
 
@@ -476,13 +476,13 @@ function renderInfra(){
     const finLabels=['Operacoes Credito','Depositos Poupanca','Ativos Totais'];
     const finData=[cr.operacoes_credito,cr.depositos_poupanca,cr.ativos_totais];
     if(finData.some(v=>v>0)){
-      new Chart(document.getElementById('chartFinanceiro'),{type:'bar',data:{labels:finLabels,datasets:[{label:'Valor (R$)',data:finData,backgroundColor:['#2a4fda','#61b466','#be64e3'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+      new Chart(document.getElementById('chartFinanceiro'),{type:'bar',data:{labels:finLabels,datasets:[{label:'Valor (R$)',data:finData,backgroundColor:['#65b7fb','#61b466','#be64e3'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{display:false}},y:{ticks:{color:'#8b9dc3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
     }
   }
 
   const cLabels=['IBC','4G/5G (%)','Fibra (%)','Internet dom. (%)','Cobert. agro (%)'];
   const cData=[cn.ibc,cn.cobertura_4g5g,cn.fibra,cn.domicilios_total>0?(cn.domicilios_internet/cn.domicilios_total)*100:0,cn.cobertura_agro];
-  new Chart(document.getElementById('chartConect'),{type:'radar',data:{labels:cLabels,datasets:[{label:D.municipio.nome,data:cData,borderColor:'#65b7fb',backgroundColor:'rgba(101,183,251,.15)',pointBackgroundColor:'#65b7fb'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:10}}}}}});
+  new Chart(document.getElementById('chartConect'),{type:'radar',data:{labels:cLabels,datasets:[{label:D.municipio.nome,data:cData,borderColor:'#65b7fb',backgroundColor:'rgba(101,183,251,.15)',pointBackgroundColor:'#65b7fb'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#8b9dc3'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#8b9dc3',font:{size:10}}}}}});
 }
 
 // ── Compras Publicas ────────────────────────────────────────
@@ -526,13 +526,13 @@ function renderCompras(){
   `;
 
   if(cp.por_porte.length>0){
-    new Chart(document.getElementById('chartPortePNCP'),{type:'doughnut',data:{labels:cp.por_porte.map(p=>p.porte),datasets:[{data:cp.por_porte.map(p=>p.valor),backgroundColor:CHART_COLORS.slice(0,cp.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartPortePNCP'),{type:'doughnut',data:{labels:cp.por_porte.map(p=>p.porte),datasets:[{data:cp.por_porte.map(p=>p.valor),backgroundColor:CHART_COLORS.slice(0,cp.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#8b9dc3',font:{size:11}}}}}});
   }
   if(cp.por_ano.length>0){
-    new Chart(document.getElementById('chartAnoPNCP'),{type:'bar',data:{labels:cp.por_ano.map(a=>a.ano),datasets:[{label:'Valor Homologado (R$)',data:cp.por_ano.map(a=>a.valor),backgroundColor:'rgba(42,79,218,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartAnoPNCP'),{type:'bar',data:{labels:cp.por_ano.map(a=>a.ano),datasets:[{label:'Valor Homologado (R$)',data:cp.por_ano.map(a=>a.valor),backgroundColor:'rgba(101,183,251,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{display:false}},y:{ticks:{color:'#8b9dc3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
   if(cp.por_categoria.length>0){
-    new Chart(document.getElementById('chartCatPNCP'),{type:'bar',data:{labels:cp.por_categoria.map(c=>c.categoria.length>35?c.categoria.substring(0,35)+'...':c.categoria),datasets:[{label:'Valor (R$)',data:cp.por_categoria.map(c=>c.valor),backgroundColor:'rgba(190,100,227,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartCatPNCP'),{type:'bar',data:{labels:cp.por_categoria.map(c=>c.categoria.length>35?c.categoria.substring(0,35)+'...':c.categoria),datasets:[{label:'Valor (R$)',data:cp.por_categoria.map(c=>c.valor),backgroundColor:'rgba(190,100,227,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#8b9dc3',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -590,10 +590,10 @@ function renderEmendas(){
   `;
 
   if(em.por_tipo.length>0){
-    new Chart(document.getElementById('chartTipoEmenda'),{type:'doughnut',data:{labels:em.por_tipo.map(t=>t.tipo),datasets:[{data:em.por_tipo.map(t=>t.valor),backgroundColor:CHART_COLORS.slice(0,em.por_tipo.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartTipoEmenda'),{type:'doughnut',data:{labels:em.por_tipo.map(t=>t.tipo),datasets:[{data:em.por_tipo.map(t=>t.valor),backgroundColor:CHART_COLORS.slice(0,em.por_tipo.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#8b9dc3',font:{size:11}}}}}});
   }
   if(em.por_ano.length>0){
-    new Chart(document.getElementById('chartAnoEmenda'),{type:'bar',data:{labels:em.por_ano.map(a=>a.ano),datasets:[{label:'Valor (R$)',data:em.por_ano.map(a=>a.valor),backgroundColor:'rgba(97,180,102,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartAnoEmenda'),{type:'bar',data:{labels:em.por_ano.map(a=>a.ano),datasets:[{label:'Valor (R$)',data:em.por_ano.map(a=>a.valor),backgroundColor:'rgba(97,180,102,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{display:false}},y:{ticks:{color:'#8b9dc3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 }
 
@@ -646,16 +646,16 @@ function renderSocial(){
   `;
 
   if(ed.aprovacao>0||ed.reprovacao>0){
-    new Chart(document.getElementById('chartTaxasEdu'),{type:'bar',data:{labels:['Aprovacao','Reprovacao','Abandono','Distorcao'],datasets:[{data:[ed.aprovacao,ed.reprovacao,ed.abandono,ed.distorcao],backgroundColor:['#61b466','#fbec76','#e0565d','#f39d72'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{max:100,ticks:{color:'#7a9bc0',callback:v=>v+'%'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartTaxasEdu'),{type:'bar',data:{labels:['Aprovacao','Reprovacao','Abandono','Distorcao'],datasets:[{data:[ed.aprovacao,ed.reprovacao,ed.abandono,ed.distorcao],backgroundColor:['#61b466','#fbec76','#e0565d','#f39d72'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{display:false}},y:{max:100,ticks:{color:'#8b9dc3',callback:v=>v+'%'},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   if(pf.idhm_renda||pf.idhm_longevidade||pf.idhm_educacao){
-    new Chart(document.getElementById('chartIDHM'),{type:'bar',data:{labels:['IDHM Geral','Renda','Longevidade','Educacao'],datasets:[{data:[pf.idhm,pf.idhm_renda,pf.idhm_longevidade,pf.idhm_educacao],backgroundColor:['#2a4fda','#61b466','#be64e3','#fbec76'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{max:1,ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartIDHM'),{type:'bar',data:{labels:['IDHM Geral','Renda','Longevidade','Educacao'],datasets:[{data:[pf.idhm,pf.idhm_renda,pf.idhm_longevidade,pf.idhm_educacao],backgroundColor:['#65b7fb','#61b466','#be64e3','#fbec76'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b9dc3'},grid:{display:false}},y:{max:1,ticks:{color:'#8b9dc3'},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   const socialLabels=['IDHM','Gini (inv.)','ISDEL','Cobertura Saude (%)','IBC Conectividade'];
   const socialData=[pf.idhm*100,(1-pf.gini)*100,pf.isdel,ss.cobertura_saude,D.conectividade.ibc];
-  new Chart(document.getElementById('chartSocial'),{type:'radar',data:{labels:socialLabels,datasets:[{label:D.municipio.nome,data:socialData,borderColor:'#2a4fda',backgroundColor:'rgba(42,79,218,.15)',pointBackgroundColor:'#2a4fda'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:10}}}}}});
+  new Chart(document.getElementById('chartSocial'),{type:'radar',data:{labels:socialLabels,datasets:[{label:D.municipio.nome,data:socialData,borderColor:'#65b7fb',backgroundColor:'rgba(101,183,251,.15)',pointBackgroundColor:'#65b7fb'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#8b9dc3'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#8b9dc3',font:{size:10}}}}}});
 }
 
 // ── Sebrae ───────────────────────────────────────────────────
@@ -690,7 +690,7 @@ function renderSebrae(){
     D.conectividade.ibc||0
   ];
 
-  new Chart(document.getElementById('chartRadar'),{type:'radar',data:{labels:dims,datasets:[{label:D.municipio.nome,data:vals,borderColor:'#2a4fda',backgroundColor:'rgba(42,79,218,.15)',pointBackgroundColor:'#2a4fda'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:11}}}}}});
+  new Chart(document.getElementById('chartRadar'),{type:'radar',data:{labels:dims,datasets:[{label:D.municipio.nome,data:vals,borderColor:'#65b7fb',backgroundColor:'rgba(101,183,251,.15)',pointBackgroundColor:'#65b7fb'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#8b9dc3'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#8b9dc3',font:{size:11}}}}}});
 }
 
 // ── CI Modal ────────────────────────────────────────────────
