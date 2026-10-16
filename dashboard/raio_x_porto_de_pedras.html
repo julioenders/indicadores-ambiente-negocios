@@ -4,25 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Raio-X Municipal — Porto de Pedras</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>(function(){var t=localStorage.getItem('pippa-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0f172a;--surface:#1e293b;--card:rgba(255,255,255,.04);--border:rgba(255,255,255,.06);--text:#e2e8f0;--text-muted:#94a3b8;--muted:#64748b;--accent:#3b82f6;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a855f7;--cyan:#06b6d4}
-body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+:root{--bg:#071a5c;--surface:#0b2574;--surface2:#0f2f88;--border:rgba(101,183,251,.12);--text:#eff3ee;--text2:#a8c4e0;--muted:#7a9bc0;--accent:#2a4fda;--accent-light:#65b7fb;--green:#61b466;--yellow:#fbec76;--red:#e0565d;--purple:#be64e3;--cyan:#65b7fb;--orange:#f39d72;--radius:12px;--font-heading:'Plus Jakarta Sans',sans-serif;--font-body:'Figtree',sans-serif;--card:rgba(42,79,218,.04)}
+[data-theme="light"]{--bg:#eff3ee;--surface:#ffffff;--surface2:#e5eae4;--border:rgba(42,79,218,.1);--text:#000000;--text2:#4a5568;--muted:#6b7280;--accent-light:#0b2574;--card:rgba(42,79,218,.04)}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
 .container{max-width:1400px;margin:0 auto;padding:1.5rem}
 header{display:flex;align-items:center;justify-content:space-between;background:var(--surface);padding:12px 24px;border-bottom:1px solid var(--border);margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
-header h1{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;color:var(--accent)}
+.header-brand{display:flex;align-items:center;gap:.8rem}
+.header-logo{width:40px;height:40px;background:rgba(42,79,218,.08);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--accent)}
+header h1{font-size:1.1rem;font-weight:700;color:var(--accent);font-family:var(--font-heading)}
 header h1 span{color:var(--accent)}
+.header-sub{font-size:.7rem;color:var(--muted);margin-top:.1rem}
 .badge{display:inline-block;padding:.2rem .6rem;border-radius:6px;font-size:.7rem;font-weight:600;background:transparent;color:var(--muted);border:1px solid var(--border)}
-.subtitle{color:var(--muted);font-size:.8rem;margin-top:.3rem}
-.header-actions{display:flex;gap:.5rem;align-items:center}
-.portal-btn{background:transparent;color:var(--muted);border:1px solid var(--border);padding:.5rem 1rem;border-radius:8px;font-size:.75rem;font-weight:600;text-decoration:none;transition:all .2s}
+.header-actions{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.portal-btn{background:transparent;color:var(--muted);border:1px solid var(--border);padding:.4rem 1rem;border-radius:8px;font-size:.72rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all .2s;font-family:inherit}
 .portal-btn:hover{border-color:var(--accent);color:var(--accent)}
+.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--muted);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+.theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.icon-moon{display:none}
+[data-theme="light"] .icon-sun{display:none}
+[data-theme="light"] .icon-moon{display:block}
 
 .kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1.5rem}
-.kpi{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;text-align:center;transition:border-color .2s}
-.kpi:hover{border-color:rgba(59,130,246,.3)}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.2rem;text-align:center;transition:border-color .2s}
+.kpi:hover{border-color:rgba(42,79,218,.3)}
 .kpi-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
 .kpi-value{font-size:1.5rem;font-weight:800;color:var(--text)}
 .kpi-detail{font-size:.65rem;color:var(--muted);margin-top:.2rem}
@@ -34,17 +43,17 @@ header h1 span{color:var(--accent)}
 
 .tabs{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:.5rem}
 .tab{padding:.5rem 1rem;border-radius:8px 8px 0 0;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--muted);background:transparent;border:none;transition:all .2s}
-.tab.active{color:var(--accent);background:rgba(59,130,246,.1);border-bottom:2px solid var(--accent)}
+.tab.active{color:var(--accent);background:rgba(42,79,218,.1);border-bottom:2px solid var(--accent)}
 .tab:hover{color:var(--text)}
 .tab-content{display:none}
 .tab-content.active{display:block}
 
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:1rem;margin-bottom:1rem}
-.chart-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem;min-height:300px}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;min-height:300px}
 .chart-title{font-size:.8rem;font-weight:600;margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 
-.section-title{font-size:.9rem;font-weight:700;margin:1.5rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.section-title{font-size:.9rem;font-weight:700;font-family:var(--font-heading);margin:1.5rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
 
 .table-wrapper{overflow-x:auto;margin-bottom:1rem}
 table{width:100%;border-collapse:collapse;font-size:.75rem}
@@ -53,10 +62,10 @@ td{padding:.5rem .8rem;border-bottom:1px solid var(--border);color:var(--text)}
 tr:hover td{background:rgba(255,255,255,.02)}
 
 .tag{display:inline-block;padding:.15rem .5rem;border-radius:4px;font-size:.65rem;font-weight:600}
-.tag-green{background:rgba(34,197,94,.15);color:#22c55e}
-.tag-yellow{background:rgba(234,179,8,.15);color:#eab308}
-.tag-red{background:rgba(239,68,68,.15);color:#ef4444}
-.tag-blue{background:rgba(59,130,246,.15);color:#3b82f6}
+.tag-green{background:rgba(97,180,102,.15);color:var(--green)}
+.tag-yellow{background:rgba(251,236,118,.15);color:var(--yellow)}
+.tag-red{background:rgba(224,86,93,.15);color:var(--red)}
+.tag-blue{background:rgba(42,79,218,.15);color:var(--accent)}
 
 .empty{text-align:center;color:var(--muted);padding:2rem;font-size:.8rem}
 
@@ -67,46 +76,53 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .benchmark-track{flex:1;height:20px;background:rgba(255,255,255,.03);border-radius:4px;position:relative;overflow:hidden}
 .benchmark-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;font-size:.6rem;font-weight:600;color:#fff;min-width:fit-content;white-space:nowrap}
 
-.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#64748b;font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:auto;line-height:1}
-.ci:hover{background:rgba(59,130,246,.2);color:#93c5fd;border-color:rgba(59,130,246,.3)}
+.ci{width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);font-size:9px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit;vertical-align:middle;margin-left:auto;line-height:1}
+.ci:hover{background:rgba(42,79,218,.2);color:var(--accent-light);border-color:rgba(42,79,218,.3)}
 
-.info-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:1000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.info-overlay{display:none;position:fixed;inset:0;background:rgba(7,26,92,.85);z-index:999;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
 .info-overlay.active{display:flex}
-.info-modal{background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:2rem;max-width:520px;width:90%;max-height:80vh;overflow-y:auto;position:relative}
-.info-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer}
-.info-close:hover{color:var(--text)}
+.info-modal{background:var(--surface);border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:640px;width:92%;max-height:85vh;overflow-y:auto;padding:2rem;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.5)}
+.info-close{position:absolute;top:10px;right:14px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#a8c4e0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.info-close:hover{background:rgba(224,86,93,.2);color:#e0565d}
 
 .info-btn{
-  width:32px;height:32px;border-radius:50%;background:transparent;
-  border:1px solid var(--border);color:var(--muted);font-size:15px;font-weight:700;
+  width:30px;height:30px;border-radius:50%;background:transparent;
+  border:1px solid var(--border);color:var(--muted);font-size:14px;font-weight:700;
   cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
-  font-family:'Segoe UI',system-ui,sans-serif;
+  font-family:inherit;
 }
 .info-btn:hover{border-color:var(--accent);color:var(--accent)}
-.info-modal h2{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#3b82f6}
-.info-modal h3{font-size:.9rem;font-weight:600;margin:1.2rem 0 .5rem;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
-.info-modal p,.info-modal li{font-size:.8rem;color:#94a3b8;line-height:1.7}
-.info-modal ul{padding-left:1.2rem;margin-bottom:.6rem}
+.info-modal h2{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--accent)}
+.info-modal h3{font-size:.82rem;font-weight:600;margin:1rem 0 .3rem;color:var(--text);border-bottom:1px solid rgba(255,255,255,.06);padding-bottom:.25rem}
+.info-modal p,.info-modal li{font-size:.75rem;color:var(--muted);line-height:1.7}
+.info-modal ul{padding-left:1.1rem;margin-bottom:.4rem}
 .info-source{
-  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(59,130,246,.08);
-  border-left:3px solid #3b82f6;margin:.5rem 0;color:#94a3b8;line-height:1.6;
+  font-size:.72rem;padding:6px 12px;border-radius:6px;background:rgba(42,79,218,.08);
+  border-left:3px solid var(--accent);margin:.5rem 0;color:var(--muted);line-height:1.6;
 }
-@media(max-width:768px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(42,79,218,.25);border-radius:3px}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}header{padding:12px 16px}.container{padding:1rem}}
+@media(max-width:600px){.kpi-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="container">
 
 <header>
-  <div>
-    <h1>Raio-X Municipal — <span>Porto de Pedras</span></h1>
-    <div class="subtitle">Alagoas (AL) | Codigo IBGE: 2707404 | Gerado em 06/10/2026 15:44</div>
+  <div class="header-brand">
+    <div class="header-logo">RX</div>
+    <div>
+      <h1><span>PIPPA</span> Raio-X Municipal — Porto de Pedras</h1>
+      <div class="header-sub">Alagoas (AL) | Codigo IBGE: 2707404 | Gerado em 06/10/2026 15:44</div>
+    </div>
   </div>
   <div class="header-actions">
-    <span class="badge">PIPPA — Indicadores</span>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
     <button class="info-btn" onclick="openInfo()" title="Metodologia e fontes">i</button>
     <a href="https://julioenders.github.io/pippa-sebrae/pippa-portal/index.html" class="portal-btn">Portal PIPPA</a>
-    <button class="portal-btn" onclick="exportWhatsApp()" title="Compartilhar via WhatsApp">📤 WhatsApp</button>
+    <button class="portal-btn" onclick="exportWhatsApp()" title="Compartilhar via WhatsApp">&#x1F4E4; WhatsApp</button>
   </div>
 </header>
 
@@ -219,7 +235,9 @@ const D = {"municipio": {"nome": "Porto de Pedras", "uf_sigla": "AL", "uf_nome":
 function fmt(v,dec=0){if(v==null||v===undefined)return'N/D';if(v===0)return'0';if(Math.abs(v)>=1e9)return'R$ '+(v/1e9).toFixed(1)+'B';if(Math.abs(v)>=1e6)return(v/1e6).toFixed(1)+'M';if(Math.abs(v)>=1e3)return(v/1e3).toFixed(dec>0?dec:1)+'k';return dec>0?v.toFixed(dec):v.toLocaleString('pt-BR')}
 function pct(v){return v!=null&&v!==undefined?v.toFixed(1)+'%':'N/D'}
 
-const CHART_COLORS = ['#3b82f6','#22c55e','#a855f7','#eab308','#ef4444','#06b6d4','#f97316','#ec4899','#14b8a6','#6366f1','#84cc16','#f43f5e'];
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+
+const CHART_COLORS = ['#2a4fda','#61b466','#be64e3','#fbec76','#e0565d','#65b7fb','#f39d72','#ec4899','#14b8a6','#6366f1','#84cc16','#f43f5e'];
 
 // ── KPIs ────────────────────────────────────────────────────
 function renderKPIs(){
@@ -308,10 +326,10 @@ function renderEmpresas(){
   `;
 
   if(e.por_porte&&e.por_porte.length>0){
-    new Chart(document.getElementById('chartPorte'),{type:'doughnut',data:{labels:e.por_porte.map(p=>p.porte),datasets:[{data:e.por_porte.map(p=>p.qtd),backgroundColor:CHART_COLORS.slice(0,e.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartPorte'),{type:'doughnut',data:{labels:e.por_porte.map(p=>p.porte),datasets:[{data:e.por_porte.map(p=>p.qtd),backgroundColor:CHART_COLORS.slice(0,e.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
   }
   if(e.por_cnae&&e.por_cnae.length>0){
-    new Chart(document.getElementById('chartCnae'),{type:'bar',data:{labels:e.por_cnae.map(c=>c.divisao.length>30?c.divisao.substring(0,30)+'...':c.divisao),datasets:[{label:'Empresas',data:e.por_cnae.map(c=>c.qtd),backgroundColor:'rgba(59,130,246,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#94a3b8',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartCnae'),{type:'bar',data:{labels:e.por_cnae.map(c=>c.divisao.length>30?c.divisao.substring(0,30)+'...':c.divisao),datasets:[{label:'Empresas',data:e.por_cnae.map(c=>c.qtd),backgroundColor:'rgba(42,79,218,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -351,19 +369,19 @@ function renderEmprego(){
   if(em.mensal&&em.mensal.length>0){
     const labels=em.mensal.map(m=>m.mes);
     new Chart(document.getElementById('chartCaged'),{type:'line',data:{labels,datasets:[
-      {label:'Admissoes',data:em.mensal.map(m=>m.admissoes),borderColor:'#22c55e',backgroundColor:'rgba(34,197,94,.1)',fill:true,tension:.3},
-      {label:'Desligamentos',data:em.mensal.map(m=>m.desligamentos),borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,.1)',fill:true,tension:.3}
-    ]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+      {label:'Admissoes',data:em.mensal.map(m=>m.admissoes),borderColor:'#61b466',backgroundColor:'rgba(97,180,102,.1)',fill:true,tension:.3},
+      {label:'Desligamentos',data:em.mensal.map(m=>m.desligamentos),borderColor:'#e0565d',backgroundColor:'rgba(224,86,93,.1)',fill:true,tension:.3}
+    ]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
 
     let acum=0;
     const acumData=em.mensal.map(m=>{acum+=m.saldo;return acum});
-    new Chart(document.getElementById('chartSaldoAcum'),{type:'bar',data:{labels,datasets:[{label:'Saldo acumulado',data:acumData,backgroundColor:acumData.map(v=>v>=0?'rgba(34,197,94,.6)':'rgba(239,68,68,.6)'),borderRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartSaldoAcum'),{type:'bar',data:{labels,datasets:[{label:'Saldo acumulado',data:acumData,backgroundColor:acumData.map(v=>v>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
 
-    new Chart(document.getElementById('chartSalario'),{type:'line',data:{labels,datasets:[{label:'Salario medio (R$)',data:em.mensal.map(m=>m.salario),borderColor:'#a855f7',backgroundColor:'rgba(168,85,247,.1)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#64748b',callback:v=>'R$ '+v.toLocaleString('pt-BR')},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartSalario'),{type:'line',data:{labels,datasets:[{label:'Salario medio (R$)',data:em.mensal.map(m=>m.salario),borderColor:'#be64e3',backgroundColor:'rgba(190,100,227,.1)',fill:true,tension:.3,pointRadius:3}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',maxRotation:45},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#7a9bc0',callback:v=>'R$ '+v.toLocaleString('pt-BR')},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   if(em.por_setor&&em.por_setor.length>0){
-    new Chart(document.getElementById('chartSetorEmprego'),{type:'bar',data:{labels:em.por_setor.map(s=>s.divisao.length>25?s.divisao.substring(0,25)+'...':s.divisao),datasets:[{label:'Saldo',data:em.por_setor.map(s=>s.saldo),backgroundColor:em.por_setor.map(s=>s.saldo>=0?'rgba(34,197,94,.6)':'rgba(239,68,68,.6)'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#94a3b8',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartSetorEmprego'),{type:'bar',data:{labels:em.por_setor.map(s=>s.divisao.length>25?s.divisao.substring(0,25)+'...':s.divisao),datasets:[{label:'Saldo',data:em.por_setor.map(s=>s.saldo),backgroundColor:em.por_setor.map(s=>s.saldo>=0?'rgba(97,180,102,.6)':'rgba(224,86,93,.6)'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -394,12 +412,12 @@ function renderEconomia(){
   `;
 
   if(p.vab_setores&&p.vab_setores.length>0){
-    new Chart(document.getElementById('chartVAB'),{type:'doughnut',data:{labels:p.vab_setores.map(s=>s.setor),datasets:[{data:p.vab_setores.map(s=>s.valor),backgroundColor:['#22c55e','#3b82f6','#a855f7','#eab308','#ef4444'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartVAB'),{type:'doughnut',data:{labels:p.vab_setores.map(s=>s.setor),datasets:[{data:p.vab_setores.map(s=>s.valor),backgroundColor:['#61b466','#2a4fda','#be64e3','#fbec76','#e0565d'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
   }
 
   const urb=pf.pop_urbana||0,rur=pf.pop_rural||0;
   if(urb>0||rur>0){
-    new Chart(document.getElementById('chartDemog'),{type:'doughnut',data:{labels:['Urbana','Rural'],datasets:[{data:[urb,rur],backgroundColor:['#3b82f6','#22c55e'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8'}}}}});
+    new Chart(document.getElementById('chartDemog'),{type:'doughnut',data:{labels:['Urbana','Rural'],datasets:[{data:[urb,rur],backgroundColor:['#2a4fda','#61b466'],borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0'}}}}});
   }
 }
 
@@ -414,10 +432,10 @@ function renderInfra(){
   let bancoHTML='';
   if(!temBanco){
     bancoHTML=`
-      <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;text-align:center">
+      <div style="background:rgba(224,86,93,.1);border:1px solid rgba(224,86,93,.3);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;text-align:center">
         <div style="font-size:2rem;margin-bottom:.5rem">🏦</div>
-        <div style="font-size:1.1rem;font-weight:600;color:#ef4444">Deserto Bancario</div>
-        <div style="color:#94a3b8;font-size:.85rem;margin-top:.5rem">Este municipio nao possui agencias bancarias registradas no BCB/ESTBAN.<br>Populacao depende de municipios vizinhos ou canais digitais para servicos financeiros.</div>
+        <div style="font-size:1.1rem;font-weight:600;color:var(--red)">Deserto Bancario</div>
+        <div style="color:var(--muted);font-size:.85rem;margin-top:.5rem">Este municipio nao possui agencias bancarias registradas no BCB/ESTBAN.<br>Populacao depende de municipios vizinhos ou canais digitais para servicos financeiros.</div>
       </div>
     `;
   } else {
@@ -458,13 +476,13 @@ function renderInfra(){
     const finLabels=['Operacoes Credito','Depositos Poupanca','Ativos Totais'];
     const finData=[cr.operacoes_credito,cr.depositos_poupanca,cr.ativos_totais];
     if(finData.some(v=>v>0)){
-      new Chart(document.getElementById('chartFinanceiro'),{type:'bar',data:{labels:finLabels,datasets:[{label:'Valor (R$)',data:finData,backgroundColor:['#3b82f6','#22c55e','#a855f7'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{ticks:{color:'#64748b',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+      new Chart(document.getElementById('chartFinanceiro'),{type:'bar',data:{labels:finLabels,datasets:[{label:'Valor (R$)',data:finData,backgroundColor:['#2a4fda','#61b466','#be64e3'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
     }
   }
 
   const cLabels=['IBC','4G/5G (%)','Fibra (%)','Internet dom. (%)','Cobert. agro (%)'];
   const cData=[cn.ibc,cn.cobertura_4g5g,cn.fibra,cn.domicilios_total>0?(cn.domicilios_internet/cn.domicilios_total)*100:0,cn.cobertura_agro];
-  new Chart(document.getElementById('chartConect'),{type:'radar',data:{labels:cLabels,datasets:[{label:D.municipio.nome,data:cData,borderColor:'#06b6d4',backgroundColor:'rgba(6,182,212,.15)',pointBackgroundColor:'#06b6d4'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#94a3b8',font:{size:10}}}}}});
+  new Chart(document.getElementById('chartConect'),{type:'radar',data:{labels:cLabels,datasets:[{label:D.municipio.nome,data:cData,borderColor:'#65b7fb',backgroundColor:'rgba(101,183,251,.15)',pointBackgroundColor:'#65b7fb'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:10}}}}}});
 }
 
 // ── Compras Publicas ────────────────────────────────────────
@@ -475,10 +493,10 @@ function renderCompras(){
   if(!cp.tem_dados){
     el.innerHTML=`
       <div class="section-title">Compras Publicas (PNCP)</div>
-      <div style="background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;text-align:center">
+      <div style="background:rgba(251,236,118,.08);border:1px solid rgba(251,236,118,.25);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;text-align:center">
         <div style="font-size:2rem;margin-bottom:.5rem">📋</div>
-        <div style="font-size:1.1rem;font-weight:600;color:#eab308">Municipio sem dados no PNCP</div>
-        <div style="color:#94a3b8;font-size:.85rem;margin-top:.5rem">A prefeitura de ${D.municipio.nome} ainda nao publicou licitacoes no Portal Nacional de Contratacoes Publicas.<br>Dados de compras governamentais indisponiveis.</div>
+        <div style="font-size:1.1rem;font-weight:600;color:var(--yellow)">Municipio sem dados no PNCP</div>
+        <div style="color:var(--muted);font-size:.85rem;margin-top:.5rem">A prefeitura de ${D.municipio.nome} ainda nao publicou licitacoes no Portal Nacional de Contratacoes Publicas.<br>Dados de compras governamentais indisponiveis.</div>
       </div>`;
     return;
   }
@@ -508,13 +526,13 @@ function renderCompras(){
   `;
 
   if(cp.por_porte.length>0){
-    new Chart(document.getElementById('chartPortePNCP'),{type:'doughnut',data:{labels:cp.por_porte.map(p=>p.porte),datasets:[{data:cp.por_porte.map(p=>p.valor),backgroundColor:CHART_COLORS.slice(0,cp.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartPortePNCP'),{type:'doughnut',data:{labels:cp.por_porte.map(p=>p.porte),datasets:[{data:cp.por_porte.map(p=>p.valor),backgroundColor:CHART_COLORS.slice(0,cp.por_porte.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
   }
   if(cp.por_ano.length>0){
-    new Chart(document.getElementById('chartAnoPNCP'),{type:'bar',data:{labels:cp.por_ano.map(a=>a.ano),datasets:[{label:'Valor Homologado (R$)',data:cp.por_ano.map(a=>a.valor),backgroundColor:'rgba(59,130,246,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{ticks:{color:'#64748b',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartAnoPNCP'),{type:'bar',data:{labels:cp.por_ano.map(a=>a.ano),datasets:[{label:'Valor Homologado (R$)',data:cp.por_ano.map(a=>a.valor),backgroundColor:'rgba(42,79,218,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
   if(cp.por_categoria.length>0){
-    new Chart(document.getElementById('chartCatPNCP'),{type:'bar',data:{labels:cp.por_categoria.map(c=>c.categoria.length>35?c.categoria.substring(0,35)+'...':c.categoria),datasets:[{label:'Valor (R$)',data:cp.por_categoria.map(c=>c.valor),backgroundColor:'rgba(168,85,247,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#64748b',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#94a3b8',font:{size:10}},grid:{display:false}}}}});
+    new Chart(document.getElementById('chartCatPNCP'),{type:'bar',data:{labels:cp.por_categoria.map(c=>c.categoria.length>35?c.categoria.substring(0,35)+'...':c.categoria),datasets:[{label:'Valor (R$)',data:cp.por_categoria.map(c=>c.valor),backgroundColor:'rgba(190,100,227,.7)',borderRadius:4}]},options:{indexAxis:'y',responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#a8c4e0',font:{size:10}},grid:{display:false}}}}});
   }
 }
 
@@ -526,10 +544,10 @@ function renderEmendas(){
   if(!em.qtd_registros){
     el.innerHTML=`
       <div class="section-title">Emendas Parlamentares</div>
-      <div style="background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);border-radius:12px;padding:1.5rem;text-align:center">
+      <div style="background:rgba(251,236,118,.08);border:1px solid rgba(251,236,118,.25);border-radius:12px;padding:1.5rem;text-align:center">
         <div style="font-size:2rem;margin-bottom:.5rem">🏛️</div>
-        <div style="font-size:1.1rem;font-weight:600;color:#eab308">Sem registros de emendas</div>
-        <div style="color:#94a3b8;font-size:.85rem;margin-top:.5rem">Nenhuma emenda parlamentar identificada para ${D.municipio.nome} no Portal da Transparencia.</div>
+        <div style="font-size:1.1rem;font-weight:600;color:var(--yellow)">Sem registros de emendas</div>
+        <div style="color:var(--muted);font-size:.85rem;margin-top:.5rem">Nenhuma emenda parlamentar identificada para ${D.municipio.nome} no Portal da Transparencia.</div>
       </div>`;
     return;
   }
@@ -572,10 +590,10 @@ function renderEmendas(){
   `;
 
   if(em.por_tipo.length>0){
-    new Chart(document.getElementById('chartTipoEmenda'),{type:'doughnut',data:{labels:em.por_tipo.map(t=>t.tipo),datasets:[{data:em.por_tipo.map(t=>t.valor),backgroundColor:CHART_COLORS.slice(0,em.por_tipo.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:11}}}}}});
+    new Chart(document.getElementById('chartTipoEmenda'),{type:'doughnut',data:{labels:em.por_tipo.map(t=>t.tipo),datasets:[{data:em.por_tipo.map(t=>t.valor),backgroundColor:CHART_COLORS.slice(0,em.por_tipo.length),borderWidth:0}]},options:{responsive:true,plugins:{legend:{position:'right',labels:{color:'#a8c4e0',font:{size:11}}}}}});
   }
   if(em.por_ano.length>0){
-    new Chart(document.getElementById('chartAnoEmenda'),{type:'bar',data:{labels:em.por_ano.map(a=>a.ano),datasets:[{label:'Valor (R$)',data:em.por_ano.map(a=>a.valor),backgroundColor:'rgba(34,197,94,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{ticks:{color:'#64748b',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartAnoEmenda'),{type:'bar',data:{labels:em.por_ano.map(a=>a.ano),datasets:[{label:'Valor (R$)',data:em.por_ano.map(a=>a.valor),backgroundColor:'rgba(97,180,102,.7)',borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{ticks:{color:'#7a9bc0',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 }
 
@@ -628,16 +646,16 @@ function renderSocial(){
   `;
 
   if(ed.aprovacao>0||ed.reprovacao>0){
-    new Chart(document.getElementById('chartTaxasEdu'),{type:'bar',data:{labels:['Aprovacao','Reprovacao','Abandono','Distorcao'],datasets:[{data:[ed.aprovacao,ed.reprovacao,ed.abandono,ed.distorcao],backgroundColor:['#22c55e','#eab308','#ef4444','#f97316'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{max:100,ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartTaxasEdu'),{type:'bar',data:{labels:['Aprovacao','Reprovacao','Abandono','Distorcao'],datasets:[{data:[ed.aprovacao,ed.reprovacao,ed.abandono,ed.distorcao],backgroundColor:['#61b466','#fbec76','#e0565d','#f39d72'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{max:100,ticks:{color:'#7a9bc0',callback:v=>v+'%'},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   if(pf.idhm_renda||pf.idhm_longevidade||pf.idhm_educacao){
-    new Chart(document.getElementById('chartIDHM'),{type:'bar',data:{labels:['IDHM Geral','Renda','Longevidade','Educacao'],datasets:[{data:[pf.idhm,pf.idhm_renda,pf.idhm_longevidade,pf.idhm_educacao],backgroundColor:['#3b82f6','#22c55e','#a855f7','#eab308'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#94a3b8'},grid:{display:false}},y:{max:1,ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,.05)'}}}}});
+    new Chart(document.getElementById('chartIDHM'),{type:'bar',data:{labels:['IDHM Geral','Renda','Longevidade','Educacao'],datasets:[{data:[pf.idhm,pf.idhm_renda,pf.idhm_longevidade,pf.idhm_educacao],backgroundColor:['#2a4fda','#61b466','#be64e3','#fbec76'],borderRadius:6}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#a8c4e0'},grid:{display:false}},y:{max:1,ticks:{color:'#7a9bc0'},grid:{color:'rgba(255,255,255,.05)'}}}}});
   }
 
   const socialLabels=['IDHM','Gini (inv.)','ISDEL','Cobertura Saude (%)','IBC Conectividade'];
   const socialData=[pf.idhm*100,(1-pf.gini)*100,pf.isdel,ss.cobertura_saude,D.conectividade.ibc];
-  new Chart(document.getElementById('chartSocial'),{type:'radar',data:{labels:socialLabels,datasets:[{label:D.municipio.nome,data:socialData,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.15)',pointBackgroundColor:'#3b82f6'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#94a3b8',font:{size:10}}}}}});
+  new Chart(document.getElementById('chartSocial'),{type:'radar',data:{labels:socialLabels,datasets:[{label:D.municipio.nome,data:socialData,borderColor:'#2a4fda',backgroundColor:'rgba(42,79,218,.15)',pointBackgroundColor:'#2a4fda'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:10}}}}}});
 }
 
 // ── Sebrae ───────────────────────────────────────────────────
@@ -672,7 +690,7 @@ function renderSebrae(){
     D.conectividade.ibc||0
   ];
 
-  new Chart(document.getElementById('chartRadar'),{type:'radar',data:{labels:dims,datasets:[{label:D.municipio.nome,data:vals,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.15)',pointBackgroundColor:'#3b82f6'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#94a3b8',font:{size:11}}}}}});
+  new Chart(document.getElementById('chartRadar'),{type:'radar',data:{labels:dims,datasets:[{label:D.municipio.nome,data:vals,borderColor:'#2a4fda',backgroundColor:'rgba(42,79,218,.15)',pointBackgroundColor:'#2a4fda'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#a8c4e0'}}},scales:{r:{max:100,ticks:{display:false},grid:{color:'rgba(255,255,255,.1)'},pointLabels:{color:'#a8c4e0',font:{size:11}}}}}});
 }
 
 // ── CI Modal ────────────────────────────────────────────────
