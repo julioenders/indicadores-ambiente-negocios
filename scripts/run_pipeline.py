@@ -14,21 +14,21 @@ SCRIPTS = ROOT / "scripts"
 
 PIPELINE = [
     # Fase 1: APIs públicas (sem token)
-    ("06_coletar_redesim_gov.py", "REDESIM Gov (API publica)"),
+    ("06_coletar_redesim_gov.py", "REDESIM Gov (API publica)", ["--rapido"]),
 
     # Fase 2: APIs com token do Observatorio
-    ("02_coletar_redesim.py", "REDESIM Observatorio"),
-    ("04_coletar_rf_estoque.py", "Receita Federal estoque"),
-    ("07_indicador_informalidade.py", "Informalidade"),
-    ("08_indicador_massa_empresarial.py", "Massa empresarial"),
-    ("09_indicador_lei_geral.py", "Lei Geral"),
-    ("11_coletar_caged_rais.py", "CAGED/RAIS"),
-    ("12_coletar_pib.py", "PIB"),
-    ("13_indicador_inclusao.py", "Inclusao produtiva"),
-    ("14_coletar_credito_bcb.py", "Credito BCB"),
+    ("02_coletar_redesim.py", "REDESIM Observatorio", []),
+    ("04_coletar_rf_estoque.py", "Receita Federal estoque", []),
+    ("07_indicador_informalidade.py", "Informalidade", []),
+    ("08_indicador_massa_empresarial.py", "Massa empresarial", []),
+    ("09_indicador_lei_geral.py", "Lei Geral", []),
+    ("11_coletar_caged_rais.py", "CAGED/RAIS", []),
+    ("12_coletar_pib.py", "PIB", []),
+    ("13_indicador_inclusao.py", "Inclusao produtiva", []),
+    ("14_coletar_credito_bcb.py", "Credito BCB", []),
 
     # Fase 3: Cruzamento (depende dos anteriores)
-    ("05_cruzar_indicadores.py", "Cruzamento de indicadores"),
+    ("05_cruzar_indicadores.py", "Cruzamento de indicadores", []),
 ]
 
 SKIP = [
@@ -38,7 +38,7 @@ SKIP = [
 ]
 
 
-def run_script(name: str, label: str) -> bool:
+def run_script(name: str, label: str, extra_args: list = None) -> bool:
     path = SCRIPTS / name
     if not path.exists():
         print(f"  SKIP {name} — arquivo nao encontrado")
@@ -53,9 +53,11 @@ def run_script(name: str, label: str) -> bool:
         "PYTHONPATH": str(ROOT),
     }
 
+    cmd = [sys.executable, str(path)] + (extra_args or [])
+
     start = time.time()
     result = subprocess.run(
-        [sys.executable, "-I", str(path)],
+        cmd,
         cwd=str(ROOT),
         env=env,
         timeout=600,
@@ -78,9 +80,9 @@ def main():
     ok = 0
     fail = 0
 
-    for name, label in PIPELINE:
+    for name, label, extra_args in PIPELINE:
         try:
-            if run_script(name, label):
+            if run_script(name, label, extra_args):
                 ok += 1
             else:
                 fail += 1
