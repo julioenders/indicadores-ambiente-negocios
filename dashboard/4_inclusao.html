@@ -183,7 +183,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t);applyChartTheme()}
 const DATA = {
   genero: { mulheres: 37.2, homens: 60.5, nao_informado: 2.3 },
   kpi_inclusao: {
@@ -217,7 +217,10 @@ const DATA = {
 };
 
 const charts = {};
-Chart.defaults.color='#8b9dc3';
+const isDark=()=>document.documentElement.getAttribute('data-theme')!=='light';
+const TC={get text(){return isDark()?'#eff3ee':'#1a202c'},get muted(){return isDark()?'#a8c4e0':'#4a5568'},get grid(){return isDark()?'rgba(255,255,255,.06)':'rgba(0,0,0,.08)'}};
+function applyChartTheme(){Chart.defaults.color=TC.muted;Object.values(Chart.instances||{}).forEach(c=>{(c.options.scales||{})&&Object.values(c.options.scales).forEach(s=>{if(s.ticks)s.ticks.color=s.ticks._isLabel?TC.text:TC.muted;if(s.grid)s.grid.color=s.grid.display===false?'transparent':TC.grid;if(s.title&&s.title.display)s.title.color=TC.muted});c.update('none')})}
+Chart.defaults.color=TC.muted;
 Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
@@ -322,8 +325,8 @@ function init(){
         tooltip:{callbacks:{label:function(ctx){return ctx.raw.toFixed(1)+'% de participacao feminina'}}}
       },
       scales:{
-        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:function(v){return v+'%'}},min:25,max:45},
-        y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:12,weight:'600'}}}
+        x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:function(v){return v+'%'}},min:25,max:45},
+        y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:12,weight:'600'}}}
       }
     }
   });
@@ -348,8 +351,8 @@ function init(){
         tooltip:{callbacks:{label:function(ctx){return ctx.raw.toFixed(1)+'% dos empreendedores'}}}
       },
       scales:{
-        x:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:12}}},
-        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:function(v){return v+'%'}}}
+        x:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:12}}},
+        y:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:function(v){return v+'%'}}}
       }
     }
   });

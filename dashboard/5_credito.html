@@ -206,7 +206,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t);applyChartTheme()}
 /* ========== SAMPLE DATA ========== */
 const SAMPLE_DATA = {
   saldo_credito: [
@@ -279,7 +279,10 @@ const SAMPLE_DATA = {
 /* ========== GLOBALS ========== */
 const charts = {};
 let DATA = null;
-Chart.defaults.color='#8b9dc3';
+const isDark=()=>document.documentElement.getAttribute('data-theme')!=='light';
+const TC={get text(){return isDark()?'#eff3ee':'#1a202c'},get muted(){return isDark()?'#a8c4e0':'#4a5568'},get grid(){return isDark()?'rgba(255,255,255,.06)':'rgba(0,0,0,.08)'}};
+function applyChartTheme(){Chart.defaults.color=TC.muted;Object.values(Chart.instances||{}).forEach(c=>{(c.options.scales||{})&&Object.values(c.options.scales).forEach(s=>{if(s.ticks)s.ticks.color=s.ticks._isLabel?TC.text:TC.muted;if(s.grid)s.grid.color=s.grid.display===false?'transparent':TC.grid;if(s.title&&s.title.display)s.title.color=TC.muted});c.update('none')})}
+Chart.defaults.color=TC.muted;
 Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 /* ========== HELPERS ========== */
@@ -372,8 +375,8 @@ function renderCredito(){
         tooltip:{callbacks:{label:ctx=>'R$ '+ctx.raw.toFixed(1)+' bilhoes'}}
       },
       scales:{
-        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',maxRotation:45,font:{size:10}}},
-        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>'R$ '+v.toFixed(0)+'B'}}
+        x:{grid:{color:TC.grid},ticks:{color:TC.muted,maxRotation:45,font:{size:10}}},
+        y:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>'R$ '+v.toFixed(0)+'B'}}
       }
     }
   });
@@ -450,8 +453,8 @@ function renderCobertura(){
         tooltip:{callbacks:{label:ctx=>ctx.raw.toFixed(2)+'% ao ano'}}
       },
       scales:{
-        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',maxRotation:45,font:{size:10}}},
-        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>v.toFixed(1)+'%'}}
+        x:{grid:{color:TC.grid},ticks:{color:TC.muted,maxRotation:45,font:{size:10}}},
+        y:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>v.toFixed(1)+'%'}}
       }
     }
   });

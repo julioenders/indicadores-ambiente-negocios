@@ -207,11 +207,14 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t);applyChartTheme()}
 const DATA = {"ranking":[{"uf":"Sergipe","tempo":119.7},{"uf":"Goiás","tempo":120.1},{"uf":"Tocantins","tempo":134.1},{"uf":"Paraná","tempo":136.5},{"uf":"Ceará","tempo":137.7},{"uf":"Mato Grosso","tempo":138.5},{"uf":"Roraima","tempo":145.8},{"uf":"Rondônia","tempo":146.8},{"uf":"Maranhão","tempo":150.7},{"uf":"Piauí","tempo":151.1},{"uf":"Mato Grosso do Sul","tempo":154.2},{"uf":"Espírito Santo","tempo":154.6},{"uf":"Distrito Federal","tempo":167.2},{"uf":"Rio Grande do Sul","tempo":167.5},{"uf":"Rio Grande do Norte","tempo":171.0},{"uf":"Alagoas","tempo":175.3},{"uf":"Paraíba","tempo":182.4},{"uf":"Amazonas","tempo":183.7},{"uf":"Amapá","tempo":186.5},{"uf":"Acre","tempo":187.3},{"uf":"Santa Catarina","tempo":215.7},{"uf":"São Paulo","tempo":224.1},{"uf":"Minas Gerais","tempo":232.5},{"uf":"Pernambuco","tempo":253.4},{"uf":"Pará","tempo":269.9},{"uf":"Rio de Janeiro","tempo":298.7},{"uf":"Bahia","tempo":327.5}],"tempo_nacional":[{"ano":2025,"mes":10,"total_h":27},{"ano":2025,"mes":11,"total_h":25},{"ano":2025,"mes":12,"total_h":27},{"ano":2026,"mes":1,"total_h":36},{"ano":2026,"mes":2,"total_h":41},{"ano":2026,"mes":3,"total_h":37},{"ano":2026,"mes":4,"total_h":40},{"ano":2026,"mes":5,"total_h":36},{"ano":2026,"mes":6,"total_h":34},{"ano":2026,"mes":7,"total_h":33},{"ano":2026,"mes":8,"total_h":29},{"ano":2026,"mes":9,"total_h":31}],"integracao":[{"uf":"MG","pct":37.4,"mun_int":319},{"uf":"PE","pct":57.3,"mun_int":106},{"uf":"BA","pct":63.1,"mun_int":263},{"uf":"PI","pct":64.7,"mun_int":145},{"uf":"MA","pct":67.7,"mun_int":147},{"uf":"PB","pct":68.6,"mun_int":153},{"uf":"RN","pct":70.1,"mun_int":117},{"uf":"TO","pct":71.2,"mun_int":99},{"uf":"GO","pct":72.4,"mun_int":178},{"uf":"AL","pct":76.5,"mun_int":78},{"uf":"ES","pct":76.9,"mun_int":60},{"uf":"PA","pct":81.2,"mun_int":117},{"uf":"SP","pct":82.8,"mun_int":534},{"uf":"MS","pct":88.6,"mun_int":70},{"uf":"SE","pct":89.3,"mun_int":67},{"uf":"AP","pct":93.8,"mun_int":15},{"uf":"SC","pct":94.9,"mun_int":280},{"uf":"PR","pct":95.5,"mun_int":381},{"uf":"RS","pct":98.6,"mun_int":490},{"uf":"RJ","pct":98.9,"mun_int":91},{"uf":"MT","pct":99.3,"mun_int":141},{"uf":"RR","pct":100.0,"mun_int":15},{"uf":"DF","pct":100.0,"mun_int":1},{"uf":"AC","pct":100.0,"mun_int":22},{"uf":"CE","pct":100.0,"mun_int":184},{"uf":"AM","pct":100.0,"mun_int":62},{"uf":"RO","pct":100.0,"mun_int":52}],"massa":[{"uf":"São Paulo","total":8532264,"mei":3922792,"me":2827952,"epp":531856,"demais":1249664,"pct_mei":46.0},{"uf":"Minas Gerais","total":2752706,"mei":1503005,"me":964234,"epp":131385,"demais":154082,"pct_mei":54.6},{"uf":"Rio de Janeiro","total":2213558,"mei":1306806,"me":654448,"epp":116161,"demais":136143,"pct_mei":59.0},{"uf":"Paraná","total":1918629,"mei":936282,"me":768765,"epp":96270,"demais":117312,"pct_mei":48.8},{"uf":"Rio Grande do Sul","total":1663900,"mei":853487,"me":606429,"epp":106227,"demais":97757,"pct_mei":51.3},{"uf":"Santa Catarina","total":1475648,"mei":745334,"me":531741,"epp":93540,"demais":105033,"pct_mei":50.5},{"uf":"Bahia","total":1182051,"mei":627728,"me":448810,"epp":52440,"demais":53073,"pct_mei":53.1},{"uf":"Goiás","total":1005638,"mei":529824,"me":371687,"epp":49731,"demais":54396,"pct_mei":52.7},{"uf":"Ceará","total":708499,"mei":358915,"me":280371,"epp":31328,"demais":37885,"pct_mei":50.7},{"uf":"Pernambuco","total":693788,"mei":383500,"me":226970,"epp":42608,"demais":40710,"pct_mei":55.3},{"uf":"Espírito Santo","total":585967,"mei":336437,"me":183663,"epp":31565,"demais":34302,"pct_mei":57.4},{"uf":"Mato Grosso","total":546704,"mei":266099,"me":191549,"epp":52405,"demais":36651,"pct_mei":48.7},{"uf":"Pará","total":479915,"mei":231801,"me":176782,"epp":49893,"demais":21439,"pct_mei":48.3},{"uf":"Distrito Federal","total":454108,"mei":208901,"me":180848,"epp":33874,"demais":30485,"pct_mei":46.0},{"uf":"Mato Grosso do Sul","total":361123,"mei":181374,"me":129605,"epp":26857,"demais":23287,"pct_mei":50.2},{"uf":"Maranhão","total":339115,"mei":144906,"me":152395,"epp":25651,"demais":16163,"pct_mei":42.7},{"uf":"Paraíba","total":318630,"mei":175986,"me":112476,"epp":16057,"demais":14111,"pct_mei":55.2},{"uf":"Rio Grande do Norte","total":294222,"mei":157095,"me":105714,"epp":15250,"demais":16163,"pct_mei":53.4},{"uf":"Amazonas","total":271002,"mei":131394,"me":95336,"epp":30351,"demais":13921,"pct_mei":48.5},{"uf":"Alagoas","total":218261,"mei":119845,"me":73561,"epp":13920,"demais":10935,"pct_mei":54.9},{"uf":"Piauí","total":214950,"mei":98476,"me":91780,"epp":14477,"demais":10217,"pct_mei":45.8},{"uf":"Tocantins","total":167192,"mei":86001,"me":59848,"epp":11834,"demais":9509,"pct_mei":51.4},{"uf":"Sergipe","total":165514,"mei":89225,"me":60416,"epp":8782,"demais":7091,"pct_mei":53.9},{"uf":"Rondônia","total":163972,"mei":82411,"me":60712,"epp":11689,"demais":9160,"pct_mei":50.3},{"uf":"Acre","total":49202,"mei":21987,"me":21311,"epp":3482,"demais":2422,"pct_mei":44.7},{"uf":"Roraima","total":48690,"mei":25148,"me":17507,"epp":3831,"demais":2204,"pct_mei":51.6},{"uf":"Amapá","total":47036,"mei":19332,"me":20030,"epp":5405,"demais":2269,"pct_mei":41.1}]};
 
 const charts = {};
-Chart.defaults.color='#a8c4e0';
+const isDark=()=>document.documentElement.getAttribute('data-theme')!=='light';
+const TC={get text(){return isDark()?'#eff3ee':'#1a202c'},get muted(){return isDark()?'#a8c4e0':'#4a5568'},get grid(){return isDark()?'rgba(255,255,255,.06)':'rgba(0,0,0,.08)'}};
+function applyChartTheme(){Chart.defaults.color=TC.muted;Object.values(Chart.instances||{}).forEach(c=>{(c.options.scales||{})&&Object.values(c.options.scales).forEach(s=>{if(s.ticks)s.ticks.color=s.ticks._isLabel?TC.text:TC.muted;if(s.grid)s.grid.color=s.grid.display===false?'transparent':TC.grid;if(s.title&&s.title.display)s.title.color=TC.muted});c.update('none')})}
+Chart.defaults.color=TC.muted;
 Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
@@ -243,21 +246,21 @@ function renderAbertura(){
     type:'bar',
     data:{labels:rk.map(r=>r.uf),datasets:[{data:rk.map(r=>+(r.tempo/24).toFixed(1)),backgroundColor:rk.map(r=>r.tempo<168?'rgba(97,180,102,.6)':r.tempo<264?'rgba(251,236,118,.6)':'rgba(224,86,93,.6)'),borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw.toFixed(1)+' dias'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>v+'d'}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>v+'d'}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:10}}}}}
   });
 
   charts.integracao=new Chart(document.getElementById('chartIntegracao'),{
     type:'bar',
     data:{labels:DATA.integracao.map(i=>i.uf),datasets:[{data:DATA.integracao.map(i=>i.pct),backgroundColor:DATA.integracao.map(i=>i.pct>=80?'rgba(97,180,102,.6)':i.pct>=50?'rgba(251,236,118,.6)':'rgba(224,86,93,.6)'),borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw.toFixed(1)+'% integrado'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>v+'%'},max:110},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>v+'%'},max:110},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:10}}}}}
   });
 
   charts.evolucao=new Chart(document.getElementById('chartEvolucao'),{
     type:'line',
     data:{labels:tn.map(t=>t.ano+'-'+String(t.mes).padStart(2,'0')),datasets:[{label:'Dias por empresa',data:tn.map(t=>+(t.total_h/24).toFixed(1)),borderColor:'#2a4fda',backgroundColor:'rgba(42,79,218,.08)',fill:true,tension:.3,pointRadius:4,borderWidth:2.5}]},
     options:{responsive:true,plugins:{legend:{display:false}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>v+'d'}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,font:{size:10}}},y:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>v+'d'}}}}
   });
 }
 
@@ -279,7 +282,7 @@ function renderMassa(){
   charts.porte=new Chart(document.getElementById('chartPorte'),{
     type:'doughnut',
     data:{labels:['MEI','ME','EPP','Demais'],datasets:[{data:[mei,me,epp,demais],backgroundColor:['rgba(97,180,102,.7)','rgba(42,79,218,.7)','rgba(190,100,227,.7)','rgba(100,116,139,.5)'],borderWidth:0}]},
-    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:'#a8c4e0',boxWidth:12,padding:16}},tooltip:{callbacks:{label:c=>{const v=c.raw;return c.label+': '+fmt(v)+' ('+(v/total*100).toFixed(1)+'%)'}}}}}
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:TC.muted,boxWidth:12,padding:16}},tooltip:{callbacks:{label:c=>{const v=c.raw;return c.label+': '+fmt(v)+' ('+(v/total*100).toFixed(1)+'%)'}}}}}
   });
 
   const top15=[...ms].sort((a,b)=>a.total-b.total).slice(-15);
@@ -291,8 +294,8 @@ function renderMassa(){
       {label:'EPP',data:top15.map(m=>m.epp),backgroundColor:'rgba(190,100,227,.6)',borderRadius:2},
       {label:'Demais',data:top15.map(m=>m.demais),backgroundColor:'rgba(100,116,139,.4)',borderRadius:2}
     ]},
-    options:{responsive:true,indexAxis:'y',plugins:{legend:{position:'bottom',labels:{color:'#a8c4e0',boxWidth:12,font:{size:10}}}},
-      scales:{x:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>fmt(v)}},y:{stacked:true,grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
+    options:{responsive:true,indexAxis:'y',plugins:{legend:{position:'bottom',labels:{color:TC.muted,boxWidth:12,font:{size:10}}}},
+      scales:{x:{stacked:true,grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>fmt(v)}},y:{stacked:true,grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:10}}}}}
   });
 
   let rows='';

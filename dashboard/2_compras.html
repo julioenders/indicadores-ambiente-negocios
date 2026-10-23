@@ -159,7 +159,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t);applyChartTheme()}
 const DATA = {
   contratacoes_recentes: 1247,
   valor_total: 3842567890.45,
@@ -199,7 +199,10 @@ const DATA = {
 };
 
 const charts = {};
-Chart.defaults.color='#a8c4e0';
+const isDark=()=>document.documentElement.getAttribute('data-theme')!=='light';
+const TC={get text(){return isDark()?'#eff3ee':'#1a202c'},get muted(){return isDark()?'#a8c4e0':'#4a5568'},get grid(){return isDark()?'rgba(255,255,255,.06)':'rgba(0,0,0,.08)'}};
+function applyChartTheme(){Chart.defaults.color=TC.muted;Object.values(Chart.instances||{}).forEach(c=>{(c.options.scales||{})&&Object.values(c.options.scales).forEach(s=>{if(s.ticks)s.ticks.color=s.ticks._isLabel?TC.text:TC.muted;if(s.grid)s.grid.color=s.grid.display===false?'transparent':TC.grid;if(s.title&&s.title.display)s.title.color=TC.muted});c.update('none')})}
+Chart.defaults.color=TC.muted;
 Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 function fmt(v){if(v>=1e9)return'R$ '+(v/1e9).toFixed(2)+'B';if(v>=1e6)return'R$ '+(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
@@ -223,7 +226,7 @@ function renderAll(){
   charts.porte=new Chart(document.getElementById('chartPorte'),{
     type:'doughnut',
     data:{labels:pt.map(p=>p.tipo),datasets:[{data:pt.map(p=>p.pct),backgroundColor:['rgba(97,180,102,.7)','rgba(42,79,218,.7)','rgba(190,100,227,.7)','rgba(100,116,139,.5)'],borderWidth:0}]},
-    options:{responsive:true,cutout:'52%',plugins:{legend:{position:'bottom',labels:{color:'#a8c4e0',boxWidth:12,padding:16}},tooltip:{callbacks:{label:c=>{const v=pt[c.dataIndex].valor;return c.label+': '+c.raw.toFixed(1)+'% ('+fmtCurrency(v)+')'}}}}}
+    options:{responsive:true,cutout:'52%',plugins:{legend:{position:'bottom',labels:{color:TC.muted,boxWidth:12,padding:16}},tooltip:{callbacks:{label:c=>{const v=pt[c.dataIndex].valor;return c.label+': '+c.raw.toFixed(1)+'% ('+fmtCurrency(v)+')'}}}}}
   });
 
   /* Chart: Modalidade (horizontal bar) */
@@ -233,7 +236,7 @@ function renderAll(){
     type:'bar',
     data:{labels:mod.map(m=>m.nome.length>28?m.nome.substring(0,26)+'...':m.nome),datasets:[{data:mod.map(m=>m.qtd),backgroundColor:'rgba(42,79,218,.6)',borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+' contratacoes'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0'}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:10}}}}}
   });
 
   /* Chart: Top UFs (horizontal bar) */
@@ -243,7 +246,7 @@ function renderAll(){
     type:'bar',
     data:{labels:ufv.map(u=>u.uf),datasets:[{data:ufv.map(u=>u.valor),backgroundColor:'rgba(243,157,114,.6)',borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtBRL(c.raw)}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#a8c4e0',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:11}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:11}}}}}
   });
 }
 

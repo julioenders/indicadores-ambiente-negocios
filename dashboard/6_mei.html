@@ -202,11 +202,14 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="footer">PIPPA Ambiente de Negocios | Sebrae Nacional | 2026</div>
 
 <script>
-function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t)}
+function toggleTheme(){const html=document.documentElement;const t=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',t);localStorage.setItem('pippa-theme',t);applyChartTheme()}
 const DATA = {"estados":[{"uf":"São Paulo","mei":3922792,"total":8532264,"pct":46.0},{"uf":"Minas Gerais","mei":1503005,"total":2752706,"pct":54.6},{"uf":"Rio de Janeiro","mei":1306806,"total":2213558,"pct":59.0},{"uf":"Paraná","mei":936282,"total":1918629,"pct":48.8},{"uf":"Rio Grande do Sul","mei":853487,"total":1663900,"pct":51.3},{"uf":"Santa Catarina","mei":745334,"total":1475648,"pct":50.5},{"uf":"Bahia","mei":627728,"total":1182051,"pct":53.1},{"uf":"Goiás","mei":529824,"total":1005638,"pct":52.7},{"uf":"Pernambuco","mei":383500,"total":693788,"pct":55.3},{"uf":"Ceará","mei":358915,"total":708499,"pct":50.7},{"uf":"Espírito Santo","mei":336437,"total":585967,"pct":57.4},{"uf":"Mato Grosso","mei":266099,"total":546704,"pct":48.7},{"uf":"Pará","mei":231801,"total":479915,"pct":48.3},{"uf":"Distrito Federal","mei":208901,"total":454108,"pct":46.0},{"uf":"Mato Grosso do Sul","mei":181374,"total":361123,"pct":50.2},{"uf":"Paraíba","mei":175986,"total":318630,"pct":55.2},{"uf":"Rio Grande do Norte","mei":157095,"total":294222,"pct":53.4},{"uf":"Maranhão","mei":144906,"total":339115,"pct":42.7},{"uf":"Amazonas","mei":131394,"total":271002,"pct":48.5},{"uf":"Alagoas","mei":119845,"total":218261,"pct":54.9},{"uf":"Piauí","mei":98476,"total":214950,"pct":45.8},{"uf":"Sergipe","mei":89225,"total":165514,"pct":53.9},{"uf":"Tocantins","mei":86001,"total":167192,"pct":51.4},{"uf":"Rondônia","mei":82411,"total":163972,"pct":50.3},{"uf":"Roraima","mei":25148,"total":48690,"pct":51.6},{"uf":"Acre","mei":21987,"total":49202,"pct":44.7},{"uf":"Amapá","mei":19332,"total":47036,"pct":41.1}],"regioes":[{"regiao":"Sudeste","mei":7069040},{"regiao":"Sul","mei":2535103},{"regiao":"Nordeste","mei":2155676},{"regiao":"Centro-Oeste","mei":1186198},{"regiao":"Norte","mei":598074}],"setores":[],"divisoes":[],"municipios":[]};
 
 const charts = {};
-Chart.defaults.color='#8b9dc3';
+const isDark=()=>document.documentElement.getAttribute('data-theme')!=='light';
+const TC={get text(){return isDark()?'#eff3ee':'#1a202c'},get muted(){return isDark()?'#a8c4e0':'#4a5568'},get grid(){return isDark()?'rgba(255,255,255,.06)':'rgba(0,0,0,.08)'}};
+function applyChartTheme(){Chart.defaults.color=TC.muted;Object.values(Chart.instances||{}).forEach(c=>{(c.options.scales||{})&&Object.values(c.options.scales).forEach(s=>{if(s.ticks)s.ticks.color=s.ticks._isLabel?TC.text:TC.muted;if(s.grid)s.grid.color=s.grid.display===false?'transparent':TC.grid;if(s.title&&s.title.display)s.title.color=TC.muted});c.update('none')})}
+Chart.defaults.color=TC.muted;
 Chart.defaults.font.family="'Figtree','Segoe UI',system-ui,sans-serif";
 
 function fmt(v){if(v>=1e6)return(v/1e6).toFixed(1)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'k';return v.toLocaleString('pt-BR')}
@@ -238,7 +241,7 @@ function renderPanorama(){
     type:'bar',
     data:{labels:esSorted.map(e=>e.uf),datasets:[{data:esSorted.map(e=>e.mei),backgroundColor:'rgba(224,86,93,.5)',borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:9}}}}}
   });
 
   const esPct=[...es].sort((a,b)=>b.pct-a.pct);
@@ -246,7 +249,7 @@ function renderPanorama(){
     type:'bar',
     data:{labels:esPct.map(e=>e.uf),datasets:[{data:esPct.map(e=>e.pct),backgroundColor:esPct.map(e=>e.pct>=55?'rgba(97,180,102,.6)':e.pct>=48?'rgba(251,236,118,.6)':'rgba(224,86,93,.5)'),borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+'% MEI'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>v+'%'},max:70},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>v+'%'},max:70},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:9}}}}}
   });
 
   renderMapa(es);
@@ -256,7 +259,7 @@ function renderPanorama(){
     type:'bar',
     data:{labels:top10.map(e=>e.uf),datasets:[{data:top10.map(e=>e.mei),backgroundColor:'rgba(224,86,93,.6)',borderRadius:4}]},
     options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>fmt(v)}}}}
+      scales:{x:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:9},maxRotation:45}},y:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>fmt(v)}}}}
   });
 }
 
@@ -277,7 +280,7 @@ function renderSetores(){
     data:{labels:stSorted.map(function(s){return s.setor}),datasets:[{data:stSorted.map(function(s){return s.mei}),backgroundColor:stColors,borderRadius:4}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},
       tooltip:{callbacks:{label:function(c){var v=c.raw;return fmtN(v)+' MEIs ('+(v/totalMei*100).toFixed(1)+'%)'}}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:function(v){return fmt(v)}}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:10}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:function(v){return fmt(v)}}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:10}}}}}
   });
 
   var top15=dv.slice(0,15);
@@ -285,7 +288,7 @@ function renderSetores(){
     type:'bar',
     data:{labels:top15.map(function(d){return d.cnae.length>45?d.cnae.substring(0,42)+'...':d.cnae}),datasets:[{data:top15.map(function(d){return d.mei}),backgroundColor:'rgba(101,183,251,.5)',borderRadius:3}]},
     options:{responsive:true,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{title:function(c){return dv[c[0].dataIndex].cnae},label:c=>fmtN(c.raw)+' MEIs'}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#8b9dc3',callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:'#eff3ee',font:{size:9}}}}}
+      scales:{x:{grid:{color:TC.grid},ticks:{color:TC.muted,callback:v=>fmt(v)}},y:{grid:{display:false},ticks:{color:TC.text,_isLabel:true,font:{size:9}}}}}
   });
 }
 
