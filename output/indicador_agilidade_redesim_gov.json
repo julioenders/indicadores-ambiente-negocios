@@ -1,5 +1,17 @@
 [
   {
+    "uf": "PI",
+    "periodo_referencia": "2026-09",
+    "tempo_abertura_dias": 0,
+    "tempo_abertura_horas": 6,
+    "tempo_total_horas": 6.0,
+    "municipios_integrados": 145,
+    "total_municipios": 224,
+    "pct_municipios_integrados": 64.7,
+    "aberturas_recentes_2024_2026": 0,
+    "score_agilidade": 155.28
+  },
+  {
     "uf": "PR",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
@@ -12,40 +24,28 @@
     "score_agilidade": 152.8
   },
   {
-    "uf": "PI",
-    "periodo_referencia": "2026-09",
-    "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 6,
-    "tempo_total_horas": 6.0,
-    "municipios_integrados": 140,
-    "total_municipios": 224,
-    "pct_municipios_integrados": 62.5,
-    "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 150.0
-  },
-  {
     "uf": "SE",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 10,
     "tempo_total_horas": 10.0,
-    "municipios_integrados": 68,
+    "municipios_integrados": 67,
     "total_municipios": 75,
-    "pct_municipios_integrados": 90.7,
+    "pct_municipios_integrados": 89.3,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 130.61
+    "score_agilidade": 128.59
   },
   {
     "uf": "ES",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 12,
-    "tempo_total_horas": 12.0,
-    "municipios_integrados": 71,
+    "tempo_abertura_horas": 11,
+    "tempo_total_horas": 11.0,
+    "municipios_integrados": 60,
     "total_municipios": 78,
-    "pct_municipios_integrados": 91.0,
+    "pct_municipios_integrados": 76.9,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 109.2
+    "score_agilidade": 100.67
   },
   {
     "uf": "AL",
@@ -53,35 +53,23 @@
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 11,
     "tempo_total_horas": 11.0,
-    "municipios_integrados": 74,
+    "municipios_integrados": 78,
     "total_municipios": 102,
-    "pct_municipios_integrados": 72.5,
+    "pct_municipios_integrados": 76.5,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 94.91
-  },
-  {
-    "uf": "SC",
-    "periodo_referencia": "2026-09",
-    "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 19,
-    "tempo_total_horas": 19.0,
-    "municipios_integrados": 282,
-    "total_municipios": 295,
-    "pct_municipios_integrados": 95.6,
-    "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 72.45
+    "score_agilidade": 100.15
   },
   {
     "uf": "CE",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 20,
-    "tempo_total_horas": 20.0,
+    "tempo_abertura_horas": 19,
+    "tempo_total_horas": 19.0,
     "municipios_integrados": 184,
     "total_municipios": 184,
     "pct_municipios_integrados": 100.0,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 72.0
+    "score_agilidade": 75.79
   },
   {
     "uf": "RO",
@@ -89,11 +77,35 @@
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 19,
     "tempo_total_horas": 19.0,
-    "municipios_integrados": 48,
+    "municipios_integrados": 52,
     "total_municipios": 52,
-    "pct_municipios_integrados": 92.3,
+    "pct_municipios_integrados": 100.0,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 69.95
+    "score_agilidade": 75.79
+  },
+  {
+    "uf": "SC",
+    "periodo_referencia": "2026-09",
+    "tempo_abertura_dias": 0,
+    "tempo_abertura_horas": 19,
+    "tempo_total_horas": 19.0,
+    "municipios_integrados": 280,
+    "total_municipios": 295,
+    "pct_municipios_integrados": 94.9,
+    "aberturas_recentes_2024_2026": 0,
+    "score_agilidade": 71.92
+  },
+  {
+    "uf": "MA",
+    "periodo_referencia": "2026-09",
+    "tempo_abertura_dias": 0,
+    "tempo_abertura_horas": 15,
+    "tempo_total_horas": 15.0,
+    "municipios_integrados": 147,
+    "total_municipios": 217,
+    "pct_municipios_integrados": 67.7,
+    "aberturas_recentes_2024_2026": 0,
+    "score_agilidade": 64.99
   },
   {
     "uf": "MS",
@@ -108,52 +120,40 @@
     "score_agilidade": 63.79
   },
   {
-    "uf": "MA",
-    "periodo_referencia": "2026-09",
-    "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 15,
-    "tempo_total_horas": 15.0,
-    "municipios_integrados": 140,
-    "total_municipios": 217,
-    "pct_municipios_integrados": 64.5,
-    "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 61.92
-  },
-  {
-    "uf": "RS",
+    "uf": "AC",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 23,
     "tempo_total_horas": 23.0,
-    "municipios_integrados": 490,
-    "total_municipios": 497,
-    "pct_municipios_integrados": 98.6,
-    "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 61.73
-  },
-  {
-    "uf": "AC",
-    "periodo_referencia": "2026-09",
-    "tempo_abertura_dias": 1,
-    "tempo_abertura_horas": 0,
-    "tempo_total_horas": 24.0,
     "municipios_integrados": 22,
     "total_municipios": 22,
     "pct_municipios_integrados": 100.0,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 60.0
+    "score_agilidade": 62.61
   },
   {
     "uf": "DF",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 1,
-    "tempo_abertura_horas": 1,
-    "tempo_total_horas": 25.0,
+    "tempo_abertura_horas": 0,
+    "tempo_total_horas": 24.0,
     "municipios_integrados": 1,
     "total_municipios": 1,
     "pct_municipios_integrados": 100.0,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 57.6
+    "score_agilidade": 60.0
+  },
+  {
+    "uf": "RS",
+    "periodo_referencia": "2026-09",
+    "tempo_abertura_dias": 1,
+    "tempo_abertura_horas": 0,
+    "tempo_total_horas": 24.0,
+    "municipios_integrados": 490,
+    "total_municipios": 497,
+    "pct_municipios_integrados": 98.6,
+    "aberturas_recentes_2024_2026": 0,
+    "score_agilidade": 59.16
   },
   {
     "uf": "GO",
@@ -185,11 +185,23 @@
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 19,
     "tempo_total_horas": 19.0,
-    "municipios_integrados": 147,
+    "municipios_integrados": 153,
     "total_municipios": 223,
-    "pct_municipios_integrados": 65.9,
+    "pct_municipios_integrados": 68.6,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 49.95
+    "score_agilidade": 51.99
+  },
+  {
+    "uf": "RN",
+    "periodo_referencia": "2026-09",
+    "tempo_abertura_dias": 0,
+    "tempo_abertura_horas": 21,
+    "tempo_total_horas": 21.0,
+    "municipios_integrados": 117,
+    "total_municipios": 167,
+    "pct_municipios_integrados": 70.1,
+    "aberturas_recentes_2024_2026": 0,
+    "score_agilidade": 48.07
   },
   {
     "uf": "RJ",
@@ -204,28 +216,16 @@
     "score_agilidade": 47.47
   },
   {
-    "uf": "RN",
+    "uf": "TO",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 0,
     "tempo_abertura_horas": 22,
     "tempo_total_horas": 22.0,
-    "municipios_integrados": 117,
-    "total_municipios": 167,
-    "pct_municipios_integrados": 70.1,
-    "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 45.88
-  },
-  {
-    "uf": "TO",
-    "periodo_referencia": "2026-09",
-    "tempo_abertura_dias": 0,
-    "tempo_abertura_horas": 23,
-    "tempo_total_horas": 23.0,
-    "municipios_integrados": 101,
+    "municipios_integrados": 99,
     "total_municipios": 139,
-    "pct_municipios_integrados": 72.7,
+    "pct_municipios_integrados": 71.2,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 45.52
+    "score_agilidade": 46.6
   },
   {
     "uf": "RR",
@@ -243,13 +243,13 @@
     "uf": "AP",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 1,
-    "tempo_abertura_horas": 8,
-    "tempo_total_horas": 32.0,
+    "tempo_abertura_horas": 9,
+    "tempo_total_horas": 33.0,
     "municipios_integrados": 15,
     "total_municipios": 16,
     "pct_municipios_integrados": 93.8,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 42.21
+    "score_agilidade": 40.93
   },
   {
     "uf": "PE",
@@ -279,37 +279,37 @@
     "uf": "SP",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 1,
-    "tempo_abertura_horas": 16,
-    "tempo_total_horas": 40.0,
+    "tempo_abertura_horas": 17,
+    "tempo_total_horas": 41.0,
     "municipios_integrados": 534,
     "total_municipios": 645,
     "pct_municipios_integrados": 82.8,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 29.81
+    "score_agilidade": 29.08
   },
   {
     "uf": "MT",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 2,
-    "tempo_abertura_horas": 16,
-    "tempo_total_horas": 64.0,
+    "tempo_abertura_horas": 18,
+    "tempo_total_horas": 66.0,
     "municipios_integrados": 141,
     "total_municipios": 142,
     "pct_municipios_integrados": 99.3,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 22.34
+    "score_agilidade": 21.67
   },
   {
     "uf": "PA",
     "periodo_referencia": "2026-09",
     "tempo_abertura_dias": 2,
-    "tempo_abertura_horas": 9,
-    "tempo_total_horas": 57.0,
-    "municipios_integrados": 121,
+    "tempo_abertura_horas": 11,
+    "tempo_total_horas": 59.0,
+    "municipios_integrados": 117,
     "total_municipios": 144,
-    "pct_municipios_integrados": 84.0,
+    "pct_municipios_integrados": 81.2,
     "aberturas_recentes_2024_2026": 0,
-    "score_agilidade": 21.22
+    "score_agilidade": 19.82
   },
   {
     "uf": "MG",

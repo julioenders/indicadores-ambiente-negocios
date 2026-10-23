@@ -436,53 +436,85 @@
     "mes": 12,
     "uf": "AC",
     "dias": 0,
-    "horas": 17,
-    "tempo_total_horas": 17
+    "horas": 15,
+    "tempo_total_horas": 15
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "AL",
     "dias": 0,
-    "horas": 20,
-    "tempo_total_horas": 20
+    "horas": 12,
+    "tempo_total_horas": 12
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "AM",
     "dias": 1,
-    "horas": 5,
-    "tempo_total_horas": 29
+    "horas": 7,
+    "tempo_total_horas": 31
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "AP",
     "dias": 0,
-    "horas": 18,
-    "tempo_total_horas": 18
+    "horas": 21,
+    "tempo_total_horas": 21
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "BA",
     "dias": 0,
-    "horas": 19,
-    "tempo_total_horas": 19
+    "horas": 15,
+    "tempo_total_horas": 15
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "CE",
-    "dias": 2,
-    "horas": 8,
-    "tempo_total_horas": 56
+    "dias": 0,
+    "horas": 22,
+    "tempo_total_horas": 22
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "DF",
+    "dias": 0,
+    "horas": 16,
+    "tempo_total_horas": 16
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "ES",
+    "dias": 0,
+    "horas": 9,
+    "tempo_total_horas": 9
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "GO",
+    "dias": 0,
+    "horas": 13,
+    "tempo_total_horas": 13
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "MA",
+    "dias": 0,
+    "horas": 13,
+    "tempo_total_horas": 13
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "MG",
     "dias": 1,
     "horas": 6,
     "tempo_total_horas": 30
@@ -490,50 +522,18 @@
   {
     "ano": 2025,
     "mes": 12,
-    "uf": "ES",
-    "dias": 0,
-    "horas": 23,
-    "tempo_total_horas": 23
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "GO",
-    "dias": 1,
-    "horas": 16,
-    "tempo_total_horas": 40
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "MA",
-    "dias": 1,
-    "horas": 2,
-    "tempo_total_horas": 26
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "MG",
-    "dias": 3,
-    "horas": 2,
-    "tempo_total_horas": 74
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
     "uf": "MS",
     "dias": 0,
-    "horas": 21,
-    "tempo_total_horas": 21
+    "horas": 22,
+    "tempo_total_horas": 22
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "MT",
-    "dias": 0,
-    "horas": 21,
-    "tempo_total_horas": 21
+    "dias": 1,
+    "horas": 16,
+    "tempo_total_horas": 40
   },
   {
     "ano": 2025,
@@ -547,86 +547,6 @@
     "ano": 2025,
     "mes": 12,
     "uf": "PB",
-    "dias": 1,
-    "horas": 6,
-    "tempo_total_horas": 30
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PE",
-    "dias": 0,
-    "horas": 17,
-    "tempo_total_horas": 17
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PI",
-    "dias": 0,
-    "horas": 10,
-    "tempo_total_horas": 10
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PR",
-    "dias": 0,
-    "horas": 23,
-    "tempo_total_horas": 23
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RJ",
-    "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RN",
-    "dias": 10,
-    "horas": 8,
-    "tempo_total_horas": 248
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RO",
-    "dias": 1,
-    "horas": 7,
-    "tempo_total_horas": 31
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RR",
-    "dias": 0,
-    "horas": 16,
-    "tempo_total_horas": 16
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RS",
-    "dias": 0,
-    "horas": 18,
-    "tempo_total_horas": 18
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "SC",
-    "dias": 1,
-    "horas": 8,
-    "tempo_total_horas": 32
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "SE",
     "dias": 0,
     "horas": 15,
     "tempo_total_horas": 15
@@ -634,39 +554,143 @@
   {
     "ano": 2025,
     "mes": 12,
-    "uf": "SP",
-    "dias": 2,
+    "uf": "PE",
+    "dias": 0,
     "horas": 13,
-    "tempo_total_horas": 61
+    "tempo_total_horas": 13
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PI",
+    "dias": 0,
+    "horas": 5,
+    "tempo_total_horas": 5
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PR",
+    "dias": 0,
+    "horas": 7,
+    "tempo_total_horas": 7
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RJ",
+    "dias": 1,
+    "horas": 2,
+    "tempo_total_horas": 26
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RN",
+    "dias": 2,
+    "horas": 20,
+    "tempo_total_horas": 68
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RO",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RR",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RS",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "SC",
+    "dias": 0,
+    "horas": 16,
+    "tempo_total_horas": 16
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "SE",
+    "dias": 0,
+    "horas": 6,
+    "tempo_total_horas": 6
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "SP",
+    "dias": 1,
+    "horas": 17,
+    "tempo_total_horas": 41
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "TO",
-    "dias": 1,
-    "horas": 1,
-    "tempo_total_horas": 25
+    "dias": 0,
+    "horas": 12,
+    "tempo_total_horas": 12
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "AC",
-    "dias": 7,
-    "horas": 16,
-    "tempo_total_horas": 184
+    "dias": 2,
+    "horas": 17,
+    "tempo_total_horas": 65
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "AL",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
+    "dias": 0,
+    "horas": 15,
+    "tempo_total_horas": 15
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "AM",
+    "dias": 1,
+    "horas": 6,
+    "tempo_total_horas": 30
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "AP",
+    "dias": 1,
+    "horas": 10,
+    "tempo_total_horas": 34
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "BA",
+    "dias": 0,
+    "horas": 18,
+    "tempo_total_horas": 18
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "CE",
     "dias": 0,
     "horas": 19,
     "tempo_total_horas": 19
@@ -674,31 +698,55 @@
   {
     "ano": 2026,
     "mes": 1,
-    "uf": "AP",
-    "dias": 2,
-    "horas": 6,
-    "tempo_total_horas": 54
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "BA",
-    "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "CE",
-    "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
     "uf": "DF",
+    "dias": 0,
+    "horas": 21,
+    "tempo_total_horas": 21
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "ES",
+    "dias": 0,
+    "horas": 14,
+    "tempo_total_horas": 14
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "GO",
+    "dias": 0,
+    "horas": 16,
+    "tempo_total_horas": 16
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MA",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MG",
+    "dias": 1,
+    "horas": 13,
+    "tempo_total_horas": 37
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MS",
+    "dias": 1,
+    "horas": 16,
+    "tempo_total_horas": 40
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MT",
     "dias": 1,
     "horas": 21,
     "tempo_total_horas": 45
@@ -706,119 +754,47 @@
   {
     "ano": 2026,
     "mes": 1,
-    "uf": "ES",
-    "dias": 2,
-    "horas": 4,
-    "tempo_total_horas": 52
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "GO",
-    "dias": 2,
-    "horas": 5,
-    "tempo_total_horas": 53
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MA",
-    "dias": 2,
-    "horas": 6,
-    "tempo_total_horas": 54
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MG",
-    "dias": 7,
-    "horas": 20,
-    "tempo_total_horas": 188
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MS",
-    "dias": 1,
-    "horas": 20,
-    "tempo_total_horas": 44
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MT",
-    "dias": 1,
-    "horas": 22,
-    "tempo_total_horas": 46
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
     "uf": "PA",
     "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
+    "horas": 19,
+    "tempo_total_horas": 43
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "PB",
-    "dias": 1,
-    "horas": 0,
-    "tempo_total_horas": 24
+    "dias": 0,
+    "horas": 17,
+    "tempo_total_horas": 17
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "PE",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
+    "dias": 0,
+    "horas": 17,
+    "tempo_total_horas": 17
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "PI",
     "dias": 0,
-    "horas": 16,
-    "tempo_total_horas": 16
+    "horas": 7,
+    "tempo_total_horas": 7
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "PR",
-    "dias": 1,
-    "horas": 16,
-    "tempo_total_horas": 40
+    "dias": 0,
+    "horas": 12,
+    "tempo_total_horas": 12
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "RJ",
-    "dias": 2,
-    "horas": 0,
-    "tempo_total_horas": 48
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RN",
-    "dias": 2,
-    "horas": 22,
-    "tempo_total_horas": 70
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RO",
-    "dias": 2,
-    "horas": 0,
-    "tempo_total_horas": 48
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RR",
     "dias": 1,
     "horas": 10,
     "tempo_total_horas": 34
@@ -826,7 +802,39 @@
   {
     "ano": 2026,
     "mes": 1,
+    "uf": "RN",
+    "dias": 1,
+    "horas": 18,
+    "tempo_total_horas": 42
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RO",
+    "dias": 1,
+    "horas": 3,
+    "tempo_total_horas": 27
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RR",
+    "dias": 1,
+    "horas": 13,
+    "tempo_total_horas": 37
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
     "uf": "RS",
+    "dias": 0,
+    "horas": 18,
+    "tempo_total_horas": 18
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "SC",
     "dias": 1,
     "horas": 4,
     "tempo_total_horas": 28
@@ -834,71 +842,31 @@
   {
     "ano": 2026,
     "mes": 1,
-    "uf": "SC",
-    "dias": 3,
-    "horas": 4,
-    "tempo_total_horas": 76
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
     "uf": "SE",
-    "dias": 1,
-    "horas": 23,
-    "tempo_total_horas": 47
+    "dias": 0,
+    "horas": 8,
+    "tempo_total_horas": 8
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "SP",
-    "dias": 6,
-    "horas": 3,
-    "tempo_total_horas": 147
+    "dias": 2,
+    "horas": 13,
+    "tempo_total_horas": 61
   },
   {
     "ano": 2026,
     "mes": 1,
     "uf": "TO",
-    "dias": 1,
-    "horas": 18,
-    "tempo_total_horas": 42
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
   },
   {
     "ano": 2026,
     "mes": 2,
     "uf": "AC",
-    "dias": 1,
-    "horas": 1,
-    "tempo_total_horas": 25
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AL",
-    "dias": 2,
-    "horas": 10,
-    "tempo_total_horas": 58
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AM",
-    "dias": 1,
-    "horas": 6,
-    "tempo_total_horas": 30
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AP",
-    "dias": 0,
-    "horas": 12,
-    "tempo_total_horas": 12
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "BA",
     "dias": 1,
     "horas": 7,
     "tempo_total_horas": 31
@@ -906,159 +874,47 @@
   {
     "ano": 2026,
     "mes": 2,
-    "uf": "CE",
+    "uf": "AL",
+    "dias": 0,
+    "horas": 17,
+    "tempo_total_horas": 17
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "AM",
     "dias": 1,
-    "horas": 19,
-    "tempo_total_horas": 43
+    "horas": 4,
+    "tempo_total_horas": 28
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "AP",
+    "dias": 1,
+    "horas": 2,
+    "tempo_total_horas": 26
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "BA",
+    "dias": 0,
+    "horas": 21,
+    "tempo_total_horas": 21
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "CE",
+    "dias": 0,
+    "horas": 21,
+    "tempo_total_horas": 21
   },
   {
     "ano": 2026,
     "mes": 2,
     "uf": "DF",
-    "dias": 3,
-    "horas": 0,
-    "tempo_total_horas": 72
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "ES",
-    "dias": 2,
-    "horas": 7,
-    "tempo_total_horas": 55
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "GO",
-    "dias": 3,
-    "horas": 8,
-    "tempo_total_horas": 80
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MA",
-    "dias": 1,
-    "horas": 3,
-    "tempo_total_horas": 27
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MG",
-    "dias": 8,
-    "horas": 14,
-    "tempo_total_horas": 206
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MS",
-    "dias": 1,
-    "horas": 20,
-    "tempo_total_horas": 44
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MT",
-    "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PA",
-    "dias": 1,
-    "horas": 10,
-    "tempo_total_horas": 34
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PB",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PE",
-    "dias": 2,
-    "horas": 3,
-    "tempo_total_horas": 51
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PI",
-    "dias": 0,
-    "horas": 9,
-    "tempo_total_horas": 9
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PR",
-    "dias": 1,
-    "horas": 16,
-    "tempo_total_horas": 40
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RJ",
-    "dias": 2,
-    "horas": 8,
-    "tempo_total_horas": 56
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RN",
-    "dias": 1,
-    "horas": 16,
-    "tempo_total_horas": 40
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RO",
-    "dias": 1,
-    "horas": 18,
-    "tempo_total_horas": 42
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RR",
-    "dias": 0,
-    "horas": 19,
-    "tempo_total_horas": 19
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RS",
-    "dias": 1,
-    "horas": 8,
-    "tempo_total_horas": 32
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "SC",
-    "dias": 2,
-    "horas": 18,
-    "tempo_total_horas": 66
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "SE",
     "dias": 0,
     "horas": 23,
     "tempo_total_horas": 23
@@ -1066,39 +922,199 @@
   {
     "ano": 2026,
     "mes": 2,
-    "uf": "SP",
-    "dias": 6,
-    "horas": 19,
-    "tempo_total_horas": 163
+    "uf": "ES",
+    "dias": 0,
+    "horas": 14,
+    "tempo_total_horas": 14
   },
   {
     "ano": 2026,
     "mes": 2,
-    "uf": "TO",
+    "uf": "GO",
+    "dias": 0,
+    "horas": 23,
+    "tempo_total_horas": 23
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MA",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MG",
+    "dias": 1,
+    "horas": 18,
+    "tempo_total_horas": 42
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MS",
+    "dias": 1,
+    "horas": 18,
+    "tempo_total_horas": 42
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MT",
     "dias": 2,
     "horas": 0,
     "tempo_total_horas": 48
   },
   {
     "ano": 2026,
+    "mes": 2,
+    "uf": "PA",
+    "dias": 1,
+    "horas": 22,
+    "tempo_total_horas": 46
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "PB",
+    "dias": 0,
+    "horas": 18,
+    "tempo_total_horas": 18
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "PE",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "PI",
+    "dias": 0,
+    "horas": 5,
+    "tempo_total_horas": 5
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "PR",
+    "dias": 0,
+    "horas": 11,
+    "tempo_total_horas": 11
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RJ",
+    "dias": 1,
+    "horas": 8,
+    "tempo_total_horas": 32
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RN",
+    "dias": 1,
+    "horas": 6,
+    "tempo_total_horas": 30
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RO",
+    "dias": 1,
+    "horas": 4,
+    "tempo_total_horas": 28
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RR",
+    "dias": 1,
+    "horas": 9,
+    "tempo_total_horas": 33
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RS",
+    "dias": 1,
+    "horas": 9,
+    "tempo_total_horas": 33
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SC",
+    "dias": 1,
+    "horas": 2,
+    "tempo_total_horas": 26
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SE",
+    "dias": 0,
+    "horas": 6,
+    "tempo_total_horas": 6
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SP",
+    "dias": 2,
+    "horas": 19,
+    "tempo_total_horas": 67
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "TO",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2026,
     "mes": 3,
     "uf": "AC",
-    "dias": 0,
-    "horas": 21,
-    "tempo_total_horas": 21
+    "dias": 2,
+    "horas": 10,
+    "tempo_total_horas": 58
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "AL",
-    "dias": 1,
-    "horas": 13,
-    "tempo_total_horas": 37
+    "dias": 0,
+    "horas": 17,
+    "tempo_total_horas": 17
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "AM",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "AP",
+    "dias": 0,
+    "horas": 22,
+    "tempo_total_horas": 22
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "BA",
     "dias": 1,
     "horas": 1,
     "tempo_total_horas": 25
@@ -1106,23 +1122,55 @@
   {
     "ano": 2026,
     "mes": 3,
-    "uf": "AP",
-    "dias": 0,
-    "horas": 18,
-    "tempo_total_horas": 18
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "BA",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
     "uf": "CE",
+    "dias": 1,
+    "horas": 0,
+    "tempo_total_horas": 24
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "DF",
+    "dias": 1,
+    "horas": 2,
+    "tempo_total_horas": 26
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "ES",
+    "dias": 0,
+    "horas": 13,
+    "tempo_total_horas": 13
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "GO",
+    "dias": 0,
+    "horas": 22,
+    "tempo_total_horas": 22
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "MA",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "MG",
+    "dias": 1,
+    "horas": 16,
+    "tempo_total_horas": 40
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "MS",
     "dias": 1,
     "horas": 19,
     "tempo_total_horas": 43
@@ -1130,143 +1178,15 @@
   {
     "ano": 2026,
     "mes": 3,
-    "uf": "DF",
-    "dias": 2,
-    "horas": 0,
-    "tempo_total_horas": 48
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "ES",
-    "dias": 1,
-    "horas": 20,
-    "tempo_total_horas": 44
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "GO",
-    "dias": 2,
-    "horas": 12,
-    "tempo_total_horas": 60
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "MA",
-    "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "MG",
-    "dias": 5,
-    "horas": 18,
-    "tempo_total_horas": 138
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "MS",
-    "dias": 1,
-    "horas": 20,
-    "tempo_total_horas": 44
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
     "uf": "MT",
     "dias": 2,
-    "horas": 3,
-    "tempo_total_horas": 51
+    "horas": 10,
+    "tempo_total_horas": 58
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "PA",
-    "dias": 1,
-    "horas": 17,
-    "tempo_total_horas": 41
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "PB",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "PE",
-    "dias": 1,
-    "horas": 13,
-    "tempo_total_horas": 37
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "PI",
-    "dias": 0,
-    "horas": 15,
-    "tempo_total_horas": 15
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "PR",
-    "dias": 1,
-    "horas": 5,
-    "tempo_total_horas": 29
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "RJ",
-    "dias": 1,
-    "horas": 15,
-    "tempo_total_horas": 39
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "RN",
-    "dias": 1,
-    "horas": 14,
-    "tempo_total_horas": 38
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "RO",
-    "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "RR",
-    "dias": 1,
-    "horas": 7,
-    "tempo_total_horas": 31
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "RS",
-    "dias": 1,
-    "horas": 13,
-    "tempo_total_horas": 37
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "SC",
     "dias": 2,
     "horas": 1,
     "tempo_total_horas": 49
@@ -1274,230 +1194,94 @@
   {
     "ano": 2026,
     "mes": 3,
-    "uf": "SE",
-    "dias": 0,
-    "horas": 21,
-    "tempo_total_horas": 21
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "SP",
-    "dias": 3,
-    "horas": 19,
-    "tempo_total_horas": 91
-  },
-  {
-    "ano": 2026,
-    "mes": 3,
-    "uf": "TO",
-    "dias": 1,
-    "horas": 17,
-    "tempo_total_horas": 41
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "AC",
+    "uf": "PB",
     "dias": 0,
     "horas": 19,
     "tempo_total_horas": 19
   },
   {
     "ano": 2026,
-    "mes": 4,
-    "uf": "AL",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "AM",
-    "dias": 0,
-    "horas": 21,
-    "tempo_total_horas": 21
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "AP",
+    "mes": 3,
+    "uf": "PE",
     "dias": 0,
     "horas": 18,
     "tempo_total_horas": 18
   },
   {
     "ano": 2026,
-    "mes": 4,
-    "uf": "BA",
-    "dias": 1,
-    "horas": 11,
-    "tempo_total_horas": 35
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "CE",
-    "dias": 2,
-    "horas": 2,
-    "tempo_total_horas": 50
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "DF",
-    "dias": 2,
-    "horas": 14,
-    "tempo_total_horas": 62
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "ES",
-    "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "GO",
-    "dias": 2,
-    "horas": 7,
-    "tempo_total_horas": 55
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "MA",
-    "dias": 1,
-    "horas": 11,
-    "tempo_total_horas": 35
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "MG",
-    "dias": 4,
-    "horas": 13,
-    "tempo_total_horas": 109
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "MS",
-    "dias": 1,
-    "horas": 17,
-    "tempo_total_horas": 41
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "MT",
-    "dias": 1,
-    "horas": 9,
-    "tempo_total_horas": 33
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "PA",
-    "dias": 1,
-    "horas": 12,
-    "tempo_total_horas": 36
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "PB",
-    "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
-    "uf": "PE",
-    "dias": 1,
-    "horas": 20,
-    "tempo_total_horas": 44
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "PI",
+    "dias": 0,
+    "horas": 8,
+    "tempo_total_horas": 8
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "PR",
     "dias": 0,
     "horas": 11,
     "tempo_total_horas": 11
   },
   {
     "ano": 2026,
-    "mes": 4,
-    "uf": "PR",
-    "dias": 1,
-    "horas": 7,
-    "tempo_total_horas": 31
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "RJ",
     "dias": 1,
-    "horas": 15,
-    "tempo_total_horas": 39
+    "horas": 5,
+    "tempo_total_horas": 29
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "RN",
     "dias": 1,
-    "horas": 18,
-    "tempo_total_horas": 42
+    "horas": 0,
+    "tempo_total_horas": 24
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "RO",
     "dias": 1,
-    "horas": 2,
-    "tempo_total_horas": 26
+    "horas": 1,
+    "tempo_total_horas": 25
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "RR",
     "dias": 1,
-    "horas": 6,
-    "tempo_total_horas": 30
+    "horas": 10,
+    "tempo_total_horas": 34
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "RS",
+    "dias": 1,
+    "horas": 16,
+    "tempo_total_horas": 40
+  },
+  {
+    "ano": 2026,
+    "mes": 3,
+    "uf": "SC",
     "dias": 1,
     "horas": 4,
     "tempo_total_horas": 28
   },
   {
     "ano": 2026,
-    "mes": 4,
-    "uf": "SC",
-    "dias": 1,
-    "horas": 23,
-    "tempo_total_horas": 47
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "SE",
     "dias": 0,
-    "horas": 17,
-    "tempo_total_horas": 17
+    "horas": 7,
+    "tempo_total_horas": 7
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "SP",
     "dias": 2,
     "horas": 3,
@@ -1505,11 +1289,227 @@
   },
   {
     "ano": 2026,
-    "mes": 4,
+    "mes": 3,
     "uf": "TO",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "AC",
+    "dias": 2,
+    "horas": 6,
+    "tempo_total_horas": 54
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "AL",
+    "dias": 1,
+    "horas": 2,
+    "tempo_total_horas": 26
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "AM",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "AP",
+    "dias": 1,
+    "horas": 8,
+    "tempo_total_horas": 32
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "BA",
+    "dias": 1,
+    "horas": 0,
+    "tempo_total_horas": 24
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "CE",
+    "dias": 1,
+    "horas": 7,
+    "tempo_total_horas": 31
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "DF",
+    "dias": 1,
+    "horas": 15,
+    "tempo_total_horas": 39
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "ES",
+    "dias": 0,
+    "horas": 14,
+    "tempo_total_horas": 14
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "GO",
+    "dias": 1,
+    "horas": 7,
+    "tempo_total_horas": 31
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "MA",
+    "dias": 0,
+    "horas": 19,
+    "tempo_total_horas": 19
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "MG",
+    "dias": 1,
+    "horas": 18,
+    "tempo_total_horas": 42
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "MS",
+    "dias": 1,
+    "horas": 13,
+    "tempo_total_horas": 37
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "MT",
+    "dias": 2,
+    "horas": 12,
+    "tempo_total_horas": 60
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "PA",
+    "dias": 2,
+    "horas": 6,
+    "tempo_total_horas": 54
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "PB",
+    "dias": 0,
+    "horas": 22,
+    "tempo_total_horas": 22
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "PE",
+    "dias": 0,
+    "horas": 20,
+    "tempo_total_horas": 20
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "PI",
+    "dias": 0,
+    "horas": 5,
+    "tempo_total_horas": 5
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "PR",
+    "dias": 0,
+    "horas": 15,
+    "tempo_total_horas": 15
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "RJ",
+    "dias": 1,
+    "horas": 13,
+    "tempo_total_horas": 37
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "RN",
+    "dias": 1,
+    "horas": 4,
+    "tempo_total_horas": 28
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "RO",
+    "dias": 1,
+    "horas": 3,
+    "tempo_total_horas": 27
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "RR",
+    "dias": 1,
+    "horas": 23,
+    "tempo_total_horas": 47
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "RS",
     "dias": 1,
     "horas": 19,
     "tempo_total_horas": 43
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "SC",
+    "dias": 1,
+    "horas": 3,
+    "tempo_total_horas": 27
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "SE",
+    "dias": 0,
+    "horas": 7,
+    "tempo_total_horas": 7
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "SP",
+    "dias": 2,
+    "horas": 6,
+    "tempo_total_horas": 54
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
+    "uf": "TO",
+    "dias": 1,
+    "horas": 0,
+    "tempo_total_horas": 24
   },
   {
     "ano": 2026,
@@ -1524,24 +1524,24 @@
     "mes": 5,
     "uf": "AL",
     "dias": 0,
-    "horas": 14,
-    "tempo_total_horas": 14
+    "horas": 17,
+    "tempo_total_horas": 17
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "AM",
-    "dias": 0,
-    "horas": 23,
-    "tempo_total_horas": 23
+    "dias": 1,
+    "horas": 4,
+    "tempo_total_horas": 28
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "AP",
     "dias": 0,
-    "horas": 18,
-    "tempo_total_horas": 18
+    "horas": 19,
+    "tempo_total_horas": 19
   },
   {
     "ano": 2026,
@@ -1556,8 +1556,8 @@
     "mes": 5,
     "uf": "CE",
     "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
+    "horas": 3,
+    "tempo_total_horas": 27
   },
   {
     "ano": 2026,
@@ -1580,8 +1580,8 @@
     "mes": 5,
     "uf": "GO",
     "dias": 0,
-    "horas": 22,
-    "tempo_total_horas": 22
+    "horas": 21,
+    "tempo_total_horas": 21
   },
   {
     "ano": 2026,
@@ -1596,8 +1596,8 @@
     "mes": 5,
     "uf": "MG",
     "dias": 1,
-    "horas": 11,
-    "tempo_total_horas": 35
+    "horas": 13,
+    "tempo_total_horas": 37
   },
   {
     "ano": 2026,
@@ -1612,16 +1612,16 @@
     "mes": 5,
     "uf": "MT",
     "dias": 2,
-    "horas": 8,
-    "tempo_total_horas": 56
+    "horas": 12,
+    "tempo_total_horas": 60
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "PA",
     "dias": 2,
-    "horas": 15,
-    "tempo_total_horas": 63
+    "horas": 20,
+    "tempo_total_horas": 68
   },
   {
     "ano": 2026,
@@ -1660,16 +1660,16 @@
     "mes": 5,
     "uf": "RJ",
     "dias": 1,
-    "horas": 6,
-    "tempo_total_horas": 30
+    "horas": 7,
+    "tempo_total_horas": 31
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "RN",
     "dias": 1,
-    "horas": 4,
-    "tempo_total_horas": 28
+    "horas": 6,
+    "tempo_total_horas": 30
   },
   {
     "ano": 2026,
@@ -1692,8 +1692,8 @@
     "mes": 5,
     "uf": "RS",
     "dias": 1,
-    "horas": 10,
-    "tempo_total_horas": 34
+    "horas": 16,
+    "tempo_total_horas": 40
   },
   {
     "ano": 2026,
@@ -1716,8 +1716,8 @@
     "mes": 5,
     "uf": "SP",
     "dias": 2,
-    "horas": 0,
-    "tempo_total_horas": 48
+    "horas": 1,
+    "tempo_total_horas": 49
   },
   {
     "ano": 2026,
@@ -2379,9 +2379,9 @@
     "ano": 2026,
     "mes": 9,
     "uf": "AC",
-    "dias": 1,
-    "horas": 0,
-    "tempo_total_horas": 24
+    "dias": 0,
+    "horas": 23,
+    "tempo_total_horas": 23
   },
   {
     "ano": 2026,
@@ -2404,8 +2404,8 @@
     "mes": 9,
     "uf": "AP",
     "dias": 1,
-    "horas": 8,
-    "tempo_total_horas": 32
+    "horas": 9,
+    "tempo_total_horas": 33
   },
   {
     "ano": 2026,
@@ -2420,24 +2420,24 @@
     "mes": 9,
     "uf": "CE",
     "dias": 0,
-    "horas": 20,
-    "tempo_total_horas": 20
+    "horas": 19,
+    "tempo_total_horas": 19
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "DF",
     "dias": 1,
-    "horas": 1,
-    "tempo_total_horas": 25
+    "horas": 0,
+    "tempo_total_horas": 24
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "ES",
     "dias": 0,
-    "horas": 12,
-    "tempo_total_horas": 12
+    "horas": 11,
+    "tempo_total_horas": 11
   },
   {
     "ano": 2026,
@@ -2476,16 +2476,16 @@
     "mes": 9,
     "uf": "MT",
     "dias": 2,
-    "horas": 16,
-    "tempo_total_horas": 64
+    "horas": 18,
+    "tempo_total_horas": 66
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "PA",
     "dias": 2,
-    "horas": 9,
-    "tempo_total_horas": 57
+    "horas": 11,
+    "tempo_total_horas": 59
   },
   {
     "ano": 2026,
@@ -2532,8 +2532,8 @@
     "mes": 9,
     "uf": "RN",
     "dias": 0,
-    "horas": 22,
-    "tempo_total_horas": 22
+    "horas": 21,
+    "tempo_total_horas": 21
   },
   {
     "ano": 2026,
@@ -2555,9 +2555,9 @@
     "ano": 2026,
     "mes": 9,
     "uf": "RS",
-    "dias": 0,
-    "horas": 23,
-    "tempo_total_horas": 23
+    "dias": 1,
+    "horas": 0,
+    "tempo_total_horas": 24
   },
   {
     "ano": 2026,
@@ -2580,15 +2580,15 @@
     "mes": 9,
     "uf": "SP",
     "dias": 1,
-    "horas": 16,
-    "tempo_total_horas": 40
+    "horas": 17,
+    "tempo_total_horas": 41
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "TO",
     "dias": 0,
-    "horas": 23,
-    "tempo_total_horas": 23
+    "horas": 22,
+    "tempo_total_horas": 22
   }
 ]

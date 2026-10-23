@@ -1,0 +1,116 @@
+Company Size Sebrae ID,Company Size Sebrae,State ID,State,Establishments
+3,Empresa de Pequeno Porte (EPP),11,Rondônia,11689.0
+3,Empresa de Pequeno Porte (EPP),12,Acre,3482.0
+3,Empresa de Pequeno Porte (EPP),13,Amazonas,30351.0
+3,Empresa de Pequeno Porte (EPP),14,Roraima,3831.0
+3,Empresa de Pequeno Porte (EPP),15,Pará,49893.0
+3,Empresa de Pequeno Porte (EPP),16,Amapá,5405.0
+3,Empresa de Pequeno Porte (EPP),17,Tocantins,11834.0
+3,Empresa de Pequeno Porte (EPP),21,Maranhão,25651.0
+3,Empresa de Pequeno Porte (EPP),22,Piauí,14477.0
+3,Empresa de Pequeno Porte (EPP),23,Ceará,31328.0
+3,Empresa de Pequeno Porte (EPP),24,Rio Grande do Norte,15250.0
+3,Empresa de Pequeno Porte (EPP),25,Paraíba,16057.0
+3,Empresa de Pequeno Porte (EPP),26,Pernambuco,42608.0
+3,Empresa de Pequeno Porte (EPP),27,Alagoas,13920.0
+3,Empresa de Pequeno Porte (EPP),28,Sergipe,8782.0
+3,Empresa de Pequeno Porte (EPP),29,Bahia,52440.0
+3,Empresa de Pequeno Porte (EPP),31,Minas Gerais,131385.0
+3,Empresa de Pequeno Porte (EPP),32,Espírito Santo,31565.0
+3,Empresa de Pequeno Porte (EPP),33,Rio de Janeiro,116161.0
+3,Empresa de Pequeno Porte (EPP),35,São Paulo,531856.0
+3,Empresa de Pequeno Porte (EPP),41,Paraná,96270.0
+3,Empresa de Pequeno Porte (EPP),42,Santa Catarina,93540.0
+3,Empresa de Pequeno Porte (EPP),43,Rio Grande do Sul,106227.0
+3,Empresa de Pequeno Porte (EPP),50,Mato Grosso do Sul,26857.0
+3,Empresa de Pequeno Porte (EPP),51,Mato Grosso,52405.0
+3,Empresa de Pequeno Porte (EPP),52,Goiás,49731.0
+3,Empresa de Pequeno Porte (EPP),53,Distrito Federal,33874.0
+3,Empresa de Pequeno Porte (EPP),93,Exterior,17.0
+3,Empresa de Pequeno Porte (EPP),99,Não informado,82.0
+4,Microempresa (ME),11,Rondônia,60712.0
+4,Microempresa (ME),12,Acre,21311.0
+4,Microempresa (ME),13,Amazonas,95336.0
+4,Microempresa (ME),14,Roraima,17507.0
+4,Microempresa (ME),15,Pará,176782.0
+4,Microempresa (ME),16,Amapá,20030.0
+4,Microempresa (ME),17,Tocantins,59848.0
+4,Microempresa (ME),21,Maranhão,152395.0
+4,Microempresa (ME),22,Piauí,91780.0
+4,Microempresa (ME),23,Ceará,280371.0
+4,Microempresa (ME),24,Rio Grande do Norte,105714.0
+4,Microempresa (ME),25,Paraíba,112476.0
+4,Microempresa (ME),26,Pernambuco,226970.0
+4,Microempresa (ME),27,Alagoas,73561.0
+4,Microempresa (ME),28,Sergipe,60416.0
+4,Microempresa (ME),29,Bahia,448810.0
+4,Microempresa (ME),31,Minas Gerais,964234.0
+4,Microempresa (ME),32,Espírito Santo,183663.0
+4,Microempresa (ME),33,Rio de Janeiro,654448.0
+4,Microempresa (ME),35,São Paulo,2827952.0
+4,Microempresa (ME),41,Paraná,768765.0
+4,Microempresa (ME),42,Santa Catarina,531741.0
+4,Microempresa (ME),43,Rio Grande do Sul,606429.0
+4,Microempresa (ME),50,Mato Grosso do Sul,129605.0
+4,Microempresa (ME),51,Mato Grosso,191549.0
+4,Microempresa (ME),52,Goiás,371687.0
+4,Microempresa (ME),53,Distrito Federal,180848.0
+4,Microempresa (ME),93,Exterior,59.0
+4,Microempresa (ME),99,Não informado,193.0
+5,Micro Empresário Individual (MEI),11,Rondônia,82411.0
+5,Micro Empresário Individual (MEI),12,Acre,21987.0
+5,Micro Empresário Individual (MEI),13,Amazonas,131394.0
+5,Micro Empresário Individual (MEI),14,Roraima,25148.0
+5,Micro Empresário Individual (MEI),15,Pará,231801.0
+5,Micro Empresário Individual (MEI),16,Amapá,19332.0
+5,Micro Empresário Individual (MEI),17,Tocantins,86001.0
+5,Micro Empresário Individual (MEI),21,Maranhão,144906.0
+5,Micro Empresário Individual (MEI),22,Piauí,98476.0
+5,Micro Empresário Individual (MEI),23,Ceará,358915.0
+5,Micro Empresário Individual (MEI),24,Rio Grande do Norte,157095.0
+5,Micro Empresário Individual (MEI),25,Paraíba,175986.0
+5,Micro Empresário Individual (MEI),26,Pernambuco,383500.0
+5,Micro Empresário Individual (MEI),27,Alagoas,119845.0
+5,Micro Empresário Individual (MEI),28,Sergipe,89225.0
+5,Micro Empresário Individual (MEI),29,Bahia,627728.0
+5,Micro Empresário Individual (MEI),31,Minas Gerais,1503005.0
+5,Micro Empresário Individual (MEI),32,Espírito Santo,336437.0
+5,Micro Empresário Individual (MEI),33,Rio de Janeiro,1306806.0
+5,Micro Empresário Individual (MEI),35,São Paulo,3922792.0
+5,Micro Empresário Individual (MEI),41,Paraná,936282.0
+5,Micro Empresário Individual (MEI),42,Santa Catarina,745334.0
+5,Micro Empresário Individual (MEI),43,Rio Grande do Sul,853487.0
+5,Micro Empresário Individual (MEI),50,Mato Grosso do Sul,181374.0
+5,Micro Empresário Individual (MEI),51,Mato Grosso,266099.0
+5,Micro Empresário Individual (MEI),52,Goiás,529824.0
+5,Micro Empresário Individual (MEI),53,Distrito Federal,208901.0
+5,Micro Empresário Individual (MEI),99,Não informado,210.0
+9,Outros,11,Rondônia,9160.0
+9,Outros,12,Acre,2422.0
+9,Outros,13,Amazonas,13921.0
+9,Outros,14,Roraima,2204.0
+9,Outros,15,Pará,21439.0
+9,Outros,16,Amapá,2269.0
+9,Outros,17,Tocantins,9509.0
+9,Outros,21,Maranhão,16163.0
+9,Outros,22,Piauí,10217.0
+9,Outros,23,Ceará,37885.0
+9,Outros,24,Rio Grande do Norte,16163.0
+9,Outros,25,Paraíba,14111.0
+9,Outros,26,Pernambuco,40710.0
+9,Outros,27,Alagoas,10935.0
+9,Outros,28,Sergipe,7091.0
+9,Outros,29,Bahia,53073.0
+9,Outros,31,Minas Gerais,154082.0
+9,Outros,32,Espírito Santo,34302.0
+9,Outros,33,Rio de Janeiro,136143.0
+9,Outros,35,São Paulo,1249664.0
+9,Outros,41,Paraná,117312.0
+9,Outros,42,Santa Catarina,105033.0
+9,Outros,43,Rio Grande do Sul,97757.0
+9,Outros,50,Mato Grosso do Sul,23287.0
+9,Outros,51,Mato Grosso,36651.0
+9,Outros,52,Goiás,54396.0
+9,Outros,53,Distrito Federal,30485.0
+9,Outros,93,Exterior,423.0
+9,Outros,99,Não informado,76.0

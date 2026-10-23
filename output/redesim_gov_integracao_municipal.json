@@ -5,8 +5,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -48,33 +48,33 @@
     "mes": 10,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2025,
     "mes": 10,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2025,
     "mes": 10,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2025,
@@ -104,8 +104,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -137,8 +137,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -158,11 +158,11 @@
     "mes": 10,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2025,
@@ -180,11 +180,11 @@
     "mes": 10,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2025,
@@ -192,8 +192,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -202,22 +202,22 @@
     "mes": 10,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2025,
     "mes": 10,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2025,
@@ -246,22 +246,22 @@
     "mes": 10,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2025,
     "mes": 10,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2025,
@@ -269,8 +269,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -279,11 +279,11 @@
     "mes": 10,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2025,
@@ -302,8 +302,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -345,33 +345,33 @@
     "mes": 11,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2025,
     "mes": 11,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2025,
     "mes": 11,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2025,
@@ -401,8 +401,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -434,8 +434,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -455,11 +455,11 @@
     "mes": 11,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2025,
@@ -477,11 +477,11 @@
     "mes": 11,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2025,
@@ -489,8 +489,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -499,22 +499,22 @@
     "mes": 11,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2025,
     "mes": 11,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2025,
@@ -543,22 +543,22 @@
     "mes": 11,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2025,
     "mes": 11,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2025,
@@ -566,8 +566,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -576,11 +576,11 @@
     "mes": 11,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2025,
@@ -599,8 +599,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -642,33 +642,33 @@
     "mes": 12,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2025,
     "mes": 12,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2025,
@@ -678,23 +678,617 @@
     "municipios_integrados": 319,
     "pj_ativas_integrados": 1591655,
     "pj_total_uf": 2216398,
+    "codigo_faixa": 0,
+    "pct_integrados": 37.4
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "SP",
+    "total_municipios": 645,
+    "municipios_integrados": 534,
+    "pj_ativas_integrados": 6166949,
+    "pj_total_uf": 7300815,
+    "codigo_faixa": 0,
+    "pct_integrados": 82.8
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "AC",
+    "total_municipios": 22,
+    "municipios_integrados": 22,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "CE",
+    "total_municipios": 184,
+    "municipios_integrados": 184,
+    "pj_ativas_integrados": 636046,
+    "pj_total_uf": 636046,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "MS",
+    "total_municipios": 79,
+    "municipios_integrados": 70,
+    "pj_ativas_integrados": 358323,
+    "pj_total_uf": 370490,
+    "codigo_faixa": 0,
+    "pct_integrados": 88.6
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "MT",
+    "total_municipios": 142,
+    "municipios_integrados": 141,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
+    "codigo_faixa": 0,
+    "pct_integrados": 99.3
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "GO",
+    "total_municipios": 246,
+    "municipios_integrados": 178,
+    "pj_ativas_integrados": 570920,
+    "pj_total_uf": 716312,
+    "codigo_faixa": 0,
+    "pct_integrados": 72.4
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "AL",
+    "total_municipios": 102,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
+    "codigo_faixa": 0,
+    "pct_integrados": 76.5
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "AM",
+    "total_municipios": 62,
+    "municipios_integrados": 62,
+    "pj_ativas_integrados": 225375,
+    "pj_total_uf": 225375,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "ES",
+    "total_municipios": 78,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
+    "codigo_faixa": 0,
+    "pct_integrados": 76.9
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "AP",
+    "total_municipios": 16,
+    "municipios_integrados": 15,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
+    "codigo_faixa": 0,
+    "pct_integrados": 93.8
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PA",
+    "total_municipios": 144,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
+    "codigo_faixa": 0,
+    "pct_integrados": 81.2
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PB",
+    "total_municipios": 223,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
+    "codigo_faixa": 0,
+    "pct_integrados": 68.6
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PE",
+    "total_municipios": 185,
+    "municipios_integrados": 106,
+    "pj_ativas_integrados": 457904,
+    "pj_total_uf": 683577,
+    "codigo_faixa": 0,
+    "pct_integrados": 57.3
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RJ",
+    "total_municipios": 92,
+    "municipios_integrados": 91,
+    "pj_ativas_integrados": 1896134,
+    "pj_total_uf": 1897847,
+    "codigo_faixa": 0,
+    "pct_integrados": 98.9
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "PI",
+    "total_municipios": 224,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
+    "codigo_faixa": 0,
+    "pct_integrados": 64.7
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "TO",
+    "total_municipios": 139,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
+    "codigo_faixa": 0,
+    "pct_integrados": 71.2
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RN",
+    "total_municipios": 167,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
+    "codigo_faixa": 0,
+    "pct_integrados": 70.1
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "RO",
+    "total_municipios": 52,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2025,
+    "mes": 12,
+    "uf": "BA",
+    "total_municipios": 417,
+    "municipios_integrados": 263,
+    "pj_ativas_integrados": 988910,
+    "pj_total_uf": 1140704,
+    "codigo_faixa": 0,
+    "pct_integrados": 63.1
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RR",
+    "total_municipios": 15,
+    "municipios_integrados": 15,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RS",
+    "total_municipios": 497,
+    "municipios_integrados": 490,
+    "pj_ativas_integrados": 1469466,
+    "pj_total_uf": 1471035,
+    "codigo_faixa": 0,
+    "pct_integrados": 98.6
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "PR",
+    "total_municipios": 399,
+    "municipios_integrados": 381,
+    "pj_ativas_integrados": 1212693,
+    "pj_total_uf": 1471123,
+    "codigo_faixa": 0,
+    "pct_integrados": 95.5
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "DF",
+    "total_municipios": 1,
+    "municipios_integrados": 1,
+    "pj_ativas_integrados": 363253,
+    "pj_total_uf": 363253,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "SC",
+    "total_municipios": 295,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
+    "codigo_faixa": 0,
+    "pct_integrados": 94.9
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "SE",
+    "total_municipios": 75,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
+    "codigo_faixa": 0,
+    "pct_integrados": 89.3
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MA",
+    "total_municipios": 217,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
+    "codigo_faixa": 0,
+    "pct_integrados": 67.7
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MG",
+    "total_municipios": 853,
+    "municipios_integrados": 319,
+    "pj_ativas_integrados": 1591655,
+    "pj_total_uf": 2216398,
+    "codigo_faixa": 0,
+    "pct_integrados": 37.4
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "SP",
+    "total_municipios": 645,
+    "municipios_integrados": 534,
+    "pj_ativas_integrados": 6166949,
+    "pj_total_uf": 7300815,
+    "codigo_faixa": 0,
+    "pct_integrados": 82.8
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "AC",
+    "total_municipios": 22,
+    "municipios_integrados": 22,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "CE",
+    "total_municipios": 184,
+    "municipios_integrados": 184,
+    "pj_ativas_integrados": 636046,
+    "pj_total_uf": 636046,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MS",
+    "total_municipios": 79,
+    "municipios_integrados": 70,
+    "pj_ativas_integrados": 358323,
+    "pj_total_uf": 370490,
+    "codigo_faixa": 0,
+    "pct_integrados": 88.6
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "MT",
+    "total_municipios": 142,
+    "municipios_integrados": 141,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
+    "codigo_faixa": 0,
+    "pct_integrados": 99.3
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "GO",
+    "total_municipios": 246,
+    "municipios_integrados": 178,
+    "pj_ativas_integrados": 570920,
+    "pj_total_uf": 716312,
+    "codigo_faixa": 0,
+    "pct_integrados": 72.4
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "AL",
+    "total_municipios": 102,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
+    "codigo_faixa": 0,
+    "pct_integrados": 76.5
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "AM",
+    "total_municipios": 62,
+    "municipios_integrados": 62,
+    "pj_ativas_integrados": 225375,
+    "pj_total_uf": 225375,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "ES",
+    "total_municipios": 78,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
+    "codigo_faixa": 0,
+    "pct_integrados": 76.9
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "AP",
+    "total_municipios": 16,
+    "municipios_integrados": 15,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
+    "codigo_faixa": 0,
+    "pct_integrados": 93.8
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "PA",
+    "total_municipios": 144,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
+    "codigo_faixa": 0,
+    "pct_integrados": 81.2
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "PB",
+    "total_municipios": 223,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
+    "codigo_faixa": 0,
+    "pct_integrados": 68.6
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "PE",
+    "total_municipios": 185,
+    "municipios_integrados": 106,
+    "pj_ativas_integrados": 457904,
+    "pj_total_uf": 683577,
+    "codigo_faixa": 0,
+    "pct_integrados": 57.3
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RJ",
+    "total_municipios": 92,
+    "municipios_integrados": 91,
+    "pj_ativas_integrados": 1896134,
+    "pj_total_uf": 1897847,
+    "codigo_faixa": 0,
+    "pct_integrados": 98.9
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "PI",
+    "total_municipios": 224,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
+    "codigo_faixa": 0,
+    "pct_integrados": 64.7
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "TO",
+    "total_municipios": 139,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
+    "codigo_faixa": 0,
+    "pct_integrados": 71.2
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RN",
+    "total_municipios": 167,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
+    "codigo_faixa": 0,
+    "pct_integrados": 70.1
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "RO",
+    "total_municipios": 52,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 1,
+    "uf": "BA",
+    "total_municipios": 417,
+    "municipios_integrados": 263,
+    "pj_ativas_integrados": 988910,
+    "pj_total_uf": 1140704,
+    "codigo_faixa": 0,
+    "pct_integrados": 63.1
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RR",
+    "total_municipios": 15,
+    "municipios_integrados": 15,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "RS",
+    "total_municipios": 497,
+    "municipios_integrados": 490,
+    "pj_ativas_integrados": 1469466,
+    "pj_total_uf": 1471035,
+    "codigo_faixa": 0,
+    "pct_integrados": 98.6
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "PR",
+    "total_municipios": 399,
+    "municipios_integrados": 381,
+    "pj_ativas_integrados": 1212693,
+    "pj_total_uf": 1471123,
+    "codigo_faixa": 0,
+    "pct_integrados": 95.5
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "DF",
+    "total_municipios": 1,
+    "municipios_integrados": 1,
+    "pj_ativas_integrados": 363253,
+    "pj_total_uf": 363253,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SC",
+    "total_municipios": 295,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
+    "codigo_faixa": 0,
+    "pct_integrados": 94.9
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SE",
+    "total_municipios": 75,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
+    "codigo_faixa": 0,
+    "pct_integrados": 89.3
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MA",
+    "total_municipios": 217,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
+    "codigo_faixa": 0,
+    "pct_integrados": 67.7
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "MG",
+    "total_municipios": 853,
+    "municipios_integrados": 319,
+    "pj_ativas_integrados": 1591655,
+    "pj_total_uf": 2216398,
+    "codigo_faixa": 0,
+    "pct_integrados": 37.4
+  },
+  {
+    "ano": 2026,
+    "mes": 2,
+    "uf": "SP",
+    "total_municipios": 645,
+    "municipios_integrados": 534,
+    "pj_ativas_integrados": 6166949,
+    "pj_total_uf": 7300815,
     "codigo_faixa": 1,
-    "pct_integrados": 37.4
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "SP",
-    "total_municipios": 645,
-    "municipios_integrados": 534,
-    "pj_ativas_integrados": 6166949,
-    "pj_total_uf": 7300815,
-    "codigo_faixa": 4,
     "pct_integrados": 82.8
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "CE",
     "total_municipios": 184,
     "municipios_integrados": 184,
@@ -704,19 +1298,19 @@
     "pct_integrados": 100.0
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "MS",
     "total_municipios": 79,
     "municipios_integrados": 70,
@@ -726,19 +1320,19 @@
     "pct_integrados": 88.6
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "GO",
     "total_municipios": 246,
     "municipios_integrados": 178,
@@ -748,19 +1342,19 @@
     "pct_integrados": 72.4
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "AM",
     "total_municipios": 62,
     "municipios_integrados": 62,
@@ -770,642 +1364,48 @@
     "pct_integrados": 100.0
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
   {
-    "ano": 2025,
-    "mes": 12,
+    "ano": 2026,
+    "mes": 2,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
-    "codigo_faixa": 0,
-    "pct_integrados": 84.0
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PB",
-    "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
-    "codigo_faixa": 0,
-    "pct_integrados": 65.9
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PE",
-    "total_municipios": 185,
-    "municipios_integrados": 106,
-    "pj_ativas_integrados": 457904,
-    "pj_total_uf": 683577,
-    "codigo_faixa": 0,
-    "pct_integrados": 57.3
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RJ",
-    "total_municipios": 92,
-    "municipios_integrados": 91,
-    "pj_ativas_integrados": 1896134,
-    "pj_total_uf": 1897847,
-    "codigo_faixa": 0,
-    "pct_integrados": 98.9
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "PI",
-    "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
-    "codigo_faixa": 0,
-    "pct_integrados": 62.5
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "TO",
-    "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
-    "codigo_faixa": 0,
-    "pct_integrados": 72.7
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RN",
-    "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
-    "codigo_faixa": 3,
-    "pct_integrados": 70.1
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "RO",
-    "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
-  },
-  {
-    "ano": 2025,
-    "mes": 12,
-    "uf": "BA",
-    "total_municipios": 417,
-    "municipios_integrados": 263,
-    "pj_ativas_integrados": 988910,
-    "pj_total_uf": 1140704,
-    "codigo_faixa": 0,
-    "pct_integrados": 63.1
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RR",
-    "total_municipios": 15,
-    "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RS",
-    "total_municipios": 497,
-    "municipios_integrados": 490,
-    "pj_ativas_integrados": 1469466,
-    "pj_total_uf": 1471035,
-    "codigo_faixa": 0,
-    "pct_integrados": 98.6
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "PR",
-    "total_municipios": 399,
-    "municipios_integrados": 381,
-    "pj_ativas_integrados": 1212693,
-    "pj_total_uf": 1471123,
-    "codigo_faixa": 0,
-    "pct_integrados": 95.5
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "DF",
-    "total_municipios": 1,
-    "municipios_integrados": 1,
-    "pj_ativas_integrados": 363253,
-    "pj_total_uf": 363253,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "SC",
-    "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
-    "codigo_faixa": 2,
-    "pct_integrados": 95.6
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "SE",
-    "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
-    "codigo_faixa": 0,
-    "pct_integrados": 90.7
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MA",
-    "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
-    "codigo_faixa": 0,
-    "pct_integrados": 64.5
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MG",
-    "total_municipios": 853,
-    "municipios_integrados": 319,
-    "pj_ativas_integrados": 1591655,
-    "pj_total_uf": 2216398,
-    "codigo_faixa": 3,
-    "pct_integrados": 37.4
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "SP",
-    "total_municipios": 645,
-    "municipios_integrados": 534,
-    "pj_ativas_integrados": 6166949,
-    "pj_total_uf": 7300815,
-    "codigo_faixa": 3,
-    "pct_integrados": 82.8
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "CE",
-    "total_municipios": 184,
-    "municipios_integrados": 184,
-    "pj_ativas_integrados": 636046,
-    "pj_total_uf": 636046,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "AC",
-    "total_municipios": 22,
-    "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MS",
-    "total_municipios": 79,
-    "municipios_integrados": 70,
-    "pj_ativas_integrados": 358323,
-    "pj_total_uf": 370490,
-    "codigo_faixa": 0,
-    "pct_integrados": 88.6
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "MT",
-    "total_municipios": 142,
-    "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
-    "codigo_faixa": 0,
-    "pct_integrados": 99.3
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "GO",
-    "total_municipios": 246,
-    "municipios_integrados": 178,
-    "pj_ativas_integrados": 570920,
-    "pj_total_uf": 716312,
-    "codigo_faixa": 0,
-    "pct_integrados": 72.4
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "AL",
-    "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
-    "codigo_faixa": 0,
-    "pct_integrados": 72.5
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "AM",
-    "total_municipios": 62,
-    "municipios_integrados": 62,
-    "pj_ativas_integrados": 225375,
-    "pj_total_uf": 225375,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "ES",
-    "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
-    "codigo_faixa": 0,
-    "pct_integrados": 91.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "AP",
-    "total_municipios": 16,
-    "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
-    "codigo_faixa": 0,
-    "pct_integrados": 93.8
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "PA",
-    "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
-    "codigo_faixa": 0,
-    "pct_integrados": 84.0
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "PB",
-    "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
-    "codigo_faixa": 0,
-    "pct_integrados": 65.9
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "PE",
-    "total_municipios": 185,
-    "municipios_integrados": 106,
-    "pj_ativas_integrados": 457904,
-    "pj_total_uf": 683577,
-    "codigo_faixa": 0,
-    "pct_integrados": 57.3
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RJ",
-    "total_municipios": 92,
-    "municipios_integrados": 91,
-    "pj_ativas_integrados": 1896134,
-    "pj_total_uf": 1897847,
-    "codigo_faixa": 0,
-    "pct_integrados": 98.9
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "PI",
-    "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
-    "codigo_faixa": 0,
-    "pct_integrados": 62.5
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "TO",
-    "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
-    "codigo_faixa": 0,
-    "pct_integrados": 72.7
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RN",
-    "total_municipios": 167,
-    "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
-    "codigo_faixa": 1,
-    "pct_integrados": 70.1
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "RO",
-    "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
-    "codigo_faixa": 0,
-    "pct_integrados": 92.3
-  },
-  {
-    "ano": 2026,
-    "mes": 1,
-    "uf": "BA",
-    "total_municipios": 417,
-    "municipios_integrados": 263,
-    "pj_ativas_integrados": 988910,
-    "pj_total_uf": 1140704,
-    "codigo_faixa": 0,
-    "pct_integrados": 63.1
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RR",
-    "total_municipios": 15,
-    "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "RS",
-    "total_municipios": 497,
-    "municipios_integrados": 490,
-    "pj_ativas_integrados": 1469466,
-    "pj_total_uf": 1471035,
-    "codigo_faixa": 0,
-    "pct_integrados": 98.6
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PR",
-    "total_municipios": 399,
-    "municipios_integrados": 381,
-    "pj_ativas_integrados": 1212693,
-    "pj_total_uf": 1471123,
-    "codigo_faixa": 0,
-    "pct_integrados": 95.5
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "DF",
-    "total_municipios": 1,
-    "municipios_integrados": 1,
-    "pj_ativas_integrados": 363253,
-    "pj_total_uf": 363253,
-    "codigo_faixa": 1,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "SC",
-    "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
-    "codigo_faixa": 0,
-    "pct_integrados": 95.6
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "SE",
-    "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
-    "codigo_faixa": 0,
-    "pct_integrados": 90.7
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MA",
-    "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
-    "codigo_faixa": 0,
-    "pct_integrados": 64.5
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MG",
-    "total_municipios": 853,
-    "municipios_integrados": 319,
-    "pj_ativas_integrados": 1591655,
-    "pj_total_uf": 2216398,
-    "codigo_faixa": 3,
-    "pct_integrados": 37.4
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "SP",
-    "total_municipios": 645,
-    "municipios_integrados": 534,
-    "pj_ativas_integrados": 6166949,
-    "pj_total_uf": 7300815,
-    "codigo_faixa": 3,
-    "pct_integrados": 82.8
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AC",
-    "total_municipios": 22,
-    "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "CE",
-    "total_municipios": 184,
-    "municipios_integrados": 184,
-    "pj_ativas_integrados": 636046,
-    "pj_total_uf": 636046,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MS",
-    "total_municipios": 79,
-    "municipios_integrados": 70,
-    "pj_ativas_integrados": 358323,
-    "pj_total_uf": 370490,
-    "codigo_faixa": 0,
-    "pct_integrados": 88.6
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "MT",
-    "total_municipios": 142,
-    "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
-    "codigo_faixa": 0,
-    "pct_integrados": 99.3
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "GO",
-    "total_municipios": 246,
-    "municipios_integrados": 178,
-    "pj_ativas_integrados": 570920,
-    "pj_total_uf": 716312,
-    "codigo_faixa": 1,
-    "pct_integrados": 72.4
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AL",
-    "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
-    "codigo_faixa": 0,
-    "pct_integrados": 72.5
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AM",
-    "total_municipios": 62,
-    "municipios_integrados": 62,
-    "pj_ativas_integrados": 225375,
-    "pj_total_uf": 225375,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "ES",
-    "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
-    "codigo_faixa": 0,
-    "pct_integrados": 91.0
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "AP",
-    "total_municipios": 16,
-    "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
-    "codigo_faixa": 0,
-    "pct_integrados": 93.8
-  },
-  {
-    "ano": 2026,
-    "mes": 2,
-    "uf": "PA",
-    "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
-    "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 2,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -1434,22 +1434,22 @@
     "mes": 2,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 2,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -1457,8 +1457,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -1467,11 +1467,11 @@
     "mes": 2,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -1490,8 +1490,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -1533,33 +1533,33 @@
     "mes": 3,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -1569,7 +1569,7 @@
     "municipios_integrados": 319,
     "pj_ativas_integrados": 1591655,
     "pj_total_uf": 2216398,
-    "codigo_faixa": 2,
+    "codigo_faixa": 0,
     "pct_integrados": 37.4
   },
   {
@@ -1580,7 +1580,7 @@
     "municipios_integrados": 534,
     "pj_ativas_integrados": 6166949,
     "pj_total_uf": 7300815,
-    "codigo_faixa": 2,
+    "codigo_faixa": 0,
     "pct_integrados": 82.8
   },
   {
@@ -1600,8 +1600,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -1622,8 +1622,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -1643,11 +1643,11 @@
     "mes": 3,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -1665,11 +1665,11 @@
     "mes": 3,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -1677,8 +1677,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -1687,22 +1687,22 @@
     "mes": 3,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -1731,22 +1731,22 @@
     "mes": 3,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 3,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -1754,8 +1754,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -1764,11 +1764,11 @@
     "mes": 3,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -1787,8 +1787,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -1806,17 +1806,6 @@
   {
     "ano": 2026,
     "mes": 4,
-    "uf": "DF",
-    "total_municipios": 1,
-    "municipios_integrados": 1,
-    "pj_ativas_integrados": 363253,
-    "pj_total_uf": 363253,
-    "codigo_faixa": 1,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 4,
     "uf": "PR",
     "total_municipios": 399,
     "municipios_integrados": 381,
@@ -1828,35 +1817,46 @@
   {
     "ano": 2026,
     "mes": 4,
+    "uf": "DF",
+    "total_municipios": 1,
+    "municipios_integrados": 1,
+    "pj_ativas_integrados": 363253,
+    "pj_total_uf": 363253,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 4,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 4,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 4,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -1866,7 +1866,7 @@
     "municipios_integrados": 319,
     "pj_ativas_integrados": 1591655,
     "pj_total_uf": 2216398,
-    "codigo_faixa": 2,
+    "codigo_faixa": 0,
     "pct_integrados": 37.4
   },
   {
@@ -1883,22 +1883,22 @@
   {
     "ano": 2026,
     "mes": 4,
-    "uf": "CE",
-    "total_municipios": 184,
-    "municipios_integrados": 184,
-    "pj_ativas_integrados": 636046,
-    "pj_total_uf": 636046,
+    "uf": "AC",
+    "total_municipios": 22,
+    "municipios_integrados": 22,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
   {
     "ano": 2026,
     "mes": 4,
-    "uf": "AC",
-    "total_municipios": 22,
-    "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "uf": "CE",
+    "total_municipios": 184,
+    "municipios_integrados": 184,
+    "pj_ativas_integrados": 636046,
+    "pj_total_uf": 636046,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -1919,8 +1919,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -1940,11 +1940,11 @@
     "mes": 4,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -1962,11 +1962,11 @@
     "mes": 4,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -1974,8 +1974,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -1984,22 +1984,22 @@
     "mes": 4,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 4,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -2028,22 +2028,22 @@
     "mes": 4,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 4,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -2051,8 +2051,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -2061,11 +2061,11 @@
     "mes": 4,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -2084,8 +2084,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2103,17 +2103,6 @@
   {
     "ano": 2026,
     "mes": 5,
-    "uf": "DF",
-    "total_municipios": 1,
-    "municipios_integrados": 1,
-    "pj_ativas_integrados": 363253,
-    "pj_total_uf": 363253,
-    "codigo_faixa": 0,
-    "pct_integrados": 100.0
-  },
-  {
-    "ano": 2026,
-    "mes": 5,
     "uf": "PR",
     "total_municipios": 399,
     "municipios_integrados": 381,
@@ -2125,35 +2114,46 @@
   {
     "ano": 2026,
     "mes": 5,
+    "uf": "DF",
+    "total_municipios": 1,
+    "municipios_integrados": 1,
+    "pj_ativas_integrados": 363253,
+    "pj_total_uf": 363253,
+    "codigo_faixa": 0,
+    "pct_integrados": 100.0
+  },
+  {
+    "ano": 2026,
+    "mes": 5,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -2183,8 +2183,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2216,8 +2216,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -2237,11 +2237,11 @@
     "mes": 5,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -2259,11 +2259,11 @@
     "mes": 5,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -2271,8 +2271,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -2281,22 +2281,22 @@
     "mes": 5,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -2325,22 +2325,22 @@
     "mes": 5,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 5,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -2348,8 +2348,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -2358,11 +2358,11 @@
     "mes": 5,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -2381,8 +2381,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2424,33 +2424,33 @@
     "mes": 6,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 6,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 6,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -2480,8 +2480,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2513,8 +2513,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -2534,11 +2534,11 @@
     "mes": 6,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -2556,11 +2556,11 @@
     "mes": 6,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -2568,8 +2568,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -2578,22 +2578,22 @@
     "mes": 6,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 6,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -2622,22 +2622,22 @@
     "mes": 6,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 6,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -2645,8 +2645,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -2655,11 +2655,11 @@
     "mes": 6,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -2678,8 +2678,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2721,33 +2721,33 @@
     "mes": 7,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 7,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 7,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -2777,8 +2777,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -2810,8 +2810,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -2831,11 +2831,11 @@
     "mes": 7,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -2853,11 +2853,11 @@
     "mes": 7,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -2865,8 +2865,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -2875,22 +2875,22 @@
     "mes": 7,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 7,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -2919,22 +2919,22 @@
     "mes": 7,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 7,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -2942,8 +2942,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -2952,11 +2952,11 @@
     "mes": 7,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -2975,8 +2975,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -3018,33 +3018,33 @@
     "mes": 8,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 8,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 8,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -3085,8 +3085,8 @@
     "uf": "AC",
     "total_municipios": 22,
     "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -3107,8 +3107,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -3128,11 +3128,11 @@
     "mes": 8,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -3150,11 +3150,11 @@
     "mes": 8,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -3162,8 +3162,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -3172,22 +3172,22 @@
     "mes": 8,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 8,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -3216,22 +3216,22 @@
     "mes": 8,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 8,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -3239,8 +3239,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -3249,11 +3249,11 @@
     "mes": 8,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,
@@ -3272,8 +3272,8 @@
     "uf": "RR",
     "total_municipios": 15,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -3315,33 +3315,33 @@
     "mes": 9,
     "uf": "SC",
     "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
+    "municipios_integrados": 280,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
     "codigo_faixa": 0,
-    "pct_integrados": 95.6
+    "pct_integrados": 94.9
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "SE",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "codigo_faixa": 0,
-    "pct_integrados": 90.7
+    "pct_integrados": 89.3
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "MA",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
     "codigo_faixa": 0,
-    "pct_integrados": 64.5
+    "pct_integrados": 67.7
   },
   {
     "ano": 2026,
@@ -3368,22 +3368,22 @@
   {
     "ano": 2026,
     "mes": 9,
-    "uf": "CE",
-    "total_municipios": 184,
-    "municipios_integrados": 184,
-    "pj_ativas_integrados": 636046,
-    "pj_total_uf": 636046,
+    "uf": "AC",
+    "total_municipios": 22,
+    "municipios_integrados": 22,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
   {
     "ano": 2026,
     "mes": 9,
-    "uf": "AC",
-    "total_municipios": 22,
-    "municipios_integrados": 22,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "uf": "CE",
+    "total_municipios": 184,
+    "municipios_integrados": 184,
+    "pj_ativas_integrados": 636046,
+    "pj_total_uf": 636046,
     "codigo_faixa": 0,
     "pct_integrados": 100.0
   },
@@ -3404,8 +3404,8 @@
     "uf": "MT",
     "total_municipios": 142,
     "municipios_integrados": 141,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "codigo_faixa": 0,
     "pct_integrados": 99.3
   },
@@ -3425,11 +3425,11 @@
     "mes": 9,
     "uf": "AL",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "codigo_faixa": 0,
-    "pct_integrados": 72.5
+    "pct_integrados": 76.5
   },
   {
     "ano": 2026,
@@ -3447,11 +3447,11 @@
     "mes": 9,
     "uf": "ES",
     "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "municipios_integrados": 60,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "codigo_faixa": 0,
-    "pct_integrados": 91.0
+    "pct_integrados": 76.9
   },
   {
     "ano": 2026,
@@ -3459,8 +3459,8 @@
     "uf": "AP",
     "total_municipios": 16,
     "municipios_integrados": 15,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "codigo_faixa": 0,
     "pct_integrados": 93.8
   },
@@ -3469,22 +3469,22 @@
     "mes": 9,
     "uf": "PA",
     "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
+    "municipios_integrados": 117,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
     "codigo_faixa": 0,
-    "pct_integrados": 84.0
+    "pct_integrados": 81.2
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "PB",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "codigo_faixa": 0,
-    "pct_integrados": 65.9
+    "pct_integrados": 68.6
   },
   {
     "ano": 2026,
@@ -3513,22 +3513,22 @@
     "mes": 9,
     "uf": "PI",
     "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
+    "municipios_integrados": 145,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "codigo_faixa": 0,
-    "pct_integrados": 62.5
+    "pct_integrados": 64.7
   },
   {
     "ano": 2026,
     "mes": 9,
     "uf": "TO",
     "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "municipios_integrados": 99,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
     "codigo_faixa": 0,
-    "pct_integrados": 72.7
+    "pct_integrados": 71.2
   },
   {
     "ano": 2026,
@@ -3536,8 +3536,8 @@
     "uf": "RN",
     "total_municipios": 167,
     "municipios_integrados": 117,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "codigo_faixa": 0,
     "pct_integrados": 70.1
   },
@@ -3546,11 +3546,11 @@
     "mes": 9,
     "uf": "RO",
     "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
+    "municipios_integrados": 52,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
     "codigo_faixa": 0,
-    "pct_integrados": 92.3
+    "pct_integrados": 100.0
   },
   {
     "ano": 2026,

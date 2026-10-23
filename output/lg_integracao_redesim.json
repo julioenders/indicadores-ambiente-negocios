@@ -5,8 +5,8 @@
     "total_municipios": 15,
     "municipios_integrados": 15,
     "pct_integrados": 100.0,
-    "pj_ativas_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_ativas_integrados": 50933,
+    "pj_total_uf": 50933,
     "faixa": 0
   },
   {
@@ -25,8 +25,8 @@
     "total_municipios": 22,
     "municipios_integrados": 22,
     "pct_integrados": 100.0,
-    "pj_ativas_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_ativas_integrados": 55305,
+    "pj_total_uf": 55305,
     "faixa": 0
   },
   {
@@ -50,13 +50,23 @@
     "faixa": 0
   },
   {
+    "uf": "RO",
+    "periodo": "2020-12",
+    "total_municipios": 52,
+    "municipios_integrados": 52,
+    "pct_integrados": 100.0,
+    "pj_ativas_integrados": 174829,
+    "pj_total_uf": 174829,
+    "faixa": 0
+  },
+  {
     "uf": "MT",
     "periodo": "2020-12",
     "total_municipios": 142,
     "municipios_integrados": 141,
     "pct_integrados": 99.3,
-    "pj_ativas_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_ativas_integrados": 575791,
+    "pj_total_uf": 576019,
     "faixa": 0
   },
   {
@@ -80,16 +90,6 @@
     "faixa": 2
   },
   {
-    "uf": "SC",
-    "periodo": "2020-12",
-    "total_municipios": 295,
-    "municipios_integrados": 282,
-    "pct_integrados": 95.6,
-    "pj_ativas_integrados": 1516735,
-    "pj_total_uf": 1553251,
-    "faixa": 1
-  },
-  {
     "uf": "PR",
     "periodo": "2020-12",
     "total_municipios": 399,
@@ -100,43 +100,33 @@
     "faixa": 0
   },
   {
+    "uf": "SC",
+    "periodo": "2020-12",
+    "total_municipios": 295,
+    "municipios_integrados": 280,
+    "pct_integrados": 94.9,
+    "pj_ativas_integrados": 1547269,
+    "pj_total_uf": 1556881,
+    "faixa": 1
+  },
+  {
     "uf": "AP",
     "periodo": "2020-12",
     "total_municipios": 16,
     "municipios_integrados": 15,
     "pct_integrados": 93.8,
-    "pj_ativas_integrados": 51414,
-    "pj_total_uf": 51523,
-    "faixa": 0
-  },
-  {
-    "uf": "RO",
-    "periodo": "2020-12",
-    "total_municipios": 52,
-    "municipios_integrados": 48,
-    "pct_integrados": 92.3,
-    "pj_ativas_integrados": 143591,
-    "pj_total_uf": 175349,
-    "faixa": 0
-  },
-  {
-    "uf": "ES",
-    "periodo": "2020-12",
-    "total_municipios": 78,
-    "municipios_integrados": 71,
-    "pct_integrados": 91.0,
-    "pj_ativas_integrados": 609400,
-    "pj_total_uf": 615653,
+    "pj_ativas_integrados": 52060,
+    "pj_total_uf": 52170,
     "faixa": 0
   },
   {
     "uf": "SE",
     "periodo": "2020-12",
     "total_municipios": 75,
-    "municipios_integrados": 68,
-    "pct_integrados": 90.7,
-    "pj_ativas_integrados": 174517,
-    "pj_total_uf": 178098,
+    "municipios_integrados": 67,
+    "pct_integrados": 89.3,
+    "pj_ativas_integrados": 173721,
+    "pj_total_uf": 175926,
     "faixa": 0
   },
   {
@@ -150,16 +140,6 @@
     "faixa": 0
   },
   {
-    "uf": "PA",
-    "periodo": "2020-12",
-    "total_municipios": 144,
-    "municipios_integrados": 121,
-    "pct_integrados": 84.0,
-    "pj_ativas_integrados": 501999,
-    "pj_total_uf": 513474,
-    "faixa": 1
-  },
-  {
     "uf": "SP",
     "periodo": "2020-12",
     "total_municipios": 645,
@@ -170,23 +150,33 @@
     "faixa": 0
   },
   {
-    "uf": "TO",
+    "uf": "PA",
     "periodo": "2020-12",
-    "total_municipios": 139,
-    "municipios_integrados": 101,
-    "pct_integrados": 72.7,
-    "pj_ativas_integrados": 169049,
-    "pj_total_uf": 180815,
+    "total_municipios": 144,
+    "municipios_integrados": 117,
+    "pct_integrados": 81.2,
+    "pj_ativas_integrados": 506023,
+    "pj_total_uf": 520181,
+    "faixa": 1
+  },
+  {
+    "uf": "ES",
+    "periodo": "2020-12",
+    "total_municipios": 78,
+    "municipios_integrados": 60,
+    "pct_integrados": 76.9,
+    "pj_ativas_integrados": 585512,
+    "pj_total_uf": 620237,
     "faixa": 0
   },
   {
     "uf": "AL",
     "periodo": "2020-12",
     "total_municipios": 102,
-    "municipios_integrados": 74,
-    "pct_integrados": 72.5,
-    "pj_ativas_integrados": 217027,
-    "pj_total_uf": 235085,
+    "municipios_integrados": 78,
+    "pct_integrados": 76.5,
+    "pj_ativas_integrados": 222905,
+    "pj_total_uf": 237146,
     "faixa": 0
   },
   {
@@ -200,33 +190,53 @@
     "faixa": 0
   },
   {
+    "uf": "TO",
+    "periodo": "2020-12",
+    "total_municipios": 139,
+    "municipios_integrados": 99,
+    "pct_integrados": 71.2,
+    "pj_ativas_integrados": 160884,
+    "pj_total_uf": 182306,
+    "faixa": 0
+  },
+  {
     "uf": "RN",
     "periodo": "2020-12",
     "total_municipios": 167,
     "municipios_integrados": 117,
     "pct_integrados": 70.1,
-    "pj_ativas_integrados": 256506,
-    "pj_total_uf": 314386,
+    "pj_ativas_integrados": 259966,
+    "pj_total_uf": 311139,
     "faixa": 0
   },
   {
     "uf": "PB",
     "periodo": "2020-12",
     "total_municipios": 223,
-    "municipios_integrados": 147,
-    "pct_integrados": 65.9,
-    "pj_ativas_integrados": 136366,
-    "pj_total_uf": 350502,
+    "municipios_integrados": 153,
+    "pct_integrados": 68.6,
+    "pj_ativas_integrados": 147047,
+    "pj_total_uf": 353712,
     "faixa": 1
   },
   {
     "uf": "MA",
     "periodo": "2020-12",
     "total_municipios": 217,
-    "municipios_integrados": 140,
-    "pct_integrados": 64.5,
-    "pj_ativas_integrados": 226095,
-    "pj_total_uf": 375563,
+    "municipios_integrados": 147,
+    "pct_integrados": 67.7,
+    "pj_ativas_integrados": 340807,
+    "pj_total_uf": 379663,
+    "faixa": 0
+  },
+  {
+    "uf": "PI",
+    "periodo": "2020-12",
+    "total_municipios": 224,
+    "municipios_integrados": 145,
+    "pct_integrados": 64.7,
+    "pj_ativas_integrados": 219909,
+    "pj_total_uf": 240036,
     "faixa": 0
   },
   {
@@ -238,16 +248,6 @@
     "pj_ativas_integrados": 988910,
     "pj_total_uf": 1140704,
     "faixa": 3
-  },
-  {
-    "uf": "PI",
-    "periodo": "2020-12",
-    "total_municipios": 224,
-    "municipios_integrados": 140,
-    "pct_integrados": 62.5,
-    "pj_ativas_integrados": 218727,
-    "pj_total_uf": 237974,
-    "faixa": 0
   },
   {
     "uf": "PE",

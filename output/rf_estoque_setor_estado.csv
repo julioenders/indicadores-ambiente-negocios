@@ -1,230 +1,230 @@
 State ID,State,Sector ID,Sector,Establishments
 11,Rondônia,0,Não especificado,61.0
-11,Rondônia,11,Industria Transformação,13029.0
-11,Rondônia,12,Extrativa Mineral,396.0
-11,Rondônia,13,SIUP - Serviços Industrias De Utilidade Pública,599.0
-11,Rondônia,21,Comércio,54657.0
-11,Rondônia,31,Serviço,77166.0
-11,Rondônia,41,Agropecuária,2209.0
-11,Rondônia,61,Construção,13365.0
+11,Rondônia,11,Industria Transformação,13232.0
+11,Rondônia,12,Extrativa Mineral,400.0
+11,Rondônia,13,SIUP - Serviços Industrias De Utilidade Pública,603.0
+11,Rondônia,21,Comércio,55213.0
+11,Rondônia,31,Serviço,78551.0
+11,Rondônia,41,Agropecuária,2268.0
+11,Rondônia,61,Construção,13644.0
 12,Acre,0,Não especificado,10.0
-12,Acre,11,Industria Transformação,3354.0
-12,Acre,12,Extrativa Mineral,38.0
-12,Acre,13,SIUP - Serviços Industrias De Utilidade Pública,92.0
-12,Acre,21,Comércio,20512.0
-12,Acre,31,Serviço,22711.0
-12,Acre,41,Agropecuária,524.0
-12,Acre,61,Construção,2902.0
-13,Amazonas,0,Não especificado,46.0
-13,Amazonas,11,Industria Transformação,19364.0
+12,Acre,11,Industria Transformação,3304.0
+12,Acre,12,Extrativa Mineral,40.0
+12,Acre,13,SIUP - Serviços Industrias De Utilidade Pública,91.0
+12,Acre,21,Comércio,20251.0
+12,Acre,31,Serviço,22110.0
+12,Acre,41,Agropecuária,528.0
+12,Acre,61,Construção,2868.0
+13,Amazonas,0,Não especificado,44.0
+13,Amazonas,11,Industria Transformação,19073.0
 13,Amazonas,12,Extrativa Mineral,139.0
-13,Amazonas,13,SIUP - Serviços Industrias De Utilidade Pública,814.0
-13,Amazonas,21,Comércio,93057.0
-13,Amazonas,31,Serviço,146350.0
-13,Amazonas,41,Agropecuária,1503.0
-13,Amazonas,61,Construção,14477.0
+13,Amazonas,13,SIUP - Serviços Industrias De Utilidade Pública,804.0
+13,Amazonas,21,Comércio,91539.0
+13,Amazonas,31,Serviço,143713.0
+13,Amazonas,41,Agropecuária,1462.0
+13,Amazonas,61,Construção,14228.0
 14,Roraima,0,Não especificado,12.0
-14,Roraima,11,Industria Transformação,3152.0
-14,Roraima,12,Extrativa Mineral,70.0
-14,Roraima,13,SIUP - Serviços Industrias De Utilidade Pública,84.0
-14,Roraima,21,Comércio,17336.0
-14,Roraima,31,Serviço,23462.0
-14,Roraima,41,Agropecuária,575.0
-14,Roraima,61,Construção,3088.0
-15,Pará,0,Não especificado,113.0
-15,Pará,11,Industria Transformação,39120.0
-15,Pará,12,Extrativa Mineral,909.0
-15,Pará,13,SIUP - Serviços Industrias De Utilidade Pública,1244.0
-15,Pará,21,Comércio,206867.0
-15,Pará,31,Serviço,233109.0
-15,Pará,41,Agropecuária,6176.0
-15,Pará,61,Construção,31947.0
+14,Roraima,11,Industria Transformação,3223.0
+14,Roraima,12,Extrativa Mineral,72.0
+14,Roraima,13,SIUP - Serviços Industrias De Utilidade Pública,86.0
+14,Roraima,21,Comércio,17600.0
+14,Roraima,31,Serviço,23965.0
+14,Roraima,41,Agropecuária,585.0
+14,Roraima,61,Construção,3147.0
+15,Pará,0,Não especificado,108.0
+15,Pará,11,Industria Transformação,36158.0
+15,Pará,12,Extrativa Mineral,847.0
+15,Pará,13,SIUP - Serviços Industrias De Utilidade Pública,1172.0
+15,Pará,21,Comércio,190418.0
+15,Pará,31,Serviço,216286.0
+15,Pará,41,Agropecuária,5698.0
+15,Pará,61,Construção,29228.0
 16,Amapá,0,Não especificado,9.0
-16,Amapá,11,Industria Transformação,3576.0
-16,Amapá,12,Extrativa Mineral,133.0
+16,Amapá,11,Industria Transformação,3491.0
+16,Amapá,12,Extrativa Mineral,134.0
 16,Amapá,13,SIUP - Serviços Industrias De Utilidade Pública,111.0
-16,Amapá,21,Comércio,18681.0
-16,Amapá,31,Serviço,22035.0
-16,Amapá,41,Agropecuária,300.0
-16,Amapá,61,Construção,3015.0
+16,Amapá,21,Comércio,18353.0
+16,Amapá,31,Serviço,21710.0
+16,Amapá,41,Agropecuária,299.0
+16,Amapá,61,Construção,2929.0
 17,Tocantins,0,Não especificado,22.0
-17,Tocantins,11,Industria Transformação,12301.0
-17,Tocantins,12,Extrativa Mineral,361.0
-17,Tocantins,13,SIUP - Serviços Industrias De Utilidade Pública,635.0
-17,Tocantins,21,Comércio,55313.0
-17,Tocantins,31,Serviço,80783.0
-17,Tocantins,41,Agropecuária,3714.0
-17,Tocantins,61,Construção,15654.0
-21,Maranhão,0,Não especificado,105.0
-21,Maranhão,11,Industria Transformação,20608.0
-21,Maranhão,12,Extrativa Mineral,322.0
-21,Maranhão,13,SIUP - Serviços Industrias De Utilidade Pública,826.0
-21,Maranhão,21,Comércio,145930.0
-21,Maranhão,31,Serviço,143767.0
-21,Maranhão,41,Agropecuária,3311.0
-21,Maranhão,61,Construção,19399.0
-22,Piauí,0,Não especificado,76.0
-22,Piauí,11,Industria Transformação,14957.0
-22,Piauí,12,Extrativa Mineral,271.0
-22,Piauí,13,SIUP - Serviços Industrias De Utilidade Pública,910.0
-22,Piauí,21,Comércio,86648.0
-22,Piauí,31,Serviço,93853.0
-22,Piauí,41,Agropecuária,1883.0
-22,Piauí,61,Construção,12433.0
-23,Ceará,0,Não especificado,102.0
-23,Ceará,11,Industria Transformação,60599.0
-23,Ceará,12,Extrativa Mineral,807.0
-23,Ceará,13,SIUP - Serviços Industrias De Utilidade Pública,2559.0
-23,Ceará,21,Comércio,233656.0
-23,Ceará,31,Serviço,371435.0
-23,Ceará,41,Agropecuária,4117.0
-23,Ceará,61,Construção,38519.0
+17,Tocantins,11,Industria Transformação,12219.0
+17,Tocantins,12,Extrativa Mineral,359.0
+17,Tocantins,13,SIUP - Serviços Industrias De Utilidade Pública,637.0
+17,Tocantins,21,Comércio,54763.0
+17,Tocantins,31,Serviço,80065.0
+17,Tocantins,41,Agropecuária,3729.0
+17,Tocantins,61,Construção,15398.0
+21,Maranhão,0,Não especificado,108.0
+21,Maranhão,11,Industria Transformação,20951.0
+21,Maranhão,12,Extrativa Mineral,323.0
+21,Maranhão,13,SIUP - Serviços Industrias De Utilidade Pública,834.0
+21,Maranhão,21,Comércio,147559.0
+21,Maranhão,31,Serviço,146161.0
+21,Maranhão,41,Agropecuária,3416.0
+21,Maranhão,61,Construção,19763.0
+22,Piauí,0,Não especificado,78.0
+22,Piauí,11,Industria Transformação,15240.0
+22,Piauí,12,Extrativa Mineral,278.0
+22,Piauí,13,SIUP - Serviços Industrias De Utilidade Pública,923.0
+22,Piauí,21,Comércio,87879.0
+22,Piauí,31,Serviço,95938.0
+22,Piauí,41,Agropecuária,1911.0
+22,Piauí,61,Construção,12703.0
+23,Ceará,0,Não especificado,103.0
+23,Ceará,11,Industria Transformação,59980.0
+23,Ceará,12,Extrativa Mineral,808.0
+23,Ceará,13,SIUP - Serviços Industrias De Utilidade Pública,2567.0
+23,Ceará,21,Comércio,232611.0
+23,Ceará,31,Serviço,369750.0
+23,Ceará,41,Agropecuária,4138.0
+23,Ceará,61,Construção,38542.0
 24,Rio Grande do Norte,0,Não especificado,46.0
-24,Rio Grande do Norte,11,Industria Transformação,22941.0
-24,Rio Grande do Norte,12,Extrativa Mineral,672.0
-24,Rio Grande do Norte,13,SIUP - Serviços Industrias De Utilidade Pública,1262.0
-24,Rio Grande do Norte,21,Comércio,91779.0
-24,Rio Grande do Norte,31,Serviço,150223.0
-24,Rio Grande do Norte,41,Agropecuária,2015.0
-24,Rio Grande do Norte,61,Construção,20998.0
-25,Paraíba,0,Não especificado,37.0
-25,Paraíba,11,Industria Transformação,24704.0
-25,Paraíba,12,Extrativa Mineral,429.0
-25,Paraíba,13,SIUP - Serviços Industrias De Utilidade Pública,817.0
-25,Paraíba,21,Comércio,109263.0
-25,Paraíba,31,Serviço,165170.0
-25,Paraíba,41,Agropecuária,1454.0
-25,Paraíba,61,Construção,27333.0
-26,Pernambuco,0,Não especificado,105.0
-26,Pernambuco,11,Industria Transformação,65048.0
-26,Pernambuco,12,Extrativa Mineral,508.0
-26,Pernambuco,13,SIUP - Serviços Industrias De Utilidade Pública,1786.0
-26,Pernambuco,21,Comércio,215870.0
-26,Pernambuco,31,Serviço,395568.0
-26,Pernambuco,41,Agropecuária,3829.0
-26,Pernambuco,61,Construção,43652.0
+24,Rio Grande do Norte,11,Industria Transformação,23234.0
+24,Rio Grande do Norte,12,Extrativa Mineral,674.0
+24,Rio Grande do Norte,13,SIUP - Serviços Industrias De Utilidade Pública,1274.0
+24,Rio Grande do Norte,21,Comércio,92564.0
+24,Rio Grande do Norte,31,Serviço,152998.0
+24,Rio Grande do Norte,41,Agropecuária,2044.0
+24,Rio Grande do Norte,61,Construção,21388.0
+25,Paraíba,0,Não especificado,38.0
+25,Paraíba,11,Industria Transformação,23818.0
+25,Paraíba,12,Extrativa Mineral,415.0
+25,Paraíba,13,SIUP - Serviços Industrias De Utilidade Pública,774.0
+25,Paraíba,21,Comércio,104772.0
+25,Paraíba,31,Serviço,160666.0
+25,Paraíba,41,Agropecuária,1387.0
+25,Paraíba,61,Construção,26760.0
+26,Pernambuco,0,Não especificado,100.0
+26,Pernambuco,11,Industria Transformação,62410.0
+26,Pernambuco,12,Extrativa Mineral,485.0
+26,Pernambuco,13,SIUP - Serviços Industrias De Utilidade Pública,1723.0
+26,Pernambuco,21,Comércio,205498.0
+26,Pernambuco,31,Serviço,378630.0
+26,Pernambuco,41,Agropecuária,3671.0
+26,Pernambuco,61,Construção,41271.0
 27,Alagoas,0,Não especificado,24.0
-27,Alagoas,11,Industria Transformação,16038.0
-27,Alagoas,12,Extrativa Mineral,189.0
-27,Alagoas,13,SIUP - Serviços Industrias De Utilidade Pública,1030.0
-27,Alagoas,21,Comércio,72661.0
-27,Alagoas,31,Serviço,115806.0
-27,Alagoas,41,Agropecuária,1977.0
-27,Alagoas,61,Construção,13282.0
+27,Alagoas,11,Industria Transformação,15834.0
+27,Alagoas,12,Extrativa Mineral,187.0
+27,Alagoas,13,SIUP - Serviços Industrias De Utilidade Pública,1011.0
+27,Alagoas,21,Comércio,71735.0
+27,Alagoas,31,Serviço,114421.0
+27,Alagoas,41,Agropecuária,1962.0
+27,Alagoas,61,Construção,13087.0
 28,Sergipe,0,Não especificado,26.0
-28,Sergipe,11,Industria Transformação,12473.0
-28,Sergipe,12,Extrativa Mineral,285.0
-28,Sergipe,13,SIUP - Serviços Industrias De Utilidade Pública,324.0
-28,Sergipe,21,Comércio,50413.0
-28,Sergipe,31,Serviço,87982.0
-28,Sergipe,41,Agropecuária,883.0
-28,Sergipe,61,Construção,10396.0
-29,Bahia,0,Não especificado,210.0
-29,Bahia,11,Industria Transformação,89441.0
-29,Bahia,12,Extrativa Mineral,2312.0
-29,Bahia,13,SIUP - Serviços Industrias De Utilidade Pública,2891.0
-29,Bahia,21,Comércio,404956.0
-29,Bahia,31,Serviço,601539.0
-29,Bahia,41,Agropecuária,10376.0
-29,Bahia,61,Construção,75803.0
-31,Minas Gerais,0,Não especificado,458.0
-31,Minas Gerais,11,Industria Transformação,250514.0
-31,Minas Gerais,12,Extrativa Mineral,6683.0
-31,Minas Gerais,13,SIUP - Serviços Industrias De Utilidade Pública,7126.0
-31,Minas Gerais,21,Comércio,716974.0
-31,Minas Gerais,31,Serviço,1528492.0
-31,Minas Gerais,41,Agropecuária,30773.0
-31,Minas Gerais,61,Construção,228458.0
-32,Espírito Santo,0,Não especificado,140.0
-32,Espírito Santo,11,Industria Transformação,53898.0
-32,Espírito Santo,12,Extrativa Mineral,1681.0
-32,Espírito Santo,13,SIUP - Serviços Industrias De Utilidade Pública,1267.0
-32,Espírito Santo,21,Comércio,157058.0
-32,Espírito Santo,31,Serviço,310395.0
-32,Espírito Santo,41,Agropecuária,4403.0
-32,Espírito Santo,61,Construção,48922.0
-33,Rio de Janeiro,0,Não especificado,782.0
-33,Rio de Janeiro,11,Industria Transformação,171112.0
-33,Rio de Janeiro,12,Extrativa Mineral,2106.0
-33,Rio de Janeiro,13,SIUP - Serviços Industrias De Utilidade Pública,3954.0
-33,Rio de Janeiro,21,Comércio,485363.0
-33,Rio de Janeiro,31,Serviço,1370916.0
-33,Rio de Janeiro,41,Agropecuária,6082.0
-33,Rio de Janeiro,61,Construção,149091.0
+28,Sergipe,11,Industria Transformação,12665.0
+28,Sergipe,12,Extrativa Mineral,281.0
+28,Sergipe,13,SIUP - Serviços Industrias De Utilidade Pública,343.0
+28,Sergipe,21,Comércio,51099.0
+28,Sergipe,31,Serviço,89595.0
+28,Sergipe,41,Agropecuária,893.0
+28,Sergipe,61,Construção,10612.0
+29,Bahia,0,Não especificado,211.0
+29,Bahia,11,Industria Transformação,89011.0
+29,Bahia,12,Extrativa Mineral,2329.0
+29,Bahia,13,SIUP - Serviços Industrias De Utilidade Pública,2901.0
+29,Bahia,21,Comércio,402674.0
+29,Bahia,31,Serviço,599275.0
+29,Bahia,41,Agropecuária,10373.0
+29,Bahia,61,Construção,75277.0
+31,Minas Gerais,0,Não especificado,457.0
+31,Minas Gerais,11,Industria Transformação,248980.0
+31,Minas Gerais,12,Extrativa Mineral,6719.0
+31,Minas Gerais,13,SIUP - Serviços Industrias De Utilidade Pública,7141.0
+31,Minas Gerais,21,Comércio,711807.0
+31,Minas Gerais,31,Serviço,1520856.0
+31,Minas Gerais,41,Agropecuária,30703.0
+31,Minas Gerais,61,Construção,226043.0
+32,Espírito Santo,0,Não especificado,141.0
+32,Espírito Santo,11,Industria Transformação,54577.0
+32,Espírito Santo,12,Extrativa Mineral,1695.0
+32,Espírito Santo,13,SIUP - Serviços Industrias De Utilidade Pública,1270.0
+32,Espírito Santo,21,Comércio,158456.0
+32,Espírito Santo,31,Serviço,315586.0
+32,Espírito Santo,41,Agropecuária,4511.0
+32,Espírito Santo,61,Construção,49731.0
+33,Rio de Janeiro,0,Não especificado,784.0
+33,Rio de Janeiro,11,Industria Transformação,173038.0
+33,Rio de Janeiro,12,Extrativa Mineral,2121.0
+33,Rio de Janeiro,13,SIUP - Serviços Industrias De Utilidade Pública,3960.0
+33,Rio de Janeiro,21,Comércio,489388.0
+33,Rio de Janeiro,31,Serviço,1387677.0
+33,Rio de Janeiro,41,Agropecuária,6125.0
+33,Rio de Janeiro,61,Construção,150465.0
 35,São Paulo,0,Não especificado,2700.0
-35,São Paulo,11,Industria Transformação,576365.0
-35,São Paulo,12,Extrativa Mineral,2490.0
-35,São Paulo,13,SIUP - Serviços Industrias De Utilidade Pública,13965.0
-35,São Paulo,21,Comércio,1823438.0
-35,São Paulo,31,Serviço,4705405.0
-35,São Paulo,41,Agropecuária,745629.0
-35,São Paulo,61,Construção,532284.0
-41,Paraná,0,Não especificado,900.0
-41,Paraná,11,Industria Transformação,174820.0
-41,Paraná,12,Extrativa Mineral,1224.0
-41,Paraná,13,SIUP - Serviços Industrias De Utilidade Pública,3507.0
-41,Paraná,21,Comércio,483864.0
-41,Paraná,31,Serviço,1055740.0
-41,Paraná,41,Agropecuária,20034.0
-41,Paraná,61,Construção,182989.0
-42,Santa Catarina,0,Não especificado,337.0
-42,Santa Catarina,11,Industria Transformação,168408.0
-42,Santa Catarina,12,Extrativa Mineral,1002.0
-42,Santa Catarina,13,SIUP - Serviços Industrias De Utilidade Pública,3261.0
-42,Santa Catarina,21,Comércio,326950.0
-42,Santa Catarina,31,Serviço,813303.0
-42,Santa Catarina,41,Agropecuária,9700.0
-42,Santa Catarina,61,Construção,151766.0
+35,São Paulo,11,Industria Transformação,586561.0
+35,São Paulo,12,Extrativa Mineral,2506.0
+35,São Paulo,13,SIUP - Serviços Industrias De Utilidade Pública,14190.0
+35,São Paulo,21,Comércio,1850516.0
+35,São Paulo,31,Serviço,4787189.0
+35,São Paulo,41,Agropecuária,747703.0
+35,São Paulo,61,Construção,540899.0
+41,Paraná,0,Não especificado,858.0
+41,Paraná,11,Industria Transformação,174484.0
+41,Paraná,12,Extrativa Mineral,1225.0
+41,Paraná,13,SIUP - Serviços Industrias De Utilidade Pública,3486.0
+41,Paraná,21,Comércio,481257.0
+41,Paraná,31,Serviço,1055963.0
+41,Paraná,41,Agropecuária,19853.0
+41,Paraná,61,Construção,181503.0
+42,Santa Catarina,0,Não especificado,309.0
+42,Santa Catarina,11,Industria Transformação,169347.0
+42,Santa Catarina,12,Extrativa Mineral,995.0
+42,Santa Catarina,13,SIUP - Serviços Industrias De Utilidade Pública,3284.0
+42,Santa Catarina,21,Comércio,326298.0
+42,Santa Catarina,31,Serviço,813662.0
+42,Santa Catarina,41,Agropecuária,9744.0
+42,Santa Catarina,61,Construção,152009.0
 43,Rio Grande do Sul,0,Não especificado,823.0
-43,Rio Grande do Sul,11,Industria Transformação,160010.0
-43,Rio Grande do Sul,12,Extrativa Mineral,1759.0
-43,Rio Grande do Sul,13,SIUP - Serviços Industrias De Utilidade Pública,3704.0
-43,Rio Grande do Sul,21,Comércio,427059.0
-43,Rio Grande do Sul,31,Serviço,875290.0
-43,Rio Grande do Sul,41,Agropecuária,15425.0
-43,Rio Grande do Sul,61,Construção,160231.0
+43,Rio Grande do Sul,11,Industria Transformação,161766.0
+43,Rio Grande do Sul,12,Extrativa Mineral,1775.0
+43,Rio Grande do Sul,13,SIUP - Serviços Industrias De Utilidade Pública,3739.0
+43,Rio Grande do Sul,21,Comércio,429603.0
+43,Rio Grande do Sul,31,Serviço,887987.0
+43,Rio Grande do Sul,41,Agropecuária,15715.0
+43,Rio Grande do Sul,61,Construção,162492.0
 50,Mato Grosso do Sul,0,Não especificado,98.0
-50,Mato Grosso do Sul,11,Industria Transformação,26748.0
-50,Mato Grosso do Sul,12,Extrativa Mineral,293.0
-50,Mato Grosso do Sul,13,SIUP - Serviços Industrias De Utilidade Pública,969.0
-50,Mato Grosso do Sul,21,Comércio,102668.0
-50,Mato Grosso do Sul,31,Serviço,189481.0
-50,Mato Grosso do Sul,41,Agropecuária,11715.0
-50,Mato Grosso do Sul,61,Construção,33572.0
-51,Mato Grosso,0,Não especificado,98.0
-51,Mato Grosso,11,Industria Transformação,44695.0
-51,Mato Grosso,12,Extrativa Mineral,1131.0
-51,Mato Grosso,13,SIUP - Serviços Industrias De Utilidade Pública,1802.0
-51,Mato Grosso,21,Comércio,155609.0
-51,Mato Grosso,31,Serviço,275726.0
-51,Mato Grosso,41,Agropecuária,18254.0
-51,Mato Grosso,61,Construção,52054.0
+50,Mato Grosso do Sul,11,Industria Transformação,26421.0
+50,Mato Grosso do Sul,12,Extrativa Mineral,297.0
+50,Mato Grosso do Sul,13,SIUP - Serviços Industrias De Utilidade Pública,967.0
+50,Mato Grosso do Sul,21,Comércio,101421.0
+50,Mato Grosso do Sul,31,Serviço,187220.0
+50,Mato Grosso do Sul,41,Agropecuária,11723.0
+50,Mato Grosso do Sul,61,Construção,32976.0
+51,Mato Grosso,0,Não especificado,96.0
+51,Mato Grosso,11,Industria Transformação,44634.0
+51,Mato Grosso,12,Extrativa Mineral,1137.0
+51,Mato Grosso,13,SIUP - Serviços Industrias De Utilidade Pública,1786.0
+51,Mato Grosso,21,Comércio,154440.0
+51,Mato Grosso,31,Serviço,275358.0
+51,Mato Grosso,41,Agropecuária,18152.0
+51,Mato Grosso,61,Construção,51101.0
 52,Goiás,0,Não especificado,255.0
-52,Goiás,11,Industria Transformação,89125.0
-52,Goiás,12,Extrativa Mineral,1239.0
-52,Goiás,13,SIUP - Serviços Industrias De Utilidade Pública,2772.0
-52,Goiás,21,Comércio,284850.0
-52,Goiás,31,Serviço,523827.0
-52,Goiás,41,Agropecuária,16286.0
-52,Goiás,61,Construção,87433.0
+52,Goiás,11,Industria Transformação,88957.0
+52,Goiás,12,Extrativa Mineral,1256.0
+52,Goiás,13,SIUP - Serviços Industrias De Utilidade Pública,2775.0
+52,Goiás,21,Comércio,283886.0
+52,Goiás,31,Serviço,524606.0
+52,Goiás,41,Agropecuária,16438.0
+52,Goiás,61,Construção,87465.0
 53,Distrito Federal,0,Não especificado,90.0
-53,Distrito Federal,11,Industria Transformação,25018.0
-53,Distrito Federal,12,Extrativa Mineral,103.0
-53,Distrito Federal,13,SIUP - Serviços Industrias De Utilidade Pública,704.0
-53,Distrito Federal,21,Comércio,100156.0
-53,Distrito Federal,31,Serviço,290479.0
-53,Distrito Federal,41,Agropecuária,1642.0
-53,Distrito Federal,61,Construção,32247.0
-93,Exterior,11,Industria Transformação,46.0
+53,Distrito Federal,11,Industria Transformação,25173.0
+53,Distrito Federal,12,Extrativa Mineral,105.0
+53,Distrito Federal,13,SIUP - Serviços Industrias De Utilidade Pública,716.0
+53,Distrito Federal,21,Comércio,100564.0
+53,Distrito Federal,31,Serviço,293285.0
+53,Distrito Federal,41,Agropecuária,1658.0
+53,Distrito Federal,61,Construção,32517.0
+93,Exterior,11,Industria Transformação,45.0
 93,Exterior,12,Extrativa Mineral,1.0
 93,Exterior,13,SIUP - Serviços Industrias De Utilidade Pública,5.0
 93,Exterior,21,Comércio,58.0
-93,Exterior,31,Serviço,293.0
-93,Exterior,61,Construção,96.0
-99,Não informado,11,Industria Transformação,41.0
+93,Exterior,31,Serviço,296.0
+93,Exterior,61,Construção,94.0
+99,Não informado,11,Industria Transformação,46.0
 99,Não informado,12,Extrativa Mineral,1.0
 99,Não informado,13,SIUP - Serviços Industrias De Utilidade Pública,1.0
 99,Não informado,21,Comércio,163.0
-99,Não informado,31,Serviço,204.0
-99,Não informado,41,Agropecuária,88.0
-99,Não informado,61,Construção,38.0
+99,Não informado,31,Serviço,218.0
+99,Não informado,41,Agropecuária,93.0
+99,Não informado,61,Construção,39.0

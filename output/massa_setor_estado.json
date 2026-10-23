@@ -4,931 +4,931 @@
     "State": "São Paulo",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 4705405.0
+    "Establishments": 4787189.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 1823438.0
+    "Establishments": 1850516.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 1528492.0
+    "Establishments": 1520856.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 1370916.0
+    "Establishments": 1387677.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 1055740.0
+    "Establishments": 1055963.0
   },
   {
     "State ID": 43,
     "State": "Rio Grande do Sul",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 875290.0
+    "Establishments": 887987.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 813303.0
+    "Establishments": 813662.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 745629.0
+    "Establishments": 747703.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 716974.0
+    "Establishments": 711807.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 601539.0
+    "Establishments": 599275.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 576365.0
+    "Establishments": 586561.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 532284.0
+    "Establishments": 540899.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 523827.0
+    "Establishments": 524606.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 485363.0
+    "Establishments": 489388.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 483864.0
+    "Establishments": 481257.0
   },
   {
     "State ID": 43,
     "State": "Rio Grande do Sul",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 427059.0
+    "Establishments": 429603.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 404956.0
+    "Establishments": 402674.0
   },
   {
     "State ID": 26,
     "State": "Pernambuco",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 395568.0
+    "Establishments": 378630.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 371435.0
+    "Establishments": 369750.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 326950.0
+    "Establishments": 326298.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 310395.0
+    "Establishments": 315586.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 290479.0
+    "Establishments": 293285.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 284850.0
+    "Establishments": 283886.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 275726.0
+    "Establishments": 275358.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 250514.0
+    "Establishments": 248980.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 233656.0
-  },
-  {
-    "State ID": 15,
-    "State": "Pará",
-    "Sector ID": 31,
-    "Sector": "Serviço",
-    "Establishments": 233109.0
+    "Establishments": 232611.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 228458.0
+    "Establishments": 226043.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 31,
+    "Sector": "Serviço",
+    "Establishments": 216286.0
   },
   {
     "State ID": 26,
     "State": "Pernambuco",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 215870.0
+    "Establishments": 205498.0
   },
   {
     "State ID": 15,
     "State": "Pará",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 206867.0
+    "Establishments": 190418.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 189481.0
+    "Establishments": 187220.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 182989.0
+    "Establishments": 181503.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 174820.0
+    "Establishments": 174484.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 171112.0
+    "Establishments": 173038.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 168408.0
+    "Establishments": 169347.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 162492.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 161766.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 165170.0
-  },
-  {
-    "State ID": 43,
-    "State": "Rio Grande do Sul",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 160231.0
-  },
-  {
-    "State ID": 43,
-    "State": "Rio Grande do Sul",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 160010.0
+    "Establishments": 160666.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 157058.0
+    "Establishments": 158456.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 155609.0
-  },
-  {
-    "State ID": 42,
-    "State": "Santa Catarina",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 151766.0
+    "Establishments": 154440.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 150223.0
+    "Establishments": 152998.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 152009.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 149091.0
-  },
-  {
-    "State ID": 13,
-    "State": "Amazonas",
-    "Sector ID": 31,
-    "Sector": "Serviço",
-    "Establishments": 146350.0
+    "Establishments": 150465.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 145930.0
+    "Establishments": 147559.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 143767.0
+    "Establishments": 146161.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Sector ID": 31,
+    "Sector": "Serviço",
+    "Establishments": 143713.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 115806.0
+    "Establishments": 114421.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 109263.0
+    "Establishments": 104772.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 102668.0
+    "Establishments": 101421.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 100156.0
+    "Establishments": 100564.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 93853.0
-  },
-  {
-    "State ID": 13,
-    "State": "Amazonas",
-    "Sector ID": 21,
-    "Sector": "Comércio",
-    "Establishments": 93057.0
+    "Establishments": 95938.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 91779.0
+    "Establishments": 92564.0
   },
   {
-    "State ID": 29,
-    "State": "Bahia",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 89441.0
-  },
-  {
-    "State ID": 52,
-    "State": "Goiás",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 89125.0
+    "State ID": 13,
+    "State": "Amazonas",
+    "Sector ID": 21,
+    "Sector": "Comércio",
+    "Establishments": 91539.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 87982.0
+    "Establishments": 89595.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 89011.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 87433.0
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 88957.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 86648.0
+    "Establishments": 87879.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 87465.0
   },
   {
     "State ID": 17,
     "State": "Tocantins",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 80783.0
+    "Establishments": 80065.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 77166.0
+    "Establishments": 78551.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 75803.0
+    "Establishments": 75277.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 72661.0
+    "Establishments": 71735.0
   },
   {
     "State ID": 26,
     "State": "Pernambuco",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 65048.0
+    "Establishments": 62410.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 60599.0
-  },
-  {
-    "State ID": 17,
-    "State": "Tocantins",
-    "Sector ID": 21,
-    "Sector": "Comércio",
-    "Establishments": 55313.0
+    "Establishments": 59980.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 54657.0
+    "Establishments": 55213.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Sector ID": 21,
+    "Sector": "Comércio",
+    "Establishments": 54763.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 53898.0
+    "Establishments": 54577.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 52054.0
+    "Establishments": 51101.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 50413.0
+    "Establishments": 51099.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 48922.0
+    "Establishments": 49731.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 44695.0
+    "Establishments": 44634.0
   },
   {
     "State ID": 26,
     "State": "Pernambuco",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 43652.0
-  },
-  {
-    "State ID": 15,
-    "State": "Pará",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 39120.0
+    "Establishments": 41271.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 38519.0
+    "Establishments": 38542.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 36158.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 33572.0
+    "Establishments": 32976.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 32247.0
-  },
-  {
-    "State ID": 15,
-    "State": "Pará",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 31947.0
+    "Establishments": 32517.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 30773.0
+    "Establishments": 30703.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 29228.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 27333.0
+    "Establishments": 26760.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 26748.0
+    "Establishments": 26421.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 25018.0
-  },
-  {
-    "State ID": 25,
-    "State": "Paraíba",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 24704.0
+    "Establishments": 25173.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 23462.0
+    "Establishments": 23965.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 23818.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 22941.0
+    "Establishments": 23234.0
   },
   {
     "State ID": 12,
     "State": "Acre",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 22711.0
+    "Establishments": 22110.0
   },
   {
     "State ID": 16,
     "State": "Amapá",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 22035.0
+    "Establishments": 21710.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 20998.0
+    "Establishments": 21388.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 20608.0
+    "Establishments": 20951.0
   },
   {
     "State ID": 12,
     "State": "Acre",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 20512.0
+    "Establishments": 20251.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 20034.0
+    "Establishments": 19853.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 19399.0
+    "Establishments": 19763.0
   },
   {
     "State ID": 13,
     "State": "Amazonas",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 19364.0
+    "Establishments": 19073.0
   },
   {
     "State ID": 16,
     "State": "Amapá",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 18681.0
+    "Establishments": 18353.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 18254.0
+    "Establishments": 18152.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 21,
     "Sector": "Comércio",
-    "Establishments": 17336.0
+    "Establishments": 17600.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 16286.0
+    "Establishments": 16438.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 16038.0
-  },
-  {
-    "State ID": 17,
-    "State": "Tocantins",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 15654.0
+    "Establishments": 15834.0
   },
   {
     "State ID": 43,
     "State": "Rio Grande do Sul",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 15425.0
+    "Establishments": 15715.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 15398.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 14957.0
+    "Establishments": 15240.0
   },
   {
     "State ID": 13,
     "State": "Amazonas",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 14477.0
+    "Establishments": 14228.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 13965.0
+    "Establishments": 14190.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 13365.0
+    "Establishments": 13644.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 13232.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 13282.0
-  },
-  {
-    "State ID": 11,
-    "State": "Rondônia",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 13029.0
-  },
-  {
-    "State ID": 28,
-    "State": "Sergipe",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 12473.0
+    "Establishments": 13087.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 12433.0
+    "Establishments": 12703.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 12665.0
   },
   {
     "State ID": 17,
     "State": "Tocantins",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 12301.0
+    "Establishments": 12219.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 11715.0
+    "Establishments": 11723.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 10396.0
+    "Establishments": 10612.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 10376.0
+    "Establishments": 10373.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 9700.0
+    "Establishments": 9744.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 7126.0
+    "Establishments": 7141.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 6683.0
+    "Establishments": 6719.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Sector ID": 41,
+    "Sector": "Agropecuária",
+    "Establishments": 6125.0
   },
   {
     "State ID": 15,
     "State": "Pará",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 6176.0
-  },
-  {
-    "State ID": 33,
-    "State": "Rio de Janeiro",
-    "Sector ID": 41,
-    "Sector": "Agropecuária",
-    "Establishments": 6082.0
+    "Establishments": 5698.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 4403.0
+    "Establishments": 4511.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 4117.0
+    "Establishments": 4138.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 3954.0
-  },
-  {
-    "State ID": 26,
-    "State": "Pernambuco",
-    "Sector ID": 41,
-    "Sector": "Agropecuária",
-    "Establishments": 3829.0
-  },
-  {
-    "State ID": 17,
-    "State": "Tocantins",
-    "Sector ID": 41,
-    "Sector": "Agropecuária",
-    "Establishments": 3714.0
+    "Establishments": 3960.0
   },
   {
     "State ID": 43,
     "State": "Rio Grande do Sul",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 3704.0
+    "Establishments": 3739.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Sector ID": 41,
+    "Sector": "Agropecuária",
+    "Establishments": 3729.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Sector ID": 41,
+    "Sector": "Agropecuária",
+    "Establishments": 3671.0
   },
   {
     "State ID": 16,
     "State": "Amapá",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 3576.0
+    "Establishments": 3491.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 3507.0
-  },
-  {
-    "State ID": 12,
-    "State": "Acre",
-    "Sector ID": 11,
-    "Sector": "Industria Transformação",
-    "Establishments": 3354.0
+    "Establishments": 3486.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 3311.0
+    "Establishments": 3416.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Sector ID": 11,
+    "Sector": "Industria Transformação",
+    "Establishments": 3304.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 3261.0
+    "Establishments": 3284.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 3152.0
+    "Establishments": 3223.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 3088.0
+    "Establishments": 3147.0
   },
   {
     "State ID": 16,
     "State": "Amapá",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 3015.0
-  },
-  {
-    "State ID": 12,
-    "State": "Acre",
-    "Sector ID": 61,
-    "Sector": "Construção",
-    "Establishments": 2902.0
+    "Establishments": 2929.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 2891.0
+    "Establishments": 2901.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Sector ID": 61,
+    "Sector": "Construção",
+    "Establishments": 2868.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 2772.0
+    "Establishments": 2775.0
   },
   {
     "State ID": 35,
@@ -942,67 +942,60 @@
     "State": "Ceará",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 2559.0
+    "Establishments": 2567.0
   },
   {
     "State ID": 35,
     "State": "São Paulo",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 2490.0
+    "Establishments": 2506.0
   },
   {
     "State ID": 29,
     "State": "Bahia",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 2312.0
+    "Establishments": 2329.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 2209.0
+    "Establishments": 2268.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 2106.0
+    "Establishments": 2121.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 2015.0
+    "Establishments": 2044.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 1977.0
+    "Establishments": 1962.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 1883.0
+    "Establishments": 1911.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
-    "Sector ID": 13,
-    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 1802.0
-  },
-  {
-    "State ID": 26,
-    "State": "Pernambuco",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
     "Establishments": 1786.0
@@ -1012,133 +1005,140 @@
     "State": "Rio Grande do Sul",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1759.0
+    "Establishments": 1775.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Sector ID": 13,
+    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
+    "Establishments": 1723.0
   },
   {
     "State ID": 32,
     "State": "Espírito Santo",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1681.0
+    "Establishments": 1695.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 1642.0
+    "Establishments": 1658.0
   },
   {
     "State ID": 13,
     "State": "Amazonas",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 1503.0
+    "Establishments": 1462.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 1454.0
-  },
-  {
-    "State ID": 32,
-    "State": "Espírito Santo",
-    "Sector ID": 13,
-    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 1267.0
+    "Establishments": 1387.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 1262.0
+    "Establishments": 1274.0
   },
   {
-    "State ID": 15,
-    "State": "Pará",
+    "State ID": 32,
+    "State": "Espírito Santo",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 1244.0
+    "Establishments": 1270.0
   },
   {
     "State ID": 52,
     "State": "Goiás",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1239.0
+    "Establishments": 1256.0
   },
   {
     "State ID": 41,
     "State": "Paraná",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1224.0
+    "Establishments": 1225.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 13,
+    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
+    "Establishments": 1172.0
   },
   {
     "State ID": 51,
     "State": "Mato Grosso",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1131.0
+    "Establishments": 1137.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 1030.0
+    "Establishments": 1011.0
   },
   {
     "State ID": 42,
     "State": "Santa Catarina",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 1002.0
+    "Establishments": 995.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 969.0
+    "Establishments": 967.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 910.0
-  },
-  {
-    "State ID": 15,
-    "State": "Pará",
-    "Sector ID": 12,
-    "Sector": "Extrativa Mineral",
-    "Establishments": 909.0
-  },
-  {
-    "State ID": 41,
-    "State": "Paraná",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 900.0
+    "Establishments": 923.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 883.0
+    "Establishments": 893.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 858.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 12,
+    "Sector": "Extrativa Mineral",
+    "Establishments": 847.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 826.0
+    "Establishments": 834.0
   },
   {
     "State ID": 43,
@@ -1148,165 +1148,165 @@
     "Establishments": 823.0
   },
   {
-    "State ID": 25,
-    "State": "Paraíba",
-    "Sector ID": 13,
-    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 817.0
+    "State ID": 23,
+    "State": "Ceará",
+    "Sector ID": 12,
+    "Sector": "Extrativa Mineral",
+    "Establishments": 808.0
   },
   {
     "State ID": 13,
     "State": "Amazonas",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 814.0
-  },
-  {
-    "State ID": 23,
-    "State": "Ceará",
-    "Sector ID": 12,
-    "Sector": "Extrativa Mineral",
-    "Establishments": 807.0
+    "Establishments": 804.0
   },
   {
     "State ID": 33,
     "State": "Rio de Janeiro",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 782.0
+    "Establishments": 784.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Sector ID": 13,
+    "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
+    "Establishments": 774.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 704.0
+    "Establishments": 716.0
   },
   {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 672.0
+    "Establishments": 674.0
   },
   {
     "State ID": 17,
     "State": "Tocantins",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 635.0
+    "Establishments": 637.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 599.0
+    "Establishments": 603.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 575.0
+    "Establishments": 585.0
   },
   {
     "State ID": 12,
     "State": "Acre",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 524.0
+    "Establishments": 528.0
   },
   {
     "State ID": 26,
     "State": "Pernambuco",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 508.0
+    "Establishments": 485.0
   },
   {
     "State ID": 31,
     "State": "Minas Gerais",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 458.0
+    "Establishments": 457.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 429.0
+    "Establishments": 415.0
   },
   {
     "State ID": 11,
     "State": "Rondônia",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 396.0
+    "Establishments": 400.0
   },
   {
     "State ID": 17,
     "State": "Tocantins",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 361.0
-  },
-  {
-    "State ID": 42,
-    "State": "Santa Catarina",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 337.0
+    "Establishments": 359.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 324.0
+    "Establishments": 343.0
   },
   {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 322.0
+    "Establishments": 323.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 309.0
   },
   {
     "State ID": 16,
     "State": "Amapá",
     "Sector ID": 41,
     "Sector": "Agropecuária",
-    "Establishments": 300.0
+    "Establishments": 299.0
   },
   {
     "State ID": 50,
     "State": "Mato Grosso do Sul",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 293.0
+    "Establishments": 297.0
   },
   {
     "State ID": 93,
     "State": "Exterior",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 293.0
+    "Establishments": 296.0
   },
   {
     "State ID": 28,
     "State": "Sergipe",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 285.0
+    "Establishments": 281.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 271.0
+    "Establishments": 278.0
   },
   {
     "State ID": 52,
@@ -1316,25 +1316,25 @@
     "Establishments": 255.0
   },
   {
-    "State ID": 29,
-    "State": "Bahia",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 210.0
-  },
-  {
     "State ID": 99,
     "State": "Não informado",
     "Sector ID": 31,
     "Sector": "Serviço",
-    "Establishments": 204.0
+    "Establishments": 218.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 211.0
   },
   {
     "State ID": 27,
     "State": "Alagoas",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 189.0
+    "Establishments": 187.0
   },
   {
     "State ID": 99,
@@ -1348,7 +1348,7 @@
     "State": "Espírito Santo",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 140.0
+    "Establishments": 141.0
   },
   {
     "State ID": 13,
@@ -1362,14 +1362,7 @@
     "State": "Amapá",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 133.0
-  },
-  {
-    "State ID": 15,
-    "State": "Pará",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 113.0
+    "Establishments": 134.0
   },
   {
     "State ID": 16,
@@ -1379,32 +1372,39 @@
     "Establishments": 111.0
   },
   {
+    "State ID": 15,
+    "State": "Pará",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 108.0
+  },
+  {
     "State ID": 21,
     "State": "Maranhão",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 105.0
-  },
-  {
-    "State ID": 26,
-    "State": "Pernambuco",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 105.0
+    "Establishments": 108.0
   },
   {
     "State ID": 53,
     "State": "Distrito Federal",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 103.0
+    "Establishments": 105.0
   },
   {
     "State ID": 23,
     "State": "Ceará",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 102.0
+    "Establishments": 103.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 100.0
   },
   {
     "State ID": 50,
@@ -1418,21 +1418,28 @@
     "State": "Mato Grosso",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 98.0
+    "Establishments": 96.0
   },
   {
     "State ID": 93,
     "State": "Exterior",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 96.0
+    "Establishments": 94.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Sector ID": 41,
+    "Sector": "Agropecuária",
+    "Establishments": 93.0
   },
   {
     "State ID": 12,
     "State": "Acre",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 92.0
+    "Establishments": 91.0
   },
   {
     "State ID": 53,
@@ -1442,32 +1449,25 @@
     "Establishments": 90.0
   },
   {
-    "State ID": 99,
-    "State": "Não informado",
-    "Sector ID": 41,
-    "Sector": "Agropecuária",
-    "Establishments": 88.0
-  },
-  {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 13,
     "Sector": "SIUP - Serviços Industrias De Utilidade Pública",
-    "Establishments": 84.0
+    "Establishments": 86.0
   },
   {
     "State ID": 22,
     "State": "Piauí",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 76.0
+    "Establishments": 78.0
   },
   {
     "State ID": 14,
     "State": "Roraima",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 70.0
+    "Establishments": 72.0
   },
   {
     "State ID": 11,
@@ -1484,13 +1484,6 @@
     "Establishments": 58.0
   },
   {
-    "State ID": 13,
-    "State": "Amazonas",
-    "Sector ID": 0,
-    "Sector": "Não especificado",
-    "Establishments": 46.0
-  },
-  {
     "State ID": 24,
     "State": "Rio Grande do Norte",
     "Sector ID": 0,
@@ -1498,39 +1491,46 @@
     "Establishments": 46.0
   },
   {
-    "State ID": 93,
-    "State": "Exterior",
+    "State ID": 99,
+    "State": "Não informado",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
     "Establishments": 46.0
   },
   {
-    "State ID": 99,
-    "State": "Não informado",
+    "State ID": 93,
+    "State": "Exterior",
     "Sector ID": 11,
     "Sector": "Industria Transformação",
-    "Establishments": 41.0
+    "Establishments": 45.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Sector ID": 0,
+    "Sector": "Não especificado",
+    "Establishments": 44.0
   },
   {
     "State ID": 12,
     "State": "Acre",
     "Sector ID": 12,
     "Sector": "Extrativa Mineral",
-    "Establishments": 38.0
+    "Establishments": 40.0
   },
   {
     "State ID": 99,
     "State": "Não informado",
     "Sector ID": 61,
     "Sector": "Construção",
-    "Establishments": 38.0
+    "Establishments": 39.0
   },
   {
     "State ID": 25,
     "State": "Paraíba",
     "Sector ID": 0,
     "Sector": "Não especificado",
-    "Establishments": 37.0
+    "Establishments": 38.0
   },
   {
     "State ID": 28,

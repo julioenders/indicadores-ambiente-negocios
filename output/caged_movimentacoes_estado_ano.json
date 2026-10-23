@@ -1,0 +1,506 @@
+[
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Year": 2024,
+    "Admissions": 167896.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Year": 2025,
+    "Admissions": 175305.0
+  },
+  {
+    "State ID": 11,
+    "State": "Rondônia",
+    "Year": 2026,
+    "Admissions": 120226.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Year": 2024,
+    "Admissions": 54776.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Year": 2025,
+    "Admissions": 57678.0
+  },
+  {
+    "State ID": 12,
+    "State": "Acre",
+    "Year": 2026,
+    "Admissions": 41601.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Year": 2024,
+    "Admissions": 291175.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Year": 2025,
+    "Admissions": 311022.0
+  },
+  {
+    "State ID": 13,
+    "State": "Amazonas",
+    "Year": 2026,
+    "Admissions": 217181.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Year": 2024,
+    "Admissions": 49757.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Year": 2025,
+    "Admissions": 51079.0
+  },
+  {
+    "State ID": 14,
+    "State": "Roraima",
+    "Year": 2026,
+    "Admissions": 36759.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Year": 2024,
+    "Admissions": 485052.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Year": 2025,
+    "Admissions": 518789.0
+  },
+  {
+    "State ID": 15,
+    "State": "Pará",
+    "Year": 2026,
+    "Admissions": 355140.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Year": 2024,
+    "Admissions": 50446.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Year": 2025,
+    "Admissions": 54509.0
+  },
+  {
+    "State ID": 16,
+    "State": "Amapá",
+    "Year": 2026,
+    "Admissions": 40758.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Year": 2024,
+    "Admissions": 134276.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Year": 2025,
+    "Admissions": 141721.0
+  },
+  {
+    "State ID": 17,
+    "State": "Tocantins",
+    "Year": 2026,
+    "Admissions": 95052.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Year": 2024,
+    "Admissions": 265595.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Year": 2025,
+    "Admissions": 293771.0
+  },
+  {
+    "State ID": 21,
+    "State": "Maranhão",
+    "Year": 2026,
+    "Admissions": 201403.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Year": 2024,
+    "Admissions": 149643.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Year": 2025,
+    "Admissions": 167995.0
+  },
+  {
+    "State ID": 22,
+    "State": "Piauí",
+    "Year": 2026,
+    "Admissions": 118804.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Year": 2024,
+    "Admissions": 615335.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Year": 2025,
+    "Admissions": 668688.0
+  },
+  {
+    "State ID": 23,
+    "State": "Ceará",
+    "Year": 2026,
+    "Admissions": 475903.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Year": 2024,
+    "Admissions": 243036.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Year": 2025,
+    "Admissions": 258381.0
+  },
+  {
+    "State ID": 24,
+    "State": "Rio Grande do Norte",
+    "Year": 2026,
+    "Admissions": 168531.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Year": 2024,
+    "Admissions": 230091.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Year": 2025,
+    "Admissions": 267368.0
+  },
+  {
+    "State ID": 25,
+    "State": "Paraíba",
+    "Year": 2026,
+    "Admissions": 190231.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Year": 2024,
+    "Admissions": 641812.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Year": 2025,
+    "Admissions": 702313.0
+  },
+  {
+    "State ID": 26,
+    "State": "Pernambuco",
+    "Year": 2026,
+    "Admissions": 485579.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Year": 2024,
+    "Admissions": 205576.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Year": 2025,
+    "Admissions": 213606.0
+  },
+  {
+    "State ID": 27,
+    "State": "Alagoas",
+    "Year": 2026,
+    "Admissions": 135896.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Year": 2024,
+    "Admissions": 137529.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Year": 2025,
+    "Admissions": 158061.0
+  },
+  {
+    "State ID": 28,
+    "State": "Sergipe",
+    "Year": 2026,
+    "Admissions": 109568.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Year": 2024,
+    "Admissions": 982538.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Year": 2025,
+    "Admissions": 1047663.0
+  },
+  {
+    "State ID": 29,
+    "State": "Bahia",
+    "Year": 2026,
+    "Admissions": 732932.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Year": 2024,
+    "Admissions": 2787339.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Year": 2025,
+    "Admissions": 2825664.0
+  },
+  {
+    "State ID": 31,
+    "State": "Minas Gerais",
+    "Year": 2026,
+    "Admissions": 1970046.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Year": 2024,
+    "Admissions": 562617.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Year": 2025,
+    "Admissions": 580932.0
+  },
+  {
+    "State ID": 32,
+    "State": "Espírito Santo",
+    "Year": 2026,
+    "Admissions": 416075.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Year": 2024,
+    "Admissions": 1681679.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Year": 2025,
+    "Admissions": 1725690.0
+  },
+  {
+    "State ID": 33,
+    "State": "Rio de Janeiro",
+    "Year": 2026,
+    "Admissions": 1216631.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Year": 2024,
+    "Admissions": 8081097.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Year": 2025,
+    "Admissions": 8412607.0
+  },
+  {
+    "State ID": 35,
+    "State": "São Paulo",
+    "Year": 2026,
+    "Admissions": 5882915.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Year": 2024,
+    "Admissions": 1991300.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Year": 2025,
+    "Admissions": 2039956.0
+  },
+  {
+    "State ID": 41,
+    "State": "Paraná",
+    "Year": 2026,
+    "Admissions": 1434283.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Year": 2024,
+    "Admissions": 1685118.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Year": 2025,
+    "Admissions": 1723690.0
+  },
+  {
+    "State ID": 42,
+    "State": "Santa Catarina",
+    "Year": 2026,
+    "Admissions": 1207403.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Year": 2024,
+    "Admissions": 1539977.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Year": 2025,
+    "Admissions": 1621360.0
+  },
+  {
+    "State ID": 43,
+    "State": "Rio Grande do Sul",
+    "Year": 2026,
+    "Admissions": 1098450.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Year": 2024,
+    "Admissions": 412502.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Year": 2025,
+    "Admissions": 420008.0
+  },
+  {
+    "State ID": 50,
+    "State": "Mato Grosso do Sul",
+    "Year": 2026,
+    "Admissions": 296322.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Year": 2024,
+    "Admissions": 652517.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Year": 2025,
+    "Admissions": 676390.0
+  },
+  {
+    "State ID": 51,
+    "State": "Mato Grosso",
+    "Year": 2026,
+    "Admissions": 475196.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Year": 2024,
+    "Admissions": 990542.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Year": 2025,
+    "Admissions": 1028442.0
+  },
+  {
+    "State ID": 52,
+    "State": "Goiás",
+    "Year": 2026,
+    "Admissions": 704074.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Year": 2024,
+    "Admissions": 458364.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Year": 2025,
+    "Admissions": 495622.0
+  },
+  {
+    "State ID": 53,
+    "State": "Distrito Federal",
+    "Year": 2026,
+    "Admissions": 340524.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Year": 2024,
+    "Admissions": 55996.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Year": 2025,
+    "Admissions": 3329.0
+  },
+  {
+    "State ID": 99,
+    "State": "Não informado",
+    "Year": 2026,
+    "Admissions": 5714.0
+  }
+]

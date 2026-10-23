@@ -2,8 +2,8 @@
   {
     "uf": "RR",
     "pct_municipios_integrados_redesim": 100.0,
-    "pj_em_municipios_integrados": 52296,
-    "pj_total_uf": 52296,
+    "pj_em_municipios_integrados": 50933,
+    "pj_total_uf": 50933,
     "pct_pj_coberta_redesim": 100.0,
     "score_proxy_lei_geral": 100.0,
     "classificacao": "ALTA"
@@ -20,8 +20,8 @@
   {
     "uf": "AC",
     "pct_municipios_integrados_redesim": 100.0,
-    "pj_em_municipios_integrados": 54675,
-    "pj_total_uf": 54675,
+    "pj_em_municipios_integrados": 55305,
+    "pj_total_uf": 55305,
     "pct_pj_coberta_redesim": 100.0,
     "score_proxy_lei_geral": 100.0,
     "classificacao": "ALTA"
@@ -45,10 +45,19 @@
     "classificacao": "ALTA"
   },
   {
+    "uf": "RO",
+    "pct_municipios_integrados_redesim": 100.0,
+    "pj_em_municipios_integrados": 174829,
+    "pj_total_uf": 174829,
+    "pct_pj_coberta_redesim": 100.0,
+    "score_proxy_lei_geral": 100.0,
+    "classificacao": "ALTA"
+  },
+  {
     "uf": "MT",
     "pct_municipios_integrados_redesim": 99.3,
-    "pj_em_municipios_integrados": 570216,
-    "pj_total_uf": 570445,
+    "pj_em_municipios_integrados": 575791,
+    "pj_total_uf": 576019,
     "pct_pj_coberta_redesim": 100.0,
     "score_proxy_lei_geral": 99.7,
     "classificacao": "ALTA"
@@ -72,39 +81,30 @@
     "classificacao": "ALTA"
   },
   {
+    "uf": "SC",
+    "pct_municipios_integrados_redesim": 94.9,
+    "pj_em_municipios_integrados": 1547269,
+    "pj_total_uf": 1556881,
+    "pct_pj_coberta_redesim": 99.4,
+    "score_proxy_lei_geral": 97.2,
+    "classificacao": "ALTA"
+  },
+  {
     "uf": "AP",
     "pct_municipios_integrados_redesim": 93.8,
-    "pj_em_municipios_integrados": 51414,
-    "pj_total_uf": 51523,
+    "pj_em_municipios_integrados": 52060,
+    "pj_total_uf": 52170,
     "pct_pj_coberta_redesim": 99.8,
     "score_proxy_lei_geral": 96.8,
     "classificacao": "ALTA"
   },
   {
-    "uf": "SC",
-    "pct_municipios_integrados_redesim": 95.6,
-    "pj_em_municipios_integrados": 1516735,
-    "pj_total_uf": 1553251,
-    "pct_pj_coberta_redesim": 97.6,
-    "score_proxy_lei_geral": 96.6,
-    "classificacao": "ALTA"
-  },
-  {
-    "uf": "ES",
-    "pct_municipios_integrados_redesim": 91.0,
-    "pj_em_municipios_integrados": 609400,
-    "pj_total_uf": 615653,
-    "pct_pj_coberta_redesim": 99.0,
-    "score_proxy_lei_geral": 95.0,
-    "classificacao": "ALTA"
-  },
-  {
     "uf": "SE",
-    "pct_municipios_integrados_redesim": 90.7,
-    "pj_em_municipios_integrados": 174517,
-    "pj_total_uf": 178098,
-    "pct_pj_coberta_redesim": 98.0,
-    "score_proxy_lei_geral": 94.3,
+    "pct_municipios_integrados_redesim": 89.3,
+    "pj_em_municipios_integrados": 173721,
+    "pj_total_uf": 175926,
+    "pct_pj_coberta_redesim": 98.7,
+    "score_proxy_lei_geral": 94.0,
     "classificacao": "ALTA"
   },
   {
@@ -118,11 +118,11 @@
   },
   {
     "uf": "PA",
-    "pct_municipios_integrados_redesim": 84.0,
-    "pj_em_municipios_integrados": 501999,
-    "pj_total_uf": 513474,
-    "pct_pj_coberta_redesim": 97.8,
-    "score_proxy_lei_geral": 90.9,
+    "pct_municipios_integrados_redesim": 81.2,
+    "pj_em_municipios_integrados": 506023,
+    "pj_total_uf": 520181,
+    "pct_pj_coberta_redesim": 97.3,
+    "score_proxy_lei_geral": 89.2,
     "classificacao": "ALTA"
   },
   {
@@ -135,12 +135,21 @@
     "classificacao": "ALTA"
   },
   {
-    "uf": "RO",
-    "pct_municipios_integrados_redesim": 92.3,
-    "pj_em_municipios_integrados": 143591,
-    "pj_total_uf": 175349,
-    "pct_pj_coberta_redesim": 81.9,
-    "score_proxy_lei_geral": 87.1,
+    "uf": "ES",
+    "pct_municipios_integrados_redesim": 76.9,
+    "pj_em_municipios_integrados": 585512,
+    "pj_total_uf": 620237,
+    "pct_pj_coberta_redesim": 94.4,
+    "score_proxy_lei_geral": 85.7,
+    "classificacao": "ALTA"
+  },
+  {
+    "uf": "AL",
+    "pct_municipios_integrados_redesim": 76.5,
+    "pj_em_municipios_integrados": 222905,
+    "pj_total_uf": 237146,
+    "pct_pj_coberta_redesim": 94.0,
+    "score_proxy_lei_geral": 85.2,
     "classificacao": "ALTA"
   },
   {
@@ -154,29 +163,38 @@
   },
   {
     "uf": "TO",
-    "pct_municipios_integrados_redesim": 72.7,
-    "pj_em_municipios_integrados": 169049,
-    "pj_total_uf": 180815,
-    "pct_pj_coberta_redesim": 93.5,
-    "score_proxy_lei_geral": 83.1,
-    "classificacao": "ALTA"
+    "pct_municipios_integrados_redesim": 71.2,
+    "pj_em_municipios_integrados": 160884,
+    "pj_total_uf": 182306,
+    "pct_pj_coberta_redesim": 88.2,
+    "score_proxy_lei_geral": 79.7,
+    "classificacao": "MEDIA"
   },
   {
-    "uf": "AL",
-    "pct_municipios_integrados_redesim": 72.5,
-    "pj_em_municipios_integrados": 217027,
-    "pj_total_uf": 235085,
-    "pct_pj_coberta_redesim": 92.3,
-    "score_proxy_lei_geral": 82.4,
-    "classificacao": "ALTA"
+    "uf": "MA",
+    "pct_municipios_integrados_redesim": 67.7,
+    "pj_em_municipios_integrados": 340807,
+    "pj_total_uf": 379663,
+    "pct_pj_coberta_redesim": 89.8,
+    "score_proxy_lei_geral": 78.8,
+    "classificacao": "MEDIA"
   },
   {
     "uf": "PI",
-    "pct_municipios_integrados_redesim": 62.5,
-    "pj_em_municipios_integrados": 218727,
-    "pj_total_uf": 237974,
-    "pct_pj_coberta_redesim": 91.9,
-    "score_proxy_lei_geral": 77.2,
+    "pct_municipios_integrados_redesim": 64.7,
+    "pj_em_municipios_integrados": 219909,
+    "pj_total_uf": 240036,
+    "pct_pj_coberta_redesim": 91.6,
+    "score_proxy_lei_geral": 78.2,
+    "classificacao": "MEDIA"
+  },
+  {
+    "uf": "RN",
+    "pct_municipios_integrados_redesim": 70.1,
+    "pj_em_municipios_integrados": 259966,
+    "pj_total_uf": 311139,
+    "pct_pj_coberta_redesim": 83.6,
+    "score_proxy_lei_geral": 76.8,
     "classificacao": "MEDIA"
   },
   {
@@ -189,30 +207,12 @@
     "classificacao": "MEDIA"
   },
   {
-    "uf": "RN",
-    "pct_municipios_integrados_redesim": 70.1,
-    "pj_em_municipios_integrados": 256506,
-    "pj_total_uf": 314386,
-    "pct_pj_coberta_redesim": 81.6,
-    "score_proxy_lei_geral": 75.8,
-    "classificacao": "MEDIA"
-  },
-  {
     "uf": "BA",
     "pct_municipios_integrados_redesim": 63.1,
     "pj_em_municipios_integrados": 988910,
     "pj_total_uf": 1140704,
     "pct_pj_coberta_redesim": 86.7,
     "score_proxy_lei_geral": 74.9,
-    "classificacao": "MEDIA"
-  },
-  {
-    "uf": "MA",
-    "pct_municipios_integrados_redesim": 64.5,
-    "pj_em_municipios_integrados": 226095,
-    "pj_total_uf": 375563,
-    "pct_pj_coberta_redesim": 60.2,
-    "score_proxy_lei_geral": 62.4,
     "classificacao": "MEDIA"
   },
   {
@@ -225,21 +225,21 @@
     "classificacao": "MEDIA"
   },
   {
+    "uf": "PB",
+    "pct_municipios_integrados_redesim": 68.6,
+    "pj_em_municipios_integrados": 147047,
+    "pj_total_uf": 353712,
+    "pct_pj_coberta_redesim": 41.6,
+    "score_proxy_lei_geral": 55.1,
+    "classificacao": "MEDIA"
+  },
+  {
     "uf": "MG",
     "pct_municipios_integrados_redesim": 37.4,
     "pj_em_municipios_integrados": 1591655,
     "pj_total_uf": 2216398,
     "pct_pj_coberta_redesim": 71.8,
     "score_proxy_lei_geral": 54.6,
-    "classificacao": "MEDIA"
-  },
-  {
-    "uf": "PB",
-    "pct_municipios_integrados_redesim": 65.9,
-    "pj_em_municipios_integrados": 136366,
-    "pj_total_uf": 350502,
-    "pct_pj_coberta_redesim": 38.9,
-    "score_proxy_lei_geral": 52.4,
     "classificacao": "MEDIA"
   }
 ]

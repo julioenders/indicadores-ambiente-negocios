@@ -1,7 +1,7 @@
 [
   {
     "estado": "Acre",
-    "estoque_mpes": 50143,
+    "estoque_mpes": 49202,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 187.3,
@@ -9,7 +9,7 @@
   },
   {
     "estado": "Alagoas",
-    "estoque_mpes": 221007,
+    "estoque_mpes": 218261,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 175.3,
@@ -17,7 +17,7 @@
   },
   {
     "estado": "Amapá",
-    "estoque_mpes": 47860,
+    "estoque_mpes": 47036,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 186.5,
@@ -25,7 +25,7 @@
   },
   {
     "estado": "Amazonas",
-    "estoque_mpes": 275750,
+    "estoque_mpes": 271002,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 183.7,
@@ -33,7 +33,7 @@
   },
   {
     "estado": "Bahia",
-    "estoque_mpes": 1187528,
+    "estoque_mpes": 1182051,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 327.5,
@@ -41,7 +41,7 @@
   },
   {
     "estado": "Ceará",
-    "estoque_mpes": 711794,
+    "estoque_mpes": 708499,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 137.7,
@@ -49,7 +49,7 @@
   },
   {
     "estado": "Distrito Federal",
-    "estoque_mpes": 450439,
+    "estoque_mpes": 454108,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 167.2,
@@ -57,7 +57,7 @@
   },
   {
     "estado": "Espírito Santo",
-    "estoque_mpes": 577764,
+    "estoque_mpes": 585967,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 154.6,
@@ -73,7 +73,7 @@
   },
   {
     "estado": "Goiás",
-    "estoque_mpes": 1005787,
+    "estoque_mpes": 1005638,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 120.1,
@@ -81,7 +81,7 @@
   },
   {
     "estado": "Maranhão",
-    "estoque_mpes": 334268,
+    "estoque_mpes": 339115,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 150.7,
@@ -89,7 +89,7 @@
   },
   {
     "estado": "Mato Grosso",
-    "estoque_mpes": 549369,
+    "estoque_mpes": 546704,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 138.5,
@@ -97,7 +97,7 @@
   },
   {
     "estado": "Mato Grosso do Sul",
-    "estoque_mpes": 365544,
+    "estoque_mpes": 361123,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 154.2,
@@ -105,7 +105,7 @@
   },
   {
     "estado": "Minas Gerais",
-    "estoque_mpes": 2769478,
+    "estoque_mpes": 2752706,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 232.5,
@@ -113,7 +113,7 @@
   },
   {
     "estado": "Não informado",
-    "estoque_mpes": 536,
+    "estoque_mpes": 561,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": null,
@@ -121,7 +121,7 @@
   },
   {
     "estado": "Paraná",
-    "estoque_mpes": 1923078,
+    "estoque_mpes": 1918629,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 136.5,
@@ -129,7 +129,7 @@
   },
   {
     "estado": "Paraíba",
-    "estoque_mpes": 329207,
+    "estoque_mpes": 318630,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 182.4,
@@ -137,7 +137,7 @@
   },
   {
     "estado": "Pará",
-    "estoque_mpes": 519485,
+    "estoque_mpes": 479915,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 269.9,
@@ -145,7 +145,7 @@
   },
   {
     "estado": "Pernambuco",
-    "estoque_mpes": 726366,
+    "estoque_mpes": 693788,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 253.4,
@@ -153,7 +153,7 @@
   },
   {
     "estado": "Piauí",
-    "estoque_mpes": 211031,
+    "estoque_mpes": 214950,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 151.1,
@@ -161,7 +161,7 @@
   },
   {
     "estado": "Rio Grande do Norte",
-    "estoque_mpes": 289936,
+    "estoque_mpes": 294222,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 171.0,
@@ -169,7 +169,7 @@
   },
   {
     "estado": "Rio Grande do Sul",
-    "estoque_mpes": 1644301,
+    "estoque_mpes": 1663900,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 167.5,
@@ -177,7 +177,7 @@
   },
   {
     "estado": "Rio de Janeiro",
-    "estoque_mpes": 2189406,
+    "estoque_mpes": 2213558,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 298.7,
@@ -185,7 +185,7 @@
   },
   {
     "estado": "Rondônia",
-    "estoque_mpes": 161482,
+    "estoque_mpes": 163972,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 146.8,
@@ -193,7 +193,7 @@
   },
   {
     "estado": "Roraima",
-    "estoque_mpes": 47779,
+    "estoque_mpes": 48690,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 145.8,
@@ -201,7 +201,7 @@
   },
   {
     "estado": "Santa Catarina",
-    "estoque_mpes": 1474727,
+    "estoque_mpes": 1475648,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 215.7,
@@ -209,7 +209,7 @@
   },
   {
     "estado": "Sergipe",
-    "estoque_mpes": 162782,
+    "estoque_mpes": 165514,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 119.7,
@@ -217,7 +217,7 @@
   },
   {
     "estado": "São Paulo",
-    "estoque_mpes": 8402276,
+    "estoque_mpes": 8532264,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 224.1,
@@ -225,7 +225,7 @@
   },
   {
     "estado": "Tocantins",
-    "estoque_mpes": 168783,
+    "estoque_mpes": 167192,
     "aberturas_recentes_2024_2026": 0,
     "taxa_dinamismo_pct": 0.0,
     "tempo_abertura_horas": 134.1,
